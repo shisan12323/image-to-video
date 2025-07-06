@@ -19,7 +19,7 @@
         },
         {
           "title": "Pricing",
-          "url": "/#pricing",
+          "url": "/pricing",
           "icon": "MdPayment"
         },
         {
@@ -48,7 +48,7 @@
     "buttons": [
       {
         "title": "Start Designing",
-        "url": "/#pricing",
+        "url": "/pricing",
         "target": "_self",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
@@ -65,14 +65,14 @@
     "announcement": {
       "label": "Free",
       "title": "🎯 Try AI Garden Design for Free",
-      "url": "/#pricing"
+      "url": "/pricing"
     },
     "tip": "✨ No experience needed - AI does the work",
     "buttons": [
       {
         "title": "Try Free Design",
         "icon": "RiSparklingFill",
-        "url": "/#pricing",
+        "url": "/pricing",
         "target": "_self",
         "variant": "default"
       },

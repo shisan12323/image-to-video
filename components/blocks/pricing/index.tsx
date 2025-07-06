@@ -102,20 +102,20 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
   return (
     <section id={pricing.name} className="py-16">
       <div className="container">
-        <div className="mx-auto mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-semibold lg:text-5xl">
+        <div className="mx-auto mb-16 text-center">
+          <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
             {pricing.title}
           </h2>
-          <p className="text-muted-foreground lg:text-lg">
+          <p className="text-slate-600 text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
             {pricing.description}
           </p>
         </div>
         <div className="flex flex-col items-center gap-2">
           {pricing.groups && pricing.groups.length > 0 && (
-            <div className="flex h-12 mb-12 items-center rounded-md bg-muted p-1 text-lg">
+            <div className="flex h-14 mb-16 items-center rounded-2xl bg-slate-100 p-2 shadow-inner">
               <RadioGroup
                 value={group}
-                className={`h-full grid-cols-${pricing.groups.length}`}
+                className={`h-full grid grid-cols-${pricing.groups.length} w-full gap-2`}
                 onValueChange={(value) => {
                   setGroup(value);
                 }}
@@ -124,7 +124,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                   return (
                     <div
                       key={i}
-                      className='h-full rounded-md transition-all has-[button[data-state="checked"]]:bg-white'
+                      className='h-full rounded-xl transition-all duration-300 has-[button[data-state="checked"]]:bg-white has-[button[data-state="checked"]]:shadow-lg'
                     >
                       <RadioGroupItem
                         value={item.name || ""}
@@ -133,13 +133,13 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                       />
                       <Label
                         htmlFor={item.name}
-                        className="flex h-full cursor-pointer items-center justify-center px-7 font-semibold text-muted-foreground peer-data-[state=checked]:text-primary"
+                        className="flex h-full cursor-pointer items-center justify-center px-8 font-bold text-slate-600 peer-data-[state=checked]:text-emerald-600 transition-all duration-300 hover:text-emerald-500"
                       >
                         {item.title}
                         {item.label && (
                           <Badge
                             variant="outline"
-                            className="border-primary bg-primary px-1.5 ml-1 text-primary-foreground"
+                            className="border-emerald-500 bg-gradient-to-r from-emerald-500 to-teal-500 px-2 ml-2 text-white text-xs font-semibold"
                           >
                             {item.label}
                           </Badge>
@@ -166,10 +166,10 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
               return (
                 <div
                   key={index}
-                  className={`rounded-lg p-6 ${
+                  className={`rounded-xl p-8 transition-all duration-300 ${
                     item.is_featured
-                      ? "border-primary border-2 bg-card text-card-foreground"
-                      : "border-muted border"
+                      ? "border-emerald-500 border-2 bg-gradient-to-br from-emerald-50/50 to-teal-50/50 shadow-xl scale-105"
+                      : "border-slate-200 border hover:border-emerald-300 hover:shadow-lg"
                   }`}
                 >
                   <div className="flex h-full flex-col justify-between gap-5">
@@ -184,7 +184,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                         {item.label && (
                           <Badge
                             variant="outline"
-                            className="border-primary bg-primary px-1.5 text-primary-foreground"
+                            className="border-emerald-500 bg-gradient-to-r from-emerald-500 to-teal-500 px-3 py-1 text-white font-semibold"
                           >
                             {item.label}
                           </Badge>
@@ -197,7 +197,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                           </span>
                         )}
                         {item.price && (
-                          <span className="text-5xl font-semibold">
+                          <span className="text-5xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                             {item.price}
                           </span>
                         )}
@@ -221,9 +221,9 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                         <ul className="flex flex-col gap-3">
                           {item.features.map((feature, fi) => {
                             return (
-                              <li className="flex gap-2" key={`feature-${fi}`}>
-                                <Check className="mt-1 size-4 shrink-0" />
-                                {feature}
+                              <li className="flex gap-3" key={`feature-${fi}`}>
+                                <Check className="mt-0.5 size-5 shrink-0 text-emerald-500" />
+                                <span className="text-slate-700">{feature}</span>
                               </li>
                             );
                           })}
@@ -253,7 +253,11 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                       ) : null}
                       {item.button && (
                         <Button
-                          className="w-full flex items-center justify-center gap-2 font-semibold"
+                          className={`w-full flex items-center justify-center gap-2 font-semibold py-6 text-lg transition-all duration-300 ${
+                            item.is_featured 
+                              ? "bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg hover:shadow-xl"
+                              : "bg-slate-900 hover:bg-slate-800 text-white"
+                          }`}
                           disabled={isLoading}
                           onClick={() => {
                             if (isLoading) {

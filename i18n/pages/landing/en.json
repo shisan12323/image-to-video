@@ -1,0 +1,646 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "GardenAI",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "GardenAI"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Features",
+          "url": "/#feature",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "Pricing",
+          "url": "/#pricing",
+          "icon": "MdPayment"
+        },
+        {
+          "title": "Gallery",
+          "url": "/#showcase",
+          "icon": "BiCube",
+          "children": [
+            {
+              "title": "Modern Gardens",
+              "description": "Contemporary Garden Designs",
+              "icon": "MdOutlineWallpaper",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "Traditional Gardens",
+              "description": "Classic Garden Styles",
+              "icon": "",
+              "url": "/#showcase",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Start Designing",
+        "url": "/#pricing",
+        "target": "_self",
+        "variant": "link",
+        "icon": "RiArrowRightUpLine"
+      }
+    ],
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "AI Garden Design in 2 Minutes",
+    "highlight_text": "2 Minutes",
+    "description": "Upload a photo, choose your style, get a professional garden design instantly.<br/>Transform any space into a beautiful garden with AI precision.",
+    "announcement": {
+      "label": "Free",
+      "title": "🎯 Try AI Garden Design for Free",
+      "url": "/#pricing"
+    },
+    "tip": "✨ No experience needed - AI does the work",
+    "buttons": [
+      {
+        "title": "Try Free Design",
+        "icon": "RiSparklingFill",
+        "url": "/#pricing",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "See Examples",
+        "icon": "RiEyeLine",
+        "url": "/#showcase",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "Powered by Advanced AI Technology",
+    "items": [
+      {
+        "title": "Computer Vision",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Computer Vision"
+        }
+      },
+      {
+        "title": "Machine Learning",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "Machine Learning"
+        }
+      },
+      {
+        "title": "Plant Database",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "Plant Database"
+        }
+      },
+      {
+        "title": "Climate Analysis",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Climate Analysis"
+        }
+      },
+      {
+        "title": "3D Rendering",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "3D Rendering"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Professional Garden Design, Instantly",
+    "label": "Why GardenAI",
+    "description": "Skip expensive consultants and lengthy design processes. Our AI creates professional-grade garden designs in minutes, perfectly tailored to your space and style preferences.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "2-Minute Design",
+        "description": "Upload photo, pick style, get results. Faster than traditional design by weeks, better than DIY guessing.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Smart Plant Selection",
+        "description": "AI matches plants to your climate, soil, and maintenance level. No more dead plants or trial and error.",
+        "icon": "RiPlantLine"
+      },
+      {
+        "title": "Professional Quality",
+        "description": "Get landscape architect-level designs without the $500+ consultation fees. AI trained on thousands of successful gardens.",
+        "icon": "RiAwardLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "See the Difference AI Makes",
+    "label": "Before & After",
+    "description": "Real transformations created by our AI in under 2 minutes. No experience required.",
+    "items": [
+      {
+        "title": "Bare Backyard → Garden Paradise",
+        "description": "Empty lawn transformed into a colorful cottage garden with structured planting beds and seasonal blooms.",
+        "icon": "RiArrowRightLine",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "Concrete Patio → Green Oasis",
+        "description": "Urban patio redesigned with vertical gardens, smart plant choices, and cozy seating areas.",
+        "icon": "RiArrowRightLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "Overgrown Mess → Zen Retreat",
+        "description": "Chaotic garden simplified into a peaceful zen space with clean lines and thoughtful plant placement.",
+        "icon": "RiArrowRightLine",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Design Your Garden in 4 Simple Steps",
+    "description": "Get professional garden design in minutes, not weeks:",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "1. Upload Photo",
+        "description": "Take a photo of your space and upload it. Our AI analyzes size, lighting, and current conditions.",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "2. Choose Style",
+        "description": "Pick your favorite garden style from our curated collection. Modern, cottage, zen, tropical, and more.",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "3. AI Designs",
+        "description": "Watch AI create your personalized garden design with perfect plant placement and color coordination.",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "4. Download Plans",
+        "description": "Get your complete garden design with shopping lists, planting guides, and maintenance schedule.",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "What Makes Our AI Special",
+    "description": "Advanced features that deliver professional results every time.",
+    "items": [
+      {
+        "title": "Photo Analysis",
+        "description": "AI reads your space dimensions, lighting, and soil conditions from a single photo.",
+        "icon": "RiCameraLine"
+      },
+      {
+        "title": "Climate Matching",
+        "description": "Automatically selects plants that thrive in your exact location and weather patterns.",
+        "icon": "RiSunLine"
+      },
+      {
+        "title": "Style Transfer",
+        "description": "Apply any garden style to your space while keeping plants practical and suitable.",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "Instant Preview",
+        "description": "See your design in HD 3D before you plant anything. Walk through your future garden.",
+        "icon": "RiEyeLine"
+      },
+      {
+        "title": "Shopping Lists",
+        "description": "Get exact plant quantities, sizes, and local pricing for everything in your design.",
+        "icon": "RiShoppingCartLine"
+      },
+      {
+        "title": "Care Calendar",
+        "description": "Receive step-by-step care schedules tailored to your specific plants and climate.",
+        "icon": "RiCalendarLine"
+      }
+    ]
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "Garden Styles for Every Space",
+    "description": "Choose your favorite style and watch AI adapt it to your unique space.",
+    "items": [
+      {
+        "title": "Modern Minimalist",
+        "description": "Clean lines, geometric plants, easy maintenance",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "English Cottage",
+        "description": "Romantic, colorful, mixed flower borders",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "Mediterranean",
+        "description": "Drought-tolerant herbs and olive trees",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/1.png"
+        }
+      },
+      {
+        "title": "Tropical Jungle",
+        "description": "Lush palms and bold foliage plants",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/2.png"
+        }
+      },
+      {
+        "title": "Zen Garden",
+        "description": "Peaceful bamboo and stone features",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/3.png"
+        }
+      },
+      {
+        "title": "Prairie Wildflower",
+        "description": "Native grasses and wildflower meadows",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/4.png"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "Stats",
+    "title": "Gardeners Love GardenAI",
+    "description": "for creating beautiful, sustainable gardens.",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "Gardens Designed",
+        "label": "1000+",
+        "description": "Beautiful Spaces"
+      },
+      {
+        "title": "Plant Varieties",
+        "label": "5000+",
+        "description": "In Our Database"
+      },
+      {
+        "title": "Design Time",
+        "label": "15",
+        "description": "Minutes Average"
+      }
+    ]
+  },
+  "pricing": {
+    "name": "pricing",
+    "label": "Pricing",
+    "title": "Try AI Garden Design",
+    "description": "Start with a free design, upgrade anytime for more features.",
+    "groups": [],
+    "items": [
+      {
+        "title": "Free Trial",
+        "description": "Try AI garden design for free.",
+        "features_title": "Includes",
+        "features": [
+          "1 free garden design",
+          "Basic plant recommendations",
+          "Layout visualization",
+          "Email support",
+          "No credit card required"
+        ],
+        "interval": "one-time",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "USD",
+        "price": "Free",
+        "original_price": "",
+        "unit": "",
+        "is_featured": true,
+        "tip": "Perfect to get started!",
+        "button": {
+          "title": "Try Free Design",
+          "url": "/#pricing",
+          "icon": "RiSparklingFill"
+        },
+        "product_id": "free-trial",
+        "product_name": "Free Garden Design Trial",
+        "credits": 1,
+        "valid_months": 1
+      },
+      {
+        "title": "Pro Design",
+        "description": "Unlock professional features.",
+        "label": "Popular",
+        "features_title": "Everything in Free, plus",
+        "features": [
+          "Unlimited garden designs",
+          "HD 3D visualization",
+          "Detailed shopping lists",
+          "Plant care schedules",
+          "Priority support",
+          "Export to PDF"
+        ],
+        "interval": "one-time",
+        "amount": 4900,
+        "cn_amount": 29900,
+        "currency": "USD",
+        "price": "$49",
+        "original_price": "$99",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "Most gardens choose this!",
+        "button": {
+          "title": "Upgrade to Pro",
+          "url": "/#pricing",
+          "icon": "RiVipCrownLine"
+        },
+        "product_id": "pro-design",
+        "product_name": "Pro Garden Design",
+        "credits": 100,
+        "valid_months": 12
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "Testimonial",
+    "title": "What Gardeners Say About GardenAI",
+    "description": "Hear from garden enthusiasts who transformed their outdoor spaces with GardenAI.",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "Sarah Williams",
+        "label": "Homeowner, Portland",
+        "description": "GardenAI transformed my boring backyard into a stunning cottage garden! The AI understood exactly what I wanted and gave me plant choices that thrive in Oregon's climate.",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Michael Rodriguez",
+        "label": "Urban Gardener, NYC",
+        "description": "Living in a small Brooklyn apartment, I thought I couldn't have a garden. GardenAI designed an amazing vertical garden for my fire escape that's now my pride and joy!",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Lisa Chen",
+        "label": "Sustainability Advocate",
+        "description": "The AI's focus on native plants and water conservation was exactly what I needed. My new garden attracts butterflies and hummingbirds while using 60% less water!",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "David Thompson",
+        "label": "Retirement Garden Project",
+        "description": "After retiring, I wanted to create my dream garden but didn't know where to start. GardenAI made it so easy - now I have a beautiful zen garden that's my daily sanctuary.",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "Emma Martinez",
+        "label": "Busy Mom of Three",
+        "description": "With three kids, I needed a low-maintenance garden that looked amazing. GardenAI designed a child-friendly space with edible plants the kids love to help with!",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "Robert Johnson",
+        "label": "First-Time Gardener",
+        "description": "I killed every plant I touched until GardenAI. The care instructions are so detailed and the plant recommendations are perfect for beginners like me. My garden is thriving!",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Frequently Asked Questions About GardenAI",
+    "description": "Have another question? Contact us via email or chat support.",
+    "items": [
+      {
+        "title": "How does GardenAI create personalized garden designs?",
+        "description": "GardenAI analyzes your space photos, climate data, soil conditions, and style preferences using advanced AI algorithms. It then selects plants and creates layouts optimized for your specific conditions and maintenance level."
+      },
+      {
+        "title": "Do I need gardening experience to use GardenAI?",
+        "description": "Not at all! GardenAI is designed for gardeners of all levels. Our AI provides detailed care instructions, maintenance schedules, and beginner-friendly plant recommendations to ensure your success."
+      },
+      {
+        "title": "What garden styles does GardenAI support?",
+        "description": "GardenAI supports a wide range of styles including modern, cottage, zen, tropical, desert, vegetable gardens, and more. Each design is customized to work with your local climate and space constraints."
+      },
+      {
+        "title": "How quickly can I get my garden design?",
+        "description": "Most garden designs are generated within 15 minutes of uploading your space and preferences. Complex designs or premium features may take up to an hour for full 3D visualizations."
+      },
+      {
+        "title": "Does GardenAI consider my local climate and soil?",
+        "description": "Yes! GardenAI uses your location to recommend plants that thrive in your specific climate zone, considers local rainfall patterns, and suggests soil improvements based on typical conditions in your area."
+      },
+      {
+        "title": "Can I modify the AI-generated design?",
+        "description": "Absolutely! All designs are fully customizable. You can swap plants, adjust layouts, change color schemes, and regenerate sections while maintaining the AI's expertise in plant compatibility and spacing."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Ready to Design Your Dream Garden?",
+    "description": "Try AI garden design free. Upload a photo and see magic happen in 2 minutes.",
+    "buttons": [
+      {
+        "title": "Try Free Design Now",
+        "url": "/#pricing",
+        "target": "_self",
+        "icon": "RiSparklingFill"
+      },
+      {
+        "title": "See More Examples",
+        "url": "/#showcase",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "GardenAI",
+      "description": "GardenAI is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence. Create personalized garden designs that match your style and space.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "GardenAI"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • GardenAI All rights reserved.",
+    "nav": {
+      "items": [
+        {
+          "title": "About",
+          "children": [
+            {
+              "title": "Features",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "Gallery",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "Pricing",
+              "url": "/#pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Garden Styles",
+          "children": [
+            {
+              "title": "Modern Gardens",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "Traditional Gardens",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "Tropical Gardens",
+              "url": "/#showcase",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Support",
+          "children": [
+            {
+              "title": "Help Center",
+              "url": "/#faq",
+              "target": "_self"
+            },
+            {
+              "title": "Plant Care Guide",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "Contact Us",
+              "url": "mailto:support@gardenai.com",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/gardenai",
+          "target": "_blank"
+        },
+        {
+          "title": "Instagram",
+          "icon": "RiInstagramFill",
+          "url": "https://instagram.com/gardenai",
+          "target": "_blank"
+        },
+        {
+          "title": "Pinterest",
+          "icon": "RiPinterestFill",
+          "url": "https://pinterest.com/gardenai",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:support@gardenai.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

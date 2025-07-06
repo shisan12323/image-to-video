@@ -1,0 +1,101 @@
+
+> shipany-template-one@1.6.0 dev
+> cross-env NODE_NO_WARNINGS=1 next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+   ▲ Next.js 15.2.3
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.3.67:3001
+
+ ✓ Starting...
+ ⚠ Found lockfile missing swc dependencies, patching...
+/bin/sh: pnpm: command not found
+/bin/sh: pnpm: command not found
+/bin/sh: pnpm: command not found
+/bin/sh: pnpm: command not found
+/bin/sh: pnpm: command not found
+/bin/sh: pnpm: command not found
+/bin/sh: pnpm: command not found
+ ⨯ Failed to patch lockfile, please try uninstalling and reinstalling next in this workspace
+Error: Failed to get registry from "pnpm".
+    at Array.map (<anonymous>) {
+  [cause]: Error: Command failed: pnpm config get registry 
+  /bin/sh: pnpm: command not found
+  
+      at Array.map (<anonymous>) {
+    status: 127,
+    signal: null,
+    output: [
+      null,
+      <Buffer >,
+      <Buffer 2f 62 69 6e 2f 73 68 3a 20 70 6e 70 6d 3a 20 63 6f 6d 6d 61 6e 64 20 6e 6f 74 20 66 6f 75 6e 64 0a>
+    ],
+    pid: 51023,
+    stdout: <Buffer >,
+    stderr: <Buffer 2f 62 69 6e 2f 73 68 3a 20 70 6e 70 6d 3a 20 63 6f 6d 6d 61 6e 64 20 6e 6f 74 20 66 6f 75 6e 64 0a>
+  }
+}
+ ✓ Ready in 2.8s
+ ✓ Compiled /middleware in 232ms (250 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 5.7s (1350 modules)
+ ✓ Compiled in 958ms (561 modules)
+ ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className=... ref=... onClick={function onClick} children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '3144654718'
+}
+ GET / 200 in 9487ms
+ ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button className=... ref=... onClick={function onClick} children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '3144654718'
+}
+ GET / 200 in 641ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /api/auth/[...nextauth] in 7.2s (1340 modules)
+ ✓ Compiled in 720ms (550 modules)
+ GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 9184ms
+ GET /css/modules/code.css 404 in 8498ms
+ GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 9170ms
+[31m[auth][error][0m MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
+    at assertConfig (webpack-internal:///(rsc)/./node_modules/@auth/core/lib/utils/assert.js:66:16)
+    at Auth (webpack-internal:///(rsc)/./node_modules/@auth/core/index.js:91:95)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AppRouteRouteModule.do (/Users/huashisan/my project buwan/ai garden design/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:26:33891)
+ GET /api/auth/session 500 in 3914ms
+[31m[auth][error][0m MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
+    at assertConfig (webpack-internal:///(rsc)/./node_modules/@auth/core/lib/utils/assert.js:66:16)
+    at Auth (webpack-internal:///(rsc)/./node_modules/@auth/core/index.js:91:95)
+    at async AppRouteRouteModule.do (/Users/huashisan/my project buwan/ai garden design/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:26:33891)
+ GET /api/auth/session 500 in 11ms
+ ✓ Compiled in 1441ms (1651 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 405ms
+ GET / 200 in 2223ms
+ GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 119ms
+ GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 178ms
+ GET /css/modules/code.css 404 in 183ms
+[31m[auth][error][0m MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
+    at assertConfig (webpack-internal:///(rsc)/./node_modules/@auth/core/lib/utils/assert.js:66:16)
+    at Auth (webpack-internal:///(rsc)/./node_modules/@auth/core/index.js:91:95)
+    at async AppRouteRouteModule.do (/Users/huashisan/my project buwan/ai garden design/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:26:33891)
+ GET /api/auth/session 500 in 312ms
+[31m[auth][error][0m MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
+    at assertConfig (webpack-internal:///(rsc)/./node_modules/@auth/core/lib/utils/assert.js:66:16)
+    at Auth (webpack-internal:///(rsc)/./node_modules/@auth/core/index.js:91:95)
+    at async AppRouteRouteModule.do (/Users/huashisan/my project buwan/ai garden design/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:26:33891)
+ GET /api/auth/session 500 in 19ms
+ ✓ Compiled in 1631ms (1657 modules)
+ GET / 200 in 250ms
+ ✓ Compiled in 4.5s (1647 modules)
+ GET / 200 in 511ms
+[?25h

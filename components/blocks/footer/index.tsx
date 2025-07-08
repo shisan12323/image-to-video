@@ -36,7 +36,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
                 </div>
               )}
             </div>
-            
+
             {footer.agreement && (
               <ul className="flex justify-center gap-6 lg:justify-end">
                 {footer.agreement.items?.map((item, i) => (

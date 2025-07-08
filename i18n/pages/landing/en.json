@@ -485,13 +485,13 @@
     "buttons": [
       {
         "title": "Try Free Design Now",
-        "url": "/#pricing",
+        "url": "/#upload-section",
         "target": "_self",
         "icon": "RiSparklingFill"
       },
       {
         "title": "See More Examples",
-        "url": "/#showcase",
+        "url": "/#garden-styles",
         "target": "_self",
         "variant": "outline"
       }

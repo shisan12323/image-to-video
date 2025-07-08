@@ -59,7 +59,8 @@ export default function GardenStyles() {
   return (
     <section 
       ref={animationRef}
-      className={`py-20 bg-white overflow-hidden transition-all duration-1000 ${
+      id="garden-styles"
+      className={`py-24 bg-gradient-to-b from-white via-slate-50/30 to-white transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >

@@ -114,6 +114,12 @@ export default function FAQ() {
               style={{
                 animation: 'breathe 3s ease-in-out infinite'
               }}
+              onClick={() => {
+                const uploadSection = document.getElementById('upload-section');
+                if (uploadSection) {
+                  uploadSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               Start Your Garden Transformation Today
             </button>

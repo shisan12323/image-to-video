@@ -36,6 +36,7 @@ export default function UploadSection() {
   return (
     <section 
       ref={ref}
+      id="upload-section"
       className={`py-20 bg-gradient-to-b from-emerald-50/30 via-white to-slate-50 relative overflow-hidden transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}

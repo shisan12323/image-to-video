@@ -543,19 +543,19 @@
   },
   "cta": {
     "name": "cta",
-    "title": "启动您的第一个 AI SaaS 创业项目",
-    "description": "从这里开始，使用 ShipAny 启动。",
+    "title": "准备好体验 AI 园林设计了吗?",
+    "description": "免费试用 AI 园林设计。上传照片，2分钟内见证奇迹。",
     "buttons": [
       {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
+        "title": "立即开始您的花园转型",
+        "url": "/#upload-section",
+        "target": "_self",
+        "icon": "RiSparklingFill"
       },
       {
-        "title": "阅读文档",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "查看更多示例",
+        "url": "/#garden-styles",
+        "target": "_self",
         "variant": "outline"
       }
     ]

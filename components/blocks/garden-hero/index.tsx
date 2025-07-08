@@ -46,6 +46,12 @@ export default function GardenHero() {
               style={{
                 animation: 'breathe 3s ease-in-out infinite'
               }}
+              onClick={() => {
+                const uploadSection = document.getElementById('upload-section');
+                if (uploadSection) {
+                  uploadSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               Try AI Garden Design for free
             </Button>

@@ -4,19 +4,102 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
-import { Upload, Image as ImageIcon, Sparkles } from "lucide-react";
+import { Upload, Image as ImageIcon, Sparkles, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
+import { toast } from "sonner";
+import downloadPhoto from "@/utils/downloadPhoto";
 
 export default function UploadSection() {
   const { ref, isVisible } = useScrollAnimation();
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [selectedStyle, setSelectedStyle] = useState<string>("");
+  const [specialElements, setSpecialElements] = useState<string>("");
+  const [isGenerating, setIsGenerating] = useState<boolean>(false);
+  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
       setSelectedFile(file);
+    }
+  };
+
+  const convertFileToBase64 = (file: File): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result as string);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  };
+
+  const handleGenerateDesign = async () => {
+    if (!selectedFile || !selectedStyle) {
+      toast.error("Please select a file and garden style");
+      return;
+    }
+
+    setIsGenerating(true);
+    
+    try {
+      // Convert file to base64
+      const imageDataUrl = await convertFileToBase64(selectedFile);
+      
+      // Convert style display name back to the value format
+      const styleDisplayNames = {
+        "japanese-zen": "Japanese Zen",
+        "english-cottage": "English Cottage", 
+        "modern-minimalist": "Modern Minimalist",
+        "mediterranean": "Mediterranean",
+        "tropical-paradise": "Tropical Paradise",
+        "desert-oasis": "Desert Oasis",
+        "prairie-wildflower": "Prairie Wildflower",
+        "french-formal": "French Formal",
+        "rustic-country": "Rustic Country",
+        "contemporary-urban": "Contemporary Urban"
+      };
+      
+      const theme = styleDisplayNames[selectedStyle as keyof typeof styleDisplayNames] || selectedStyle;
+
+      // Call the generation API
+      const response = await fetch('/api/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          imageUrl: imageDataUrl,
+          theme: theme,
+          elements: specialElements
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setGeneratedImage(result.image);
+        toast.success("Garden design generated successfully!");
+      } else {
+        toast.error(result.error || "Failed to generate design");
+      }
+    } catch (error) {
+      console.error("Error generating design:", error);
+      toast.error("Failed to generate design. Please try again.");
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const handleDownload = async () => {
+    if (!generatedImage) return;
+    
+    try {
+      await downloadPhoto(generatedImage, `garden-design-${Date.now()}.png`);
+      toast.success("Image downloaded successfully!");
+    } catch (error) {
+      console.error("Error downloading image:", error);
+      toast.error("Failed to download image");
     }
   };
 
@@ -122,41 +205,83 @@ export default function UploadSection() {
                   Special Elements (Optional)
                 </label>
                 <Input 
+                  value={specialElements}
+                  onChange={(e) => setSpecialElements(e.target.value)}
                   placeholder="e.g., water feature, pergola, fire pit..."
                   className="h-12 bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 rounded-lg"
                 />
               </div>
               
               <Button 
+                onClick={handleGenerateDesign}
                 className="w-full h-12 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50"
                 style={{
                   animation: 'breathe 3s ease-in-out infinite'
                 }}
-                disabled={!selectedFile || !selectedStyle}
+                disabled={!selectedFile || !selectedStyle || isGenerating}
               >
-                Generate Design
+                {isGenerating ? (
+                  <>
+                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                    Generating...
+                  </>
+                ) : (
+                  <>
+                    <Sparkles className="w-4 h-4 mr-2" />
+                    Generate Design
+                  </>
+                )}
               </Button>
+              
             </div>
           </div>
           
-          {/* Right Side - Example Image */}
+          {/* Right Side - Generated Design or Placeholder */}
           <div className="relative">
-            <div className="relative">
-              <img 
-                src="/imgs/showcases/1.png" 
-                alt="AI Garden Design Example" 
-                className="w-full h-auto rounded-xl shadow-2xl"
-              />
-              <div 
-                className="absolute bottom-4 left-4 bg-white text-slate-900 px-3 py-1 rounded-lg text-sm font-medium shadow-lg flex items-center gap-2"
-                style={{
-                  animation: 'breathe 4s ease-in-out infinite'
-                }}
-              >
-                <div className="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></div>
-                AI Generated
+            {generatedImage ? (
+              /* Generated Design Display */
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-slate-800 mb-4">您的AI生成设计</h3>
+                <div className="relative">
+                  <img 
+                    src={generatedImage} 
+                    alt="Generated garden design" 
+                    className="w-full h-auto rounded-xl shadow-2xl"
+                  />
+                  <div 
+                    className="absolute bottom-4 left-4 bg-white text-slate-900 px-3 py-1 rounded-lg text-sm font-medium shadow-lg flex items-center gap-2"
+                    style={{
+                      animation: 'breathe 4s ease-in-out infinite'
+                    }}
+                  >
+                    <div className="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></div>
+                    AI 生成完成
+                  </div>
+                </div>
+                <Button
+                  onClick={handleDownload}
+                  className="w-full h-12 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <ImageIcon className="w-4 h-4 mr-2" />
+                  下载设计图
+                </Button>
               </div>
-            </div>
+            ) : (
+              /* Placeholder Display */
+              <div className="bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl p-8 text-center min-h-[400px] flex flex-col justify-center items-center border-2 border-dashed border-slate-300">
+                <div className="space-y-4">
+                  <div className="w-16 h-16 mx-auto bg-slate-300 rounded-full flex items-center justify-center">
+                    <ImageIcon className="w-8 h-8 text-slate-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-slate-700 mb-2">您的AI生成设计</h3>
+                    <p className="text-sm text-slate-500 max-w-xs">
+                      上传花园图片并选择风格后，生成的设计将在此处显示
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           
         </div>

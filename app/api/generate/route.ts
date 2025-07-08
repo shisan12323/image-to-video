@@ -1,5 +1,8 @@
 import { GoogleGenAI, Modality } from "@google/genai";
 import { NextRequest, NextResponse } from "next/server";
+import { getUserUuid } from "@/services/user";
+import { getUserCredits, decreaseCredits, CreditsTransType, CreditsAmount } from "@/services/credit";
+import { respErr } from "@/lib/resp";
 
 // Rate limiting - simple in-memory counter
 const DAILY_LIMIT = 10;
@@ -30,6 +33,21 @@ function checkRateLimit(key: string): boolean {
 
 export async function POST(req: NextRequest) {
   try {
+    // User authentication
+    const user_uuid = await getUserUuid();
+    if (!user_uuid) {
+      return respErr("no auth");
+    }
+
+    // Check user credits
+    const userCredits = await getUserCredits(user_uuid);
+    if (userCredits.left_credits < CreditsAmount.GenerateCost) {
+      return NextResponse.json(
+        { success: false, error: "Insufficient credits" },
+        { status: 402 }
+      );
+    }
+
     // Rate limiting
     const rateLimitKey = getRateLimitKey(req);
     if (!checkRateLimit(rateLimitKey)) {
@@ -124,6 +142,13 @@ export async function POST(req: NextRequest) {
 
     // Return the generated image as base64 data URL
     const imageDataUrl = `data:${generatedImageMimeType};base64,${generatedImageData}`;
+
+    // Deduct credits only after successful generation
+    await decreaseCredits({
+      user_uuid,
+      trans_type: CreditsTransType.Generate,
+      credits: CreditsAmount.GenerateCost,
+    });
 
     return NextResponse.json({
       success: true,

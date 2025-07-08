@@ -40,13 +40,6 @@ export default function SignUser({ user }: { user: User }) {
         </DropdownMenuItem>
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem className="flex justify-center cursor-pointer">
-          <Link href="/admin/users" target="_blank">
-            {t("user.admin_system")}
-          </Link>
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
-
         <DropdownMenuItem
           className="flex justify-center cursor-pointer"
           onClick={() => signOut()}

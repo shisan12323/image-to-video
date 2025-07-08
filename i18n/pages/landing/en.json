@@ -21,39 +21,10 @@
           "title": "Pricing",
           "url": "/pricing",
           "icon": "MdPayment"
-        },
-        {
-          "title": "Gallery",
-          "url": "/#showcase",
-          "icon": "BiCube",
-          "children": [
-            {
-              "title": "Modern Gardens",
-              "description": "Contemporary Garden Designs",
-              "icon": "MdOutlineWallpaper",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "Traditional Gardens",
-              "description": "Classic Garden Styles",
-              "icon": "",
-              "url": "/#showcase",
-              "target": "_self"
-            }
-          ]
         }
       ]
     },
-    "buttons": [
-      {
-        "title": "Start Designing",
-        "url": "/pricing",
-        "target": "_self",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
-      }
-    ],
+    "buttons": [],
     "show_sign": true,
     "show_theme": true,
     "show_locale": true

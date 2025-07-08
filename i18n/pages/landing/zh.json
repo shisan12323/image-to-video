@@ -3,10 +3,10 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "GardenAI 园艺 AI",
+      "title": "AI Garden Design 园林设计",
       "logo": {
         "src": "/logo.png",
-        "alt": "GardenAI 园艺 AI"
+        "alt": "AI Garden Design 园林设计"
       },
       "url": "/zh"
     },
@@ -563,15 +563,15 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "GardenAI 园艺 AI",
-      "description": "GardenAI 园艺 AI 是一个智能花园设计平台，利用人工智能技术变革您的户外空间。",
+      "title": "AI Garden Design 园林设计",
+      "description": "AI Garden Design 园林设计是一个智能花园设计平台，利用人工智能技术变革您的户外空间。",
       "logo": {
         "src": "/logo.png",
-        "alt": "GardenAI 园艺 AI"
+        "alt": "AI Garden Design 园林设计"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • GardenAI 园艺 AI 保留所有权利。",
+    "copyright": "© 2025 • AI Garden Design 园林设计 保留所有权利。",
     "nav": {
       "items": []
     },

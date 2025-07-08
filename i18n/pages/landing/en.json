@@ -3,10 +3,10 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "GardenAI",
+      "title": "AI Garden Design",
       "logo": {
         "src": "/logo.png",
-        "alt": "GardenAI"
+        "alt": "AI Garden Design"
       },
       "url": "/"
     },
@@ -392,14 +392,14 @@
   "testimonial": {
     "name": "testimonial",
     "label": "Testimonial",
-    "title": "What Gardeners Say About GardenAI",
-    "description": "Hear from garden enthusiasts who transformed their outdoor spaces with GardenAI.",
+    "title": "What Gardeners Say About AI Garden Design",
+    "description": "Hear from garden enthusiasts who transformed their outdoor spaces with AI Garden Design.",
     "icon": "GoThumbsup",
     "items": [
       {
         "title": "Sarah Williams",
         "label": "Homeowner, Portland",
-        "description": "GardenAI transformed my boring backyard into a stunning cottage garden! The AI understood exactly what I wanted and gave me plant choices that thrive in Oregon's climate.",
+        "description": "AI Garden Design transformed my boring backyard into a stunning cottage garden! The AI understood exactly what I wanted and gave me plant choices that thrive in Oregon's climate.",
         "image": {
           "src": "/imgs/users/1.png"
         }
@@ -407,7 +407,7 @@
       {
         "title": "Michael Rodriguez",
         "label": "Urban Gardener, NYC",
-        "description": "Living in a small Brooklyn apartment, I thought I couldn't have a garden. GardenAI designed an amazing vertical garden for my fire escape that's now my pride and joy!",
+        "description": "Living in a small Brooklyn apartment, I thought I couldn't have a garden. AI Garden Design designed an amazing vertical garden for my fire escape that's now my pride and joy!",
         "image": {
           "src": "/imgs/users/2.png"
         }
@@ -423,7 +423,7 @@
       {
         "title": "David Thompson",
         "label": "Retirement Garden Project",
-        "description": "After retiring, I wanted to create my dream garden but didn't know where to start. GardenAI made it so easy - now I have a beautiful zen garden that's my daily sanctuary.",
+        "description": "After retiring, I wanted to create my dream garden but didn't know where to start. AI Garden Design made it so easy - now I have a beautiful zen garden that's my daily sanctuary.",
         "image": {
           "src": "/imgs/users/4.png"
         }
@@ -431,7 +431,7 @@
       {
         "title": "Emma Martinez",
         "label": "Busy Mom of Three",
-        "description": "With three kids, I needed a low-maintenance garden that looked amazing. GardenAI designed a child-friendly space with edible plants the kids love to help with!",
+        "description": "With three kids, I needed a low-maintenance garden that looked amazing. AI Garden Design designed a child-friendly space with edible plants the kids love to help with!",
         "image": {
           "src": "/imgs/users/5.png"
         }
@@ -439,7 +439,7 @@
       {
         "title": "Robert Johnson",
         "label": "First-Time Gardener",
-        "description": "I killed every plant I touched until GardenAI. The care instructions are so detailed and the plant recommendations are perfect for beginners like me. My garden is thriving!",
+        "description": "I killed every plant I touched until AI Garden Design. The care instructions are so detailed and the plant recommendations are perfect for beginners like me. My garden is thriving!",
         "image": {
           "src": "/imgs/users/6.png"
         }
@@ -449,28 +449,28 @@
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About GardenAI",
+    "title": "Frequently Asked Questions About AI Garden Design",
     "description": "Have another question? Contact us via email or chat support.",
     "items": [
       {
-        "title": "How does GardenAI create personalized garden designs?",
-        "description": "GardenAI analyzes your space photos, climate data, soil conditions, and style preferences using advanced AI algorithms. It then selects plants and creates layouts optimized for your specific conditions and maintenance level."
+        "title": "How does AI Garden Design create personalized garden designs?",
+        "description": "AI Garden Design analyzes your space photos, climate data, soil conditions, and style preferences using advanced AI algorithms. It then selects plants and creates layouts optimized for your specific conditions and maintenance level."
       },
       {
-        "title": "Do I need gardening experience to use GardenAI?",
-        "description": "Not at all! GardenAI is designed for gardeners of all levels. Our AI provides detailed care instructions, maintenance schedules, and beginner-friendly plant recommendations to ensure your success."
+        "title": "Do I need gardening experience to use AI Garden Design?",
+        "description": "Not at all! AI Garden Design is designed for gardeners of all levels. Our AI provides detailed care instructions, maintenance schedules, and beginner-friendly plant recommendations to ensure your success."
       },
       {
-        "title": "What garden styles does GardenAI support?",
-        "description": "GardenAI supports a wide range of styles including modern, cottage, zen, tropical, desert, vegetable gardens, and more. Each design is customized to work with your local climate and space constraints."
+        "title": "What garden styles does AI Garden Design support?",
+        "description": "AI Garden Design supports a wide range of styles including modern, cottage, zen, tropical, desert, vegetable gardens, and more. Each design is customized to work with your local climate and space constraints."
       },
       {
         "title": "How quickly can I get my garden design?",
         "description": "Most garden designs are generated within 15 minutes of uploading your space and preferences. Complex designs or premium features may take up to an hour for full 3D visualizations."
       },
       {
-        "title": "Does GardenAI consider my local climate and soil?",
-        "description": "Yes! GardenAI uses your location to recommend plants that thrive in your specific climate zone, considers local rainfall patterns, and suggests soil improvements based on typical conditions in your area."
+        "title": "Does AI Garden Design consider my local climate and soil?",
+        "description": "Yes! AI Garden Design uses your location to recommend plants that thrive in your specific climate zone, considers local rainfall patterns, and suggests soil improvements based on typical conditions in your area."
       },
       {
         "title": "Can I modify the AI-generated design?",
@@ -500,15 +500,15 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "GardenAI",
-      "description": "GardenAI is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence.",
+      "title": "AI Garden Design",
+      "description": "AI Garden Design is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence.",
       "logo": {
         "src": "/logo.png",
-        "alt": "GardenAI"
+        "alt": "AI Garden Design"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • GardenAI All rights reserved.",
+    "copyright": "© 2025 • AI Garden Design All rights reserved.",
     "nav": {
       "items": []
     },

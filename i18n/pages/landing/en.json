@@ -501,7 +501,7 @@
     "name": "footer",
     "brand": {
       "title": "GardenAI",
-      "description": "GardenAI is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence. Create personalized garden designs that match your style and space.",
+      "description": "GardenAI is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence.",
       "logo": {
         "src": "/logo.png",
         "alt": "GardenAI"
@@ -510,96 +510,10 @@
     },
     "copyright": "© 2025 • GardenAI All rights reserved.",
     "nav": {
-      "items": [
-        {
-          "title": "About",
-          "children": [
-            {
-              "title": "Features",
-              "url": "/#feature",
-              "target": "_self"
-            },
-            {
-              "title": "Gallery",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "Pricing",
-              "url": "/#pricing",
-              "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "Garden Styles",
-          "children": [
-            {
-              "title": "Modern Gardens",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "Traditional Gardens",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "Tropical Gardens",
-              "url": "/#showcase",
-              "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "Support",
-          "children": [
-            {
-              "title": "Help Center",
-              "url": "/#faq",
-              "target": "_self"
-            },
-            {
-              "title": "Plant Care Guide",
-              "url": "/#feature",
-              "target": "_self"
-            },
-            {
-              "title": "Contact Us",
-              "url": "mailto:support@gardenai.com",
-              "target": "_self"
-            }
-          ]
-        }
-      ]
+      "items": []
     },
     "social": {
-      "items": [
-        {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/gardenai",
-          "target": "_blank"
-        },
-        {
-          "title": "Instagram",
-          "icon": "RiInstagramFill",
-          "url": "https://instagram.com/gardenai",
-          "target": "_blank"
-        },
-        {
-          "title": "Pinterest",
-          "icon": "RiPinterestFill",
-          "url": "https://pinterest.com/gardenai",
-          "target": "_blank"
-        },
-        {
-          "title": "Email",
-          "icon": "RiMailLine",
-          "url": "mailto:support@gardenai.com",
-          "target": "_self"
-        }
-      ]
+      "items": []
     },
     "agreement": {
       "items": [

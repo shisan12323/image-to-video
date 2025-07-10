@@ -120,13 +120,12 @@ export async function POST(req: NextRequest) {
       contents,
       config: { 
         responseModalities: [Modality.TEXT, Modality.IMAGE],
-        // Add generation config for better control
-        generationConfig: {
-          temperature: 0.3, // Lower temperature for more consistent results
-          topP: 0.8,
-          topK: 20,
-        }
       },
+      generationConfig: {
+        temperature: 0.3, // Lower temperature for more consistent results
+        topP: 0.8,
+        topK: 20,
+      }
     });
 
     // Extract generated image

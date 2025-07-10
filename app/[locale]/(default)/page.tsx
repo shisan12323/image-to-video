@@ -4,10 +4,9 @@ import GardenStyles from "@/components/blocks/garden-styles";
 import HowItWorks from "@/components/blocks/how-it-works";
 import Transformations from "@/components/blocks/transformations";
 import AIFeatures from "@/components/blocks/ai-features";
-import Pricing from "@/components/blocks/pricing";
+import PricingI18n from "@/components/blocks/pricing-i18n";
 import Testimonials from "@/components/blocks/testimonials";
 import FAQ from "@/components/blocks/faq";
-import { pricingData } from "@/data/pricing";
 
 export async function generateMetadata({
   params,
@@ -49,7 +48,7 @@ export default async function LandingPage({
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-radial from-teal-200/15 to-transparent rounded-full blur-3xl"></div>
         </div>
         <div className="relative z-10">
-          <Pricing pricing={pricingData} />
+          <PricingI18n />
         </div>
       </section>
       <Testimonials />

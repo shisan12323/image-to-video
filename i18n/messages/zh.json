@@ -119,6 +119,14 @@
       "seasonal_planning": {
         "title": "逼真预览",
         "description": "生成逼真的 3D 可视化效果，准确查看您的花园外观"
+      },
+      "plant_database": {
+        "title": "地域植物数据库",
+        "description": "访问来自本地苗圃的精选植物推荐，包含价格和库存信息"
+      },
+      "instant_results": {
+        "title": "即时结果",
+        "description": "在不到 2 分钟内生成完整的专业花园设计，而非数周时间"
       }
     }
   },
@@ -153,14 +161,120 @@
     ]
   },
   "pricing": {
-    "title": "简单定价",
-    "subtitle": "选择您的计划",
-    "description": "从免费设计开始，随时升级获得更多功能",
-    "free_trial": "免费试用",
-    "pro_plan": "专业版",
-    "features": "功能",
-    "get_started": "开始使用",
-    "upgrade": "升级到专业版"
+    "title": "简单透明的定价",
+    "description": "选择完美的计划，用 AI 改造您的户外空间",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "月付",
+        "description": "按需付费"
+      },
+      {
+        "name": "yearly", 
+        "title": "年付",
+        "description": "节省 20%",
+        "label": "节省 20%"
+      }
+    ],
+    "plans": [
+      {
+        "title": "入门版",
+        "description": "适合拥有小花园的房主",
+        "price": "$9.9",
+        "unit": "/月",
+        "group": "monthly",
+        "features_title": "开始所需的一切：",
+        "features": [
+          "每月 80 次 AI 花园设计",
+          "基础植物推荐",
+          "邮件支持"
+        ],
+        "button_title": "开始使用",
+        "tip": ""
+      },
+      {
+        "title": "专业版", 
+        "description": "适合花园爱好者和园艺师",
+        "price": "$19.9",
+        "unit": "/月",
+        "group": "monthly",
+        "label": "最受欢迎",
+        "features_title": "入门版的全部功能，以及：",
+        "features": [
+          "每月 200 次 AI 花园设计",
+          "高级植物数据库",
+          "优先邮件支持"
+        ],
+        "button_title": "开始使用",
+        "tip": ""
+      },
+      {
+        "title": "商业版",
+        "description": "适合园艺企业和设计师",
+        "price": "$29.9",
+        "unit": "/月", 
+        "group": "monthly",
+        "features_title": "专业版的全部功能，以及：",
+        "features": [
+          "每月 500 次 AI 花园设计",
+          "商业使用权"
+        ],
+        "button_title": "开始使用",
+        "tip": ""
+      },
+      {
+        "title": "入门版",
+        "description": "适合拥有小花园的房主",
+        "price": "$7.9",
+        "original_price": "$9.9",
+        "unit": "/月",
+        "group": "yearly",
+        "features_title": "开始所需的一切：",
+        "features": [
+          "每月 80 次 AI 花园设计",
+          "基础植物推荐",
+          "邮件支持"
+        ],
+        "button_title": "开始使用",
+        "tip": "按年计费，共 $94.8"
+      },
+      {
+        "title": "专业版",
+        "description": "适合花园爱好者和园艺师", 
+        "price": "$15.9",
+        "original_price": "$19.9",
+        "unit": "/月",
+        "group": "yearly",
+        "label": "最超值",
+        "features_title": "入门版的全部功能，以及：",
+        "features": [
+          "每月 200 次 AI 花园设计",
+          "高级植物数据库",
+          "多种风格变体",
+          "高清质量下载", 
+          "3D 可视化预览",
+          "优先邮件支持",
+          "自定义色彩方案"
+        ],
+        "button_title": "开始使用",
+        "tip": "按年计费，共 $190.8"
+      },
+      {
+        "title": "商业版",
+        "description": "适合园艺企业和设计师",
+        "price": "$23.9",
+        "original_price": "$29.9",
+        "unit": "/月",
+        "group": "yearly",
+        "features_title": "专业版的全部功能，以及：",
+        "features": [
+          "每月 500 次 AI 花园设计",
+          "商业使用权"
+        ],
+        "button_title": "开始使用",
+        "tip": "按年计费，共 $286.8"
+      }
+    ]
   },
   "testimonials": {
     "title": "用户对 AI 园林设计的评价",

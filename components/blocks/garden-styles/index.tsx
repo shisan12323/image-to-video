@@ -11,8 +11,11 @@ export default function GardenStyles() {
 
   const gardenStyles = t.raw('styles');
 
+  // 确保 gardenStyles 是数组，添加安全检查
+  const stylesArray = Array.isArray(gardenStyles) ? gardenStyles : [];
+  
   // 复制数组以创建无限滚动效果
-  const duplicatedStyles = [...gardenStyles, ...gardenStyles];
+  const duplicatedStyles = [...stylesArray, ...stylesArray];
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;

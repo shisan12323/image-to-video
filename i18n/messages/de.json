@@ -133,9 +133,360 @@
     "credits_used": "Verwendete Guthaben",
     "status": "Status"
   },
-  "hero_title": "AI Garden Design",
-  "hero_subtitle": "Intelligente Landschaftslösungen",
-  "hero_description": "Laden Sie Ihr Gartenfoto hoch und lassen Sie unsere KI professionelle Landschaftsdesigns für Ihren Raum erstellen",
-  "hero_button": "AI Garden Design kostenlos testen",
-  "hero_ai_badge": "KI-generiert"
+  "garden_styles": {
+    "title": "AI Garten Design Stile",
+    "description": "Unsere AI Garten Design Plattform bietet eine breite Palette beliebter Landschaftsstile zur Verwandlung Ihres Außenbereichs",
+    "styles": [
+      { "name": "Englisches Cottage", "image": "/imgs/showcases/1.png" },
+      { "name": "Moderner Minimalismus", "image": "/imgs/showcases/2.png" },
+      { "name": "Mediterran", "image": "/imgs/showcases/3.png" },
+      { "name": "Japanisches Zen", "image": "/imgs/showcases/4.png" },
+      { "name": "Tropisches Paradies", "image": "/imgs/showcases/5.png" },
+      { "name": "Wüstenoase", "image": "/imgs/showcases/6.png" },
+      { "name": "Prärie Wildblumen", "image": "/imgs/showcases/7.png" },
+      { "name": "Französisch Formal", "image": "/imgs/showcases/8.png" },
+      { "name": "Rustikales Land", "image": "/imgs/showcases/9.png" },
+      { "name": "Zeitgenössisch Urban", "image": "/imgs/showcases/1.png" },
+      { "name": "Waldland Natürlich", "image": "/imgs/showcases/2.png" },
+      { "name": "Küstengarten", "image": "/imgs/showcases/3.png" },
+      { "name": "Viktorianisch Formal", "image": "/imgs/showcases/4.png" },
+      { "name": "Steingarten", "image": "/imgs/showcases/5.png" },
+      { "name": "Wassergarten", "image": "/imgs/showcases/6.png" },
+      { "name": "Kräutergarten", "image": "/imgs/showcases/7.png" }
+    ]
+  },
+  "hero": {
+    "title": "AI Garden Design",
+    "subtitle": "Intelligente Landschaftslösungen",
+    "description": "Laden Sie Ihr Gartenfoto hoch und lassen Sie unsere KI professionelle Landschaftsdesigns für Ihren Raum erstellen",
+    "button": "AI Garden Design kostenlos testen",
+    "ai_badge": "KI-generiert"
+  },
+  "upload": {
+    "title": "Garten-Design Upload",
+    "description": "Laden Sie Ihr Gartenfoto hoch und lassen Sie unsere KI ein professionelles Design erstellen",
+    "change": "Klicken Sie, um das Foto zu ändern",
+    "prompt": "Laden Sie Ihr Gartenfoto hoch",
+    "formats": "Unterstützte Formate: JPG, PNG, WEBP, bis zu 5MB",
+    "style_label": "Garten-Stil",
+    "style_placeholder": "Stil wählen...",
+    "elements_label": "Besondere Elemente (Optional)",
+    "elements_placeholder": "z.B. Wasserspiel, Pergola, Feuerstelle...",
+    "generating": "Generiere...",
+    "generate_button": "Design generieren",
+    "result_title": "Ihr KI-generiertes Design",
+    "ai_complete": "KI-generiert",
+    "download": "Design herunterladen",
+    "placeholder_title": "Ihr KI-generiertes Design",
+    "placeholder_text": "Laden Sie Ihr Gartenfoto hoch und wählen Sie einen Stil, um Ihr KI-generiertes Design hier zu sehen",
+    "error_selection": "Bitte wählen Sie eine Datei und einen Garten-Stil"
+  },
+  "how_it_works": {
+    "title": "Wie es funktioniert",
+    "subtitle": "Garten-Design in 3 einfachen Schritten",
+    "description": "Verwandeln Sie Ihren Außenbereich mit unserem KI-gestützten Garten-Design-Prozess",
+    "steps": {
+      "upload": {
+        "title": "1. Foto hochladen",
+        "description": "Machen Sie ein Foto Ihres Außenbereichs und laden Sie es auf unsere Plattform hoch"
+      },
+      "style": {
+        "title": "2. Stil wählen",
+        "description": "Wählen Sie Ihren bevorzugten Garten-Stil aus unserer kuratierten Sammlung"
+      },
+      "generate": {
+        "title": "3. Design erhalten",
+        "description": "Unsere KI erstellt ein professionelles Garten-Design, das auf Ihren Raum zugeschnitten ist"
+      }
+    }
+  },
+  "ai_features": {
+    "title": "Warum AI Garden Design wählen",
+    "subtitle": "Fortschrittliche KI-Technologie",
+    "description": "Unsere leistungsstarke KI-Landschaftsdesign-Plattform revolutioniert die Planung von Außenräumen",
+    "features": {
+      "analysis": {
+        "title": "Intelligente Foto-Analyse",
+        "description": "KI analysiert Ihre Raumabmessungen, Lichtverhältnisse und vorhandene Elemente in Sekunden"
+      },
+      "plant_selection": {
+        "title": "Klima-Intelligenz",
+        "description": "Passt automatisch Pflanzen an Ihren genauen Standort, Wettermuster und Wachstumsbedingungen an"
+      },
+      "design_optimization": {
+        "title": "Stil-Anpassung",
+        "description": "Wendet nahtlos jeden Garten-Stil an, während die Pflanzenauswahl für Ihren Raum praktisch bleibt"
+      },
+      "seasonal_planning": {
+        "title": "Realistische Vorschauen",
+        "description": "Generiert fotorealistische 3D-Visualisierungen, um genau zu sehen, wie Ihr Garten aussehen wird"
+      },
+      "plant_database": {
+        "title": "Lokale Pflanzendatenbank",
+        "description": "Zugang zu kuratierten Pflanzenempfehlungen aus lokalen Gärtnereien mit Preisen und Verfügbarkeit"
+      },
+      "instant_results": {
+        "title": "Sofortige Ergebnisse",
+        "description": "Komplette professionelle Gartendesigns in unter 2 Minuten generiert, nicht Wochen"
+      }
+    }
+  },
+  "transformations": {
+    "badge": "Echte KI-Transformationen",
+    "title": "Vorher & Nachher Magie",
+    "description": "Sehen Sie, wie unsere KI gewöhnliche Räume in unter 2 Minuten in außergewöhnliche Gärten verwandelt",
+    "instruction": "Ziehen Sie den Schieberegler zum Vergleichen",
+    "cta_title": "Bereit, Ihren Raum zu verwandeln?",
+    "cta_description": "Laden Sie Ihr Foto oben hoch, um zu beginnen",
+    "features": [
+      "Professionelles KI-Design",
+      "2-Minuten-Transformation",
+      "Detaillierte Pflanzenempfehlungen"
+    ],
+    "examples": [
+      {
+        "title": "Städtischer Hinterhof",
+        "style": "Japanisches Zen",
+        "description": "Ein überfüllter städtischer Hinterhof, der in einen friedlichen japanischen Zen-Garten mit Bambus, Steinen und sorgfältig platzierten Pflanzen verwandelt wurde."
+      },
+      {
+        "title": "Vorort-Garten",
+        "style": "Englisches Cottage",
+        "description": "Ein einfacher Vorort-Rasen, der als romantischer englischer Cottage-Garten mit gemischten Blumenbeeten und charmanten Wegen neu gestaltet wurde."
+      },
+      {
+        "title": "Terrassen-Raum",
+        "style": "Moderner Minimalismus",
+        "description": "Eine Beton-Terrasse, die in einen eleganten modernen minimalistischen Garten mit klaren Linien und geometrischen Pflanzenarrangements verwandelt wurde."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Einfache und Transparente Preisgestaltung",
+    "description": "Wählen Sie den perfekten Plan, um Ihren Außenbereich mit KI zu transformieren",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "Monatlich",
+        "description": "Nach Nutzung bezahlen"
+      },
+      {
+        "name": "yearly", 
+        "title": "Jährlich",
+        "description": "20% sparen",
+        "label": "20% sparen"
+      }
+    ],
+    "plans": [
+      {
+        "title": "Starter",
+        "description": "Perfekt für Hausbesitzer mit kleinen Gärten",
+        "price": "$9.9",
+        "unit": "/Monat",
+        "group": "monthly",
+        "features_title": "Alles was Sie zum Starten brauchen:",
+        "features": [
+          "80 KI-Gartendesigns pro Monat",
+          "Grundlegende Pflanzenempfehlungen",
+          "E-Mail-Support"
+        ],
+        "button_title": "Loslegen",
+        "tip": ""
+      },
+      {
+        "title": "Professional", 
+        "description": "Ideal für Gartenbegeisterte und Landschaftsgestalter",
+        "price": "$19.9",
+        "unit": "/Monat",
+        "group": "monthly",
+        "label": "Beliebtester",
+        "features_title": "Alles aus Starter, plus:",
+        "features": [
+          "200 KI-Gartendesigns pro Monat",
+          "Erweiterte Pflanzendatenbank",
+          "Priority E-Mail-Support"
+        ],
+        "button_title": "Loslegen",
+        "tip": ""
+      },
+      {
+        "title": "Business",
+        "description": "Für Landschaftsbau-Unternehmen und Designer",
+        "price": "$29.9",
+        "unit": "/Monat", 
+        "group": "monthly",
+        "features_title": "Alles aus Professional, plus:",
+        "features": [
+          "500 KI-Gartendesigns pro Monat",
+          "Kommerzielle Nutzungsrechte"
+        ],
+        "button_title": "Loslegen",
+        "tip": ""
+      },
+      {
+        "title": "Starter",
+        "description": "Perfekt für Hausbesitzer mit kleinen Gärten",
+        "price": "$7.9",
+        "original_price": "$9.9",
+        "unit": "/Monat",
+        "group": "yearly",
+        "features_title": "Alles was Sie zum Starten brauchen:",
+        "features": [
+          "80 KI-Gartendesigns pro Monat",
+          "Grundlegende Pflanzenempfehlungen",
+          "E-Mail-Support"
+        ],
+        "button_title": "Loslegen",
+        "tip": "Jährlich abgerechnet für $94.8"
+      },
+      {
+        "title": "Professional",
+        "description": "Ideal für Gartenbegeisterte und Landschaftsgestalter", 
+        "price": "$15.9",
+        "original_price": "$19.9",
+        "unit": "/Monat",
+        "group": "yearly",
+        "label": "Bester Wert",
+        "features_title": "Alles aus Starter, plus:",
+        "features": [
+          "200 KI-Gartendesigns pro Monat",
+          "Erweiterte Pflanzendatenbank",
+          "Mehrere Stilvariationen",
+          "HD-Qualitäts-Downloads", 
+          "3D-Visualisierung Vorschau",
+          "Priority E-Mail-Support",
+          "Benutzerdefinierte Farbschemata"
+        ],
+        "button_title": "Loslegen",
+        "tip": "Jährlich abgerechnet für $190.8"
+      },
+      {
+        "title": "Business",
+        "description": "Für Landschaftsbau-Unternehmen und Designer",
+        "price": "$23.9",
+        "original_price": "$29.9",
+        "unit": "/Monat",
+        "group": "yearly",
+        "features_title": "Alles aus Professional, plus:",
+        "features": [
+          "500 KI-Gartendesigns pro Monat",
+          "Kommerzielle Nutzungsrechte"
+        ],
+        "button_title": "Loslegen",
+        "tip": "Jährlich abgerechnet für $286.8"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Was Benutzer über AI Garden Design sagen",
+    "description": "Schließen Sie sich Tausenden von zufriedenen Kunden an, die ihre Außenbereiche mit unserer KI-Technologie verwandelt haben",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "location": "Berlin, Deutschland",
+        "quote": "Ich war zunächst skeptisch gegenüber KI-Garten-Design, aber ich bin absolut begeistert von den Ergebnissen. Die Transformation meines Hinterhofs übertraf alle Erwartungen!"
+      },
+      {
+        "name": "Michael R.",
+        "location": "München, Deutschland",
+        "quote": "Als Landschaftsdesigner verwende ich AI Garden Design für erste Konzepte. Es ist unglaublich genau und spart mir Stunden an Planungszeit."
+      },
+      {
+        "name": "Lisa K.",
+        "location": "Hamburg, Deutschland",
+        "quote": "Das japanische Zen-Design für meine kleine Terrasse war perfekt. Ich folgte dem Plan genau und habe jetzt meinen Traum-Außenbereich."
+      },
+      {
+        "name": "David L.",
+        "location": "Köln, Deutschland",
+        "quote": "Immobilienentwickler hier - wir verwenden dies für Home-Staging. Die KI-Designs helfen Käufern, das Potenzial von Außenräumen zu visualisieren."
+      },
+      {
+        "name": "Emma J.",
+        "location": "Frankfurt, Deutschland",
+        "quote": "Ich bin nicht gut mit Pflanzen, aber die KI empfahl die perfekten für mein Klima. Sechs Monate später gedeiht alles!"
+      },
+      {
+        "name": "James T.",
+        "location": "Stuttgart, Deutschland",
+        "quote": "Der Vorher-Nachher-Unterschied ist unglaublich. Meine Nachbarn können nicht glauben, dass es derselbe Hinterhof ist. Jeden Cent wert!"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen zu AI Garden Design",
+    "description": "Erhalten Sie Antworten auf die häufigsten Fragen zu unserem KI-gestützten Garten-Design-Service",
+    "cta_title": "Bereit, AI Garden Design zu erleben?",
+    "cta_description": "Schließen Sie sich Tausenden von Gärtnern an, die ihre Räume mit unserem intelligenten Design-System verwandelt haben",
+    "cta_button": "Starten Sie Ihre Garten-Transformation heute",
+    "stats": {
+      "gardens_designed": "Gärten entworfen",
+      "cities_served": "Städte bedient",
+      "design_time": "Minuten Design-Zeit"
+    },
+    "questions": [
+      {
+        "question": "Wie genau sind die KI-generierten Garten-Designs?",
+        "answer": "Unsere KI-Garten-Designs sind hochpräzise und berücksichtigen die spezifischen Raumabmessungen, Lichtverhältnisse und Klimazone. Die KI wurde mit Tausenden von professionellen Landschaftsdesigns trainiert und berücksichtigt Faktoren wie Pflanzenkompatibilität, saisonale Veränderungen und Wartungsanforderungen. Die meisten Benutzer berichten von 90%+ Zufriedenheit mit der Design-Genauigkeit."
+      },
+      {
+        "question": "Ist es kompliziert, die KI-generierten Designs umzusetzen?",
+        "answer": "Ganz und gar nicht! Jedes Design kommt mit detaillierten Umsetzungsanleitungen, Pflanzenlisten mit lokalen Anbietern und schrittweisen Anweisungen. Wir bieten Einkaufslisten, Pflanzpläne und Wartungstipps. Viele Designs können als Wochenend-DIY-Projekte umgesetzt werden, während andere professionelle Landschaftsgestaltung für komplexe Funktionen erfordern können."
+      },
+      {
+        "question": "Wie vergleicht sich KI-Garten-Design mit traditioneller Landschaftsgestaltung?",
+        "answer": "KI-Garten-Design bietet mehrere Vorteile: Es ist schneller (2 Minuten vs. Wochen), erschwinglicher (Bruchteil der Kosten) und bietet sofort mehrere Design-Optionen. Während traditionelle Designer persönliche Beratung bieten, berücksichtigt unsere KI dieselben Design-Prinzipien, Pflanzenwissenschaft und Ästhetik. Viele professionelle Landschaftsarchitekten verwenden tatsächlich unser Tool für erste Konzepte."
+      },
+      {
+        "question": "Welche Art von Fotos funktioniert am besten für KI-Garten-Design?",
+        "answer": "Für beste Ergebnisse laden Sie klare, gut beleuchtete Fotos hoch, die bei Tageslicht aufgenommen wurden. Schließen Sie den gesamten Raum ein, den Sie neu gestalten möchten, aus einem guten Blickwinkel aufgenommen. Mehrere Winkel helfen, aber ein umfassendes Foto ist ausreichend. Die KI funktioniert mit Fotos von jedem Smartphone oder jeder Kamera - keine spezielle Ausrüstung erforderlich."
+      },
+      {
+        "question": "Was ist im KI-Garten-Design-Service enthalten?",
+        "answer": "Jedes Design enthält: fotorealistische Visualisierungen, detaillierte Pflanzenlisten mit lokaler Verfügbarkeit, saisonale Pflegeanleitungen, Umsetzungszeitleisten, Kostenschätzungen und Wartungspläne. Premium-Pläne enthalten auch mehrere Design-Variationen, 3D-Renderings und direkte Beratung mit Landschaftsprofis."
+      },
+      {
+        "question": "Kann ich die KI-generierten Designs anpassen?",
+        "answer": "Absolut! Die KI-Designs dienen als professionelle Ausgangspunkte, die Sie anpassen können. Sie können Präferenzen wie Farbschemata, Pflanzentypen, Wartungsebenen und Budget-Einschränkungen angeben. Unser System lernt aus Ihrem Feedback, um zunehmend personalisierte Designs zu erstellen, die Ihrem Stil und Ihren Bedürfnissen entsprechen."
+      }
+    ]
+  },
+  "footer": {
+    "brand_description": "AI Garden Design ist eine intelligente Garten-Design-Plattform, die Ihre Außenbereiche mit künstlicher Intelligenz transformiert.",
+    "copyright": "© 2025 • AI Garden Design Alle Rechte vorbehalten.",
+    "privacy_policy": "Datenschutzrichtlinie",
+    "terms_of_service": "Nutzungsbedingungen"
+  },
+  "my_credits": {
+    "title": "Meine Credits",
+    "left_tip": "Verbleibende Credits: {left_credits}",
+    "no_credits": "Keine Credit-Einträge",
+    "recharge": "Aufladen",
+    "table": {
+      "trans_no": "Transaktionsnummer",
+      "trans_type": "Typ",
+      "credits": "Credits",
+      "updated_at": "Aktualisiert am"
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Etwas ist schiefgelaufen",
+    "try_again": "Erneut versuchen",
+    "success": "Erfolgreich!",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "view": "Ansehen",
+    "download": "Herunterladen",
+    "upload": "Hochladen",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "sort": "Sortieren",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "close": "Schließen"
+  }
 }

@@ -133,9 +133,348 @@
     "credits_used": "Créditos Usados",
     "status": "Estado"
   },
-  "hero_title": "AI Garden Design",
-  "hero_subtitle": "Soluciones paisajísticas inteligentes",
-  "hero_description": "Sube la foto de tu jardín y deja que nuestra IA cree diseños paisajísticos profesionales adaptados a tu espacio",
-  "hero_button": "Prueba AI Garden Design gratis",
-  "hero_ai_badge": "Generado por IA"
+  "garden_styles": {
+    "title": "Estilos de Diseño de Jardín AI",
+    "description": "Nuestra plataforma de diseño de jardín AI ofrece una amplia gama de estilos de paisajismo populares para transformar tu espacio exterior",
+    "styles": [
+      { "name": "Casa de Campo Inglesa", "image": "/imgs/showcases/1.png" },
+      { "name": "Minimalista Moderno", "image": "/imgs/showcases/2.png" },
+      { "name": "Mediterráneo", "image": "/imgs/showcases/3.png" },
+      { "name": "Zen Japonés", "image": "/imgs/showcases/4.png" },
+      { "name": "Paraíso Tropical", "image": "/imgs/showcases/5.png" },
+      { "name": "Oasis del Desierto", "image": "/imgs/showcases/6.png" },
+      { "name": "Pradera de Flores Silvestres", "image": "/imgs/showcases/7.png" },
+      { "name": "Formal Francés", "image": "/imgs/showcases/8.png" },
+      { "name": "Rústico Campestre", "image": "/imgs/showcases/9.png" },
+      { "name": "Urbano Contemporáneo", "image": "/imgs/showcases/1.png" },
+      { "name": "Bosque Natural", "image": "/imgs/showcases/2.png" },
+      { "name": "Jardín Costero", "image": "/imgs/showcases/3.png" },
+      { "name": "Formal Victoriano", "image": "/imgs/showcases/4.png" },
+      { "name": "Jardín de Rocas", "image": "/imgs/showcases/5.png" },
+      { "name": "Jardín de Agua", "image": "/imgs/showcases/6.png" },
+      { "name": "Jardín de Hierbas", "image": "/imgs/showcases/7.png" }
+    ]
+  },
+  "hero": {
+    "title": "AI Garden Design",
+    "subtitle": "Soluciones paisajísticas inteligentes",
+    "description": "Sube la foto de tu jardín y deja que nuestra IA cree diseños paisajísticos profesionales adaptados a tu espacio",
+    "button": "Prueba AI Garden Design gratis",
+    "ai_badge": "Generado por IA"
+  },
+  "upload": {
+    "title": "Subir Diseño de Jardín",
+    "description": "Sube la foto de tu jardín y deja que nuestra IA cree un diseño profesional",
+    "change": "Hacer clic para cambiar foto",
+    "prompt": "Sube la foto de tu jardín",
+    "formats": "Formatos soportados: JPG, PNG, WEBP, hasta 5MB",
+    "style_label": "Estilo de Jardín",
+    "style_placeholder": "Elegir estilo...",
+    "elements_label": "Elementos Especiales (Opcional)",
+    "elements_placeholder": "ej: fuente de agua, pérgola, hoguera...",
+    "generating": "Generando...",
+    "generate_button": "Generar Diseño",
+    "result_title": "Tu Diseño Generado por IA",
+    "ai_complete": "Generado por IA",
+    "download": "Descargar Diseño",
+    "placeholder_title": "Tu Diseño Generado por IA",
+    "placeholder_text": "Sube la foto de tu jardín y elige un estilo para ver tu diseño generado por IA aquí",
+    "error_selection": "Por favor selecciona un archivo y estilo de jardín"
+  },
+  "how_it_works": {
+    "title": "Cómo Funciona",
+    "subtitle": "Diseño de Jardín en 3 Pasos Simples",
+    "description": "Transforma tu espacio exterior con nuestro proceso de diseño de jardín impulsado por IA",
+    "steps": {
+      "upload": {
+        "title": "1. Subir Foto",
+        "description": "Toma una foto de tu espacio exterior y súbela a nuestra plataforma"
+      },
+      "style": {
+        "title": "2. Elegir Estilo",
+        "description": "Selecciona tu estilo de jardín preferido de nuestra colección curada"
+      },
+      "generate": {
+        "title": "3. Obtener Diseño",
+        "description": "Nuestra IA crea un diseño de jardín profesional adaptado a tu espacio"
+      }
+    }
+  },
+  "ai_features": {
+    "title": "Por Qué Elegir AI Garden Design",
+    "subtitle": "Tecnología IA Avanzada",
+    "description": "Nuestra poderosa plataforma de diseño paisajístico IA transforma cómo planificas espacios exteriores",
+    "features": {
+      "analysis": {
+        "title": "Análisis Inteligente de Fotos",
+        "description": "La IA analiza las dimensiones de tu espacio, condiciones de iluminación y elementos existentes en segundos"
+      },
+      "plant_selection": {
+        "title": "Inteligencia Climática",
+        "description": "Combina automáticamente plantas con tu ubicación exacta, patrones climáticos y condiciones de crecimiento"
+      },
+      "design_optimization": {
+        "title": "Adaptación de Estilo",
+        "description": "Aplica sin problemas cualquier estilo de jardín manteniendo las opciones de plantas prácticas para tu espacio"
+      },
+      "seasonal_planning": {
+        "title": "Vistas Previas Realistas",
+        "description": "Genera visualizaciones 3D fotorrealistas para ver exactamente cómo se verá tu jardín"
+      },
+      "plant_database": {
+        "title": "Base de Datos de Plantas Locales",
+        "description": "Accede a recomendaciones de plantas seleccionadas de viveros locales con precios y disponibilidad"
+      },
+      "instant_results": {
+        "title": "Resultados Instantáneos",
+        "description": "Diseños completos de jardines profesionales generados en menos de 2 minutos, no semanas"
+      }
+    }
+  },
+  "transformations": {
+    "badge": "Transformaciones IA Reales",
+    "title": "Magia de Antes y Después",
+    "description": "Mira cómo nuestra IA transforma espacios ordinarios en jardines extraordinarios en menos de 2 minutos",
+    "instruction": "Arrastra el deslizador para comparar",
+    "cta_title": "¿Listo para transformar tu espacio?",
+    "cta_description": "Sube tu foto arriba para comenzar",
+    "features": [
+      "Diseño IA Profesional",
+      "Transformación en 2 minutos",
+      "Recomendaciones detalladas de plantas"
+    ],
+    "examples": [
+      {
+        "title": "Patio Urbano",
+        "style": "Zen Japonés",
+        "description": "Un patio urbano desordenado transformado en un jardín zen japonés pacífico con bambú, piedras y plantas cuidadosamente colocadas."
+      },
+      {
+        "title": "Jardín Suburbano",
+        "style": "Casa de Campo Inglesa",
+        "description": "Un césped suburbano simple rediseñado como un jardín romántico de casa de campo inglesa con bordes de flores mixtas y senderos encantadores."
+      },
+      {
+        "title": "Espacio de Patio",
+        "style": "Minimalista Moderno",
+        "description": "Un patio de concreto transformado en un elegante jardín minimalista moderno con líneas limpias y arreglos geométricos de plantas."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios Simples y Transparentes",
+    "description": "Elige el plan perfecto para transformar tu espacio exterior con IA",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "Mensual",
+        "description": "Paga según uses"
+      },
+      {
+        "name": "yearly", 
+        "title": "Anual",
+        "description": "Ahorra 20%",
+        "label": "Ahorra 20%"
+      }
+    ],
+    "plans": [
+      {
+        "title": "Iniciador",
+        "description": "Perfecto para propietarios con jardines pequeños",
+        "price": "$9.9",
+        "unit": "/mes",
+        "group": "monthly",
+        "features_title": "Todo lo que necesitas para empezar:",
+        "features": [
+          "80 diseños de jardín IA por mes",
+          "Recomendaciones básicas de plantas",
+          "Soporte por correo electrónico"
+        ],
+        "button_title": "Comenzar",
+        "tip": ""
+      },
+      {
+        "title": "Profesional", 
+        "description": "Ideal para entusiastas de jardines y paisajistas",
+        "price": "$19.9",
+        "unit": "/mes",
+        "group": "monthly",
+        "label": "Más Popular",
+        "features_title": "Todo en Iniciador, además:",
+        "features": [
+          "200 diseños de jardín IA por mes",
+          "Base de datos avanzada de plantas",
+          "Soporte prioritario por correo electrónico"
+        ],
+        "button_title": "Comenzar",
+        "tip": ""
+      },
+      {
+        "title": "Empresarial",
+        "description": "Para empresas de paisajismo y diseñadores",
+        "price": "$29.9",
+        "unit": "/mes", 
+        "group": "monthly",
+        "features_title": "Todo en Profesional, además:",
+        "features": [
+          "500 diseños de jardín IA por mes",
+          "Derechos de uso comercial"
+        ],
+        "button_title": "Comenzar",
+        "tip": ""
+      },
+      {
+        "title": "Iniciador",
+        "description": "Perfecto para propietarios con jardines pequeños",
+        "price": "$7.9",
+        "original_price": "$9.9",
+        "unit": "/mes",
+        "group": "yearly",
+        "features_title": "Todo lo que necesitas para empezar:",
+        "features": [
+          "80 diseños de jardín IA por mes",
+          "Recomendaciones básicas de plantas",
+          "Soporte por correo electrónico"
+        ],
+        "button_title": "Comenzar",
+        "tip": "Facturado anualmente a $94.8"
+      },
+      {
+        "title": "Profesional",
+        "description": "Ideal para entusiastas de jardines y paisajistas", 
+        "price": "$15.9",
+        "original_price": "$19.9",
+        "unit": "/mes",
+        "group": "yearly",
+        "label": "Mejor Valor",
+        "features_title": "Todo en Iniciador, además:",
+        "features": [
+          "200 diseños de jardín IA por mes",
+          "Base de datos avanzada de plantas",
+          "Múltiples variaciones de estilo",
+          "Descargas de alta calidad", 
+          "Vista previa de visualización 3D",
+          "Soporte prioritario por correo electrónico",
+          "Esquemas de colores personalizados"
+        ],
+        "button_title": "Comenzar",
+        "tip": "Facturado anualmente a $190.8"
+      },
+      {
+        "title": "Empresarial",
+        "description": "Para empresas de paisajismo y diseñadores",
+        "price": "$23.9",
+        "original_price": "$29.9",
+        "unit": "/mes",
+        "group": "yearly",
+        "features_title": "Todo en Profesional, además:",
+        "features": [
+          "500 diseños de jardín IA por mes",
+          "Derechos de uso comercial"
+        ],
+        "button_title": "Comenzar",
+        "tip": "Facturado anualmente a $286.8"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen los Usuarios Sobre AI Garden Design",
+    "description": "Únete a miles de clientes satisfechos que han transformado sus espacios exteriores con nuestra tecnología IA",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "location": "Madrid, España",
+        "quote": "Al principio era escéptica sobre el diseño de jardín con IA, pero estoy completamente impresionada con los resultados. ¡La transformación de mi patio trasero superó todas las expectativas!"
+      },
+      {
+        "name": "Michael R.",
+        "location": "Barcelona, España",
+        "quote": "Como diseñador paisajista, uso AI Garden Design para conceptos iniciales. Es increíblemente preciso y me ahorra horas de tiempo de planificación."
+      },
+      {
+        "name": "Lisa K.",
+        "location": "Valencia, España",
+        "quote": "El diseño zen japonés generado para mi pequeño patio fue perfecto. Seguí el plan exactamente y ahora tengo mi espacio exterior de ensueño."
+      },
+      {
+        "name": "David L.",
+        "location": "Sevilla, España",
+        "quote": "Soy desarrollador inmobiliario - usamos esto para preparar casas. Los diseños IA ayudan a los compradores a visualizar el potencial de los espacios exteriores."
+      },
+      {
+        "name": "Emma J.",
+        "location": "Bilbao, España",
+        "quote": "No soy buena con las plantas, pero la IA recomendó las perfectas para mi clima. ¡Todo está prosperando seis meses después!"
+      },
+      {
+        "name": "James T.",
+        "location": "Zaragoza, España",
+        "quote": "La diferencia de antes y después es increíble. Mis vecinos no pueden creer que sea el mismo patio trasero. ¡Vale cada centavo!"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes Sobre AI Garden Design",
+    "description": "Obtén respuestas a las preguntas más comunes sobre nuestro servicio de diseño de jardín impulsado por IA",
+    "cta_title": "¿Listo para Experimentar AI Garden Design?",
+    "cta_description": "Únete a miles de jardineros que han transformado sus espacios con nuestro sistema de diseño inteligente",
+    "cta_button": "Comienza Tu Transformación de Jardín Hoy",
+    "stats": {
+      "gardens_designed": "Jardines Diseñados",
+      "cities_served": "Ciudades Servidas",
+      "design_time": "Tiempo de Diseño en Minutos"
+    },
+    "questions": [
+      {
+        "question": "¿Qué tan precisos son los diseños de jardín generados por IA?",
+        "answer": "Nuestros diseños de jardín IA son altamente precisos, tomando en cuenta las dimensiones específicas de tu espacio, condiciones de iluminación y zona climática. La IA ha sido entrenada con miles de diseños paisajísticos profesionales y considera factores como compatibilidad de plantas, cambios estacionales y requisitos de mantenimiento. La mayoría de los usuarios reportan 90%+ de satisfacción con la precisión del diseño."
+      },
+      {
+        "question": "¿Es complicado implementar los diseños generados por IA?",
+        "answer": "¡Para nada! Cada diseño viene con guías de implementación detalladas, listas de plantas con proveedores locales e instrucciones paso a paso. Proporcionamos listas de compras, horarios de plantación y consejos de mantenimiento. Muchos diseños se pueden implementar como proyectos de bricolaje de fin de semana, mientras que otros pueden requerir paisajismo profesional para características complejas."
+      },
+      {
+        "question": "¿Cómo se compara el diseño de jardín IA con el diseño paisajístico tradicional?",
+        "answer": "El diseño de jardín IA ofrece varias ventajas: es más rápido (2 minutos vs semanas), más asequible (fracción del costo) y proporciona múltiples opciones de diseño instantáneamente. Mientras que los diseñadores tradicionales ofrecen consulta personal, nuestra IA considera los mismos principios de diseño, ciencia de plantas y estética. Muchos paisajistas profesionales realmente usan nuestra herramienta para conceptos iniciales."
+      },
+      {
+        "question": "¿Qué tipo de fotos funcionan mejor para el diseño de jardín IA?",
+        "answer": "Para mejores resultados, sube fotos claras y bien iluminadas tomadas durante horas de luz diurna. Incluye todo el espacio que quieres rediseñar, tomado desde un buen punto de vista. Múltiples ángulos ayudan, pero una foto integral es suficiente. La IA funciona con fotos de cualquier smartphone o cámara - no se necesita equipo especial."
+      },
+      {
+        "question": "¿Qué está incluido en el servicio de diseño de jardín IA?",
+        "answer": "Cada diseño incluye: visualizaciones fotorrealistas, listas detalladas de plantas con disponibilidad local, guías de cuidado estacional, cronogramas de implementación, estimaciones de costos y horarios de mantenimiento. Los planes premium también incluyen múltiples variaciones de diseño, renderizados 3D y consulta directa con profesionales paisajistas."
+      },
+      {
+        "question": "¿Puedo personalizar los diseños generados por IA?",
+        "answer": "¡Absolutamente! Los diseños IA sirven como puntos de partida profesionales que puedes personalizar. Puedes especificar preferencias como esquemas de colores, tipos de plantas, niveles de mantenimiento y restricciones de presupuesto. Nuestro sistema aprende de tus comentarios para crear diseños cada vez más personalizados que coincidan con tu estilo y necesidades."
+      }
+    ]
+  },
+  "footer": {
+    "brand_description": "AI Garden Design es una plataforma inteligente de diseño de jardín que transforma tus espacios exteriores usando inteligencia artificial.",
+    "copyright": "© 2025 • AI Garden Design Todos los derechos reservados.",
+    "privacy_policy": "Política de Privacidad",
+    "terms_of_service": "Términos de Servicio"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "try_again": "Intentar de Nuevo",
+    "success": "¡Éxito!",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "view": "Ver",
+    "download": "Descargar",
+    "upload": "Subir",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar"
+  }
 }

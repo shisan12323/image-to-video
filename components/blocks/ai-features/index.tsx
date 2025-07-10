@@ -42,14 +42,14 @@ export default function AIFeatures() {
     },
     {
       icon: MapPin,
-      title: "Local Plant Database",
-      description: "Access curated plant recommendations from local nurseries with pricing and availability",
+      title: t('features.plant_database.title'),
+      description: t('features.plant_database.description'),
       gradient: "from-green-500 to-emerald-500"
     },
     {
       icon: Zap,
-      title: "Instant Results",
-      description: "Complete professional garden designs generated in under 2 minutes, not weeks",
+      title: t('features.instant_results.title'),
+      description: t('features.instant_results.description'),
       gradient: "from-yellow-500 to-orange-500"
     }
   ];

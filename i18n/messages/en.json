@@ -119,6 +119,14 @@
       "seasonal_planning": {
         "title": "Realistic Previews",
         "description": "Generate photorealistic 3D visualizations to see exactly how your garden will look"
+      },
+      "plant_database": {
+        "title": "Local Plant Database",
+        "description": "Access curated plant recommendations from local nurseries with pricing and availability"
+      },
+      "instant_results": {
+        "title": "Instant Results",
+        "description": "Complete professional garden designs generated in under 2 minutes, not weeks"
       }
     }
   },
@@ -153,14 +161,120 @@
     ]
   },
   "pricing": {
-    "title": "Simple Pricing",
-    "subtitle": "Choose Your Plan",
-    "description": "Start with a free design, upgrade anytime for more features",
-    "free_trial": "Free Trial",
-    "pro_plan": "Pro Plan",
-    "features": "Features",
-    "get_started": "Get Started",
-    "upgrade": "Upgrade to Pro"
+    "title": "Simple, Transparent Pricing",
+    "description": "Choose the perfect plan to transform your outdoor space with AI",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "Monthly",
+        "description": "Pay as you go"
+      },
+      {
+        "name": "yearly", 
+        "title": "Yearly",
+        "description": "Save 20%",
+        "label": "Save 20%"
+      }
+    ],
+    "plans": [
+      {
+        "title": "Starter",
+        "description": "Perfect for homeowners with small gardens",
+        "price": "$9.9",
+        "unit": "/month",
+        "group": "monthly",
+        "features_title": "Everything you need to start:",
+        "features": [
+          "80 AI garden designs per month",
+          "Basic plant recommendations",
+          "Email support"
+        ],
+        "button_title": "Get Started",
+        "tip": ""
+      },
+      {
+        "title": "Professional", 
+        "description": "Ideal for garden enthusiasts and landscapers",
+        "price": "$19.9",
+        "unit": "/month",
+        "group": "monthly",
+        "label": "Most Popular",
+        "features_title": "Everything in Starter, plus:",
+        "features": [
+          "200 AI garden designs per month",
+          "Advanced plant database",
+          "Priority email support"
+        ],
+        "button_title": "Get Started",
+        "tip": ""
+      },
+      {
+        "title": "Business",
+        "description": "For landscaping businesses and designers",
+        "price": "$29.9",
+        "unit": "/month", 
+        "group": "monthly",
+        "features_title": "Everything in Professional, plus:",
+        "features": [
+          "500 AI garden designs per month",
+          "Commercial usage rights"
+        ],
+        "button_title": "Get Started",
+        "tip": ""
+      },
+      {
+        "title": "Starter",
+        "description": "Perfect for homeowners with small gardens",
+        "price": "$7.9",
+        "original_price": "$9.9",
+        "unit": "/month",
+        "group": "yearly",
+        "features_title": "Everything you need to start:",
+        "features": [
+          "80 AI garden designs per month",
+          "Basic plant recommendations",
+          "Email support"
+        ],
+        "button_title": "Get Started",
+        "tip": "Billed annually at $94.8"
+      },
+      {
+        "title": "Professional",
+        "description": "Ideal for garden enthusiasts and landscapers", 
+        "price": "$15.9",
+        "original_price": "$19.9",
+        "unit": "/month",
+        "group": "yearly",
+        "label": "Best Value",
+        "features_title": "Everything in Starter, plus:",
+        "features": [
+          "200 AI garden designs per month",
+          "Advanced plant database",
+          "Multiple style variations",
+          "HD quality downloads", 
+          "3D visualization preview",
+          "Priority email support",
+          "Custom color schemes"
+        ],
+        "button_title": "Get Started",
+        "tip": "Billed annually at $190.8"
+      },
+      {
+        "title": "Business",
+        "description": "For landscaping businesses and designers",
+        "price": "$23.9",
+        "original_price": "$29.9",
+        "unit": "/month",
+        "group": "yearly",
+        "features_title": "Everything in Professional, plus:",
+        "features": [
+          "500 AI garden designs per month",
+          "Commercial usage rights"
+        ],
+        "button_title": "Get Started",
+        "tip": "Billed annually at $286.8"
+      }
+    ]
   },
   "testimonials": {
     "title": "What Users Say About AI Garden Design",

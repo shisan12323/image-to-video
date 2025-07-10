@@ -10,7 +10,7 @@ export default function GardenHero() {
   return (
     <section 
       ref={ref}
-      className={`relative py-16 lg:py-24 bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 overflow-hidden transition-all duration-1000 ${
+      className={`relative py-8 md:py-16 lg:py-24 bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 overflow-hidden transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >
@@ -21,7 +21,7 @@ export default function GardenHero() {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Left Side - Text Content */}
           <div className="text-center lg:text-left">
             {/* Main Title with gradient */}

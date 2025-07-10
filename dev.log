@@ -2,10 +2,10 @@
 > shipany-template-one@1.6.0 dev
 > cross-env NODE_NO_WARNINGS=1 next dev
 
- ⚠ Port 3000 is in use, trying 3001 instead.
    ▲ Next.js 15.2.3
-   - Local:        http://localhost:3001
-   - Network:      http://192.168.3.67:3001
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.3.67:3000
+   - Environments: .env
 
  ✓ Starting...
  ⚠ Found lockfile missing swc dependencies, patching...
@@ -30,72 +30,647 @@ Error: Failed to get registry from "pnpm".
       <Buffer >,
       <Buffer 2f 62 69 6e 2f 73 68 3a 20 70 6e 70 6d 3a 20 63 6f 6d 6d 61 6e 64 20 6e 6f 74 20 66 6f 75 6e 64 0a>
     ],
-    pid: 51023,
+    pid: 42733,
     stdout: <Buffer >,
     stderr: <Buffer 2f 62 69 6e 2f 73 68 3a 20 70 6e 70 6d 3a 20 63 6f 6d 6d 61 6e 64 20 6e 6f 74 20 66 6f 75 6e 64 0a>
   }
 }
- ✓ Ready in 2.8s
- ✓ Compiled /middleware in 232ms (250 modules)
+ ✓ Ready in 2.4s
+ ✓ Compiled /middleware in 466ms (260 modules)
  ○ Compiling /[locale] ...
- ✓ Compiled /[locale] in 5.7s (1350 modules)
- ✓ Compiled in 958ms (561 modules)
- ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className=... ref=... onClick={function onClick} children=...>
-                                        ^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-    at stringify (<anonymous>)
-    at stringify (<anonymous>)
-    at stringify (<anonymous>) {
-  digest: '3144654718'
+ ✓ Compiled /[locale] in 7.9s (1405 modules)
+ ✓ Compiled in 481ms (576 modules)
+Error: MISSING_MESSAGE: Could not resolve `upload.title` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:142:17)
+  140 |             <div>
+  141 |               <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+> 142 |                 {t("upload.title")}
+      |                 ^
+  143 |               </h2>
+  144 |               <p className="text-lg text-slate-600 mb-8">
+  145 |                 {t("upload.description")} {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.title` in messages for locale `es`.'
 }
- GET / 200 in 9487ms
- ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button className=... ref=... onClick={function onClick} children=...>
-                                        ^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-    at stringify (<anonymous>)
-    at stringify (<anonymous>)
-    at stringify (<anonymous>) {
-  digest: '3144654718'
+Error: MISSING_MESSAGE: Could not resolve `upload.description` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:145:17)
+  143 |               </h2>
+  144 |               <p className="text-lg text-slate-600 mb-8">
+> 145 |                 {t("upload.description")}
+      |                 ^
+  146 |               </p>
+  147 |             </div>
+  148 |              {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.description` in messages for locale `es`.'
 }
- GET / 200 in 641ms
+Error: MISSING_MESSAGE: Could not resolve `upload.prompt` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:172:77)
+  170 |                       <Upload className="w-12 h-12 mx-auto text-slate-400 group-hover:text-emerald-500 transition-colors" />
+  171 |                       <div>
+> 172 |                         <p className="text-lg font-semibold text-slate-700">{t("upload.prompt")}</p>
+      |                                                                             ^
+  173 |                         <p className="text-sm text-slate-500">{t("upload.formats")}</p>
+  174 |                       </div>
+  175 |                     </div> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.prompt` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.formats` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:173:63)
+  171 |                       <div>
+  172 |                         <p className="text-lg font-semibold text-slate-700">{t("upload.prompt")}</p>
+> 173 |                         <p className="text-sm text-slate-500">{t("upload.formats")}</p>
+      |                                                               ^
+  174 |                       </div>
+  175 |                     </div>
+  176 |                   )} {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.formats` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.style_label` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:185:19)
+  183 |               <div>
+  184 |                 <label className="block text-sm font-semibold text-slate-700 mb-2">
+> 185 |                   {t("upload.style_label")}
+      |                   ^
+  186 |                 </label>
+  187 |                 <Select value={selectedStyle} onValueChange={setSelectedStyle}>
+  188 |                   <SelectTrigger className="w-full h-12 bg-white border-slate-300 text-slate-900 rounded-lg"> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.style_label` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.style_placeholder` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:189:46)
+  187 |                 <Select value={selectedStyle} onValueChange={setSelectedStyle}>
+  188 |                   <SelectTrigger className="w-full h-12 bg-white border-slate-300 text-slate-900 rounded-lg">
+> 189 |                     <SelectValue placeholder={t("upload.style_placeholder")} />
+      |                                              ^
+  190 |                   </SelectTrigger>
+  191 |                   <SelectContent className="bg-white border-slate-200">
+  192 |                     {gardenStyles.map((style) => ( {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.style_placeholder` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.elements_label` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:207:19)
+  205 |               <div>
+  206 |                 <label className="block text-sm font-semibold text-slate-700 mb-2">
+> 207 |                   {t("upload.elements_label")}
+      |                   ^
+  208 |                 </label>
+  209 |                 <Input 
+  210 |                   value={specialElements} {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.elements_label` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.elements_placeholder` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:212:31)
+  210 |                   value={specialElements}
+  211 |                   onChange={(e) => setSpecialElements(e.target.value)}
+> 212 |                   placeholder={t("upload.elements_placeholder")}
+      |                               ^
+  213 |                   className="h-12 bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 rounded-lg"
+  214 |                 />
+  215 |               </div> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.elements_placeholder` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.generate_button` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:233:21)
+  231 |                   <>
+  232 |                     <Sparkles className="w-4 h-4 mr-2" />
+> 233 |                     {t("upload.generate_button")}
+      |                     ^
+  234 |                   </>
+  235 |                 )}
+  236 |               </Button> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.generate_button` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.placeholder_title` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:279:79)
+  277 |                   </div>
+  278 |                   <div>
+> 279 |                     <h3 className="text-lg font-semibold text-slate-700 mb-2">{t("upload.placeholder_title")}</h3>
+      |                                                                               ^
+  280 |                     <p className="text-sm text-slate-500 max-w-xs">
+  281 |                       {t("upload.placeholder_text")}
+  282 |                     </p> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.placeholder_title` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.placeholder_text` in messages for locale `es`.
+    at UploadSection (components/blocks/upload-section/index.tsx:281:23)
+  279 |                     <h3 className="text-lg font-semibold text-slate-700 mb-2">{t("upload.placeholder_title")}</h3>
+  280 |                     <p className="text-sm text-slate-500 max-w-xs">
+> 281 |                       {t("upload.placeholder_text")}
+      |                       ^
+  282 |                     </p>
+  283 |                   </div>
+  284 |                 </div> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.placeholder_text` in messages for locale `es`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `transformations` in messages for locale `es`.
+    at Transformations (components/blocks/transformations/index.tsx:10:28)
+   8 | export default function Transformations() {
+   9 |   const { ref, isVisible } = useScrollAnimation();
+> 10 |   const t = useTranslations('transformations');
+     |                            ^
+  11 |   const transformations = t.raw('examples').map((example: any, index: number) => ({
+  12 |     ...example,
+  13 |     before: `/imgs/features/${index + 1}.png`, {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `transformations` in messages for locale `es`.'
+}
+ ⨯ TypeError: t.raw(...).map is not a function
+    at Transformations (components/blocks/transformations/index.tsx:11:44)
+   9 |   const { ref, isVisible } = useScrollAnimation();
+  10 |   const t = useTranslations('transformations');
+> 11 |   const transformations = t.raw('examples').map((example: any, index: number) => ({
+     |                                            ^
+  12 |     ...example,
+  13 |     before: `/imgs/features/${index + 1}.png`,
+  14 |     after: `/imgs/showcases/${index + 1}.png` {
+  digest: '262610374'
+}
+ GET /es 500 in 9620ms
+ ✓ Compiled in 528ms (260 modules)
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 1183ms (1001 modules)
+ ✓ Compiled in 1014ms (260 modules)
+ ✓ Compiled in 4s (260 modules)
+ ✓ Compiled in 4.7s (260 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 7.8s (820 modules)
+ GET /es 200 in 12702ms
+ GET /ja 200 in 1942ms
+ GET /de 200 in 2825ms
+ GET /fr 200 in 615ms
+Error: MISSING_MESSAGE: Could not resolve `upload.title` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:142:17)
+  140 |             <div>
+  141 |               <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+> 142 |                 {t("upload.title")}
+      |                 ^
+  143 |               </h2>
+  144 |               <p className="text-lg text-slate-600 mb-8">
+  145 |                 {t("upload.description")} {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.title` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.description` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:145:17)
+  143 |               </h2>
+  144 |               <p className="text-lg text-slate-600 mb-8">
+> 145 |                 {t("upload.description")}
+      |                 ^
+  146 |               </p>
+  147 |             </div>
+  148 |              {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.description` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.prompt` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:172:77)
+  170 |                       <Upload className="w-12 h-12 mx-auto text-slate-400 group-hover:text-emerald-500 transition-colors" />
+  171 |                       <div>
+> 172 |                         <p className="text-lg font-semibold text-slate-700">{t("upload.prompt")}</p>
+      |                                                                             ^
+  173 |                         <p className="text-sm text-slate-500">{t("upload.formats")}</p>
+  174 |                       </div>
+  175 |                     </div> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.prompt` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.formats` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:173:63)
+  171 |                       <div>
+  172 |                         <p className="text-lg font-semibold text-slate-700">{t("upload.prompt")}</p>
+> 173 |                         <p className="text-sm text-slate-500">{t("upload.formats")}</p>
+      |                                                               ^
+  174 |                       </div>
+  175 |                     </div>
+  176 |                   )} {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.formats` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.style_label` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:185:19)
+  183 |               <div>
+  184 |                 <label className="block text-sm font-semibold text-slate-700 mb-2">
+> 185 |                   {t("upload.style_label")}
+      |                   ^
+  186 |                 </label>
+  187 |                 <Select value={selectedStyle} onValueChange={setSelectedStyle}>
+  188 |                   <SelectTrigger className="w-full h-12 bg-white border-slate-300 text-slate-900 rounded-lg"> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.style_label` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.style_placeholder` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:189:46)
+  187 |                 <Select value={selectedStyle} onValueChange={setSelectedStyle}>
+  188 |                   <SelectTrigger className="w-full h-12 bg-white border-slate-300 text-slate-900 rounded-lg">
+> 189 |                     <SelectValue placeholder={t("upload.style_placeholder")} />
+      |                                              ^
+  190 |                   </SelectTrigger>
+  191 |                   <SelectContent className="bg-white border-slate-200">
+  192 |                     {gardenStyles.map((style) => ( {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.style_placeholder` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.elements_label` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:207:19)
+  205 |               <div>
+  206 |                 <label className="block text-sm font-semibold text-slate-700 mb-2">
+> 207 |                   {t("upload.elements_label")}
+      |                   ^
+  208 |                 </label>
+  209 |                 <Input 
+  210 |                   value={specialElements} {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.elements_label` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.elements_placeholder` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:212:31)
+  210 |                   value={specialElements}
+  211 |                   onChange={(e) => setSpecialElements(e.target.value)}
+> 212 |                   placeholder={t("upload.elements_placeholder")}
+      |                               ^
+  213 |                   className="h-12 bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 rounded-lg"
+  214 |                 />
+  215 |               </div> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.elements_placeholder` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.generate_button` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:233:21)
+  231 |                   <>
+  232 |                     <Sparkles className="w-4 h-4 mr-2" />
+> 233 |                     {t("upload.generate_button")}
+      |                     ^
+  234 |                   </>
+  235 |                 )}
+  236 |               </Button> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.generate_button` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.placeholder_title` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:279:79)
+  277 |                   </div>
+  278 |                   <div>
+> 279 |                     <h3 className="text-lg font-semibold text-slate-700 mb-2">{t("upload.placeholder_title")}</h3>
+      |                                                                               ^
+  280 |                     <p className="text-sm text-slate-500 max-w-xs">
+  281 |                       {t("upload.placeholder_text")}
+  282 |                     </p> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.placeholder_title` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `upload.placeholder_text` in messages for locale `ko`.
+    at UploadSection (components/blocks/upload-section/index.tsx:281:23)
+  279 |                     <h3 className="text-lg font-semibold text-slate-700 mb-2">{t("upload.placeholder_title")}</h3>
+  280 |                     <p className="text-sm text-slate-500 max-w-xs">
+> 281 |                       {t("upload.placeholder_text")}
+      |                       ^
+  282 |                     </p>
+  283 |                   </div>
+  284 |                 </div> {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `upload.placeholder_text` in messages for locale `ko`.'
+}
+Error: MISSING_MESSAGE: Could not resolve `transformations` in messages for locale `ko`.
+    at Transformations (components/blocks/transformations/index.tsx:10:28)
+   8 | export default function Transformations() {
+   9 |   const { ref, isVisible } = useScrollAnimation();
+> 10 |   const t = useTranslations('transformations');
+     |                            ^
+  11 |   const transformations = t.raw('examples').map((example: any, index: number) => ({
+  12 |     ...example,
+  13 |     before: `/imgs/features/${index + 1}.png`, {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `transformations` in messages for locale `ko`.'
+}
+ ⨯ TypeError: t.raw(...).map is not a function
+    at Transformations (components/blocks/transformations/index.tsx:11:44)
+   9 |   const { ref, isVisible } = useScrollAnimation();
+  10 |   const t = useTranslations('transformations');
+> 11 |   const transformations = t.raw('examples').map((example: any, index: number) => ({
+     |                                            ^
+  12 |     ...example,
+  13 |     before: `/imgs/features/${index + 1}.png`,
+  14 |     after: `/imgs/showcases/${index + 1}.png` {
+  digest: '262610374'
+}
+ GET /ko 500 in 537ms
+ ✓ Compiled in 3s (260 modules)
+ ✓ Compiled in 202ms (260 modules)
+ ✓ Compiled in 353ms (260 modules)
+ ✓ Compiled in 300ms (260 modules)
+ ✓ Compiled in 141ms (260 modules)
+ ✓ Compiled in 1233ms (260 modules)
+ ✓ Compiled in 73ms (260 modules)
+ ✓ Compiled /[locale] in 351ms (820 modules)
+ GET /ko 200 in 4726ms
+ GET /hi 200 in 194ms
+ GET /id 200 in 159ms
+ GET /ms 200 in 136ms
+ GET /vi 200 in 111ms
+ GET /km 200 in 142ms
+ ✓ Compiled in 3.5s (260 modules)
+ ✓ Compiled in 946ms (260 modules)
+ ✓ Compiled in 179ms (260 modules)
+ ✓ Compiled in 4.9s (260 modules)
+ ✓ Compiled in 197ms (260 modules)
+ ✓ Compiled in 441ms (260 modules)
+ ✓ Compiled in 57ms (260 modules)
+ ✓ Compiled in 181ms (260 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/edge-server-development/2.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/edge-server-development/2.pack.gz'
+ ✓ Compiled in 156ms (260 modules)
+ ✓ Compiled in 196ms (260 modules)
+ ✓ Compiled in 147ms (260 modules)
+ ✓ Compiled in 48ms (260 modules)
+ ✓ Compiled in 173ms (260 modules)
+ ✓ Compiled in 160ms (260 modules)
+ ✓ Compiled in 1933ms (577 modules)
+ ✓ Compiled in 459ms (577 modules)
+ ✓ Compiled in 393ms (577 modules)
+ ✓ Compiled in 407ms (577 modules)
+ ○ Compiling /[locale]/pricing ...
+ ✓ Compiled /[locale]/pricing in 1902ms (1359 modules)
+ GET /pricing 200 in 3725ms
+ GET /zh/pricing 200 in 72ms
+ GET /es/pricing 200 in 56ms
+ GET /ja/pricing 200 in 53ms
+ GET /ko/pricing 200 in 79ms
+ GET /fr/pricing 200 in 60ms
+ GET /de/pricing 200 in 55ms
+ ✓ Compiled in 894ms (260 modules)
+ ✓ Compiled in 147ms (260 modules)
+ ✓ Compiled in 124ms (260 modules)
+ ✓ Compiled in 3.6s (579 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/edge-server-development/0.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/edge-server-development/0.pack.gz'
+ ✓ Compiled in 137ms (260 modules)
+ ✓ Compiled in 133ms (260 modules)
+ ✓ Compiled in 165ms (260 modules)
+ ✓ Compiled in 143ms (260 modules)
+ ✓ Compiled in 142ms (260 modules)
+ ✓ Compiled in 626ms (260 modules)
+ ✓ Compiled in 112ms (260 modules)
+ ✓ Compiled in 57ms (260 modules)
+ ✓ Compiled in 166ms (260 modules)
+ ✓ Compiled in 141ms (260 modules)
+ ✓ Compiled in 141ms (260 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 1635ms (1382 modules)
+ GET /ja 200 in 3040ms
+ GET /ko 200 in 148ms
+ GET /es 200 in 140ms
+ GET /zh 200 in 142ms
+ ○ Compiling /[locale]/pricing ...
+ ✓ Compiled /[locale]/pricing in 1741ms (780 modules)
+ ⨯ [TypeError: Cannot read properties of undefined (reading 'clientModules')] {
+  page: '/en/pricing'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2.1s (1673 modules)
+ GET /pricing 500 in 5317ms
  ○ Compiling /_not-found ...
- ✓ Compiled /api/auth/[...nextauth] in 7.2s (1340 modules)
- ✓ Compiled in 720ms (550 modules)
- GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 9184ms
- GET /css/modules/code.css 404 in 8498ms
- GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 9170ms
-[31m[auth][error][0m MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
-    at assertConfig (webpack-internal:///(rsc)/./node_modules/@auth/core/lib/utils/assert.js:66:16)
-    at Auth (webpack-internal:///(rsc)/./node_modules/@auth/core/index.js:91:95)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async AppRouteRouteModule.do (/Users/huashisan/my project buwan/ai garden design/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:26:33891)
- GET /api/auth/session 500 in 3914ms
-[31m[auth][error][0m MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
-    at assertConfig (webpack-internal:///(rsc)/./node_modules/@auth/core/lib/utils/assert.js:66:16)
-    at Auth (webpack-internal:///(rsc)/./node_modules/@auth/core/index.js:91:95)
-    at async AppRouteRouteModule.do (/Users/huashisan/my project buwan/ai garden design/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:26:33891)
- GET /api/auth/session 500 in 11ms
- ✓ Compiled in 1441ms (1651 modules)
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET / 200 in 405ms
- GET / 200 in 2223ms
- GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 119ms
- GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 178ms
- GET /css/modules/code.css 404 in 183ms
-[31m[auth][error][0m MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
-    at assertConfig (webpack-internal:///(rsc)/./node_modules/@auth/core/lib/utils/assert.js:66:16)
-    at Auth (webpack-internal:///(rsc)/./node_modules/@auth/core/index.js:91:95)
-    at async AppRouteRouteModule.do (/Users/huashisan/my project buwan/ai garden design/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:26:33891)
- GET /api/auth/session 500 in 312ms
-[31m[auth][error][0m MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
-    at assertConfig (webpack-internal:///(rsc)/./node_modules/@auth/core/lib/utils/assert.js:66:16)
-    at Auth (webpack-internal:///(rsc)/./node_modules/@auth/core/index.js:91:95)
-    at async AppRouteRouteModule.do (/Users/huashisan/my project buwan/ai garden design/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:26:33891)
- GET /api/auth/session 500 in 19ms
- ✓ Compiled in 1631ms (1657 modules)
- GET / 200 in 250ms
- ✓ Compiled in 4.5s (1647 modules)
- GET / 200 in 511ms
-[?25h
+ ✓ Compiled /_not-found in 2s (1678 modules)
+ GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 2329ms
+ GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 2340ms
+ GET /css/modules/code.css 404 in 2331ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /pricing 200 in 1816ms
+ GET /_next/static/chunks/app/%5Blocale%5D/(default)/pricing/page.js 404 in 111ms
+ GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 121ms
+ GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 130ms
+ GET /css/modules/code.css 404 in 82ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 2.6s (528 modules)
+ GET /api/auth/session 200 in 3085ms
+ ○ Compiling /api/get-user-info ...
+ ✓ Compiled /api/get-user-info in 1334ms (1336 modules)
+ GET /api/auth/session 200 in 1514ms
+ POST /api/get-user-info 200 in 3991ms
+ POST /api/get-user-info 200 in 3420ms
+ GET /api/auth/session 200 in 818ms
+ GET /api/auth/session 200 in 105ms
+ GET /api/auth/session 200 in 53ms
+ GET /api/auth/session 200 in 87ms
+ POST /api/get-user-info 200 in 2471ms
+ POST /api/get-user-info 200 in 2422ms
+ POST /api/get-user-info 200 in 2332ms
+ POST /api/get-user-info 200 in 2937ms
+ GET /api/auth/session 200 in 15ms
+ GET /api/auth/session 200 in 30ms
+ POST /api/get-user-info 200 in 1274ms
+ POST /api/get-user-info 200 in 2472ms
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 6.6s (1208 modules)
+ ⨯ [TypeError: Cannot read properties of undefined (reading 'clientModules')] {
+  page: '/en'
+}
+ ○ Compiling /[locale]/pricing ...
+ ✓ Compiled /[locale]/pricing in 1315ms (868 modules)
+ GET /pricing 200 in 3819ms
+ GET /pricing 200 in 172ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 3.4s (1678 modules)
+ GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 3806ms
+ GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 3821ms
+ GET /css/modules/code.css 404 in 3802ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 518ms (1168 modules)
+ GET /api/auth/session 200 in 1004ms
+ ○ Compiling /api/get-user-info ...
+ ✓ Compiled /api/get-user-info in 536ms (1171 modules)
+ ✓ Compiled in 0ms (1171 modules)
+ ✓ Compiled in 0ms (1171 modules)
+ ✓ Compiled in 0ms (1171 modules)
+ GET /api/auth/session 200 in 1968ms
+ ✓ Compiled in 0ms (1171 modules)
+ GET /ja/pricing 200 in 1715ms
+ ✓ Compiled in 0ms (1171 modules)
+ ✓ Compiled in 0ms (1171 modules)
+ ✓ Compiled in 1ms (1171 modules)
+ GET /api/auth/session 200 in 1474ms
+ GET /api/auth/session 200 in 28ms
+ POST /api/get-user-info 200 in 5835ms
+ POST /api/get-user-info 200 in 4041ms
+ POST /api/get-user-info 200 in 1962ms
+ POST /api/get-user-info 200 in 2271ms
+ GET /api/auth/session 200 in 522ms
+ GET /api/auth/session 200 in 99ms
+ POST /api/get-user-info 200 in 1809ms
+ POST /api/get-user-info 200 in 1952ms
+ GET /pricing 200 in 359ms
+ GET /api/auth/session 200 in 118ms
+ GET /api/auth/session 200 in 187ms
+ ○ Compiling /[locale] ...
+ POST /api/get-user-info 200 in 2165ms
+ POST /api/get-user-info 200 in 2375ms
+ ✓ Compiled /[locale] in 2.6s (1212 modules)
+ GET / 200 in 8013ms
+ GET /pricing 200 in 948ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 3.6s (2022 modules)
+ GET /css/modules/code.css 404 in 3372ms
+ GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 4001ms
+ GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 3935ms
+ GET /imgs/showcases/9.png 404 in 1166ms
+ GET / 200 in 3006ms
+ GET /imgs/showcases/9.png 404 in 325ms
+ GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 321ms
+ GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 426ms
+ GET /css/modules/code.css 404 in 340ms
+ GET /imgs/showcases/9.png 404 in 65ms
+ GET /api/auth/session 200 in 381ms
+ GET / 200 in 989ms
+ GET /api/auth/session 200 in 48ms
+ POST /api/get-user-info 200 in 1233ms
+ POST /api/get-user-info 200 in 2165ms
+ GET / 200 in 1035ms
+ GET / 200 in 1100ms
+ GET /fr 200 in 75ms
+ GET /imgs/showcases/9.png 404 in 50ms
+ GET /imgs/showcases/9.png 404 in 569ms
+ GET /api/auth/session 200 in 659ms
+ GET /api/auth/session 200 in 109ms
+ POST /api/get-user-info 200 in 4316ms
+ POST /api/get-user-info 200 in 10059ms
+ ✓ Compiled in 10.6s (1731 modules)
+ GET /fr 200 in 333ms
+ ✓ Compiled in 1295ms (1731 modules)
+ GET /fr 200 in 181ms
+ ✓ Compiled in 4.2s (1716 modules)
+ GET /fr 200 in 145ms
+ ✓ Compiled in 5.2s (820 modules)
+ GET /fr 200 in 88ms
+ ✓ Compiled in 738ms (820 modules)
+ GET /fr 200 in 145ms
+ ✓ Compiled in 667ms (820 modules)
+ GET /fr 200 in 160ms
+ GET /fr 200 in 19ms
+ ✓ Compiled in 570ms (820 modules)
+ GET /fr 200 in 119ms
+ GET /fr 200 in 16ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/2.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/2.pack.gz'
+ ✓ Compiled in 916ms (820 modules)
+ GET /fr 200 in 46ms
+ GET /fr 200 in 1756ms
+ ✓ Compiled in 7.4s (1976 modules)
+ GET /fr 200 in 803ms
+ ✓ Compiled in 3.8s (1976 modules)
+ GET /fr 200 in 1824ms
+ GET /fr 200 in 58ms
+ ✓ Compiled in 940ms (820 modules)
+ ✓ Compiled in 562ms (820 modules)
+ GET /fr 200 in 1173ms
+ GET /fr 200 in 71ms
+ ✓ Compiled in 1562ms (820 modules)
+ ✓ Compiled in 1169ms (820 modules)
+ GET /fr 200 in 713ms
+ GET /fr 200 in 75ms
+ ✓ Compiled in 4.7s (1731 modules)
+ ⨯ ReferenceError: baseUrl is not defined
+    at RootLayout (app/[locale]/layout.tsx:80:11)
+  78 |     "name": "AI Garden Design",
+  79 |     "description": "Smart garden design platform that transforms your outdoor space using artificial intelligence",
+> 80 |     "url": baseUrl,
+     |           ^
+  81 |     "potentialAction": {
+  82 |       "@type": "SearchAction",
+  83 |       "target": { {
+  digest: '3628464276'
+}
+ GET /fr 200 in 143ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 3.1s (1731 modules)
+ ⨯ ReferenceError: baseUrl is not defined
+    at RootLayout (app/[locale]/layout.tsx:81:11)
+  79 |     "name": "AI Garden Design",
+  80 |     "description": "Smart garden design platform that transforms your outdoor space using artificial intelligence",
+> 81 |     "url": baseUrl,
+     |           ^
+  82 |     "potentialAction": {
+  83 |       "@type": "SearchAction",
+  84 |       "target": { {
+  digest: '3403955315'
+}
+ GET /fr 500 in 592ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1197ms (1721 modules)
+ GET /css/modules/laydate/default/laydate.css?v=5.0.9 404 in 1562ms
+ GET /css/modules/code.css 404 in 1102ms
+ GET /css/modules/layer/default/layer.css?v=3.1.1 404 in 1549ms
+ ✓ Compiled in 11.3s (1736 modules)
+ ✓ Compiled in 5.3s (1731 modules)
+ ✓ Compiled in 4.9s (820 modules)
+ ✓ Compiled in 627ms (820 modules)
+ ✓ Compiled in 550ms (820 modules)
+ ✓ Compiled in 861ms (820 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/4.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/4.pack.gz'
+ ✓ Compiled in 886ms (1171 modules)
+ ✓ Compiled in 546ms (1171 modules)
+ ✓ Compiled in 447ms (820 modules)
+ ○ Compiling /robots.txt ...
+ ✓ Compiled /robots.txt in 2.1s (927 modules)
+ GET /robots.txt 200 in 2675ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/0.pack.gz'
+ ○ Compiling /sitemap.xml ...
+ ✓ Compiled /sitemap.xml in 1854ms (1738 modules)
+ GET /sitemap.xml 200 in 2064ms
+Failed to load llms.txt.json, falling back to en.json
+ GET /llms.txt 200 in 7168ms
+ ✓ Compiled in 2.7s (820 modules)
+ ✓ Compiled in 4.5s (820 modules)
+ ✓ Compiled in 4.2s (1171 modules)
+ ✓ Compiled in 312ms (1171 modules)
+ ✓ Compiled in 2.1s (820 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/server-development/6.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/server-development/6.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/3.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/3.pack.gz'
+ ✓ Compiled /sitemap.xml in 455ms (931 modules)
+ GET /sitemap.xml 200 in 601ms
+ GET /sitemap.xml 200 in 1596ms
+ ✓ Compiled in 17.1s (1731 modules)
+ ○ Compiling /sitemap.xml ...
+ ✓ Compiled /sitemap.xml in 1765ms (931 modules)
+ GET /sitemap.xml 200 in 2337ms
+ GET /sitemap.xml 200 in 19ms
+ ✓ Compiled in 3s (1751 modules)
+ GET /sitemap.xml 200 in 67ms
+ ✓ Compiled in 4.9s (1731 modules)
+ ○ Compiling /sitemap.xml ...
+ ✓ Compiled /sitemap.xml in 530ms (931 modules)
+ GET /sitemap.xml 200 in 747ms
+ ✓ Compiled in 7.5s (1751 modules)
+ GET /sitemap.xml 200 in 108ms
+ GET /sitemap.xml 200 in 99ms
+ ✓ Compiled in 10.5s (1731 modules)
+ ✓ Compiled in 3.6s (1731 modules)
+ ✓ Compiled in 2.4s (1731 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/server-development/5.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/server-development/5.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/0.pack.gz'
+ ✓ Compiled in 4s (1731 modules)
+ ✓ Compiled in 6.4s (1731 modules)
+ ✓ Compiled in 4.7s (1731 modules)
+ ✓ Compiled in 3.4s (1731 modules)
+ ✓ Compiled in 3.9s (1731 modules)
+ ✓ Compiled in 2.8s (1731 modules)
+ ✓ Compiled in 1558ms (1731 modules)
+ ✓ Compiled in 2.6s (1731 modules)
+ ✓ Compiled in 35.9s (1731 modules)
+ ✓ Compiled in 20s (1731 modules)
+ ✓ Compiled in 20.1s (1731 modules)
+ ✓ Compiled in 6.2s (1731 modules)
+ ✓ Compiled in 3.4s (1731 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/1.pack.gz_' -> '/Users/huashisan/my project buwan/ai garden design/.next/cache/webpack/client-development/1.pack.gz'
+ ✓ Compiled in 10s (820 modules)
+ ✓ Compiled in 4.3s (820 modules)
+ ✓ Compiled in 3.1s (820 modules)
+ ✓ Compiled in 21.5s (1731 modules)
+ ✓ Compiled in 6.3s (1731 modules)
+ ✓ Compiled in 625ms (820 modules)
+ ✓ Compiled in 541ms (820 modules)

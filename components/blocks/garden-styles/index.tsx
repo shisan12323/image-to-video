@@ -48,12 +48,12 @@ export default function GardenStyles() {
     <section 
       ref={animationRef}
       id="garden-styles"
-      className={`py-24 bg-gradient-to-b from-white via-slate-50/30 to-white transition-all duration-1000 ${
+      className={`py-12 md:py-24 bg-gradient-to-b from-white via-slate-50/30 to-white transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >
       {/* 标题区域 */}
-      <div className="container mx-auto px-6 mb-20">
+      <div className="container mx-auto px-6 mb-12 md:mb-20">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
             {t('title')}

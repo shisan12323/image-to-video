@@ -42,7 +42,7 @@ export default async function LandingPage({
       <Transformations />
       <HowItWorks />
       <AIFeatures />
-      <section className="py-20 bg-gradient-to-b from-white via-emerald-50/20 to-slate-50 relative overflow-hidden">
+      <section className="py-12 md:py-20 bg-gradient-to-b from-white via-emerald-50/20 to-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-radial from-emerald-200/20 to-transparent rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-radial from-teal-200/15 to-transparent rounded-full blur-3xl"></div>

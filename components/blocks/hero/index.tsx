@@ -26,7 +26,7 @@ export default function Hero({ hero }: { hero: HeroType }) {
             <div className="flex items-center justify-center mb-8">
               <img
                 src="/imgs/badges/phdaily.svg"
-                alt="phdaily"
+                alt="Product Hunt Daily Badge - AI Garden Design"
                 className="h-10 object-cover"
               />
             </div>

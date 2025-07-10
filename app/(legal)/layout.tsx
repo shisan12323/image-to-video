@@ -15,6 +15,10 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     description: t("metadata.description"),
     keywords: t("metadata.keywords"),
+    robots: {
+      index: false,
+      follow: false,
+    },
   };
 }
 

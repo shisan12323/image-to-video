@@ -15,7 +15,11 @@ export default async function () {
       name: "avatar_url",
       title: "Avatar",
       callback: (row) => (
-        <img src={row.avatar_url} className="w-10 h-10 rounded-full" />
+        <img 
+          src={row.avatar_url} 
+          alt={`${row.nickname || row.email || 'User'} avatar`}
+          className="w-10 h-10 rounded-full" 
+        />
       ),
     },
     {

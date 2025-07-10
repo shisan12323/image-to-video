@@ -122,7 +122,7 @@ export default function UploadSection() {
     <section 
       ref={ref}
       id="upload-section"
-      className={`py-20 bg-gradient-to-b from-emerald-50/30 via-white to-slate-50 relative overflow-hidden transition-all duration-1000 ${
+      className={`py-12 md:py-20 bg-gradient-to-b from-emerald-50/30 via-white to-slate-50 relative overflow-hidden transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >
@@ -133,7 +133,7 @@ export default function UploadSection() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center max-w-7xl mx-auto">
           
           {/* Left Side - Upload Form */}
           <div className="space-y-8">

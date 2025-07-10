@@ -22,6 +22,7 @@ export default async function () {
           <div className="flex items-center gap-2">
             <img
               src={row.user?.avatar_url || ""}
+              alt={`${row.user?.nickname || 'User'} avatar`}
               className="w-8 h-8 rounded-full"
             />
             <span>{row.user?.nickname}</span>

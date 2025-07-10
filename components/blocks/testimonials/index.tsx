@@ -46,12 +46,12 @@ export default function Testimonials() {
   return (
     <section 
       ref={animationRef}
-      className={`py-24 bg-gradient-to-b from-white to-slate-50 transition-all duration-1000 ${
+      className={`py-12 md:py-24 bg-gradient-to-b from-white to-slate-50 transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
             {t('title')}
           </h2>

@@ -28,12 +28,12 @@ export default function HowItWorks() {
   return (
     <section 
       ref={ref}
-      className={`py-24 bg-gradient-to-b from-slate-50 to-white transition-all duration-1000 ${
+      className={`py-12 md:py-24 bg-gradient-to-b from-slate-50 to-white transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
             {t('title')}
           </h2>

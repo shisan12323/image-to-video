@@ -245,7 +245,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                           >
                             <img
                               src="/imgs/cnpay.png"
-                              alt="cnpay"
+                              alt="Chinese Payment Methods - WeChat Pay and Alipay"
                               className="w-20 h-10 rounded-lg"
                             />
                           </div>

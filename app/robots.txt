@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Block legal pages from indexing
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+# Allow all language versions of main content
+Allow: /en/
+Allow: /zh/
+Allow: /fr/
+Allow: /de/
+Allow: /es/
+Allow: /ja/
+Allow: /ko/
+Allow: /ms/
+Allow: /vi/
+Allow: /id/
+Allow: /km/
+Allow: /hi/
+
+# Block API routes and internal paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_vercel/
+Disallow: /.well-known/
+
+# Sitemap location
+Sitemap: https://www.aigardendesign.online/sitemap.xml
+
+# Crawl delay (optional - sets a polite crawl rate)
+Crawl-delay: 1

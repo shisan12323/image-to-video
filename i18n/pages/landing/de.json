@@ -1,0 +1,531 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "AI Garden Design",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Garden Design"
+      },
+      "url": "/de"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Funktionen",
+          "url": "/#feature",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "Preise",
+          "url": "/pricing",
+          "icon": "MdPayment"
+        }
+      ]
+    },
+    "buttons": [],
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "KI-Gartendesign in 2 Minuten",
+    "highlight_text": "2 Minuten",
+    "description": "Foto hochladen, Stil wählen, sofort professionelles Gartendesign erhalten.<br/>Verwandeln Sie jeden Raum mit KI-Präzision in einen wunderschönen Garten.",
+    "announcement": {
+      "label": "Kostenlos",
+      "title": "🎯 KI-Gartendesign kostenlos testen",
+      "url": "/pricing"
+    },
+    "tip": "✨ Keine Erfahrung nötig - die KI macht die Arbeit",
+    "buttons": [
+      {
+        "title": "Kostenloses Design",
+        "icon": "RiSparklingFill",
+        "url": "/pricing",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "Beispiele ansehen",
+        "icon": "RiEyeLine",
+        "url": "/#showcase",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "Angetrieben von fortschrittlicher KI-Technologie",
+    "items": [
+      {
+        "title": "Computer Vision",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Computer Vision"
+        }
+      },
+      {
+        "title": "Maschinelles Lernen",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "Maschinelles Lernen"
+        }
+      },
+      {
+        "title": "Pflanzendatenbank",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "Pflanzendatenbank"
+        }
+      },
+      {
+        "title": "Klimaanalyse",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Klimaanalyse"
+        }
+      },
+      {
+        "title": "3D-Rendering",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "3D-Rendering"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Professionelles Gartendesign, sofort",
+    "label": "Warum GartenKI",
+    "description": "Umgehen Sie teure Berater und langwierige Designprozesse. Unsere KI erstellt in Minuten professionelle Gartendesigns, perfekt auf Ihren Raum und Stilvorlieben abgestimmt.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "2-Minuten-Design",
+        "description": "Foto hochladen, Stil wählen, Ergebnis erhalten. Wochen schneller als traditionelles Design, besser als DIY-Rätselraten.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Intelligente Pflanzenauswahl",
+        "description": "KI passt Pflanzen an Ihr Klima, Ihren Boden und Pflegeaufwand an. Keine toten Pflanzen oder Versuch und Irrtum mehr.",
+        "icon": "RiPlantLine"
+      },
+      {
+        "title": "Professionelle Qualität",
+        "description": "Erhalten Sie Designs auf Landschaftsarchitekt-Niveau ohne 500€+ Beratungsgebühren. KI trainiert an Tausenden erfolgreicher Gärten.",
+        "icon": "RiAwardLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Sehen Sie den Unterschied, den KI macht",
+    "label": "Vorher & Nachher",
+    "description": "Echte Transformationen von unserer KI in unter 2 Minuten erstellt. Keine Erfahrung erforderlich.",
+    "items": [
+      {
+        "title": "Kahler Hinterhof → Gartenparadies",
+        "description": "Leerer Rasen verwandelt in einen farbenfrohen Cottage-Garten mit strukturierten Pflanzbeeten und saisonalen Blüten.",
+        "icon": "RiArrowRightLine",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "Betonterrasse → Grüne Oase",
+        "description": "Urbane Terrasse neu gestaltet mit vertikalen Gärten, intelligenter Pflanzenauswahl und gemütlichen Sitzbereichen.",
+        "icon": "RiArrowRightLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "Überwuchertes Chaos → Zen-Rückzugsort",
+        "description": "Chaotischer Garten vereinfacht zu einem friedlichen Zen-Raum mit klaren Linien und durchdachter Pflanzenplatzierung.",
+        "icon": "RiArrowRightLine",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Gestalten Sie Ihren Garten in 4 einfachen Schritten",
+    "description": "Erhalten Sie professionelles Gartendesign in Minuten, nicht Wochen:",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "1. Foto hochladen",
+        "description": "Machen Sie ein Foto Ihres Raums und laden Sie es hoch. Unsere KI analysiert Größe, Beleuchtung und aktuelle Bedingungen.",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "2. Stil wählen",
+        "description": "Wählen Sie Ihren Lieblings-Gartenstil aus unserer kuratierten Sammlung. Modern, Cottage, Zen, Tropisch und mehr.",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "3. KI gestaltet",
+        "description": "Beobachten Sie, wie die KI Ihr personalisiertes Gartendesign mit perfekter Pflanzenplatzierung und Farbkoordination erstellt.",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "4. Pläne herunterladen",
+        "description": "Erhalten Sie Ihr komplettes Gartendesign mit Einkaufslisten, Pflanzanleitungen und Pflegeplan.",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Was unsere KI besonders macht",
+    "description": "Erweiterte Funktionen, die jedes Mal professionelle Ergebnisse liefern.",
+    "items": [
+      {
+        "title": "Fotoanalyse",
+        "description": "KI liest Ihre Raumabmessungen, Beleuchtung und Bodenbedingungen von einem einzigen Foto ab.",
+        "icon": "RiCameraLine"
+      },
+      {
+        "title": "Klimaanpassung",
+        "description": "Wählt automatisch Pflanzen aus, die in Ihrem genauen Standort und Wetterbedingungen gedeihen.",
+        "icon": "RiSunLine"
+      },
+      {
+        "title": "Stil-Transfer",
+        "description": "Wenden Sie jeden Gartenstil auf Ihren Raum an, während Pflanzen praktisch und geeignet bleiben.",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "Sofortvorschau",
+        "description": "Sehen Sie Ihr Design in HD-3D, bevor Sie etwas pflanzen. Spazieren Sie durch Ihren zukünftigen Garten.",
+        "icon": "RiEyeLine"
+      },
+      {
+        "title": "Einkaufslisten",
+        "description": "Erhalten Sie exakte Pflanzenmengen, Größen und lokale Preise für alles in Ihrem Design.",
+        "icon": "RiShoppingCartLine"
+      },
+      {
+        "title": "Pflegekalender",
+        "description": "Erhalten Sie schrittweise Pflegepläne, angepasst an Ihre spezifischen Pflanzen und Ihr Klima.",
+        "icon": "RiCalendarLine"
+      }
+    ]
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "Gartenstile für jeden Raum",
+    "description": "Wählen Sie Ihren Lieblingsstil und beobachten Sie, wie die KI ihn an Ihren einzigartigen Raum anpasst.",
+    "items": [
+      {
+        "title": "Modern Minimalistisch",
+        "description": "Klare Linien, geometrische Pflanzen, einfache Pflege",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "Englischer Cottage-Garten",
+        "description": "Romantisch, farbenfroh, gemischte Blumenränder",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "Mediterran",
+        "description": "Trockenheitsresistente Kräuter und Olivenbäume",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/1.png"
+        }
+      },
+      {
+        "title": "Tropischer Dschungel",
+        "description": "Üppige Palmen und kühne Blattpflanzen",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/2.png"
+        }
+      },
+      {
+        "title": "Zen-Garten",
+        "description": "Friedlicher Bambus und Steinelemente",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/3.png"
+        }
+      },
+      {
+        "title": "Präriewildblumen",
+        "description": "Einheimische Gräser und Wildblumenwiesen",
+        "url": "/#showcase",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/4.png"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "Statistiken",
+    "title": "Gärtner lieben GartenKI",
+    "description": "für die Erschaffung schöner, nachhaltiger Gärten.",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "Gestaltete Gärten",
+        "label": "1000+",
+        "description": "Schöne Räume"
+      },
+      {
+        "title": "Pflanzensorten",
+        "label": "5000+",
+        "description": "In unserer Datenbank"
+      },
+      {
+        "title": "Designzeit",
+        "label": "15",
+        "description": "Minuten Durchschnitt"
+      }
+    ]
+  },
+  "pricing": {
+    "name": "pricing",
+    "label": "Preise",
+    "title": "KI-Gartendesign testen",
+    "description": "Beginnen Sie mit einem kostenlosen Design, upgraden Sie jederzeit für mehr Funktionen.",
+    "groups": [],
+    "items": [
+      {
+        "title": "Kostenloser Test",
+        "description": "Testen Sie KI-Gartendesign kostenlos.",
+        "features_title": "Enthalten",
+        "features": [
+          "1 kostenloses Gartendesign",
+          "Grundlegende Pflanzenempfehlungen",
+          "Layout-Visualisierung",
+          "E-Mail-Support",
+          "Keine Kreditkarte erforderlich"
+        ],
+        "interval": "one-time",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "EUR",
+        "price": "Kostenlos",
+        "original_price": "",
+        "unit": "",
+        "is_featured": true,
+        "tip": "Perfekt zum Starten!",
+        "button": {
+          "title": "Kostenloses Design",
+          "url": "/#pricing",
+          "icon": "RiSparklingFill"
+        },
+        "product_id": "free-trial",
+        "product_name": "Kostenloses Gartendesign-Test",
+        "credits": 1,
+        "valid_months": 1
+      },
+      {
+        "title": "Pro Design",
+        "description": "Professionelle Funktionen freischalten.",
+        "label": "Beliebt",
+        "features_title": "Alles in Kostenlos, plus",
+        "features": [
+          "Unbegrenzte Gartendesigns",
+          "HD-3D-Visualisierung",
+          "Detaillierte Einkaufslisten",
+          "Pflanzenpflegepläne",
+          "Prioritäts-Support",
+          "PDF-Export"
+        ],
+        "interval": "one-time",
+        "amount": 4900,
+        "cn_amount": 4900,
+        "currency": "EUR",
+        "price": "49€",
+        "original_price": "99€",
+        "unit": "EUR",
+        "is_featured": false,
+        "tip": "Die meisten Gärten wählen dies!",
+        "button": {
+          "title": "Auf Pro upgraden",
+          "url": "/#pricing",
+          "icon": "RiVipCrownLine"
+        },
+        "product_id": "pro-design",
+        "product_name": "Pro Gartendesign",
+        "credits": 100,
+        "valid_months": 12
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "Bewertungen",
+    "title": "Was Gärtner über KI-Gartendesign sagen",
+    "description": "Hören Sie von Gartenliebhabern, die ihre Außenbereiche mit KI-Gartendesign verwandelt haben.",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "Anna Müller",
+        "label": "Hausbesitzerin, München",
+        "description": "KI-Gartendesign hat meinen langweiligen Hinterhof in einen atemberaubenden Cottage-Garten verwandelt! Die KI verstand genau, was ich wollte und gab mir Pflanzenauswahl, die im bayerischen Klima gedeiht.",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Michael Schmidt",
+        "label": "Stadtgärtner, Berlin",
+        "description": "In einer kleinen Berliner Wohnung lebend, dachte ich, ich könnte keinen Garten haben. KI-Gartendesign entwarf einen erstaunlichen vertikalen Garten für meinen Balkon, der jetzt mein ganzer Stolz ist!",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Lisa Weber",
+        "label": "Nachhaltigkeits-Befürworterin",
+        "description": "Der Fokus der KI auf einheimische Pflanzen und Wassereinsparung war genau das, was ich brauchte. Mein neuer Garten zieht Schmetterlinge und Kolibris an und verbraucht 60% weniger Wasser!",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "Hans Fischer",
+        "label": "Renten-Gartenprojekt",
+        "description": "Nach der Rente wollte ich meinen Traumgarten erschaffen, wusste aber nicht, wo ich anfangen sollte. KI-Gartendesign machte es so einfach - jetzt habe ich einen wunderschönen Zen-Garten, der mein tägliches Refugium ist.",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "Sandra Klein",
+        "label": "Beschäftigte Mutter von drei Kindern",
+        "description": "Mit drei Kindern brauchte ich einen pflegeleichten Garten, der fantastisch aussieht. KI-Gartendesign entwarf einen kinderfreundlichen Raum mit essbaren Pflanzen, bei denen die Kinder gerne helfen!",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "Robert Wagner",
+        "label": "Garten-Anfänger",
+        "description": "Ich tötete jede Pflanze, die ich berührte, bis KI-Gartendesign kam. Die Pflegeanweisungen sind so detailliert und die Pflanzenempfehlungen sind perfekt für Anfänger wie mich. Mein Garten gedeiht!",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Häufig gestellte Fragen zu KI-Gartendesign",
+    "description": "Haben Sie eine andere Frage? Kontaktieren Sie uns per E-Mail oder Chat-Support.",
+    "items": [
+      {
+        "title": "Wie erstellt KI-Gartendesign personalisierte Gartendesigns?",
+        "description": "KI-Gartendesign analysiert Ihre Raumfotos, Klimadaten, Bodenbedingungen und Stilvorlieben mit fortschrittlichen KI-Algorithmen. Es wählt dann Pflanzen aus und erstellt Layouts, die für Ihre spezifischen Bedingungen und Pflegeaufwand optimiert sind."
+      },
+      {
+        "title": "Brauche ich Gartenerfahrung, um KI-Gartendesign zu verwenden?",
+        "description": "Überhaupt nicht! KI-Gartendesign ist für Gärtner aller Ebenen konzipiert. Unsere KI bietet detaillierte Pflegeanweisungen, Wartungspläne und anfängerfreundliche Pflanzenempfehlungen, um Ihren Erfolg zu gewährleisten."
+      },
+      {
+        "title": "Welche Gartenstile unterstützt KI-Gartendesign?",
+        "description": "KI-Gartendesign unterstützt eine breite Palette von Stilen einschließlich modern, Cottage, Zen, tropisch, Wüste, Gemüsegärten und mehr. Jedes Design ist angepasst, um mit Ihrem lokalen Klima und Raumbeschränkungen zu funktionieren."
+      },
+      {
+        "title": "Wie schnell kann ich mein Gartendesign erhalten?",
+        "description": "Die meisten Gartendesigns werden innerhalb von 15 Minuten nach dem Hochladen Ihres Raums und Ihrer Vorlieben generiert. Komplexe Designs oder Premium-Funktionen können bis zu einer Stunde für vollständige 3D-Visualisierungen dauern."
+      },
+      {
+        "title": "Berücksichtigt KI-Gartendesign mein lokales Klima und meinen Boden?",
+        "description": "Ja! KI-Gartendesign nutzt Ihren Standort, um Pflanzen zu empfehlen, die in Ihrer spezifischen Klimazone gedeihen, berücksichtigt lokale Niederschlagsmuster und schlägt Bodenverbesserungen basierend auf typischen Bedingungen in Ihrer Region vor."
+      },
+      {
+        "title": "Kann ich das KI-generierte Design modifizieren?",
+        "description": "Absolut! Alle Designs sind vollständig anpassbar. Sie können Pflanzen austauschen, Layouts anpassen, Farbschemata ändern und Bereiche neu generieren, während Sie die Expertise der KI in Pflanzenkompatibilität und -abständen beibehalten."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Bereit, Ihren Traumgarten zu gestalten?",
+    "description": "Testen Sie KI-Gartendesign kostenlos. Laden Sie ein Foto hoch und erleben Sie Magie in 2 Minuten.",
+    "buttons": [
+      {
+        "title": "Jetzt kostenloses Design testen",
+        "url": "/#upload-section",
+        "target": "_self",
+        "icon": "RiSparklingFill"
+      },
+      {
+        "title": "Mehr Beispiele sehen",
+        "url": "/#garden-styles",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "AI Garden Design",
+      "description": "AI Garden Design ist eine intelligente Gartendesign-Plattform, die Ihre Außenbereiche mit künstlicher Intelligenz transformiert.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Garden Design"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • AI Garden Design Alle Rechte vorbehalten.",
+    "nav": {
+      "items": []
+    },
+    "social": {
+      "items": []
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Datenschutzrichtlinie",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Nutzungsbedingungen",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

@@ -3,37 +3,14 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
+import { useTranslations } from "next-intl";
 
 export default function FAQ() {
   const { ref, isVisible } = useScrollAnimation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const t = useTranslations('faq');
 
-  const faqs = [
-    {
-      question: "How accurate are the AI-generated garden designs?",
-      answer: "Our AI garden designs are highly accurate, taking into account your specific space dimensions, lighting conditions, and climate zone. The AI has been trained on thousands of professional landscape designs and considers factors like plant compatibility, seasonal changes, and maintenance requirements. Most users report 90%+ satisfaction with the design accuracy."
-    },
-    {
-      question: "Is it complicated to implement the AI-generated designs?",
-      answer: "Not at all! Each design comes with detailed implementation guides, plant lists with local suppliers, and step-by-step instructions. We provide shopping lists, planting schedules, and maintenance tips. Many designs can be implemented as weekend DIY projects, while others may require professional landscaping for complex features."
-    },
-    {
-      question: "How does AI garden design compare to traditional landscape design?",
-      answer: "AI garden design offers several advantages: it's faster (2 minutes vs weeks), more affordable (fraction of the cost), and provides multiple design options instantly. While traditional designers offer personal consultation, our AI considers the same principles of design, plant science, and aesthetics. Many professional landscapers actually use our tool for initial concepts."
-    },
-    {
-      question: "What kind of photos work best for AI garden design?",
-      answer: "For best results, upload clear, well-lit photos taken during daylight hours. Include the entire space you want to redesign, taken from a good vantage point. Multiple angles help, but one comprehensive photo is sufficient. The AI works with photos from any smartphone or camera - no special equipment needed."
-    },
-    {
-      question: "What's included in the AI garden design service?",
-      answer: "Each design includes: photorealistic visualizations, detailed plant lists with local availability, seasonal care guides, implementation timelines, cost estimates, and maintenance schedules. Premium plans also include multiple design variations, 3D renderings, and direct consultation with landscape professionals."
-    },
-    {
-      question: "Can I customize the AI-generated designs?",
-      answer: "Absolutely! The AI designs serve as professional starting points that you can customize. You can specify preferences like color schemes, plant types, maintenance levels, and budget constraints. Our system learns from your feedback to create increasingly personalized designs that match your style and needs."
-    }
-  ];
+  const faqs = t.raw('questions');
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -49,10 +26,10 @@ export default function FAQ() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
-            FAQ About AI Garden Design
+            {t('title')}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Get answers to the most common questions about our AI-powered garden design service
+            {t('description')}
           </p>
         </div>
         
@@ -90,23 +67,23 @@ export default function FAQ() {
         <div className="text-center mt-20">
           <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-12 max-w-4xl mx-auto text-white">
             <h3 className="text-3xl font-bold mb-4">
-              Ready to Experience AI Garden Design?
+              {t('cta_title')}
             </h3>
             <p className="text-xl text-emerald-100 mb-8">
-              Join thousands of gardeners who've transformed their spaces with our intelligent design system
+              {t('cta_description')}
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-emerald-100 mb-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">10K+</div>
-                <div className="text-sm">Gardens Designed</div>
+                <div className="text-sm">{t('stats.gardens_designed')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">50+</div>
-                <div className="text-sm">Cities Served</div>
+                <div className="text-sm">{t('stats.cities_served')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">2</div>
-                <div className="text-sm">Minutes Design Time</div>
+                <div className="text-sm">{t('stats.design_time')}</div>
               </div>
             </div>
             <button 
@@ -121,7 +98,7 @@ export default function FAQ() {
                 }
               }}
             >
-              Start Your Garden Transformation Today
+              {t('cta_button')}
             </button>
           </div>
         </div>

@@ -2,29 +2,14 @@
 
 import { useEffect, useRef } from "react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
+import { useTranslations } from "next-intl";
 
 export default function GardenStyles() {
   const { ref: animationRef, isVisible } = useScrollAnimation();
   const scrollRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations('garden_styles');
 
-  const gardenStyles = [
-    { name: "English Cottage", image: "/imgs/showcases/1.png" },
-    { name: "Modern Minimalist", image: "/imgs/showcases/2.png" },
-    { name: "Mediterranean", image: "/imgs/showcases/3.png" },
-    { name: "Japanese Zen", image: "/imgs/showcases/4.png" },
-    { name: "Tropical Paradise", image: "/imgs/showcases/5.png" },
-    { name: "Desert Oasis", image: "/imgs/showcases/6.png" },
-    { name: "Prairie Wildflower", image: "/imgs/showcases/7.png" },
-    { name: "French Formal", image: "/imgs/showcases/8.png" },
-    { name: "Rustic Country", image: "/imgs/showcases/9.png" },
-    { name: "Contemporary Urban", image: "/imgs/showcases/1.png" },
-    { name: "Woodland Natural", image: "/imgs/showcases/2.png" },
-    { name: "Coastal Garden", image: "/imgs/showcases/3.png" },
-    { name: "Victorian Formal", image: "/imgs/showcases/4.png" },
-    { name: "Rock Garden", image: "/imgs/showcases/5.png" },
-    { name: "Water Garden", image: "/imgs/showcases/6.png" },
-    { name: "Herb Garden", image: "/imgs/showcases/7.png" }
-  ];
+  const gardenStyles = t.raw('styles');
 
   // 复制数组以创建无限滚动效果
   const duplicatedStyles = [...gardenStyles, ...gardenStyles];
@@ -68,10 +53,10 @@ export default function GardenStyles() {
       <div className="container mx-auto px-6 mb-20">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
-            AI Garden Design Styles
+            {t('title')}
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-            Our AI garden design platform offers a wide range of popular landscape styles to transform your outdoor space
+            {t('description')}
           </p>
         </div>
       </div>

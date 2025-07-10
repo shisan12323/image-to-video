@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "title": "AI Garden Design - Transformez votre espace extérieur en minutes",
+    "description": "AI Garden Design est une plateforme intelligente de conception de jardins qui transforme vos espaces extérieurs grâce à l'intelligence artificielle. Téléchargez une photo et obtenez instantanément des conceptions paysagères professionnelles.",
+    "keywords": "conception jardin IA, aménagement paysager, planification jardin, design extérieur, intelligence artificielle"
+  },
+  "user": {
+    "sign_in": "Se connecter",
+    "sign_out": "Se déconnecter",
+    "credits": "Crédits",
+    "api_keys": "Clés API",
+    "my_orders": "Mes commandes",
+    "user_center": "Centre utilisateur",
+    "admin_system": "Administration"
+  },
+  "sign_modal": {
+    "sign_in_title": "Connexion",
+    "sign_in_description": "Connectez-vous à votre compte",
+    "sign_up_title": "Inscription",
+    "sign_up_description": "Créer un compte",
+    "email_title": "Email",
+    "email_placeholder": "Saisissez votre email",
+    "password_title": "Mot de passe",
+    "password_placeholder": "Saisissez votre mot de passe",
+    "forgot_password": "Mot de passe oublié ?",
+    "or": "Ou",
+    "continue": "Continuer",
+    "no_account": "Pas encore de compte ?",
+    "email_sign_in": "Connexion avec email",
+    "google_sign_in": "Connexion avec Google",
+    "github_sign_in": "Connexion avec GitHub",
+    "close_title": "Fermer",
+    "cancel_title": "Annuler"
+  },
+  "hero": {
+    "title": "AI Garden Design",
+    "subtitle": "Solutions paysagères intelligentes",
+    "description": "Téléchargez la photo de votre jardin et laissez notre IA créer des conceptions paysagères professionnelles adaptées à votre espace",
+    "button": "Essayez AI Garden Design gratuitement",
+    "ai_badge": "Généré par IA"
+  },
+  "upload": {
+    "title": "Téléchargement de conception de jardin",
+    "description": "Téléchargez votre photo de jardin et laissez notre IA créer une conception professionnelle",
+    "change": "Cliquez pour changer la photo",
+    "prompt": "Téléchargez votre photo de jardin",
+    "formats": "Formats supportés : JPG, PNG, WEBP, jusqu'à 5 MB",
+    "style_label": "Style de jardin",
+    "style_placeholder": "Choisir un style...",
+    "elements_label": "Éléments spéciaux (Optionnel)",
+    "elements_placeholder": "ex : point d'eau, pergola, foyer...",
+    "generating": "Génération...",
+    "generate_button": "Générer la conception",
+    "result_title": "Votre conception générée par IA",
+    "ai_complete": "Généré par IA",
+    "download": "Télécharger la conception",
+    "placeholder_title": "Votre conception générée par IA",
+    "placeholder_text": "Téléchargez votre photo de jardin et choisissez un style pour voir votre conception générée par IA ici",
+    "error_selection": "Veuillez sélectionner un fichier et un style de jardin"
+  },
+  "garden_styles": {
+    "title": "Styles de jardin populaires",
+    "subtitle": "Choisissez votre style parfait",
+    "description": "Sélectionnez dans notre collection soignée de styles de jardin, chacun conçu pour transformer votre espace extérieur en quelque chose d'extraordinaire.",
+    "styles": {
+      "modern": "Moderne minimaliste",
+      "cottage": "Cottage anglais",
+      "mediterranean": "Méditerranéen",
+      "tropical": "Paradis tropical",
+      "zen": "Jardin zen",
+      "desert": "Paysage désertique"
+    }
+  },
+  "how_it_works": {
+    "title": "Comment ça marche",
+    "subtitle": "Conception de jardin en 3 étapes simples",
+    "description": "Transformez votre espace extérieur avec notre processus de conception de jardin alimenté par l'IA",
+    "steps": {
+      "upload": {
+        "title": "1. Télécharger photo",
+        "description": "Prenez une photo de votre espace extérieur et téléchargez-la sur notre plateforme"
+      },
+      "style": {
+        "title": "2. Choisir le style",
+        "description": "Sélectionnez votre style de jardin préféré dans notre collection soignée"
+      },
+      "generate": {
+        "title": "3. Obtenir la conception",
+        "description": "Notre IA crée une conception de jardin professionnelle adaptée à votre espace"
+      }
+    }
+  },
+  "ai_features": {
+    "title": "Fonctionnalités alimentées par l'IA",
+    "subtitle": "Technologie avancée",
+    "description": "Notre technologie d'IA de pointe garantit que votre conception de jardin est à la fois belle et pratique",
+    "features": {
+      "analysis": {
+        "title": "Analyse de l'espace",
+        "description": "L'IA analyse les dimensions de votre espace, l'éclairage et les caractéristiques existantes"
+      },
+      "plant_selection": {
+        "title": "Sélection intelligente de plantes",
+        "description": "Recommande des plantes qui prospèrent dans votre climat et vos conditions"
+      },
+      "design_optimization": {
+        "title": "Optimisation de la conception",
+        "description": "Crée des aménagements qui maximisent la beauté et la fonctionnalité"
+      },
+      "seasonal_planning": {
+        "title": "Planification saisonnière",
+        "description": "Planifie pour une beauté toute l'année avec des sélections de plantes saisonnières"
+      }
+    }
+  },
+  "transformations": {
+    "title": "Transformations incroyables",
+    "subtitle": "Avant & Après",
+    "description": "Voyez comment notre IA a transformé des espaces extérieurs pour des propriétaires du monde entier",
+    "view_more": "Voir plus d'exemples"
+  },
+  "pricing": {
+    "title": "Tarification simple",
+    "subtitle": "Choisissez votre plan",
+    "description": "Commencez avec une conception gratuite, mettez à niveau à tout moment pour plus de fonctionnalités",
+    "free_trial": "Essai gratuit",
+    "pro_plan": "Plan Pro",
+    "features": "Fonctionnalités",
+    "get_started": "Commencer",
+    "upgrade": "Passer à Pro"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos utilisateurs",
+    "subtitle": "Histoires réelles",
+    "description": "Écoutez les propriétaires qui ont transformé leurs espaces extérieurs avec AI Garden Design"
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "subtitle": "Des questions ?",
+    "description": "Trouvez des réponses aux questions courantes sur AI Garden Design"
+  },
+  "my_orders": {
+    "title": "Mes commandes",
+    "description": "Voir votre historique de commandes",
+    "no_orders": "Aucune commande trouvée",
+    "table": {
+      "order_no": "N° de commande",
+      "email": "Email",
+      "product_name": "Produit",
+      "amount": "Montant",
+      "paid_at": "Payé le"
+    }
+  },
+  "footer": {
+    "brand_description": "AI Garden Design est une plateforme intelligente de conception de jardins qui transforme vos espaces extérieurs grâce à l'intelligence artificielle.",
+    "copyright": "© 2025 • AI Garden Design Tous droits réservés.",
+    "privacy_policy": "Politique de confidentialité",
+    "terms_of_service": "Conditions de service"
+  },
+  "my_images": {
+    "title": "Mes Images",
+    "no_images": "Aucune image générée pour le moment",
+    "download": "Télécharger",
+    "copy": "Copier",
+    "generation_date": "Généré",
+    "theme": "Thème",
+    "elements": "Éléments",
+    "credits_used": "Crédits Utilisés",
+    "status": "Statut"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "try_again": "Réessayer",
+    "success": "Succès !",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "download": "Télécharger",
+    "upload": "Télécharger",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "close": "Fermer"
+  }
+}

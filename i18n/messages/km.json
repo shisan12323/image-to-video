@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "title": "ការរចនាសួនច្បាស់ AI ក្នុងរយៈពេលប៉ុន្មានម៉ោង | AI Garden Design",
+    "description": "AI Garden Design គឺជាវេទិការចនាសួនច្បាស់ដែលផ្លាស់ប្តូរពិភពលោកខាងក្រៅរបស់អ្នកដោយប្រើបញ្ញាសិប្បនិម្មិត។",
+    "keywords": "ការរចនាសួនច្បាស់ AI, ទេសភាព, ការរចនាសួនច្បាស់ស្វ័យប្រវត្តិ, បញ្ញាសិប្បនិម្មិតក្នុងការធ្វើសួនច្បាស់"
+  },
+  "user": {
+    "sign_in": "ចូល",
+    "sign_out": "ចេញ",
+    "credits": "ពិន្ទុ",
+    "api_keys": "គន្លឹះ API",
+    "my_orders": "ការបញ្ជាទិញរបស់ខ្ញុំ",
+    "user_center": "មជ្ឈមណ្ឌលអ្នកប្រើប្រាស់",
+    "admin_system": "ប្រព័ន្ធគ្រប់គ្រង"
+  },
+  "sign_modal": {
+    "sign_in_title": "ចូល",
+    "sign_in_description": "ចូលទៅក្នុងគណនីរបស់អ្នក",
+    "sign_up_title": "ចុះឈ្មោះ",
+    "sign_up_description": "បង្កើតគណនី",
+    "email_title": "អ៊ីមែល",
+    "email_placeholder": "បញ្ចូលអ៊ីមែលរបស់អ្នក",
+    "password_title": "ពាក្យសម្ងាត់",
+    "password_placeholder": "បញ្ចូលពាក្យសម្ងាត់របស់អ្នក",
+    "forgot_password": "ភ្លេចពាក្យសម្ងាត់?",
+    "or": "ឬ",
+    "continue": "បន្ត",
+    "no_account": "មិនទាន់មានគណនី?",
+    "email_sign_in": "ចូលដោយអ៊ីមែល",
+    "google_sign_in": "ចូលដោយ Google",
+    "github_sign_in": "ចូលដោយ GitHub",
+    "close_title": "បិទ",
+    "cancel_title": "បោះបង់"
+  },
+  "my_orders": {
+    "title": "ការបញ្ជាទិញរបស់ខ្ញុំ",
+    "description": "ប្រវត្តិការទិញរបស់អ្នក។",
+    "no_orders": "រកមិនឃើញការបញ្ជាទិញ",
+    "tip": "",
+    "activate_order": "ធ្វើឱ្យការបញ្ជាទិញសកម្ម",
+    "actived": "សកម្មហើយ",
+    "join_discord": "ចូលរួម Discord",
+    "read_docs": "អានឯកសារ",
+    "table": {
+      "order_no": "លេខបញ្ជាទិញ",
+      "email": "អ៊ីមែល",
+      "product_name": "ឈ្មោះផលិតផល",
+      "amount": "ចំនួនទឹកប្រាក់",
+      "paid_at": "បង់ប្រាក់នៅ",
+      "github_username": "ឈ្មោះអ្នកប្រើ GitHub",
+      "status": "ស្ថានភាព"
+    }
+  },
+  "my_credits": {
+    "title": "ពិន្ទុរបស់ខ្ញុំ",
+    "left_tip": "ពិន្ទុនៅសល់: {left_credits}",
+    "no_credits": "មិនមានកំណត់ត្រាពិន្ទុ",
+    "recharge": "បញ្ចូលប្រាក់",
+    "table": {
+      "trans_no": "លេខប្រតិបត្តិការ",
+      "trans_type": "ប្រភេទប្រតិបត្តិការ",
+      "credits": "ពិន្ទុ",
+      "updated_at": "ធ្វើបច្ចុប្បន្នភាពនៅ",
+      "status": "ស្ថានភាព"
+    }
+  },
+  "api_keys": {
+    "title": "គន្លឹះ API",
+    "tip": "សូមរក្សាគន្លឹះ API របស់អ្នកឱ្យមានសុវត្ថិភាពដើម្បីជៀសវាងការលេចធ្លាយ",
+    "no_api_keys": "មិនមានគន្លឹះ API",
+    "create_api_key": "បង្កើតគន្លឹះ API",
+    "table": {
+      "name": "ឈ្មោះ",
+      "key": "គន្លឹះ",
+      "created_at": "បង្កើតនៅ"
+    },
+    "form": {
+      "name": "ឈ្មោះ",
+      "name_placeholder": "ឈ្មោះគន្លឹះ API",
+      "submit": "ដាក់ស្នើ"
+    }
+  },
+  "blog": {
+    "title": "ប្លុក",
+    "description": "ព័ត៌មាន ធនធាន និងការធ្វើបច្ចុប្បន្នភាពអំពី AI Garden Design",
+    "read_more_text": "អានបន្ថែម"
+  },
+  "my_invites": {
+    "title": "ការអញ្ជើញរបស់ខ្ញុំ",
+    "description": "មើលកំណត់ត្រាការអញ្ជើញរបស់អ្នក",
+    "no_invites": "រកមិនឃើញការអញ្ជើញ",
+    "my_invite_link": "តំណភ្ជាប់អញ្ជើញរបស់ខ្ញុំ",
+    "edit_invite_link": "កែសម្រួលតំណភ្ជាប់អញ្ជើញ",
+    "copy_invite_link": "ចម្លងតំណភ្ជាប់អញ្ជើញ",
+    "invite_code": "កូដអញ្ជើញ",
+    "invite_tip": "អញ្ជើញមិត្តភក្តិ 1 នាក់ទិញ AI Garden Design រកបាន $50។",
+    "invite_balance": "សមតុល្យរង្វាន់អញ្ជើញ",
+    "total_invite_count": "ចំនួនអញ្ជើញសរុប",
+    "total_paid_count": "ចំនួនបង់ប្រាក់សរុប",
+    "total_award_amount": "ចំនួនរង្វាន់សរុប",
+    "update_invite_code": "កំណត់កូដអញ្ជើញ",
+    "update_invite_code_tip": "បញ្ចូលកូដអញ្ជើញផ្ទាល់ខ្លួនរបស់អ្នក",
+    "update_invite_button": "រក្សាទុក",
+    "no_orders": "អ្នកត្រូវទិញ AI Garden Design ជាមុនសិនដើម្បីអញ្ជើញមិត្តភក្តិ",
+    "no_affiliates": "អ្នកមិនត្រូវបានអនុញ្ញាតឱ្យអញ្ជើញអ្នកដទៃទេ សូមទាក់ទងមកយើងដើម្បីស្នើសុំការអនុញ្ញាត។",
+    "table": {
+      "invite_time": "ពេលវេលាអញ្ជើញ",
+      "invite_user": "អ្នកប្រើប្រាស់ត្រូវបានអញ្ជើញ",
+      "status": "ស្ថានភាព",
+      "reward_percent": "ភាគរយរង្វាន់",
+      "reward_amount": "ចំនួនរង្វាន់",
+      "pending": "កំពុងរង់ចាំ",
+      "completed": "បានបញ្ចប់"
+    }
+  },
+  "feedback": {
+    "title": "មតិកែលម្អ",
+    "description": "យើងចង់ស្តាប់ពីអ្វីដែលដំណើរការបានល្អ ឬវិធីដែលយើងអាចកែលម្អបទពិសោធន៍ផលិតផល។",
+    "submit": "ដាក់ស្នើ",
+    "loading": "កំពុងដាក់ស្នើ...",
+    "contact_tip": "វិធីផ្សេងទៀតដើម្បីទាក់ទងមកយើង",
+    "rating_tip": "តើអ្នកមានអារម្មណ៍យ៉ាងណាចំពោះ AI Garden Design?",
+    "placeholder": "បន្សល់មតិកែលម្អរបស់អ្នកនៅទីនេះ..."
+  },
+  "my_images": {
+    "title": "រូបភាពរបស់ខ្ញុំ",
+    "no_images": "មិនទាន់មានរូបភាពបង្កើតនៅឡើយ",
+    "download": "ទាញយក",
+    "copy": "ចម្លង",
+    "generation_date": "បង្កើតនៅ",
+    "theme": "ប្រធានបទ",
+    "elements": "ធាតុ",
+    "credits_used": "ពិន្ទុត្រូវបានប្រើ",
+    "status": "ស្ថានភាព"
+  },
+  "hero_title": "AI Garden Design",
+  "hero_subtitle": "ដំណោះស្រាយទេសភាពចប្បាស់",
+  "hero_description": "បញ្ចូលរូបភាពសួនច្បាស់របស់អ្នក ហើយត្រូវឱ្យ AI របស់យើងបង្កើតការរចនាសួនច្បាស់ជំនាញវិជ្ជាសម្រាប់រូបរាងអ្នក",
+  "hero_button": "សាកល្បង AI Garden Design ទំនេរ",
+  "hero_ai_badge": "បង្កើតដោយ AI"
+}

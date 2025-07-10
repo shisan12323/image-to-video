@@ -102,3 +102,17 @@ CREATE TABLE feedbacks (
     content TEXT,
     rating INT
 );
+
+CREATE TABLE image_generations (
+    id SERIAL PRIMARY KEY,
+    uuid VARCHAR(255) UNIQUE NOT NULL,
+    user_uuid VARCHAR(255) NOT NULL,
+    original_image_url TEXT,
+    generated_image_url TEXT NOT NULL,
+    theme VARCHAR(255) NOT NULL,
+    elements TEXT,
+    status VARCHAR(50) NOT NULL DEFAULT 'completed',
+    credits_used INT NOT NULL DEFAULT 1,
+    created_at timestamptz DEFAULT NOW(),
+    updated_at timestamptz DEFAULT NOW()
+);

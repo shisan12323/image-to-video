@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "title": "几小时内构建任何 AI SaaS 创业项目 | ShipAny",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，提供各种模板和组件，帮助您快速启动。",
-    "keywords": "ShipAny, AI SaaS 模板, NextJS 模板"
+    "title": "AI 园林设计 - 几分钟内改造您的户外空间",
+    "description": "AI Garden Design 是一个智能园林设计平台，使用人工智能改造您的户外空间。上传照片即可获得专业的景观设计。",
+    "keywords": "AI 园林设计, 景观设计, 花园规划, 户外设计, 人工智能"
   },
   "user": {
     "sign_in": "登录",
     "sign_out": "退出登录",
-    "credits": "额度",
+    "credits": "积分",
     "api_keys": "API 密钥",
     "my_orders": "我的订单",
     "user_center": "用户中心",
@@ -32,94 +32,269 @@
     "close_title": "关闭",
     "cancel_title": "取消"
   },
+  "hero": {
+    "title": "AI 园林设计",
+    "subtitle": "智能景观解决方案",
+    "description": "上传您的庭院照片，让我们的 AI 为您的空间创建专业的景观设计",
+    "button": "免费试用 AI 园林设计",
+    "ai_badge": "AI 生成"
+  },
+  "upload": {
+    "title": "花园设计上传",
+    "description": "上传您的花园照片，让我们的 AI 创建专业设计",
+    "change": "点击更换照片",
+    "prompt": "上传您的花园照片",
+    "formats": "支持格式：JPG、PNG、WEBP，最大 5MB",
+    "style_label": "花园风格",
+    "style_placeholder": "选择风格...",
+    "elements_label": "特殊元素（可选）",
+    "elements_placeholder": "例如：水景、凉亭、火坑...",
+    "generating": "生成中...",
+    "generate_button": "生成设计",
+    "result_title": "您的 AI 生成设计",
+    "ai_complete": "AI 生成完成",
+    "download": "下载设计图",
+    "placeholder_title": "您的 AI 生成设计",
+    "placeholder_text": "上传花园照片并选择风格后，生成的设计将在此处显示",
+    "error_selection": "请选择文件和花园风格"
+  },
+  "garden_styles": {
+    "title": "AI 园林设计风格",
+    "description": "我们的 AI 园林设计平台提供广泛的流行景观风格，改造您的户外空间",
+    "styles": [
+      { "name": "英式乡村", "image": "/imgs/showcases/1.png" },
+      { "name": "现代简约", "image": "/imgs/showcases/2.png" },
+      { "name": "地中海风格", "image": "/imgs/showcases/3.png" },
+      { "name": "日式禅意", "image": "/imgs/showcases/4.png" },
+      { "name": "热带天堂", "image": "/imgs/showcases/5.png" },
+      { "name": "沙漠绿洲", "image": "/imgs/showcases/6.png" },
+      { "name": "草原野花", "image": "/imgs/showcases/7.png" },
+      { "name": "法式正式", "image": "/imgs/showcases/8.png" },
+      { "name": "乡村风情", "image": "/imgs/showcases/9.png" },
+      { "name": "当代都市", "image": "/imgs/showcases/1.png" },
+      { "name": "林地自然", "image": "/imgs/showcases/2.png" },
+      { "name": "海滨花园", "image": "/imgs/showcases/3.png" },
+      { "name": "维多利亚正式", "image": "/imgs/showcases/4.png" },
+      { "name": "岩石花园", "image": "/imgs/showcases/5.png" },
+      { "name": "水景花园", "image": "/imgs/showcases/6.png" },
+      { "name": "药草花园", "image": "/imgs/showcases/7.png" }
+    ]
+  },
+  "how_it_works": {
+    "title": "工作原理",
+    "subtitle": "3个简单步骤设计花园",
+    "description": "通过我们的 AI 驱动花园设计流程改造您的户外空间",
+    "steps": {
+      "upload": {
+        "title": "1. 上传照片",
+        "description": "拍摄您的户外空间照片并上传到我们的平台"
+      },
+      "style": {
+        "title": "2. 选择风格",
+        "description": "从我们精心策划的收藏中选择您喜欢的花园风格"
+      },
+      "generate": {
+        "title": "3. 获得设计",
+        "description": "我们的 AI 为您的空间创建量身定制的专业花园设计"
+      }
+    }
+  },
+  "ai_features": {
+    "title": "为什么选择 AI 园林设计",
+    "subtitle": "先进 AI 技术",
+    "description": "我们强大的 AI 景观设计平台改变了您规划户外空间的方式",
+    "features": {
+      "analysis": {
+        "title": "智能照片分析",
+        "description": "AI 在几秒钟内分析您的空间尺寸、光照条件和现有元素"
+      },
+      "plant_selection": {
+        "title": "气候智能",
+        "description": "自动匹配适合您确切位置、天气模式和生长条件的植物"
+      },
+      "design_optimization": {
+        "title": "风格适应",
+        "description": "无缝应用任何花园风格，同时保持植物选择对您的空间实用"
+      },
+      "seasonal_planning": {
+        "title": "逼真预览",
+        "description": "生成逼真的 3D 可视化效果，准确查看您的花园外观"
+      }
+    }
+  },
+  "transformations": {
+    "badge": "真实的 AI 改造",
+    "title": "前后对比魔法",
+    "description": "看看我们的 AI 如何在不到 2 分钟内将普通空间转换为非凡花园",
+    "instruction": "拖动滑块进行比较",
+    "cta_title": "准备改造您的空间吗？",
+    "cta_description": "在上方上传您的照片即可开始",
+    "features": [
+      "专业 AI 设计",
+      "2 分钟改造",
+      "详细植物推荐"
+    ],
+    "examples": [
+      {
+        "title": "城市后院",
+        "style": "日式禅意",
+        "description": "杂乱的城市后院变身为宁静的日式禅意花园，配有竹子、石头和精心布置的植物。"
+      },
+      {
+        "title": "郊区花园",
+        "style": "英式乡村",
+        "description": "普通的郊区草坪重新设计为浪漫的英式乡村花园，配有混合花境和迷人小径。"
+      },
+      {
+        "title": "露台空间",
+        "style": "现代简约",
+        "description": "混凝土露台变身为时尚的现代简约花园，线条简洁，植物排列几何化。"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "简单定价",
+    "subtitle": "选择您的计划",
+    "description": "从免费设计开始，随时升级获得更多功能",
+    "free_trial": "免费试用",
+    "pro_plan": "专业版",
+    "features": "功能",
+    "get_started": "开始使用",
+    "upgrade": "升级到专业版"
+  },
+  "testimonials": {
+    "title": "用户对 AI 园林设计的评价",
+    "description": "加入数千名使用我们 AI 技术改造户外空间的满意客户",
+    "reviews": [
+      {
+        "name": "张女士",
+        "location": "北京",
+        "quote": "起初我对 AI 园林设计持怀疑态度，但结果让我非常震惊。我的后院改造超出了所有期望！"
+      },
+      {
+        "name": "李先生",
+        "location": "上海",
+        "quote": "作为景观设计师，我使用 AI Garden Design 进行初始概念设计。它非常准确，为我节省了数小时的规划时间。"
+      },
+      {
+        "name": "王女士",
+        "location": "深圳",
+        "quote": "为我的小露台生成的日式禅意设计非常完美。我严格按照计划执行，现在拥有了梦想中的户外空间。"
+      },
+      {
+        "name": "陈先生",
+        "location": "广州",
+        "quote": "我是房地产开发商 - 我们用这个来装饰房屋。AI 设计帮助买家可视化户外空间的潜力。"
+      },
+      {
+        "name": "刘女士",
+        "location": "成都",
+        "quote": "我不擅长种植物，但 AI 为我的气候推荐了完美的植物。六个月后一切都在茁壮成长！"
+      },
+      {
+        "name": "赵先生",
+        "location": "杭州",
+        "quote": "前后对比的差异令人难以置信。我的邻居们不敢相信这是同一个后院。物超所值！"
+      }
+    ]
+  },
+  "faq": {
+    "title": "AI 园林设计常见问题",
+    "description": "获取关于我们 AI 驱动的园林设计服务最常见问题的答案",
+    "cta_title": "准备体验 AI 园林设计吗？",
+    "cta_description": "加入数千名使用我们智能设计系统改造空间的园艺爱好者",
+    "cta_button": "立即开始您的花园改造",
+    "stats": {
+      "gardens_designed": "花园设计数量",
+      "cities_served": "服务城市",
+      "design_time": "分钟设计时间"
+    },
+    "questions": [
+      {
+        "question": "AI 生成的园林设计有多准确？",
+        "answer": "我们的 AI 园林设计非常准确，会考虑您的具体空间尺寸、光照条件和气候区域。AI 经过数千个专业景观设计的训练，考虑植物兼容性、季节变化和维护要求等因素。90% 以上的用户对设计准确性表示满意。"
+      },
+      {
+        "question": "实施 AI 生成的设计复杂吗？",
+        "answer": "一点也不复杂！每个设计都配有详细的实施指南、本地供应商的植物清单和分步说明。我们提供购物清单、种植时间表和维护技巧。许多设计可以作为周末 DIY 项目实施，而其他复杂功能可能需要专业园艺师。"
+      },
+      {
+        "question": "AI 园林设计与传统景观设计相比如何？",
+        "answer": "AI 园林设计具有几个优势：更快（2 分钟 vs 数周）、更实惠（成本的一小部分）、即时提供多种设计选项。虽然传统设计师提供个人咨询，但我们的 AI 考虑相同的设计原则、植物科学和美学。许多专业景观设计师实际上使用我们的工具进行初始概念设计。"
+      },
+      {
+        "question": "什么样的照片最适合 AI 园林设计？",
+        "answer": "为了获得最佳效果，请上传在日光下拍摄的清晰、光线充足的照片。包括您想要重新设计的整个空间，从良好的有利位置拍摄。多个角度有帮助，但一张全面的照片就足够了。AI 可以处理任何智能手机或相机拍摄的照片 - 无需特殊设备。"
+      },
+      {
+        "question": "AI 园林设计服务包括什么？",
+        "answer": "每个设计包括：逼真的可视化、详细的植物清单及本地可用性、季节性护理指南、实施时间表、成本估算和维护计划。高级计划还包括多种设计变体、3D 渲染和与景观专业人士的直接咨询。"
+      },
+      {
+        "question": "我可以自定义 AI 生成的设计吗？",
+        "answer": "当然可以！AI 设计作为您可以自定义的专业起点。您可以指定颜色方案、植物类型、维护水平和预算约束等偏好。我们的系统会从您的反馈中学习，创建越来越个性化的设计，匹配您的风格和需求。"
+      }
+    ]
+  },
+  "footer": {
+    "brand_description": "AI Garden Design 是一个智能园林设计平台，使用人工智能改造您的户外空间。",
+    "copyright": "© 2025 • AI Garden Design 保留所有权利。",
+    "privacy_policy": "隐私政策",
+    "terms_of_service": "服务条款"
+  },
+  "my_credits": {
+    "title": "我的积分",
+    "left_tip": "剩余积分：{left_credits}",
+    "no_credits": "暂无积分记录",
+    "recharge": "充值",
+    "table": {
+      "trans_no": "交易号",
+      "trans_type": "类型",
+      "credits": "积分",
+      "updated_at": "更新时间"
+    }
+  },
   "my_orders": {
     "title": "我的订单",
-    "description": "您的购买记录。",
-    "no_orders": "未找到订单",
-    "tip": "",
-    "activate_order": "激活订单",
-    "actived": "已激活",
-    "join_discord": "加入 Discord",
-    "read_docs": "阅读文档",
+    "description": "查看您的订单历史",
+    "no_orders": "暂无订单记录",
     "table": {
       "order_no": "订单号",
       "email": "邮箱",
       "product_name": "产品名称",
       "amount": "金额",
-      "paid_at": "支付时间",
-      "github_username": "GitHub 用户名",
-      "status": "状态"
+      "paid_at": "支付时间"
     }
   },
-  "my_credits": {
-    "title": "我的积分",
-    "left_tip": "剩余积分: {left_credits}",
-    "no_credits": "没有积分记录",
-    "recharge": "充值",
-    "table": {
-      "trans_no": "交易号",
-      "trans_type": "交易类型",
-      "credits": "积分",
-      "updated_at": "更新时间",
-      "status": "状态"
-    }
+  "my_images": {
+    "title": "我的图片",
+    "no_images": "暂无生成的图片",
+    "download": "下载",
+    "copy": "复制",
+    "generation_date": "生成时间",
+    "theme": "主题",
+    "elements": "元素",
+    "credits_used": "消耗积分",
+    "status": "状态"
   },
-  "api_keys": {
-    "title": "API 密钥",
-    "tip": "请妥善保管您的 API 密钥，避免泄露",
-    "no_api_keys": "没有 API 密钥",
-    "create_api_key": "创建 API 密钥",
-    "table": {
-      "name": "名称",
-      "key": "密钥",
-      "created_at": "创建时间"
-    },
-    "form": {
-      "name": "名称",
-      "name_placeholder": "API 密钥名称",
-      "submit": "提交"
-    }
-  },
-  "blog": {
-    "title": "博客",
-    "description": "关于 ShipAny 的新闻、资源和更新",
-    "read_more_text": "阅读更多"
-  },
-  "my_invites": {
-    "title": "我的邀请",
-    "description": "查看您的邀请记录",
-    "no_invites": "未找到邀请记录",
-    "my_invite_link": "我的邀请链接",
-    "edit_invite_link": "编辑邀请链接",
-    "copy_invite_link": "复制邀请链接",
-    "invite_code": "邀请码",
-    "invite_tip": "每邀请 1 位朋友购买 ShipAny，奖励 $50。",
-    "invite_balance": "邀请奖励余额",
-    "total_invite_count": "总邀请人数",
-    "total_paid_count": "已充值人数",
-    "total_award_amount": "总奖励金额",
-    "update_invite_code": "设置邀请码",
-    "update_invite_code_tip": "输入你的自定义邀请码",
-    "update_invite_button": "保存",
-    "no_orders": "你需要先购买过 ShipAny 才能邀请朋友",
-    "no_affiliates": "你暂无邀请朋友的权限，请联系我们申请开通。",
-    "table": {
-      "invite_time": "邀请时间",
-      "invite_user": "邀请用户",
-      "status": "状态",
-      "reward_percent": "奖励比例",
-      "reward_amount": "奖励金额",
-      "pending": "已注册，未支付",
-      "completed": "已支付"
-    }
-  },
-  "feedback": {
-    "title": "反馈",
-    "description": "我们很乐意听取您对产品的看法或如何改进产品体验。",
-    "submit": "提交",
-    "loading": "提交中...",
-    "contact_tip": "其他联系方式",
-    "rating_tip": "您对 ShipAny 的看法如何？",
-    "placeholder": "在这里留下您的反馈..."
+  "common": {
+    "loading": "加载中...",
+    "error": "出现错误",
+    "try_again": "重试",
+    "success": "成功！",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "view": "查看",
+    "download": "下载",
+    "upload": "上传",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "next": "下一页",
+    "previous": "上一页",
+    "close": "关闭"
   }
 }

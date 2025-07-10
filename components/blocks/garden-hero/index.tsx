@@ -2,8 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
+import { useTranslations } from "next-intl";
 
 export default function GardenHero() {
+  const t = useTranslations();
   const { ref, isVisible } = useScrollAnimation();
   return (
     <section 
@@ -25,18 +27,18 @@ export default function GardenHero() {
             {/* Main Title with gradient */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-teal-400 via-cyan-500 to-emerald-500 bg-clip-text text-transparent">
-                AI Garden Design
+                {t("hero.title")}
               </span>
             </h1>
             
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-slate-600 mb-6 font-bold">
-              Smart landscape solutions
+              {t("hero.subtitle")}
             </p>
             
             {/* Description */}
             <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Upload your yard photo and let our AI create professional landscape designs tailored to your space
+              {t("hero.description")}
             </p>
             
             {/* CTA Button */}
@@ -53,7 +55,7 @@ export default function GardenHero() {
                 }
               }}
             >
-              Try AI Garden Design for free
+              {t("hero.button")}
             </Button>
           </div>
           
@@ -74,7 +76,7 @@ export default function GardenHero() {
                 }}
               >
                 <div className="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></div>
-                AI Generated
+                {t("hero.ai_badge")}
               </div>
               
               {/* Decorative elements */}

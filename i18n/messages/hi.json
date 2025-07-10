@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "title": "घंटों में AI गार्डन डिज़ाइन बनाएं | AI Garden Design",
+    "description": "AI Garden Design एक स्मार्ट गार्डन डिज़ाइन प्लेटफॉर्म है जो कृत्रिम बुद्धिमत्ता का उपयोग करके आपके बाहरी स्थानों को बदल देता है।",
+    "keywords": "AI गार्डन डिज़ाइन, लैंडस्केप, स्वचालित गार्डन डिज़ाइन, कृत्रिम बुद्धिमत्ता बागवानी"
+  },
+  "user": {
+    "sign_in": "साइन इन",
+    "sign_out": "साइन आउट",
+    "credits": "क्रेडिट",
+    "api_keys": "API कीज़",
+    "my_orders": "मेरे ऑर्डर",
+    "user_center": "उपयोगकर्ता केंद्र",
+    "admin_system": "प्रशासन सिस्टम"
+  },
+  "sign_modal": {
+    "sign_in_title": "साइन इन",
+    "sign_in_description": "अपने खाते में साइन इन करें",
+    "sign_up_title": "साइन अप",
+    "sign_up_description": "खाता बनाएं",
+    "email_title": "ईमेल",
+    "email_placeholder": "अपना ईमेल दर्ज करें",
+    "password_title": "पासवर्ड",
+    "password_placeholder": "अपना पासवर्ड दर्ज करें",
+    "forgot_password": "पासवर्ड भूल गए?",
+    "or": "या",
+    "continue": "जारी रखें",
+    "no_account": "खाता नहीं है?",
+    "email_sign_in": "ईमेल से साइन इन करें",
+    "google_sign_in": "Google से साइन इन करें",
+    "github_sign_in": "GitHub से साइन इन करें",
+    "close_title": "बंद करें",
+    "cancel_title": "रद्द करें"
+  },
+  "my_orders": {
+    "title": "मेरे ऑर्डर",
+    "description": "आपका खरीदारी इतिहास।",
+    "no_orders": "कोई ऑर्डर नहीं मिला",
+    "tip": "",
+    "activate_order": "ऑर्डर सक्रिय करें",
+    "actived": "सक्रिय",
+    "join_discord": "Discord में शामिल हों",
+    "read_docs": "दस्तावेज़ पढ़ें",
+    "table": {
+      "order_no": "ऑर्डर नंबर",
+      "email": "ईमेल",
+      "product_name": "उत्पाद नाम",
+      "amount": "राशि",
+      "paid_at": "भुगतान दिनांक",
+      "github_username": "GitHub उपयोगकर्ता नाम",
+      "status": "स्थिति"
+    }
+  },
+  "my_credits": {
+    "title": "मेरे क्रेडिट",
+    "left_tip": "बचे हुए क्रेडिट: {left_credits}",
+    "no_credits": "कोई क्रेडिट रिकॉर्ड नहीं",
+    "recharge": "रीचार्ज",
+    "table": {
+      "trans_no": "लेन-देन संख्या",
+      "trans_type": "लेन-देन प्रकार",
+      "credits": "क्रेडिट",
+      "updated_at": "अपडेट किया गया",
+      "status": "स्थिति"
+    }
+  },
+  "api_keys": {
+    "title": "API कीज़",
+    "tip": "कृपया अपनी API कीज़ को सुरक्षित रखें ताकि लीक न हों",
+    "no_api_keys": "कोई API कीज़ नहीं",
+    "create_api_key": "API की बनाएं",
+    "table": {
+      "name": "नाम",
+      "key": "की",
+      "created_at": "बनाया गया"
+    },
+    "form": {
+      "name": "नाम",
+      "name_placeholder": "API की नाम",
+      "submit": "सबमिट करें"
+    }
+  },
+  "blog": {
+    "title": "ब्लॉग",
+    "description": "AI Garden Design के बारे में समाचार, संसाधन और अपडेट",
+    "read_more_text": "और पढ़ें"
+  },
+  "my_invites": {
+    "title": "मेरे निमंत्रण",
+    "description": "अपने निमंत्रण रिकॉर्ड देखें",
+    "no_invites": "कोई निमंत्रण नहीं मिला",
+    "my_invite_link": "मेरा निमंत्रण लिंक",
+    "edit_invite_link": "निमंत्रण लिंक संपादित करें",
+    "copy_invite_link": "निमंत्रण लिंक कॉपी करें",
+    "invite_code": "निमंत्रण कोड",
+    "invite_tip": "1 मित्र को AI Garden Design खरीदने के लिए आमंत्रित करें, ₹4000 कमाएं।",
+    "invite_balance": "निमंत्रण पुरस्कार शेष",
+    "total_invite_count": "कुल निमंत्रण संख्या",
+    "total_paid_count": "कुल भुगतान संख्या",
+    "total_award_amount": "कुल पुरस्कार राशि",
+    "update_invite_code": "निमंत्रण कोड सेट करें",
+    "update_invite_code_tip": "अपना कस्टम निमंत्रण कोड दर्ज करें",
+    "update_invite_button": "सेव करें",
+    "no_orders": "मित्रों को आमंत्रित करने से पहले आपको AI Garden Design खरीदना होगा",
+    "no_affiliates": "आपको दूसरों को आमंत्रित करने की अनुमति नहीं है, कृपया अनुमति के लिए हमसे संपर्क करें।",
+    "table": {
+      "invite_time": "निमंत्रण समय",
+      "invite_user": "आमंत्रित उपयोगकर्ता",
+      "status": "स्थिति",
+      "reward_percent": "पुरस्कार प्रतिशत",
+      "reward_amount": "पुरस्कार राशि",
+      "pending": "लंबित",
+      "completed": "पूर्ण"
+    }
+  },
+  "feedback": {
+    "title": "फीडबैक",
+    "description": "हम सुनना चाहते हैं कि क्या अच्छा हुआ या हम उत्पाद अनुभव को कैसे बेहतर बना सकते हैं।",
+    "submit": "सबमिट करें",
+    "loading": "सबमिट कर रहे हैं...",
+    "contact_tip": "हमसे संपर्क करने के अन्य तरीके",
+    "rating_tip": "AI Garden Design के बारे में आपका क्या विचार है?",
+    "placeholder": "यहाँ अपनी प्रतिक्रिया छोड़ें..."
+  },
+  "my_images": {
+    "title": "मेरी छवियां",
+    "no_images": "अभी तक कोई छवि जेनरेट नहीं हुई",
+    "download": "डाउनलोड करें",
+    "copy": "कॉपी करें",
+    "generation_date": "जेनरेट किया गया",
+    "theme": "थीम",
+    "elements": "तत्व",
+    "credits_used": "उपयोग किए गए क्रेडिट",
+    "status": "स्थिति"
+  },
+  "hero_title": "AI Garden Design",
+  "hero_subtitle": "स्मार्ट लैंडस्केप समाधान",
+  "hero_description": "अपने यार्ड की फ़ोटो अपलोड करें और हमारे AI को आपकी जगह के अनुकूल पेशेवर लैंडस्केप डिज़ाइन बनाने दें",
+  "hero_button": "AI Garden Design मुफ़्त में आज़माएं",
+  "hero_ai_badge": "AI जनरेटेड"
+}

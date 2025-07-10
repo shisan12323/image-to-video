@@ -2,24 +2,26 @@
 
 import { Upload, Palette, Sparkles } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
+import { useTranslations } from "next-intl";
 
 export default function HowItWorks() {
   const { ref, isVisible } = useScrollAnimation();
+  const t = useTranslations('how_it_works');
   const steps = [
     {
       icon: Upload,
-      title: "Upload Your Photo",
-      description: "Simply upload a photo of your garden space. Our AI works with any outdoor area - from small patios to large backyards."
+      title: t('steps.upload.title'),
+      description: t('steps.upload.description')
     },
     {
       icon: Palette,
-      title: "Select Design Style",
-      description: "Choose from 20+ professionally curated garden styles, from Japanese Zen to Modern Minimalist. Each style is tailored to different preferences."
+      title: t('steps.style.title'),
+      description: t('steps.style.description')
     },
     {
       icon: Sparkles,
-      title: "AI Generates Designs",
-      description: "Our advanced AI analyzes your space and creates multiple design options in under 2 minutes. Get photorealistic visualizations instantly."
+      title: t('steps.generate.title'),
+      description: t('steps.generate.description')
     }
   ];
 
@@ -33,10 +35,10 @@ export default function HowItWorks() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-            How AI Garden Design Works
+            {t('title')}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Transform your outdoor space in three simple steps with our intelligent design system
+            {t('description')}
           </p>
         </div>
         

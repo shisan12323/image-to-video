@@ -28,6 +28,12 @@ export default async function ({ children }: { children: ReactNode }) {
           icon: "RiBankCardLine",
           is_active: false,
         },
+        {
+          title: t("my_images.title"),
+          url: "/my-images",
+          icon: "RiImageLine",
+          is_active: false,
+        },
       ],
     },
   };

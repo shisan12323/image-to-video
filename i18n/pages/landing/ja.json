@@ -1,0 +1,63 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "AI Garden Design",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Garden Design"
+      },
+      "url": "/ja"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "機能",
+          "url": "/#feature",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "料金",
+          "url": "/pricing",
+          "icon": "MdPayment"
+        }
+      ]
+    },
+    "buttons": [],
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "AI Garden Design",
+      "description": "AI Garden Designは人工知能を使用してあなたの屋外スペースを変革するインテリジェントな庭園デザインプラットフォームです。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Garden Design"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • AI Garden Design 全著作権所有。",
+    "nav": {
+      "items": []
+    },
+    "social": {
+      "items": []
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "プライバシーポリシー",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "利用規約",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

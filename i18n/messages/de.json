@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "title": "KI-Gartendesign in Stunden erstellen | AI Garden Design",
+    "description": "AI Garden Design ist eine intelligente Gartendesign-Plattform, die Ihre Außenbereiche mit künstlicher Intelligenz transformiert.",
+    "keywords": "KI Gartendesign, Landschaftsgestaltung, automatisches Gartendesign, künstliche Intelligenz Gartenbau"
+  },
+  "user": {
+    "sign_in": "Anmelden",
+    "sign_out": "Abmelden",
+    "credits": "Guthaben",
+    "api_keys": "API-Schlüssel",
+    "my_orders": "Meine Bestellungen",
+    "user_center": "Benutzerzentrum",
+    "admin_system": "Verwaltung"
+  },
+  "sign_modal": {
+    "sign_in_title": "Anmelden",
+    "sign_in_description": "Bei Ihrem Konto anmelden",
+    "sign_up_title": "Registrieren",
+    "sign_up_description": "Konto erstellen",
+    "email_title": "E-Mail",
+    "email_placeholder": "Geben Sie Ihre E-Mail ein",
+    "password_title": "Passwort",
+    "password_placeholder": "Geben Sie Ihr Passwort ein",
+    "forgot_password": "Passwort vergessen?",
+    "or": "Oder",
+    "continue": "Weiter",
+    "no_account": "Noch kein Konto?",
+    "email_sign_in": "Mit E-Mail anmelden",
+    "google_sign_in": "Mit Google anmelden",
+    "github_sign_in": "Mit GitHub anmelden",
+    "close_title": "Schließen",
+    "cancel_title": "Abbrechen"
+  },
+  "my_orders": {
+    "title": "Meine Bestellungen",
+    "description": "Ihr Kaufverlauf.",
+    "no_orders": "Keine Bestellungen gefunden",
+    "tip": "",
+    "activate_order": "Bestellung aktivieren",
+    "actived": "Aktiviert",
+    "join_discord": "Discord beitreten",
+    "read_docs": "Dokumentation lesen",
+    "table": {
+      "order_no": "Bestellnr.",
+      "email": "E-Mail",
+      "product_name": "Produktname",
+      "amount": "Betrag",
+      "paid_at": "Bezahlt am",
+      "github_username": "GitHub-Benutzername",
+      "status": "Status"
+    }
+  },
+  "my_credits": {
+    "title": "Mein Guthaben",
+    "left_tip": "Verbleibendes Guthaben: {left_credits}",
+    "no_credits": "Keine Guthaben-Aufzeichnungen",
+    "recharge": "Aufladen",
+    "table": {
+      "trans_no": "Transaktionsnr.",
+      "trans_type": "Transaktionstyp",
+      "credits": "Guthaben",
+      "updated_at": "Aktualisiert am",
+      "status": "Status"
+    }
+  },
+  "api_keys": {
+    "title": "API-Schlüssel",
+    "tip": "Bitte bewahren Sie Ihre API-Schlüssel sicher auf, um Lecks zu vermeiden",
+    "no_api_keys": "Keine API-Schlüssel",
+    "create_api_key": "API-Schlüssel erstellen",
+    "table": {
+      "name": "Name",
+      "key": "Schlüssel",
+      "created_at": "Erstellt am"
+    },
+    "form": {
+      "name": "Name",
+      "name_placeholder": "API-Schlüssel Name",
+      "submit": "Absenden"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Neuigkeiten, Ressourcen und Updates über AI Garden Design",
+    "read_more_text": "Mehr lesen"
+  },
+  "my_invites": {
+    "title": "Meine Einladungen",
+    "description": "Ihre Einladungsaufzeichnungen anzeigen",
+    "no_invites": "Keine Einladungen gefunden",
+    "my_invite_link": "Mein Einladungslink",
+    "edit_invite_link": "Einladungslink bearbeiten",
+    "copy_invite_link": "Einladungslink kopieren",
+    "invite_code": "Einladungscode",
+    "invite_tip": "Laden Sie 1 Freund ein, AI Garden Design zu kaufen, verdienen Sie 50€.",
+    "invite_balance": "Einladungsbelohnungs-Guthaben",
+    "total_invite_count": "Gesamtanzahl Einladungen",
+    "total_paid_count": "Gesamtanzahl bezahlt",
+    "total_award_amount": "Gesamtbelohnungsbetrag",
+    "update_invite_code": "Einladungscode festlegen",
+    "update_invite_code_tip": "Geben Sie Ihren benutzerdefinierten Einladungscode ein",
+    "update_invite_button": "Speichern",
+    "no_orders": "Sie müssen zuerst AI Garden Design kaufen, um Freunde einzuladen",
+    "no_affiliates": "Sie sind nicht berechtigt, andere einzuladen, bitte kontaktieren Sie uns für eine Genehmigung.",
+    "table": {
+      "invite_time": "Einladungszeit",
+      "invite_user": "Eingeladener Benutzer",
+      "status": "Status",
+      "reward_percent": "Belohnungsprozent",
+      "reward_amount": "Belohnungsbetrag",
+      "pending": "Ausstehend",
+      "completed": "Abgeschlossen"
+    }
+  },
+  "feedback": {
+    "title": "Feedback",
+    "description": "Wir würden gerne hören, was gut gelaufen ist oder wie wir die Produkterfahrung verbessern können.",
+    "submit": "Absenden",
+    "loading": "Wird gesendet...",
+    "contact_tip": "Andere Wege, uns zu kontaktieren",
+    "rating_tip": "Wie finden Sie AI Garden Design?",
+    "placeholder": "Hinterlassen Sie hier Ihr Feedback..."
+  },
+  "my_images": {
+    "title": "Meine Bilder",
+    "no_images": "Noch keine generierten Bilder",
+    "download": "Herunterladen",
+    "copy": "Kopieren",
+    "generation_date": "Generiert",
+    "theme": "Thema",
+    "elements": "Elemente",
+    "credits_used": "Verwendete Guthaben",
+    "status": "Status"
+  },
+  "hero_title": "AI Garden Design",
+  "hero_subtitle": "Intelligente Landschaftslösungen",
+  "hero_description": "Laden Sie Ihr Gartenfoto hoch und lassen Sie unsere KI professionelle Landschaftsdesigns für Ihren Raum erstellen",
+  "hero_button": "AI Garden Design kostenlos testen",
+  "hero_ai_badge": "KI-generiert"
+}

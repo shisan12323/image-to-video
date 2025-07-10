@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "title": "数時間でAI庭園デザインを構築 | AI Garden Design",
+    "description": "AI Garden Designは人工知能を使用してあなたの屋外スペースを変革するインテリジェントな庭園デザインプラットフォームです。",
+    "keywords": "AI庭園デザイン, 造園, 自動庭園デザイン, 人工知能ガーデニング"
+  },
+  "user": {
+    "sign_in": "ログイン",
+    "sign_out": "ログアウト",
+    "credits": "クレジット",
+    "api_keys": "APIキー",
+    "my_orders": "注文履歴",
+    "user_center": "ユーザーセンター",
+    "admin_system": "管理システム"
+  },
+  "sign_modal": {
+    "sign_in_title": "ログイン",
+    "sign_in_description": "アカウントにログインする",
+    "sign_up_title": "新規登録",
+    "sign_up_description": "アカウントを作成する",
+    "email_title": "メールアドレス",
+    "email_placeholder": "メールアドレスを入力してください",
+    "password_title": "パスワード",
+    "password_placeholder": "パスワードを入力してください",
+    "forgot_password": "パスワードをお忘れですか？",
+    "or": "または",
+    "continue": "続行",
+    "no_account": "アカウントをお持ちではありませんか？",
+    "email_sign_in": "メールでログイン",
+    "google_sign_in": "Googleでログイン",
+    "github_sign_in": "GitHubでログイン",
+    "close_title": "閉じる",
+    "cancel_title": "キャンセル"
+  },
+  "my_orders": {
+    "title": "注文履歴",
+    "description": "購入履歴です。",
+    "no_orders": "注文が見つかりません",
+    "tip": "",
+    "activate_order": "注文を有効化",
+    "actived": "有効化済み",
+    "join_discord": "Discordに参加",
+    "read_docs": "ドキュメントを読む",
+    "table": {
+      "order_no": "注文番号",
+      "email": "メール",
+      "product_name": "商品名",
+      "amount": "金額",
+      "paid_at": "支払日時",
+      "github_username": "GitHubユーザー名",
+      "status": "ステータス"
+    }
+  },
+  "my_credits": {
+    "title": "マイクレジット",
+    "left_tip": "残りクレジット: {left_credits}",
+    "no_credits": "クレジット記録がありません",
+    "recharge": "チャージ",
+    "table": {
+      "trans_no": "取引番号",
+      "trans_type": "取引タイプ",
+      "credits": "クレジット",
+      "updated_at": "更新日時",
+      "status": "ステータス"
+    }
+  },
+  "api_keys": {
+    "title": "APIキー",
+    "tip": "APIキーは安全に保管し、漏洩を防いでください",
+    "no_api_keys": "APIキーがありません",
+    "create_api_key": "APIキーを作成",
+    "table": {
+      "name": "名前",
+      "key": "キー",
+      "created_at": "作成日時"
+    },
+    "form": {
+      "name": "名前",
+      "name_placeholder": "APIキー名",
+      "submit": "送信"
+    }
+  },
+  "blog": {
+    "title": "ブログ",
+    "description": "AI Garden Designに関するニュース、リソース、更新情報",
+    "read_more_text": "続きを読む"
+  },
+  "my_invites": {
+    "title": "招待履歴",
+    "description": "招待記録を表示",
+    "no_invites": "招待記録が見つかりません",
+    "my_invite_link": "招待リンク",
+    "edit_invite_link": "招待リンクを編集",
+    "copy_invite_link": "招待リンクをコピー",
+    "invite_code": "招待コード",
+    "invite_tip": "友達1人をAI Garden Designの購入に招待して、50€を獲得しましょう。",
+    "invite_balance": "招待報酬残高",
+    "total_invite_count": "総招待数",
+    "total_paid_count": "総支払済み数",
+    "total_award_amount": "総報酬額",
+    "update_invite_code": "招待コードを設定",
+    "update_invite_code_tip": "カスタム招待コードを入力してください",
+    "update_invite_button": "保存",
+    "no_orders": "友達を招待する前に、まずAI Garden Designを購入する必要があります",
+    "no_affiliates": "他の人を招待する権限がありません。許可を申請するためにお問い合わせください。",
+    "table": {
+      "invite_time": "招待時間",
+      "invite_user": "招待ユーザー",
+      "status": "ステータス",
+      "reward_percent": "報酬パーセント",
+      "reward_amount": "報酬額",
+      "pending": "保留中",
+      "completed": "完了"
+    }
+  },
+  "feedback": {
+    "title": "フィードバック",
+    "description": "うまくいったことや、製品体験の改善方法についてお聞かせください。",
+    "submit": "送信",
+    "loading": "送信中...",
+    "contact_tip": "その他のお問い合わせ方法",
+    "rating_tip": "AI Garden Designについてどう思いますか？",
+    "placeholder": "こちらにご意見をお書きください..."
+  },
+  "my_images": {
+    "title": "マイ画像",
+    "no_images": "まだ生成された画像がありません",
+    "download": "ダウンロード",
+    "copy": "コピー",
+    "generation_date": "生成日時",
+    "theme": "テーマ",
+    "elements": "要素",
+    "credits_used": "使用クレジット",
+    "status": "ステータス"
+  },
+  "hero_title": "AI 庭園デザイン",
+  "hero_subtitle": "スマートな造園ソリューション",
+  "hero_description": "あなたの庭の写真をアップロードし、AIがあなたのスペースに合わせたプロフェッショナルな造園デザインを作成します",
+  "hero_button": "AI 庭園デザインを無料で試す",
+  "hero_ai_badge": "AI生成"
+}

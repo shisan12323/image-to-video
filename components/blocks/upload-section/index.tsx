@@ -9,8 +9,10 @@ import { useState } from "react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { toast } from "sonner";
 import downloadPhoto from "@/utils/downloadPhoto";
+import { useTranslations } from "next-intl";
 
 export default function UploadSection() {
+  const t = useTranslations();
   const { ref, isVisible } = useScrollAnimation();
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [selectedStyle, setSelectedStyle] = useState<string>("");
@@ -36,7 +38,7 @@ export default function UploadSection() {
 
   const handleGenerateDesign = async () => {
     if (!selectedFile || !selectedStyle) {
-      toast.error("Please select a file and garden style");
+      toast.error(t("upload.error_selection"));
       return;
     }
 
@@ -137,10 +139,10 @@ export default function UploadSection() {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                Garden Design Upload
+                {t("upload.title")}
               </h2>
               <p className="text-lg text-slate-600 mb-8">
-                Upload your garden photo and let our AI create a professional design
+                {t("upload.description")}
               </p>
             </div>
             
@@ -160,15 +162,15 @@ export default function UploadSection() {
                       <ImageIcon className="w-12 h-12 mx-auto text-emerald-500" />
                       <div>
                         <p className="text-lg font-semibold text-emerald-600">{selectedFile.name}</p>
-                        <p className="text-sm text-slate-500">Click to change photo</p>
+                        <p className="text-sm text-slate-500">{t("upload.change")}</p>
                       </div>
                     </div>
                   ) : (
                     <div className="space-y-3">
                       <Upload className="w-12 h-12 mx-auto text-slate-400 group-hover:text-emerald-500 transition-colors" />
                       <div>
-                        <p className="text-lg font-semibold text-slate-700">Upload your garden photo</p>
-                        <p className="text-sm text-slate-500">Supported: JPG, PNG, WEBP, up to 5MB</p>
+                        <p className="text-lg font-semibold text-slate-700">{t("upload.prompt")}</p>
+                        <p className="text-sm text-slate-500">{t("upload.formats")}</p>
                       </div>
                     </div>
                   )}
@@ -180,11 +182,11 @@ export default function UploadSection() {
             <div className="space-y-6">
               <div>
                 <label className="block text-sm font-semibold text-slate-700 mb-2">
-                  Garden Style
+                  {t("upload.style_label")}
                 </label>
                 <Select value={selectedStyle} onValueChange={setSelectedStyle}>
                   <SelectTrigger className="w-full h-12 bg-white border-slate-300 text-slate-900 rounded-lg">
-                    <SelectValue placeholder="Choose style..." />
+                    <SelectValue placeholder={t("upload.style_placeholder")} />
                   </SelectTrigger>
                   <SelectContent className="bg-white border-slate-200">
                     {gardenStyles.map((style) => (
@@ -202,12 +204,12 @@ export default function UploadSection() {
               
               <div>
                 <label className="block text-sm font-semibold text-slate-700 mb-2">
-                  Special Elements (Optional)
+                  {t("upload.elements_label")}
                 </label>
                 <Input 
                   value={specialElements}
                   onChange={(e) => setSpecialElements(e.target.value)}
-                  placeholder="e.g., water feature, pergola, fire pit..."
+                  placeholder={t("upload.elements_placeholder")}
                   className="h-12 bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 rounded-lg"
                 />
               </div>
@@ -223,12 +225,12 @@ export default function UploadSection() {
                 {isGenerating ? (
                   <>
                     <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                    Generating...
+                    {t("upload.generating")}
                   </>
                 ) : (
                   <>
                     <Sparkles className="w-4 h-4 mr-2" />
-                    Generate Design
+                    {t("upload.generate_button")}
                   </>
                 )}
               </Button>
@@ -241,7 +243,7 @@ export default function UploadSection() {
             {generatedImage ? (
               /* Generated Design Display */
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-slate-800 mb-4">您的AI生成设计</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">{t("upload.result_title")}</h3>
                 <div className="relative">
                   <img 
                     src={generatedImage} 
@@ -255,7 +257,7 @@ export default function UploadSection() {
                     }}
                   >
                     <div className="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></div>
-                    AI 生成完成
+                    {t("upload.ai_complete")}
                   </div>
                 </div>
                 <Button
@@ -263,7 +265,7 @@ export default function UploadSection() {
                   className="w-full h-12 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <ImageIcon className="w-4 h-4 mr-2" />
-                  下载设计图
+                  {t("upload.download")}
                 </Button>
               </div>
             ) : (
@@ -274,9 +276,9 @@ export default function UploadSection() {
                     <ImageIcon className="w-8 h-8 text-slate-500" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-700 mb-2">您的AI生成设计</h3>
+                    <h3 className="text-lg font-semibold text-slate-700 mb-2">{t("upload.placeholder_title")}</h3>
                     <p className="text-sm text-slate-500 max-w-xs">
-                      上传花园图片并选择风格后，生成的设计将在此处显示
+                      {t("upload.placeholder_text")}
                     </p>
                   </div>
                 </div>

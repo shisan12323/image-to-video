@@ -10,32 +10,34 @@ import {
   MapPin
 } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
+import { useTranslations } from "next-intl";
 
 export default function AIFeatures() {
   const { ref, isVisible } = useScrollAnimation();
+  const t = useTranslations('ai_features');
   const features = [
     {
       icon: Camera,
-      title: "Smart Photo Analysis",
-      description: "AI analyzes your space dimensions, lighting conditions, and existing elements in seconds",
+      title: t('features.analysis.title'),
+      description: t('features.analysis.description'),
       gradient: "from-blue-500 to-cyan-500"
     },
     {
       icon: Brain,
-      title: "Climate Intelligence", 
-      description: "Automatically matches plants to your exact location, weather patterns, and growing conditions",
+      title: t('features.plant_selection.title'), 
+      description: t('features.plant_selection.description'),
       gradient: "from-emerald-500 to-teal-500"
     },
     {
       icon: Palette,
-      title: "Style Adaptation",
-      description: "Seamlessly applies any garden style while keeping plant choices practical for your space",
+      title: t('features.design_optimization.title'),
+      description: t('features.design_optimization.description'),
       gradient: "from-purple-500 to-pink-500"
     },
     {
       icon: Eye,
-      title: "Realistic Previews",
-      description: "Generate photorealistic 3D visualizations to see exactly how your garden will look",
+      title: t('features.seasonal_planning.title'),
+      description: t('features.seasonal_planning.description'),
       gradient: "from-orange-500 to-red-500"
     },
     {
@@ -69,13 +71,13 @@ export default function AIFeatures() {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-6 py-2 rounded-full font-semibold mb-6">
             <Brain className="w-4 h-4" />
-            Advanced AI Technology
+            {t('subtitle')}
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-            Why Choose AI Garden Design
+            {t('title')}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Our powerful AI landscape design platform transforms how you plan outdoor spaces
+            {t('description')}
           </p>
         </div>
         

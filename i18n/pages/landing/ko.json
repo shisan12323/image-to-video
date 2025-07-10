@@ -1,0 +1,63 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "AI Garden Design",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Garden Design"
+      },
+      "url": "/ko"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "기능",
+          "url": "/#feature",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "가격",
+          "url": "/pricing",
+          "icon": "MdPayment"
+        }
+      ]
+    },
+    "buttons": [],
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "AI Garden Design",
+      "description": "AI Garden Design은 인공지능을 활용하여 야외 공간을 변화시키는 지능형 정원 디자인 플랫폼입니다.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Garden Design"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • AI Garden Design 모든 권리 보유.",
+    "nav": {
+      "items": []
+    },
+    "social": {
+      "items": []
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "개인정보 보호정책",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "서비스 약관",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

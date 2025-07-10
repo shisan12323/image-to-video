@@ -1,5 +1,5 @@
 import Pricing from "@/components/blocks/pricing";
-import { pricingData } from "@/data/pricing";
+import { pricingData as enPricingData } from "@/data/pricing";
 
 export async function generateMetadata({
   params,
@@ -20,6 +20,17 @@ export default async function PricingPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+
+  let pricingData;
+  try {
+    if (locale === "zh" || locale === "zh-CN") {
+      pricingData = (await import("@/data/pricing.zh")).pricingData;
+    } else {
+      pricingData = enPricingData;
+    }
+  } catch (e) {
+    pricingData = enPricingData;
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/30 via-white to-slate-50">

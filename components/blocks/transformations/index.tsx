@@ -3,32 +3,16 @@
 import { Sparkles, MousePointer2 } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { BeforeAfterSlider } from "@/components/ui/before-after-slider";
+import { useTranslations } from "next-intl";
 
 export default function Transformations() {
   const { ref, isVisible } = useScrollAnimation();
-  const transformations = [
-    {
-      title: "Urban Backyard",
-      style: "Japanese Zen",
-      before: "/imgs/features/1.png",
-      after: "/imgs/showcases/1.png",
-      description: "A cluttered urban backyard transformed into a peaceful Japanese zen garden with bamboo, stones, and carefully placed plants."
-    },
-    {
-      title: "Suburban Garden", 
-      style: "English Cottage",
-      before: "/imgs/features/2.png",
-      after: "/imgs/showcases/2.png", 
-      description: "A plain suburban lawn redesigned as a romantic English cottage garden with mixed flower borders and charming pathways."
-    },
-    {
-      title: "Patio Space",
-      style: "Modern Minimalist", 
-      before: "/imgs/features/3.png",
-      after: "/imgs/showcases/3.png",
-      description: "A concrete patio transformed into a sleek modern minimalist garden with clean lines and geometric plant arrangements."
-    }
-  ];
+  const t = useTranslations('transformations');
+  const transformations = t.raw('examples').map((example: any, index: number) => ({
+    ...example,
+    before: `/imgs/features/${index + 1}.png`,
+    after: `/imgs/showcases/${index + 1}.png`
+  }));
 
   return (
     <section 
@@ -41,17 +25,17 @@ export default function Transformations() {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-6 py-2 rounded-full font-semibold mb-6">
             <Sparkles className="w-4 h-4" />
-            Real AI Transformations
+            {t('badge')}
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-            Before & After Magic
+            {t('title')}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-4">
-            See how our AI transforms ordinary spaces into extraordinary gardens in under 2 minutes
+            {t('description')}
           </p>
           <div className="inline-flex items-center gap-2 text-slate-500 text-sm">
             <MousePointer2 className="w-4 h-4" />
-            Drag the slider to compare
+            {t('instruction')}
           </div>
         </div>
         
@@ -87,18 +71,12 @@ export default function Transformations() {
                   
                   {/* Features List */}
                   <div className="space-y-3">
-                    <div className="flex items-center gap-3 text-slate-700">
-                      <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                      <span className="text-sm font-medium">Professional AI Design</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-slate-700">
-                      <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                      <span className="text-sm font-medium">2-minute transformation</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-slate-700">
-                      <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                      <span className="text-sm font-medium">Detailed plant recommendations</span>
-                    </div>
+                    {t.raw('features').map((feature: string, featureIndex: number) => (
+                      <div key={featureIndex} className="flex items-center gap-3 text-slate-700">
+                        <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                        <span className="text-sm font-medium">{feature}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
@@ -118,11 +96,11 @@ export default function Transformations() {
         {/* Call to action */}
         <div className="text-center mt-20">
           <p className="text-2xl font-bold text-slate-900 mb-6">
-            Ready to transform your space?
+            {t('cta_title')}
           </p>
           <div className="inline-flex items-center gap-2 text-emerald-600 font-semibold text-lg">
             <Sparkles className="w-5 h-5" />
-            Upload your photo above to get started
+            {t('cta_description')}
             <Sparkles className="w-5 h-5" />
           </div>
         </div>

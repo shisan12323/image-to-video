@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Ship Any AI SaaS Startups in hours | ShipAny",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups, Ship Fast with a variety of templates and components.",
-    "keywords": "ShipAny, AI SaaS Boilerplate, NextJS Boilerplate"
+    "title": "AI Garden Design - Transform Your Outdoor Space in Minutes",
+    "description": "AI Garden Design is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence. Upload a photo and get professional landscape designs instantly.",
+    "keywords": "AI garden design, landscape design, garden planning, outdoor design, artificial intelligence"
   },
   "user": {
     "sign_in": "Sign In",
@@ -32,94 +32,269 @@
     "close_title": "Close",
     "cancel_title": "Cancel"
   },
-  "my_orders": {
-    "title": "My Orders",
-    "description": "Your purchase history.",
-    "no_orders": "No orders found",
-    "tip": "",
-    "activate_order": "Activate Order",
-    "actived": "Activated",
-    "join_discord": "Join Discord",
-    "read_docs": "Read Docs",
-    "table": {
-      "order_no": "Order No",
-      "email": "Email",
-      "product_name": "Product Name",
-      "amount": "Amount",
-      "paid_at": "Paid At",
-      "github_username": "GitHub Username",
-      "status": "Status"
+  "hero": {
+    "title": "AI Garden Design",
+    "subtitle": "Smart landscape solutions",
+    "description": "Upload your yard photo and let our AI create professional landscape designs tailored to your space",
+    "button": "Try AI Garden Design for free",
+    "ai_badge": "AI Generated"
+  },
+  "upload": {
+    "title": "Garden Design Upload",
+    "description": "Upload your garden photo and let our AI create a professional design",
+    "change": "Click to change photo",
+    "prompt": "Upload your garden photo",
+    "formats": "Supported: JPG, PNG, WEBP, up to 5MB",
+    "style_label": "Garden Style",
+    "style_placeholder": "Choose style...",
+    "elements_label": "Special Elements (Optional)",
+    "elements_placeholder": "e.g., water feature, pergola, fire pit...",
+    "generating": "Generating...",
+    "generate_button": "Generate Design",
+    "result_title": "Your AI Generated Design",
+    "ai_complete": "AI Generated",
+    "download": "Download Design",
+    "placeholder_title": "Your AI Generated Design",
+    "placeholder_text": "Upload your garden photo and choose a style to see your AI-generated design here",
+    "error_selection": "Please select a file and garden style"
+  },
+  "garden_styles": {
+    "title": "AI Garden Design Styles",
+    "description": "Our AI garden design platform offers a wide range of popular landscape styles to transform your outdoor space",
+    "styles": [
+      { "name": "English Cottage", "image": "/imgs/showcases/1.png" },
+      { "name": "Modern Minimalist", "image": "/imgs/showcases/2.png" },
+      { "name": "Mediterranean", "image": "/imgs/showcases/3.png" },
+      { "name": "Japanese Zen", "image": "/imgs/showcases/4.png" },
+      { "name": "Tropical Paradise", "image": "/imgs/showcases/5.png" },
+      { "name": "Desert Oasis", "image": "/imgs/showcases/6.png" },
+      { "name": "Prairie Wildflower", "image": "/imgs/showcases/7.png" },
+      { "name": "French Formal", "image": "/imgs/showcases/8.png" },
+      { "name": "Rustic Country", "image": "/imgs/showcases/9.png" },
+      { "name": "Contemporary Urban", "image": "/imgs/showcases/1.png" },
+      { "name": "Woodland Natural", "image": "/imgs/showcases/2.png" },
+      { "name": "Coastal Garden", "image": "/imgs/showcases/3.png" },
+      { "name": "Victorian Formal", "image": "/imgs/showcases/4.png" },
+      { "name": "Rock Garden", "image": "/imgs/showcases/5.png" },
+      { "name": "Water Garden", "image": "/imgs/showcases/6.png" },
+      { "name": "Herb Garden", "image": "/imgs/showcases/7.png" }
+    ]
+  },
+  "how_it_works": {
+    "title": "How It Works",
+    "subtitle": "Garden Design in 3 Simple Steps",
+    "description": "Transform your outdoor space with our AI-powered garden design process",
+    "steps": {
+      "upload": {
+        "title": "1. Upload Photo",
+        "description": "Take a photo of your outdoor space and upload it to our platform"
+      },
+      "style": {
+        "title": "2. Choose Style",
+        "description": "Select your preferred garden style from our curated collection"
+      },
+      "generate": {
+        "title": "3. Get Design",
+        "description": "Our AI creates a professional garden design tailored to your space"
+      }
     }
+  },
+  "ai_features": {
+    "title": "Why Choose AI Garden Design",
+    "subtitle": "Advanced AI Technology",
+    "description": "Our powerful AI landscape design platform transforms how you plan outdoor spaces",
+    "features": {
+      "analysis": {
+        "title": "Smart Photo Analysis",
+        "description": "AI analyzes your space dimensions, lighting conditions, and existing elements in seconds"
+      },
+      "plant_selection": {
+        "title": "Climate Intelligence",
+        "description": "Automatically matches plants to your exact location, weather patterns, and growing conditions"
+      },
+      "design_optimization": {
+        "title": "Style Adaptation",
+        "description": "Seamlessly applies any garden style while keeping plant choices practical for your space"
+      },
+      "seasonal_planning": {
+        "title": "Realistic Previews",
+        "description": "Generate photorealistic 3D visualizations to see exactly how your garden will look"
+      }
+    }
+  },
+  "transformations": {
+    "badge": "Real AI Transformations",
+    "title": "Before & After Magic",
+    "description": "See how our AI transforms ordinary spaces into extraordinary gardens in under 2 minutes",
+    "instruction": "Drag the slider to compare",
+    "cta_title": "Ready to transform your space?",
+    "cta_description": "Upload your photo above to get started",
+    "features": [
+      "Professional AI Design",
+      "2-minute transformation", 
+      "Detailed plant recommendations"
+    ],
+    "examples": [
+      {
+        "title": "Urban Backyard",
+        "style": "Japanese Zen",
+        "description": "A cluttered urban backyard transformed into a peaceful Japanese zen garden with bamboo, stones, and carefully placed plants."
+      },
+      {
+        "title": "Suburban Garden",
+        "style": "English Cottage", 
+        "description": "A plain suburban lawn redesigned as a romantic English cottage garden with mixed flower borders and charming pathways."
+      },
+      {
+        "title": "Patio Space",
+        "style": "Modern Minimalist",
+        "description": "A concrete patio transformed into a sleek modern minimalist garden with clean lines and geometric plant arrangements."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple Pricing",
+    "subtitle": "Choose Your Plan",
+    "description": "Start with a free design, upgrade anytime for more features",
+    "free_trial": "Free Trial",
+    "pro_plan": "Pro Plan",
+    "features": "Features",
+    "get_started": "Get Started",
+    "upgrade": "Upgrade to Pro"
+  },
+  "testimonials": {
+    "title": "What Users Say About AI Garden Design",
+    "description": "Join thousands of satisfied customers who've transformed their outdoor spaces with our AI technology",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "location": "San Francisco, CA",
+        "quote": "I was skeptical about AI garden design at first, but I'm absolutely blown away by the results. My backyard transformation exceeded all expectations!"
+      },
+      {
+        "name": "Michael R.",
+        "location": "Austin, TX",
+        "quote": "As a landscape designer, I use AI Garden Design for initial concepts. It's incredibly accurate and saves me hours of planning time."
+      },
+      {
+        "name": "Lisa K.",
+        "location": "Seattle, WA",
+        "quote": "The Japanese Zen design generated for my small patio was perfect. I followed the plan exactly and now have my dream outdoor space."
+      },
+      {
+        "name": "David L.",
+        "location": "Miami, FL",
+        "quote": "Property developer here - we use this for staging homes. The AI designs help buyers visualize the potential of outdoor spaces."
+      },
+      {
+        "name": "Emma J.",
+        "location": "Portland, OR",
+        "quote": "I'm not good with plants, but the AI recommended the perfect ones for my climate. Everything is thriving six months later!"
+      },
+      {
+        "name": "James T.",
+        "location": "Denver, CO",
+        "quote": "The before and after difference is incredible. My neighbors can't believe it's the same backyard. Worth every penny!"
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ About AI Garden Design",
+    "description": "Get answers to the most common questions about our AI-powered garden design service",
+    "cta_title": "Ready to Experience AI Garden Design?",
+    "cta_description": "Join thousands of gardeners who've transformed their spaces with our intelligent design system",
+    "cta_button": "Start Your Garden Transformation Today",
+    "stats": {
+      "gardens_designed": "Gardens Designed",
+      "cities_served": "Cities Served",
+      "design_time": "Minutes Design Time"
+    },
+    "questions": [
+      {
+        "question": "How accurate are the AI-generated garden designs?",
+        "answer": "Our AI garden designs are highly accurate, taking into account your specific space dimensions, lighting conditions, and climate zone. The AI has been trained on thousands of professional landscape designs and considers factors like plant compatibility, seasonal changes, and maintenance requirements. Most users report 90%+ satisfaction with the design accuracy."
+      },
+      {
+        "question": "Is it complicated to implement the AI-generated designs?",
+        "answer": "Not at all! Each design comes with detailed implementation guides, plant lists with local suppliers, and step-by-step instructions. We provide shopping lists, planting schedules, and maintenance tips. Many designs can be implemented as weekend DIY projects, while others may require professional landscaping for complex features."
+      },
+      {
+        "question": "How does AI garden design compare to traditional landscape design?",
+        "answer": "AI garden design offers several advantages: it's faster (2 minutes vs weeks), more affordable (fraction of the cost), and provides multiple design options instantly. While traditional designers offer personal consultation, our AI considers the same principles of design, plant science, and aesthetics. Many professional landscapers actually use our tool for initial concepts."
+      },
+      {
+        "question": "What kind of photos work best for AI garden design?",
+        "answer": "For best results, upload clear, well-lit photos taken during daylight hours. Include the entire space you want to redesign, taken from a good vantage point. Multiple angles help, but one comprehensive photo is sufficient. The AI works with photos from any smartphone or camera - no special equipment needed."
+      },
+      {
+        "question": "What's included in the AI garden design service?",
+        "answer": "Each design includes: photorealistic visualizations, detailed plant lists with local availability, seasonal care guides, implementation timelines, cost estimates, and maintenance schedules. Premium plans also include multiple design variations, 3D renderings, and direct consultation with landscape professionals."
+      },
+      {
+        "question": "Can I customize the AI-generated designs?",
+        "answer": "Absolutely! The AI designs serve as professional starting points that you can customize. You can specify preferences like color schemes, plant types, maintenance levels, and budget constraints. Our system learns from your feedback to create increasingly personalized designs that match your style and needs."
+      }
+    ]
+  },
+  "footer": {
+    "brand_description": "AI Garden Design is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence.",
+    "copyright": "© 2025 • AI Garden Design All rights reserved.",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
   },
   "my_credits": {
     "title": "My Credits",
-    "left_tip": "left credits: {left_credits}",
-    "no_credits": "No credits records",
+    "left_tip": "Remaining Credits: {left_credits}",
+    "no_credits": "No credit records",
     "recharge": "Recharge",
     "table": {
-      "trans_no": "Trans No",
-      "trans_type": "Trans Type",
+      "trans_no": "Transaction No",
+      "trans_type": "Type",
       "credits": "Credits",
-      "updated_at": "Updated At",
-      "status": "Status"
+      "updated_at": "Updated At"
     }
   },
-  "api_keys": {
-    "title": "API Keys",
-    "tip": "Please keep your apikey safe to avoid leaks",
-    "no_api_keys": "No API Keys",
-    "create_api_key": "Create API Key",
+  "my_orders": {
+    "title": "My Orders",
+    "description": "View your order history",
+    "no_orders": "No orders found",
     "table": {
-      "name": "Name",
-      "key": "Key",
-      "created_at": "Created At"
-    },
-    "form": {
-      "name": "Name",
-      "name_placeholder": "API Key Name",
-      "submit": "Submit"
+      "order_no": "Order No",
+      "email": "Email",
+      "product_name": "Product",
+      "amount": "Amount",
+      "paid_at": "Paid At"
     }
   },
-  "blog": {
-    "title": "Blog",
-    "description": "News, resources, and updates about ShipAny",
-    "read_more_text": "Read More"
+  "my_images": {
+    "title": "My Images",
+    "no_images": "No generated images yet",
+    "download": "Download",
+    "copy": "Copy",
+    "generation_date": "Generated",
+    "theme": "Theme",
+    "elements": "Elements",
+    "credits_used": "Credits Used",
+    "status": "Status"
   },
-  "my_invites": {
-    "title": "My Invites",
-    "description": "View your invite records",
-    "no_invites": "No invite records found",
-    "my_invite_link": "My Invite Link",
-    "edit_invite_link": "Edit Invite Link",
-    "copy_invite_link": "Copy Invite Link",
-    "invite_code": "Invite Code",
-    "invite_tip": "Invite 1 friend to buy ShipAny, reward $50.",
-    "invite_balance": "Invite Reward Balance",
-    "total_invite_count": "Total Invite Count",
-    "total_paid_count": "Total Paid Count",
-    "total_award_amount": "Total Award Amount",
-    "update_invite_code": "Set Invite Code",
-    "update_invite_code_tip": "Input your custom invite code",
-    "update_invite_button": "Save",
-    "no_orders": "You can't invite others before you bought ShipAny",
-    "no_affiliates": "You're not allowed to invite others, please contact us to apply for permission.",
-    "table": {
-      "invite_time": "Invite Time",
-      "invite_user": "Invite User",
-      "status": "Status",
-      "reward_percent": "Reward Percent",
-      "reward_amount": "Reward Amount",
-      "pending": "Pending",
-      "completed": "Completed"
-    }
-  },
-  "feedback": {
-    "title": "Feedback",
-    "description": "We'd love to hear what went well or how we can improve the product experience.",
-    "submit": "Submit",
-    "loading": "Submitting...",
-    "contact_tip": "Other ways to contact us",
-    "rating_tip": "How do you feel about ShipAny?",
-    "placeholder": "Leave your words here..."
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "try_again": "Try Again",
+    "success": "Success!",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close"
   }
 }

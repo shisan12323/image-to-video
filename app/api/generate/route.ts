@@ -3,6 +3,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { getUserUuid } from "@/services/user";
 import { getUserCredits, decreaseCredits, CreditsTransType, CreditsAmount } from "@/services/credit";
 import { respErr } from "@/lib/resp";
+import { insertImageGeneration, ImageGenerationStatus } from "@/models/image-generation";
+import { getUuid } from "@/lib/hash";
+import { newStorage } from "@/lib/storage";
 
 // Rate limiting - simple in-memory counter
 const DAILY_LIMIT = 10;
@@ -104,7 +107,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Generate prompt based on style and elements for garden design
-    const prompt = `Transform this garden/outdoor space into ${theme} style. Keep the main landscape structure and layout, but redesign it with ${theme} garden aesthetics. ${elements ? `Incorporate these special elements: ${elements}.` : ''} Make it look natural, harmonious and realistic. Focus on plants, hardscape features, lighting, water elements, and garden structures that match the ${theme} garden style. The result should be photorealistic and professionally landscaped with proper plant placement, seasonal considerations, and garden design principles.`;
+    const prompt = `IMPORTANT: Use this exact image as the base and ONLY change the garden style while preserving the original layout, structure, and perspective. Transform this garden/outdoor space to ${theme} style. KEEP: the same camera angle, building positions, pathways, basic layout, and overall composition. CHANGE ONLY: plants, flowers, garden features to match ${theme} style. ${elements ? `Add these elements: ${elements}. ` : ''}The result must look like the same space but with ${theme} garden design. Maintain photorealistic quality and ensure the transformation respects the existing architecture and landscape structure.`;
 
     const contents = [
       { text: prompt },
@@ -115,7 +118,15 @@ export async function POST(req: NextRequest) {
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash-preview-image-generation",
       contents,
-      config: { responseModalities: [Modality.TEXT, Modality.IMAGE] },
+      config: { 
+        responseModalities: [Modality.TEXT, Modality.IMAGE],
+        // Add generation config for better control
+        generationConfig: {
+          temperature: 0.3, // Lower temperature for more consistent results
+          topP: 0.8,
+          topK: 20,
+        }
+      },
     });
 
     // Extract generated image
@@ -140,10 +151,34 @@ export async function POST(req: NextRequest) {
     const generatedImageData = imagePart.inlineData.data;
     const generatedImageMimeType = imagePart.inlineData.mimeType;
 
-    // Return the generated image as base64 data URL
-    const imageDataUrl = `data:${generatedImageMimeType};base64,${generatedImageData}`;
+    // Upload generated image to R2 storage
+    const storage = newStorage();
+    const imageBuffer = Buffer.from(generatedImageData, 'base64');
+    const imageKey = `garden-designs/${user_uuid}/${getUuid()}.png`;
+    
+    const uploadResult = await storage.uploadFile({
+      body: imageBuffer,
+      key: imageKey,
+      contentType: generatedImageMimeType,
+    });
 
-    // Deduct credits only after successful generation
+    // Save image generation record to database
+    const imageGeneration = {
+      uuid: getUuid(),
+      user_uuid,
+      original_image_url: imageUrl.startsWith("data:") ? undefined : imageUrl,
+      generated_image_url: uploadResult.url,
+      theme,
+      elements,
+      status: ImageGenerationStatus.Completed,
+      credits_used: CreditsAmount.GenerateCost,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    };
+
+    await insertImageGeneration(imageGeneration);
+
+    // Deduct credits only after successful generation and saving record
     await decreaseCredits({
       user_uuid,
       trans_type: CreditsTransType.Generate,
@@ -152,7 +187,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      image: imageDataUrl,
+      image: uploadResult.url,
+      generation_id: imageGeneration.uuid,
     });
 
   } catch (error) {

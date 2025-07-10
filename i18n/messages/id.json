@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "title": "Desain Taman AI dalam Jam | AI Garden Design",
+    "description": "AI Garden Design adalah platform desain taman cerdas yang mengubah ruang luar Anda menggunakan kecerdasan buatan.",
+    "keywords": "desain taman AI, lansekap, desain taman otomatis, kecerdasan buatan berkebun"
+  },
+  "user": {
+    "sign_in": "Masuk",
+    "sign_out": "Keluar",
+    "credits": "Kredit",
+    "api_keys": "Kunci API",
+    "my_orders": "Pesanan Saya",
+    "user_center": "Pusat Pengguna",
+    "admin_system": "Sistem Admin"
+  },
+  "sign_modal": {
+    "sign_in_title": "Masuk",
+    "sign_in_description": "Masuk ke akun Anda",
+    "sign_up_title": "Daftar",
+    "sign_up_description": "Buat akun",
+    "email_title": "Email",
+    "email_placeholder": "Masukkan email Anda",
+    "password_title": "Kata Sandi",
+    "password_placeholder": "Masukkan kata sandi Anda",
+    "forgot_password": "Lupa kata sandi?",
+    "or": "Atau",
+    "continue": "Lanjutkan",
+    "no_account": "Belum punya akun?",
+    "email_sign_in": "Masuk dengan email",
+    "google_sign_in": "Masuk dengan Google",
+    "github_sign_in": "Masuk dengan GitHub",
+    "close_title": "Tutup",
+    "cancel_title": "Batal"
+  },
+  "my_orders": {
+    "title": "Pesanan Saya",
+    "description": "Riwayat pembelian Anda.",
+    "no_orders": "Tidak ada pesanan ditemukan",
+    "tip": "",
+    "activate_order": "Aktifkan Pesanan",
+    "actived": "Diaktifkan",
+    "join_discord": "Bergabung dengan Discord",
+    "read_docs": "Baca Dokumentasi",
+    "table": {
+      "order_no": "No. Pesanan",
+      "email": "Email",
+      "product_name": "Nama Produk",
+      "amount": "Jumlah",
+      "paid_at": "Dibayar Pada",
+      "github_username": "Username GitHub",
+      "status": "Status"
+    }
+  },
+  "my_credits": {
+    "title": "Kredit Saya",
+    "left_tip": "Kredit tersisa: {left_credits}",
+    "no_credits": "Tidak ada catatan kredit",
+    "recharge": "Isi Ulang",
+    "table": {
+      "trans_no": "No. Transaksi",
+      "trans_type": "Jenis Transaksi",
+      "credits": "Kredit",
+      "updated_at": "Diperbarui Pada",
+      "status": "Status"
+    }
+  },
+  "api_keys": {
+    "title": "Kunci API",
+    "tip": "Harap simpan kunci API Anda dengan aman untuk menghindari kebocoran",
+    "no_api_keys": "Tidak ada Kunci API",
+    "create_api_key": "Buat Kunci API",
+    "table": {
+      "name": "Nama",
+      "key": "Kunci",
+      "created_at": "Dibuat Pada"
+    },
+    "form": {
+      "name": "Nama",
+      "name_placeholder": "Nama Kunci API",
+      "submit": "Kirim"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Berita, sumber daya, dan pembaruan tentang AI Garden Design",
+    "read_more_text": "Baca Selengkapnya"
+  },
+  "my_invites": {
+    "title": "Undangan Saya",
+    "description": "Lihat catatan undangan Anda",
+    "no_invites": "Tidak ada undangan ditemukan",
+    "my_invite_link": "Link Undangan Saya",
+    "edit_invite_link": "Edit Link Undangan",
+    "copy_invite_link": "Salin Link Undangan",
+    "invite_code": "Kode Undangan",
+    "invite_tip": "Undang 1 teman untuk membeli AI Garden Design, dapatkan Rp750.000.",
+    "invite_balance": "Saldo Hadiah Undangan",
+    "total_invite_count": "Total Undangan",
+    "total_paid_count": "Total Dibayar",
+    "total_award_amount": "Total Jumlah Hadiah",
+    "update_invite_code": "Atur Kode Undangan",
+    "update_invite_code_tip": "Masukkan kode undangan kustom Anda",
+    "update_invite_button": "Simpan",
+    "no_orders": "Anda perlu membeli AI Garden Design terlebih dahulu untuk mengundang teman",
+    "no_affiliates": "Anda tidak diizinkan mengundang orang lain, silakan hubungi kami untuk mengajukan izin.",
+    "table": {
+      "invite_time": "Waktu Undangan",
+      "invite_user": "Pengguna yang Diundang",
+      "status": "Status",
+      "reward_percent": "Persentase Hadiah",
+      "reward_amount": "Jumlah Hadiah",
+      "pending": "Menunggu",
+      "completed": "Selesai"
+    }
+  },
+  "feedback": {
+    "title": "Umpan Balik",
+    "description": "Kami ingin mendengar apa yang berjalan dengan baik atau bagaimana kami dapat meningkatkan pengalaman produk.",
+    "submit": "Kirim",
+    "loading": "Mengirim...",
+    "contact_tip": "Cara lain untuk menghubungi kami",
+    "rating_tip": "Bagaimana perasaan Anda tentang AI Garden Design?",
+    "placeholder": "Tinggalkan umpan balik Anda di sini..."
+  },
+  "my_images": {
+    "title": "Gambar Saya",
+    "no_images": "Belum ada gambar yang dihasilkan",
+    "download": "Unduh",
+    "copy": "Salin",
+    "generation_date": "Dihasilkan",
+    "theme": "Tema",
+    "elements": "Elemen",
+    "credits_used": "Kredit Digunakan",
+    "status": "Status"
+  },
+  "hero_title": "AI Garden Design",
+  "hero_subtitle": "Solusi lanskap cerdas",
+  "hero_description": "Unggah foto halaman Anda dan biarkan AI kami membuat desain lanskap profesional yang disesuaikan dengan ruang Anda",
+  "hero_button": "Coba AI Garden Design gratis",
+  "hero_ai_badge": "Dibuat AI"
+}

@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "title": "Thiết kế vườn AI trong vài giờ | AI Garden Design",
+    "description": "AI Garden Design là nền tảng thiết kế vườn thông minh biến đổi không gian ngoài trời của bạn bằng trí tuệ nhân tạo.",
+    "keywords": "thiết kế vườn AI, cảnh quan, thiết kế vườn tự động, trí tuệ nhân tạo làm vườn"
+  },
+  "user": {
+    "sign_in": "Đăng nhập",
+    "sign_out": "Đăng xuất",
+    "credits": "Tín dụng",
+    "api_keys": "Khóa API",
+    "my_orders": "Đơn hàng của tôi",
+    "user_center": "Trung tâm người dùng",
+    "admin_system": "Hệ thống quản trị"
+  },
+  "sign_modal": {
+    "sign_in_title": "Đăng nhập",
+    "sign_in_description": "Đăng nhập vào tài khoản của bạn",
+    "sign_up_title": "Đăng ký",
+    "sign_up_description": "Tạo tài khoản",
+    "email_title": "Email",
+    "email_placeholder": "Nhập email của bạn",
+    "password_title": "Mật khẩu",
+    "password_placeholder": "Nhập mật khẩu của bạn",
+    "forgot_password": "Quên mật khẩu?",
+    "or": "Hoặc",
+    "continue": "Tiếp tục",
+    "no_account": "Chưa có tài khoản?",
+    "email_sign_in": "Đăng nhập bằng email",
+    "google_sign_in": "Đăng nhập bằng Google",
+    "github_sign_in": "Đăng nhập bằng GitHub",
+    "close_title": "Đóng",
+    "cancel_title": "Hủy"
+  },
+  "my_orders": {
+    "title": "Đơn hàng của tôi",
+    "description": "Lịch sử mua hàng của bạn.",
+    "no_orders": "Không tìm thấy đơn hàng",
+    "tip": "",
+    "activate_order": "Kích hoạt đơn hàng",
+    "actived": "Đã kích hoạt",
+    "join_discord": "Tham gia Discord",
+    "read_docs": "Đọc tài liệu",
+    "table": {
+      "order_no": "Số đơn hàng",
+      "email": "Email",
+      "product_name": "Tên sản phẩm",
+      "amount": "Số tiền",
+      "paid_at": "Thanh toán lúc",
+      "github_username": "Tên người dùng GitHub",
+      "status": "Trạng thái"
+    }
+  },
+  "my_credits": {
+    "title": "Tín dụng của tôi",
+    "left_tip": "Tín dụng còn lại: {left_credits}",
+    "no_credits": "Không có bản ghi tín dụng",
+    "recharge": "Nạp tiền",
+    "table": {
+      "trans_no": "Số giao dịch",
+      "trans_type": "Loại giao dịch",
+      "credits": "Tín dụng",
+      "updated_at": "Cập nhật lúc",
+      "status": "Trạng thái"
+    }
+  },
+  "api_keys": {
+    "title": "Khóa API",
+    "tip": "Vui lòng giữ khóa API của bạn an toàn để tránh rò rỉ",
+    "no_api_keys": "Không có khóa API",
+    "create_api_key": "Tạo khóa API",
+    "table": {
+      "name": "Tên",
+      "key": "Khóa",
+      "created_at": "Tạo lúc"
+    },
+    "form": {
+      "name": "Tên",
+      "name_placeholder": "Tên khóa API",
+      "submit": "Gửi"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Tin tức, tài nguyên và cập nhật về AI Garden Design",
+    "read_more_text": "Đọc thêm"
+  },
+  "my_invites": {
+    "title": "Lời mời của tôi",
+    "description": "Xem bản ghi lời mời của bạn",
+    "no_invites": "Không tìm thấy lời mời",
+    "my_invite_link": "Liên kết mời của tôi",
+    "edit_invite_link": "Chỉnh sửa liên kết mời",
+    "copy_invite_link": "Sao chép liên kết mời",
+    "invite_code": "Mã mời",
+    "invite_tip": "Mời 1 bạn mua AI Garden Design, kiếm 1.200.000 VND.",
+    "invite_balance": "Số dư phần thưởng mời",
+    "total_invite_count": "Tổng số lời mời",
+    "total_paid_count": "Tổng số đã thanh toán",
+    "total_award_amount": "Tổng số tiền thưởng",
+    "update_invite_code": "Đặt mã mời",
+    "update_invite_code_tip": "Nhập mã mời tùy chỉnh của bạn",
+    "update_invite_button": "Lưu",
+    "no_orders": "Bạn cần mua AI Garden Design trước để mời bạn bè",
+    "no_affiliates": "Bạn không được phép mời người khác, vui lòng liên hệ với chúng tôi để xin phép.",
+    "table": {
+      "invite_time": "Thời gian mời",
+      "invite_user": "Người dùng được mời",
+      "status": "Trạng thái",
+      "reward_percent": "Phần trăm phần thưởng",
+      "reward_amount": "Số tiền phần thưởng",
+      "pending": "Đang chờ",
+      "completed": "Hoàn thành"
+    }
+  },
+  "feedback": {
+    "title": "Phản hồi",
+    "description": "Chúng tôi muốn nghe những gì diễn ra tốt đẹp hoặc cách chúng tôi có thể cải thiện trải nghiệm sản phẩm.",
+    "submit": "Gửi",
+    "loading": "Đang gửi...",
+    "contact_tip": "Các cách khác để liên hệ với chúng tôi",
+    "rating_tip": "Bạn cảm thấy thế nào về AI Garden Design?",
+    "placeholder": "Để lại phản hồi của bạn ở đây..."
+  },
+  "my_images": {
+    "title": "Hình Ảnh Của Tôi",
+    "no_images": "Chưa có hình ảnh nào được tạo ra",
+    "download": "Tải xuống",
+    "copy": "Sao chép",
+    "generation_date": "Ngày tạo",
+    "theme": "Chủ đề",
+    "elements": "Yếu tố",
+    "credits_used": "Tín dụng đã sử dụng",
+    "status": "Trạng thái"
+  },
+  "hero_title": "AI Garden Design",
+  "hero_subtitle": "Giải pháp cảnh quan thông minh",
+  "hero_description": "Tải lên hình ảnh sân vườn của bạn và để AI của chúng tôi tạo ra thiết kế cảnh quan chuyên nghiệp phù hợp với không gian của bạn",
+  "hero_button": "Thử AI Garden Design miễn phí",
+  "hero_ai_badge": "Tạo bởi AI"
+}

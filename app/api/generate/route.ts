@@ -118,14 +118,12 @@ export async function POST(req: NextRequest) {
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash-preview-image-generation",
       contents,
-      config: { 
+      config: {
         responseModalities: [Modality.TEXT, Modality.IMAGE],
-      },
-      generationConfig: {
         temperature: 0.3, // Lower temperature for more consistent results
         topP: 0.8,
         topK: 20,
-      }
+      },
     });
 
     // Extract generated image
@@ -148,18 +146,25 @@ export async function POST(req: NextRequest) {
     }
 
     const generatedImageData = imagePart.inlineData.data;
+    if (!generatedImageData) {
+      throw new Error("No image data in response");
+    }
     const generatedImageMimeType = imagePart.inlineData.mimeType;
 
     // Upload generated image to R2 storage
     const storage = newStorage();
-    const imageBuffer = Buffer.from(generatedImageData, 'base64');
+    const imageBuffer = Buffer.from(generatedImageData, "base64");
     const imageKey = `garden-designs/${user_uuid}/${getUuid()}.png`;
-    
+
     const uploadResult = await storage.uploadFile({
       body: imageBuffer,
       key: imageKey,
       contentType: generatedImageMimeType,
     });
+
+    if (!uploadResult?.url) {
+      throw new Error("Image upload failed");
+    }
 
     // Save image generation record to database
     const imageGeneration = {

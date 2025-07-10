@@ -5,10 +5,18 @@ import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { BeforeAfterSlider } from "@/components/ui/before-after-slider";
 import { useTranslations } from "next-intl";
 
+interface TransformationItem {
+  style: string;
+  title: string;
+  description: string;
+  before: string;
+  after: string;
+}
+
 export default function Transformations() {
   const { ref, isVisible } = useScrollAnimation();
   const t = useTranslations('transformations');
-  const transformations = t.raw('examples').map((example: any, index: number) => ({
+  const transformations: TransformationItem[] = t.raw('examples').map((example: any, index: number) => ({
     ...example,
     before: `/imgs/features/${index + 1}.png`,
     after: `/imgs/showcases/${index + 1}.png`
@@ -40,7 +48,7 @@ export default function Transformations() {
         </div>
         
         <div className="space-y-24 max-w-7xl mx-auto">
-          {transformations.map((transformation, index) => {
+          {transformations.map((transformation: TransformationItem, index) => {
             const isEven = index % 2 === 0;
             return (
               <div 

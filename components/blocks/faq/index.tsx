@@ -5,12 +5,17 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { useTranslations } from "next-intl";
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 export default function FAQ() {
   const { ref, isVisible } = useScrollAnimation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const t = useTranslations('faq');
 
-  const faqs = t.raw('questions');
+  const faqs: FAQItem[] = t.raw('questions');
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -34,7 +39,7 @@ export default function FAQ() {
         </div>
         
         <div className="max-w-4xl mx-auto">
-          {faqs.map((faq, index) => (
+          {faqs.map((faq: FAQItem, index) => (
             <div key={index} className="mb-4">
               <button
                 onClick={() => toggleFAQ(index)}

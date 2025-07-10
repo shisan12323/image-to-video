@@ -674,3 +674,75 @@ Failed to load llms.txt.json, falling back to en.json
  ✓ Compiled in 6.3s (1731 modules)
  ✓ Compiled in 625ms (820 modules)
  ✓ Compiled in 541ms (820 modules)
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx

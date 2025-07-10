@@ -3,6 +3,8 @@
 import { ImageGeneration } from "@/types/image-generation";
 import { useTranslations } from "next-intl";
 import moment from "moment";
+import downloadPhoto from "@/utils/downloadPhoto";
+import { toast } from "sonner";
 
 interface ImageCardProps {
   generation: ImageGeneration;
@@ -11,20 +13,15 @@ interface ImageCardProps {
 export default function ImageCard({ generation }: ImageCardProps) {
   const t = useTranslations();
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = generation.generated_image_url;
-    link.download = `garden-design-${generation.theme}-${generation.uuid}.png`;
-    link.target = '_blank';
-    link.click();
-  };
-
-  const handleCopy = async () => {
+  const handleDownload = async () => {
+    if (!generation.generated_image_url) return;
+    
     try {
-      await navigator.clipboard.writeText(generation.generated_image_url);
-      // You might want to show a toast notification here
-    } catch (err) {
-      console.error('Failed to copy image URL:', err);
+      await downloadPhoto(generation.generated_image_url, `garden-design-${generation.theme}-${generation.uuid}.png`);
+      toast.success("Image downloaded successfully!");
+    } catch (error) {
+      console.error("Error downloading image:", error);
+      toast.error("Failed to download image");
     }
   };
 
@@ -57,18 +54,12 @@ export default function ImageCard({ generation }: ImageCardProps) {
           <span>{moment(generation.created_at).format("YYYY-MM-DD HH:mm")}</span>
           <span>{generation.credits_used} credits</span>
         </div>
-        <div className="mt-3 flex gap-2">
+        <div className="mt-3">
           <button
             onClick={handleDownload}
-            className="flex-1 px-3 py-1 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition-colors"
+            className="w-full px-3 py-2 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 transition-colors"
           >
             {t("my_images.download")}
-          </button>
-          <button
-            onClick={handleCopy}
-            className="flex-1 px-3 py-1 bg-gray-500 text-white rounded text-sm hover:bg-gray-600 transition-colors"
-          >
-            {t("my_images.copy")}
           </button>
         </div>
       </div>

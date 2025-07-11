@@ -25,6 +25,8 @@ export const localeDetection =
   process.env.NEXT_PUBLIC_LOCALE_DETECTION === "true";
 
 export const pathnames = {
+  "/blog": "/blog",
+  "/blog/[slug]": "/blog/[slug]",
   en: {
     "privacy-policy": "/privacy-policy",
     "terms-of-service": "/terms-of-service",

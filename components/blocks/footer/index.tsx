@@ -45,7 +45,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
               {/* Blog Link */}
               <div className="mb-4">
                 <Link 
-                  href={{pathname: "/blog"}} 
+                  href="/blog" 
                   className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
                 >
                   📝 {t('footer.blog') || 'Blog'}

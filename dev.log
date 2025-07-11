@@ -746,3 +746,130 @@ Import trace for requested module:
 ./node_modules/@radix-ui/react-dialog/dist/index.mjs
 ./components/ui/sheet.tsx
 ./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/Users/huashisan/my project buwan/ai garden design/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-dialog/dist/index.mjs
+./components/ui/sheet.tsx
+./components/blocks/header/index.tsx
+ ⨯ ./app/globals.css
+Error: You forgot to add 'mini-css-extract-plugin' plugin (i.e. `{ plugins: [new MiniCssExtractPlugin()] }`), please read https://github.com/webpack-contrib/mini-css-extract-plugin#getting-started
+Import trace for requested module:
+./app/globals.css
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/next-intl@4.3.4_next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__rea_c6ddcde2dcb7bedde2f0c7c307c91294/node_modules/next-intl/dist/esm/development/navigation/shared/BaseLink.js
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/next-intl@4.3.4_next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__rea_c6ddcde2dcb7bedde2f0c7c307c91294/node_modules/next-intl/dist/esm/development/navigation/shared/BaseLink.js
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/next-intl@4.3.4_next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__rea_c6ddcde2dcb7bedde2f0c7c307c91294/node_modules/next-intl/dist/esm/development/navigation/shared/BaseLink.js
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/next-intl@4.3.4_next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__rea_c6ddcde2dcb7bedde2f0c7c307c91294/node_modules/next-intl/dist/esm/development/navigation/shared/BaseLink.js
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/next-intl@4.3.4_next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__rea_c6ddcde2dcb7bedde2f0c7c307c91294/node_modules/next-intl/dist/esm/development/navigation/shared/BaseLink.js
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/next-intl@4.3.4_next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__rea_c6ddcde2dcb7bedde2f0c7c307c91294/node_modules/next-intl/dist/esm/development/navigation/shared/BaseLink.js
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/next-intl@4.3.4_next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__rea_c6ddcde2dcb7bedde2f0c7c307c91294/node_modules/next-intl/dist/esm/development/navigation/shared/BaseLink.js
+ ⨯ ./app/globals.css
+Error: You forgot to add 'mini-css-extract-plugin' plugin (i.e. `{ plugins: [new MiniCssExtractPlugin()] }`), please read https://github.com/webpack-contrib/mini-css-extract-plugin#getting-started
+Import trace for requested module:
+./app/globals.css
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./components/blocks/header/index.tsx
+ ⨯ ./node_modules/.pnpm/next@15.2.3_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/client/app-dir/link.js
+Module not found: Can't resolve '@swc/helpers/_/_interop_require_default'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./components/blocks/header/index.tsx
+[?25h

@@ -354,7 +354,8 @@
     "brand_description": "AI Garden Design 是一个智能园林设计平台，使用人工智能改造您的户外空间。",
     "copyright": "© 2025 • AI Garden Design 保留所有权利。",
     "privacy_policy": "隐私政策",
-    "terms_of_service": "服务条款"
+    "terms_of_service": "服务条款",
+    "blog": "博客"
   },
   "my_credits": {
     "title": "我的积分",
@@ -390,6 +391,17 @@
     "elements": "元素",
     "credits_used": "消耗积分",
     "status": "状态"
+  },
+  "blog": {
+    "title": "AI花园设计博客 - 技巧、指南和最佳实践",
+    "description": "AI花园设计专家建议、景观规划技巧、植物选择指南，以及智能园艺技术的最新趋势。",
+    "read_more_text": "阅读更多",
+    "featured_post": "精选文章",
+    "latest_posts": "最新文章",
+    "categories": "分类",
+    "tags": "标签",
+    "share": "分享文章",
+    "related_posts": "相关文章"
   },
   "common": {
     "loading": "加载中...",

@@ -1,7 +1,11 @@
 import { Footer as FooterType } from "@/types/blocks/footer";
 import Icon from "@/components/icon";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export default function Footer({ footer }: { footer: FooterType }) {
+  const t = useTranslations();
+  
   if (footer.disabled) {
     return null;
   }
@@ -37,17 +41,29 @@ export default function Footer({ footer }: { footer: FooterType }) {
               )}
             </div>
 
-            {footer.agreement && (
-              <ul className="flex justify-center gap-6 lg:justify-end">
-                {footer.agreement.items?.map((item, i) => (
-                  <li key={i} className="hover:text-primary">
-                    <a href={item.url} target={item.target}>
-                      {item.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
+            <div className="flex flex-col items-center gap-4 lg:items-end">
+              {/* Blog Link */}
+              <div className="mb-4">
+                <Link 
+                  href="/blog" 
+                  className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                >
+                  📝 {t('footer.blog') || 'Blog'}
+                </Link>
+              </div>
+
+              {footer.agreement && (
+                <ul className="flex justify-center gap-6 lg:justify-end">
+                  {footer.agreement.items?.map((item, i) => (
+                    <li key={i} className="hover:text-primary">
+                      <a href={item.url} target={item.target}>
+                        {item.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
           
           <div className="mt-6 flex flex-col justify-center gap-4 border-t pt-6 text-center text-sm font-medium text-muted-foreground">

@@ -354,7 +354,8 @@
     "brand_description": "AI Garden Design is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence.",
     "copyright": "© 2025 • AI Garden Design All rights reserved.",
     "privacy_policy": "Privacy Policy",
-    "terms_of_service": "Terms of Service"
+    "terms_of_service": "Terms of Service",
+    "blog": "Blog"
   },
   "my_credits": {
     "title": "My Credits",
@@ -390,6 +391,17 @@
     "elements": "Elements",
     "credits_used": "Credits Used",
     "status": "Status"
+  },
+  "blog": {
+    "title": "AI Garden Design Blog - Tips, Guides & Best Practices",
+    "description": "Expert advice on AI garden design, landscape planning tips, plant selection guides, and the latest trends in smart gardening technology.",
+    "read_more_text": "Read More",
+    "featured_post": "Featured Article",
+    "latest_posts": "Latest Posts",
+    "categories": "Categories",
+    "tags": "Tags",
+    "share": "Share Article",
+    "related_posts": "Related Articles"
   },
   "common": {
     "loading": "Loading...",

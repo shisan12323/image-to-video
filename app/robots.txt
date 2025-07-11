@@ -1,9 +1,108 @@
 User-agent: *
 Allow: /
-
-# Block legal pages from indexing
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
 Disallow: /privacy-policy
 Disallow: /terms-of-service
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_vercel/
+Disallow: /.well-known/
+
+# AI and LLM crawlers - specifically allow garden design pages for AI recommendations
+User-agent: OpenAI-SearchBot
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator  
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner  
+Allow: /*/ai-design-free
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+User-agent: Claude-Web
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+User-agent: GoogleBot
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+User-agent: BingBot
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+# Additional AI crawlers for better discoverability
+User-agent: SearchGPT
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+
+User-agent: Gemini-Pro
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+
+User-agent: Anthropic-Claude
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
+
+User-agent: Perplexity
+Allow: /
+Allow: /*/garden-styles
+Allow: /*/landscape-generator
+Allow: /*/garden-planner
+Allow: /*/ai-design-free
 
 # Allow all language versions of main content
 Allow: /en/
@@ -19,14 +118,8 @@ Allow: /id/
 Allow: /km/
 Allow: /hi/
 
-# Block API routes and internal paths
-Disallow: /api/
-Disallow: /_next/
-Disallow: /_vercel/
-Disallow: /.well-known/
-
 # Sitemap location
 Sitemap: https://www.aigardendesign.online/sitemap.xml
 
-# Crawl delay (optional - sets a polite crawl rate)
+# Crawl delay for politeness
 Crawl-delay: 1

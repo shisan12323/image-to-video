@@ -18,7 +18,7 @@ export default function BlogDetail({ post }: { post: Post }) {
       "@type": "Article",
       "headline": post.title,
       "description": post.description || post.title,
-      "image": post.image_url ? `${baseUrl}${post.image_url}` : `${baseUrl}/og-image.jpg`,
+      "image": post.cover_url ? `${baseUrl}${post.cover_url}` : `${baseUrl}/og-image.jpg`,
       "author": {
         "@type": "Person",
         "name": post.author_name || "AI Garden Design Team",

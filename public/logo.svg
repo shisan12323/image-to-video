@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- Leaf body -->
+  <path d="M24 4C12 12 10 24 24 44C38 24 36 12 24 4Z" fill="#22c55e" />
+  <!-- Main vein -->
+  <path d="M24 12V36" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+  <!-- Side veins -->
+  <path d="M24 18C28 22 30 26 29 30" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+  <path d="M24 18C20 22 18 26 19 30" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+</svg> 

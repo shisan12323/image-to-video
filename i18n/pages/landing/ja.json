@@ -5,7 +5,7 @@
     "brand": {
       "title": "AI Garden Design",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/ja"
@@ -35,7 +35,7 @@
       "title": "AI Garden Design",
       "description": "AI Garden Designは人工知能を使用してあなたの屋外スペースを変革するインテリジェントな庭園デザインプラットフォームです。",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/"

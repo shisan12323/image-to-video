@@ -5,7 +5,7 @@
     "brand": {
       "title": "AI Garden Design",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/ko"
@@ -35,7 +35,7 @@
       "title": "AI Garden Design",
       "description": "AI Garden Design은 인공지능을 활용하여 야외 공간을 변화시키는 지능형 정원 디자인 플랫폼입니다.",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/"

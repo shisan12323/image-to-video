@@ -29,7 +29,7 @@ export default function BlogDetail({ post }: { post: Post }) {
         "name": "AI Garden Design",
         "logo": {
           "@type": "ImageObject",
-          "url": `${baseUrl}/logo.png`
+          "url": `${baseUrl}/logo.svg`
         }
       },
       "datePublished": post.created_at,

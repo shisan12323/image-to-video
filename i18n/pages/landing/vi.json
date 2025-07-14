@@ -5,7 +5,7 @@
     "brand": {
       "title": "AI Garden Design",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/vi"
@@ -35,7 +35,7 @@
       "title": "AI Garden Design",
       "description": "AI Garden Design là nền tảng thiết kế vườn thông minh biến đổi không gian ngoài trời của bạn bằng trí tuệ nhân tạo.",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/"

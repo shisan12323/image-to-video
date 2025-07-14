@@ -5,7 +5,7 @@
     "brand": {
       "title": "AI Garden Design 园林设计",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design 园林设计"
       },
       "url": "/zh"
@@ -566,7 +566,7 @@
       "title": "AI Garden Design 园林设计",
       "description": "AI Garden Design 园林设计是一个智能花园设计平台，利用人工智能技术变革您的户外空间。",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design 园林设计"
       },
       "url": "/"

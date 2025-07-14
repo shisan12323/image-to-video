@@ -5,7 +5,7 @@
     "brand": {
       "title": "AI Garden Design",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/km"
@@ -35,7 +35,7 @@
       "title": "AI Garden Design",
       "description": "AI Garden Design គឺជាព្រេរឈន្ទល់ព្រេកជំនាញការរចនាសំរាមដែលបន្តប្រេកធ្នាប់នៅខាងក្រៅរបស់អ្នកដោយប្រើប្រាស់ប្រឥញ្ញាចានសម្តិបញ្ញា។",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/"

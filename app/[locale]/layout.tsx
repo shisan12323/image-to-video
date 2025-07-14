@@ -109,7 +109,7 @@ export default async function RootLayout({
     "name": "AI Garden Design",
     "description": "AI-powered garden design platform",
     "url": baseUrl,
-    "logo": `${baseUrl}/logo.png`,
+    "logo": `${baseUrl}/logo.svg`,
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",

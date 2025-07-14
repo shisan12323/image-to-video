@@ -5,7 +5,7 @@
     "brand": {
       "title": "AI Garden Design",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/hi"
@@ -35,7 +35,7 @@
       "title": "AI Garden Design",
       "description": "AI Garden Design एक स्मार्ट गार्डन डिजाइन प्लेटफॉर्म है जो कृत्रिम बुद्धिमत्ता का उपयोग करते हुए आपके बाहरी स्थानों को बदलता है।",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/"

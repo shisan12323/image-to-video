@@ -5,7 +5,7 @@
     "brand": {
       "title": "AI Garden Design",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/id"
@@ -35,7 +35,7 @@
       "title": "AI Garden Design",
       "description": "AI Garden Design adalah platform desain taman cerdas yang mengubah ruang luar Anda menggunakan kecerdasan buatan.",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "AI Garden Design"
       },
       "url": "/"

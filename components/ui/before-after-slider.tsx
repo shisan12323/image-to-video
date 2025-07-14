@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import Image from 'next/image'
 
 interface BeforeAfterSliderProps {
   beforeImage: string
@@ -120,11 +121,14 @@ export function BeforeAfterSlider({
     >
       {/* After Image (Background) */}
       <div className="absolute inset-0">
-        <img 
-          src={afterImage} 
-          alt="After transformation"
-          className="w-full h-full object-cover"
+        <Image
+          src={afterImage}
+          alt="AI garden design after transformation"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover"
           draggable={false}
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/10 to-transparent"></div>
         <div className="absolute top-6 right-6 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-4 py-2 rounded-xl font-bold text-sm shadow-lg">
@@ -137,10 +141,13 @@ export function BeforeAfterSlider({
         className="absolute inset-0"
         style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
       >
-        <img 
-          src={beforeImage} 
-          alt="Before transformation"
-          className="w-full h-full object-cover"
+        <Image
+          src={beforeImage}
+          alt="Original garden before AI design"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover"
+          loading="lazy"
           draggable={false}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

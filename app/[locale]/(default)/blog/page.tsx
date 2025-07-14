@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { buildCanonical, buildHreflang } from "@/lib/seo";
 import Link from "next/link";
 import { getTranslation } from "@/lib/blog-translations";
 
@@ -39,16 +40,14 @@ export async function generateMetadata({
     km: "រកឃើញបច្ចេកវិទ្យារចនាសួនច្បារ AI ចុងក្រោយបំផុត គន្លឹះសម្រាប់បង្កើតទីតាំងខាងក្រៅដ៏ស្រស់ស្អាត និងដំបូន្មានពីអ្នកជំនាញអំពីការរៀបចំទេសភាព។",
   };
 
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/blog`;
-  if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/blog`;
-  }
+  const canonicalUrl = buildCanonical(locale, 'blog');
 
   return {
     title: titles[locale as keyof typeof titles] || titles.en,
     description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
     alternates: {
       canonical: canonicalUrl,
+      languages: buildHreflang('blog'),
     },
   };
 }

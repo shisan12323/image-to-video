@@ -1,6 +1,7 @@
 "use client";
 
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { useEffect } from "react";
 
 import Crumb from "./crumb";
 import Markdown from "@/components/markdown";
@@ -8,6 +9,62 @@ import { Post } from "@/types/post";
 import moment from "moment";
 
 export default function BlogDetail({ post }: { post: Post }) {
+  // Generate Article structured data
+  useEffect(() => {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aigardendesign.online';
+    
+    const articleSchema = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.description || post.title,
+      "image": post.image_url ? `${baseUrl}${post.image_url}` : `${baseUrl}/og-image.jpg`,
+      "author": {
+        "@type": "Person",
+        "name": post.author_name || "AI Garden Design Team",
+        "image": post.author_avatar_url
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AI Garden Design",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/logo.png`
+        }
+      },
+      "datePublished": post.created_at,
+      "dateModified": post.updated_at || post.created_at,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `${baseUrl}/posts/${post.slug}`
+      },
+      "articleSection": "Garden Design",
+      "keywords": "garden design, AI landscape, outdoor planning, garden planner"
+    };
+
+    // Add structured data to head
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(articleSchema);
+    script.id = 'article-structured-data';
+    
+    // Remove existing Article structured data if any
+    const existingScript = document.getElementById('article-structured-data');
+    if (existingScript) {
+      existingScript.remove();
+    }
+    
+    document.head.appendChild(script);
+
+    // Cleanup on unmount
+    return () => {
+      const scriptToRemove = document.getElementById('article-structured-data');
+      if (scriptToRemove) {
+        scriptToRemove.remove();
+      }
+    };
+  }, [post]);
+
   return (
     <section className="py-16">
       <div className="container">

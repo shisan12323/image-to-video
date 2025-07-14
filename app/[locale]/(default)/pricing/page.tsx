@@ -1,5 +1,6 @@
 import PricingI18n from "@/components/blocks/pricing-i18n";
 import { getTranslations } from "next-intl/server";
+import { buildCanonical, buildHreflang } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -10,29 +11,15 @@ export async function generateMetadata({
   const t = await getTranslations('pricing');
   
   // Construct canonical URL for pricing page
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aigardendesign.online';
-  const canonicalUrl = locale === 'en' ? `${baseUrl}/pricing` : `${baseUrl}/${locale}/pricing`;
+  const canonicalUrl = buildCanonical(locale, 'pricing');
   
   return {
     title: `${t('title')} - AI Garden Design`,
     description: t('description'),
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aigardendesign.online'),
     alternates: {
       canonical: canonicalUrl,
-      languages: {
-        'en': `${baseUrl}/pricing`,
-        'zh': `${baseUrl}/zh/pricing`,
-        'fr': `${baseUrl}/fr/pricing`,
-        'de': `${baseUrl}/de/pricing`,
-        'es': `${baseUrl}/es/pricing`,
-        'ja': `${baseUrl}/ja/pricing`,
-        'ko': `${baseUrl}/ko/pricing`,
-        'ms': `${baseUrl}/ms/pricing`,
-        'vi': `${baseUrl}/vi/pricing`,
-        'id': `${baseUrl}/id/pricing`,
-        'km': `${baseUrl}/km/pricing`,
-        'hi': `${baseUrl}/hi/pricing`,
-      },
+      languages: buildHreflang('pricing'),
     },
     openGraph: {
       url: canonicalUrl,
@@ -111,6 +98,25 @@ export default async function PricingPage({
     ]
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": buildCanonical(locale)
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pricing",
+        "item": buildCanonical(locale, 'pricing')
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/30 via-white to-slate-50">
       <script
@@ -118,6 +124,10 @@ export default async function PricingPage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(pricingStructuredData)
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <div className="pt-20">
         <PricingI18n />

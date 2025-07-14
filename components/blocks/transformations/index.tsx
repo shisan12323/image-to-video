@@ -4,6 +4,7 @@ import { Sparkles, MousePointer2 } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { BeforeAfterSlider } from "@/components/ui/before-after-slider";
 import { useTranslations } from "next-intl";
+import { useEffect } from "react";
 
 interface TransformationItem {
   style: string;
@@ -21,6 +22,32 @@ export default function Transformations() {
     before: `/imgs/features/${index + 1}.png`,
     after: `/imgs/showcases/${index + 1}.png`
   }));
+
+  // Inject ImageObject JSON-LD for gallery images (after images)
+  useEffect(() => {
+    const imagesLd = {
+      "@context": "https://schema.org",
+      "@graph": transformations.map((item) => ({
+        "@type": "ImageObject",
+        "contentUrl": item.after,
+        "description": item.title,
+      }))
+    };
+
+    const id = "gallery-images-ld";
+    let scriptEl = document.getElementById(id) as HTMLScriptElement | null;
+    if (scriptEl) scriptEl.remove();
+    scriptEl = document.createElement('script');
+    scriptEl.type = 'application/ld+json';
+    scriptEl.id = id;
+    scriptEl.textContent = JSON.stringify(imagesLd);
+    document.head.appendChild(scriptEl);
+
+    return () => {
+      const s = document.getElementById(id);
+      s && s.remove();
+    };
+  }, [transformations]);
 
   return (
     <section 

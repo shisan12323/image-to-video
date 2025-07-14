@@ -7,6 +7,8 @@ import AIFeatures from "@/components/blocks/ai-features";
 import PricingI18n from "@/components/blocks/pricing-i18n";
 import Testimonials from "@/components/blocks/testimonials";
 import FAQ from "@/components/blocks/faq";
+import { buildCanonical, buildHreflang } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
   params,
@@ -14,15 +16,40 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}`;
+  const t = await getTranslations("hero");
 
-  if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}`;
-  }
+  const canonicalUrl = buildCanonical(locale);
 
   return {
+    title: t("title"),
+    description: t("description"),
     alternates: {
       canonical: canonicalUrl,
+      languages: buildHreflang(""),
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: canonicalUrl,
+      siteName: "AI Garden Design",
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.aigardendesign.online"}/og-home.jpg`,
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+      locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: [
+        `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.aigardendesign.online"}/og-home.jpg`,
+      ],
     },
   };
 }

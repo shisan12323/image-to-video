@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Blog as BlogType } from "@/types/blocks/blog";
+import Image from "next/image";
 
 export default function Blog({ blog }: { blog: BlogType }) {
   if (blog.disabled) {
@@ -31,9 +32,12 @@ export default function Blog({ blog }: { blog: BlogType }) {
               <div className="flex flex-col overflow-clip rounded-xl border border-border">
                 {item.cover_url && (
                   <div>
-                    <img
+                    <Image
                       src={item.cover_url}
-                      alt={item.title || ""}
+                      alt={`${item.title} - garden design blog article about landscape planning and outdoor space transformation`}
+                      width={400}
+                      height={225}
+                      loading="lazy"
                       className="aspect-[16/9] h-full w-full object-cover object-center"
                     />
                   </div>

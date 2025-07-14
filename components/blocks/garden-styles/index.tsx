@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function GardenStyles() {
   const { ref: animationRef, isVisible } = useScrollAnimation();
@@ -77,9 +78,12 @@ export default function GardenStyles() {
             style={{ width: '400px' }}
           >
             <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
-              <img 
+              <Image 
                 src={style.image} 
-                alt={style.name}
+                alt={`${style.name} garden design style - professional landscape design inspiration for outdoor spaces`}
+                width={400}
+                height={267}
+                loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               

@@ -10,6 +10,7 @@ import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { toast } from "sonner";
 import downloadPhoto from "@/utils/downloadPhoto";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function UploadSection() {
   const t = useTranslations();
@@ -245,9 +246,11 @@ export default function UploadSection() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-slate-800 mb-4">{t("upload.result_title")}</h3>
                 <div className="relative">
-                  <img 
+                  <Image 
                     src={generatedImage} 
-                    alt="Generated garden design" 
+                    alt="AI-generated professional garden design transformation showing custom landscape planning results"
+                    width={600}
+                    height={400}
                     className="w-full h-auto rounded-xl shadow-2xl"
                   />
                   <div 

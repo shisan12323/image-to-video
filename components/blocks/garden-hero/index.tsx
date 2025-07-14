@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function GardenHero() {
   const t = useTranslations();
@@ -62,9 +63,12 @@ export default function GardenHero() {
           {/* Right Side - Hero Image */}
           <div className="relative">
             <div className="relative">
-              <img 
+              <Image 
                 src="/imgs/showcases/1.png" 
-                alt="AI Garden Design Example" 
+                alt="Professional AI-generated garden design transformation showing modern landscape planning with smart technology"
+                width={600}
+                height={400}
+                priority
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
               

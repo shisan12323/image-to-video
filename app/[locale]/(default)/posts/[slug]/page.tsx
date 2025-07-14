@@ -2,6 +2,7 @@ import { PostStatus, findPostBySlug } from "@/models/post";
 
 import BlogDetail from "@/components/blocks/blog-detail";
 import Empty from "@/components/blocks/empty";
+import { buildCanonical, buildHreflang } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,17 +13,27 @@ export async function generateMetadata({
 
   const post = await findPostBySlug(slug, locale);
 
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/posts/${slug}`;
-
-  if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/posts/${slug}`;
-  }
+  const canonicalUrl = buildCanonical(locale, `posts/${slug}`);
 
   return {
     title: post?.title,
     description: post?.description,
     alternates: {
       canonical: canonicalUrl,
+      languages: buildHreflang(`posts/${slug}`),
+    },
+    openGraph: {
+      title: post?.title,
+      description: post?.description,
+      url: canonicalUrl,
+      type: "article",
+      images: post?.cover_url ? [{ url: post.cover_url, width: 1200, height: 630, alt: post.title }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post?.title,
+      description: post?.description,
+      images: post?.cover_url ? [post.cover_url] : undefined,
     },
   };
 }
@@ -39,5 +50,30 @@ export default async function ({
     return <Empty message="Post not found" />;
   }
 
-  return <BlogDetail post={post} />;
+  if (!post) return null;
+
+  // Prepare Article structured data
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.description,
+    "datePublished": post.created_at || new Date().toISOString(),
+    "dateModified": post.updated_at || post.created_at || new Date().toISOString(),
+    "author": {
+      "@type": "Person",
+      "name": post.author_name || "AI Garden Design"
+    },
+    "image": post.cover_url ? [post.cover_url] : undefined,
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <BlogDetail post={post} />
+    </>
+  );
 }

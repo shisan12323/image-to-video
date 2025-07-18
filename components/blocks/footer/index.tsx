@@ -50,6 +50,16 @@ export default function Footer({ footer }: { footer: FooterType }) {
                         style={{ height: 54, width: 'auto' }}
                       />
                     </a>
+                    {/* AI Nav Site link */}
+                    <a
+                      href="https://navs.site"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="AI Sites | 2025"
+                      className="text-primary underline hover:text-primary/80 text-sm font-medium"
+                    >
+                      AI Nav Site
+                    </a>
                   </div>
                 </div>
               )}

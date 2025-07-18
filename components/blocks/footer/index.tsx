@@ -37,6 +37,20 @@ export default function Footer({ footer }: { footer: FooterType }) {
                       {footer.brand.description}
                     </p>
                   )}
+                  {/* Badges Section */}
+                  <div className="mt-4 flex flex-wrap gap-3 justify-center lg:justify-start">
+                    <a
+                      href="https://turbo0.com/item/ai-garden-design"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.turbo0.com/badge-listed-light.svg"
+                        alt="Listed on Turbo0"
+                        style={{ height: 54, width: 'auto' }}
+                      />
+                    </a>
+                  </div>
                 </div>
               )}
             </div>

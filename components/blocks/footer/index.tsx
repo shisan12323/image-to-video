@@ -60,6 +60,16 @@ export default function Footer({ footer }: { footer: FooterType }) {
                     >
                       AI Nav Site
                     </a>
+                    {/* AIStage link */}
+                    <a
+                      href="https://aistage.net"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="AIStage"
+                      className="text-primary underline hover:text-primary/80 text-sm font-medium"
+                    >
+                      AIStage
+                    </a>
                   </div>
                 </div>
               )}

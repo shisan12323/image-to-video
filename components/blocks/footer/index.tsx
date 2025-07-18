@@ -120,6 +120,19 @@ export default function Footer({ footer }: { footer: FooterType }) {
                         height={54}
                       />
                     </a>
+                    {/* Code Market badge */}
+                    <a
+                      href="https://code.market?code.market=verified"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="ai tools code.market"
+                    >
+                      <img
+                        src="https://code.market/assets/manage-product/featured-logo-bright.svg"
+                        alt="ai tools code.market"
+                        title="ai tools code.market"
+                      />
+                    </a>
                   </div>
                 </div>
               )}

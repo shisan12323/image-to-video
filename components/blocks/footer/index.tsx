@@ -39,83 +39,79 @@ export default function Footer({ footer }: { footer: FooterType }) {
                   )}
                   {/* Badges Section */}
                   <div className="mt-4 flex flex-col gap-4 justify-center lg:justify-start">
-                    {/* Image Badges Row */}
-                    <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                      {/* TinyLaunch Badge */}
-                      <a href="https://tinylaun.ch" target="_blank" rel="noopener">
-                        <img 
-                          src="https://tinylaun.ch/tinylaunch_badge_launching_soon.svg"
-                          alt="TinyLaunch Badge"
-                          style={{
-                            width: 202,
-                            height: 'auto'
-                          }}
-                        />
-                      </a>
-                      <a
-                        href="https://turbo0.com/item/ai-garden-design"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src="https://img.turbo0.com/badge-listed-light.svg"
-                          alt="Listed on Turbo0"
-                          style={{ height: 54, width: 'auto' }}
-                        />
-                      </a>
-                      {/* Dang.ai badge */}
-                      <a
-                        href="https://dang.ai/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png"
-                          alt="Dang.ai"
-                          style={{ width: 150, height: 54 }}
-                          width={150}
-                          height={54}
-                        />
-                      </a>
-                      {/* Fazier badge */}
-                      <a
-                        href="https://fazier.com/launches/www.aigardendesign.online"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=light"
-                          alt="Fazier badge"
-                          width={250}
-                          style={{ width: 250 }}
-                        />
-                      </a>
-                      {/* Twelve Tools badge */}
-                      <a
-                        href="https://twelve.tools"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src="https://twelve.tools/badge0-light.svg"
-                          alt="Featured on Twelve Tools"
-                          width={200}
-                          height={54}
-                        />
-                      </a>
-                      {/* Code Market badge */}
-                      <a
-                        href="https://code.market?code.market=verified"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="ai tools code.market"
-                      >
-                        <img
-                          src="https://code.market/assets/manage-product/featured-logo-bright.svg"
-                          alt="ai tools code.market"
+                    {/* Image Badges Row - Horizontal scrollable container */}
+                    <div className="w-full overflow-x-auto pb-2">
+                      <div className="flex gap-3 min-w-max">
+                        {/* TinyLaunch Badge */}
+                        <a href="https://tinylaun.ch" target="_blank" rel="noopener">
+                          <img 
+                            src="https://tinylaun.ch/tinylaunch_badge_launching_soon.svg"
+                            alt="TinyLaunch Badge"
+                            className="h-12 w-auto"
+                          />
+                        </a>
+                        <a
+                          href="https://turbo0.com/item/ai-garden-design"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://img.turbo0.com/badge-listed-light.svg"
+                            alt="Listed on Turbo0"
+                            className="h-12 w-auto"
+                          />
+                        </a>
+                        {/* Dang.ai badge */}
+                        <a
+                          href="https://dang.ai/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png"
+                            alt="Dang.ai"
+                            className="h-12 w-auto"
+                          />
+                        </a>
+                        {/* Fazier badge */}
+                        <a
+                          href="https://fazier.com/launches/www.aigardendesign.online"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=light"
+                            alt="Fazier badge"
+                            className="h-12 w-auto"
+                          />
+                        </a>
+                        {/* Twelve Tools badge */}
+                        <a
+                          href="https://twelve.tools"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://twelve.tools/badge0-light.svg"
+                            alt="Featured on Twelve Tools"
+                            className="h-12 w-auto"
+                          />
+                        </a>
+                        {/* Code Market badge */}
+                        <a
+                          href="https://code.market?code.market=verified"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           title="ai tools code.market"
-                        />
-                      </a>
+                        >
+                          <img
+                            src="https://code.market/assets/manage-product/featured-logo-bright.svg"
+                            alt="ai tools code.market"
+                            title="ai tools code.market"
+                            className="h-12 w-auto"
+                          />
+                        </a>
+                      </div>
                     </div>
                     
                     {/* Text Links Row */}

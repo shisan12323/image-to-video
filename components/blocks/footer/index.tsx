@@ -133,6 +133,16 @@ export default function Footer({ footer }: { footer: FooterType }) {
                         title="ai tools code.market"
                       />
                     </a>
+                    {/* MossAI Tools Directory link */}
+                    <a
+                      href="https://mossai.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="MossAI Tools Directory"
+                      className="text-primary underline hover:text-primary/80 text-sm font-medium"
+                    >
+                      MossAI Tools Diresctory
+                    </a>
                   </div>
                 </div>
               )}

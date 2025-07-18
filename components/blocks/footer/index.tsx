@@ -107,6 +107,19 @@ export default function Footer({ footer }: { footer: FooterType }) {
                         style={{ width: 250 }}
                       />
                     </a>
+                    {/* Twelve Tools badge */}
+                    <a
+                      href="https://twelve.tools"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://twelve.tools/badge0-light.svg"
+                        alt="Featured on Twelve Tools"
+                        width={200}
+                        height={54}
+                      />
+                    </a>
                   </div>
                 </div>
               )}

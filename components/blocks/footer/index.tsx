@@ -39,6 +39,17 @@ export default function Footer({ footer }: { footer: FooterType }) {
                   )}
                   {/* Badges Section */}
                   <div className="mt-4 flex flex-wrap gap-3 justify-center lg:justify-start">
+                    {/* TinyLaunch Badge */}
+                    <a href="https://tinylaun.ch" target="_blank" rel="noopener">
+                      <img 
+                        src="https://tinylaun.ch/tinylaunch_badge_launching_soon.svg"
+                        alt="TinyLaunch Badge"
+                        style={{
+                          width: 202,
+                          height: 'auto'
+                        }}
+                      />
+                    </a>
                     <a
                       href="https://turbo0.com/item/ai-garden-design"
                       target="_blank"

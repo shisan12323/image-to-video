@@ -70,6 +70,20 @@ export default function Footer({ footer }: { footer: FooterType }) {
                     >
                       AIStage
                     </a>
+                    {/* Dang.ai badge */}
+                    <a
+                      href="https://dang.ai/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png"
+                        alt="Dang.ai"
+                        style={{ width: 150, height: 54 }}
+                        width={150}
+                        height={54}
+                      />
+                    </a>
                   </div>
                 </div>
               )}

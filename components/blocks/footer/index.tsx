@@ -84,6 +84,16 @@ export default function Footer({ footer }: { footer: FooterType }) {
                         height={54}
                       />
                     </a>
+                    {/* AIToolly link */}
+                    <a
+                      href="https://AIToolly.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="AIToolly AI Tools Directory"
+                      className="text-primary underline hover:text-primary/80 text-sm font-medium"
+                    >
+                      AIToolly
+                    </a>
                   </div>
                 </div>
               )}

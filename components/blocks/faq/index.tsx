@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { useTranslations } from "next-intl";
@@ -17,47 +17,25 @@ export default function FAQ() {
 
   const faqs: FAQItem[] = t.raw('questions');
 
+  // 预先构建 FAQ 结构化数据，让其随首屏 HTML 一并输出
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Generate FAQ structured data
-  useEffect(() => {
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer
-        }
-      }))
-    };
-
-    // Add structured data to head
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(faqSchema);
-    script.id = 'faq-structured-data';
-    
-    // Remove existing FAQ structured data if any
-    const existingScript = document.getElementById('faq-structured-data');
-    if (existingScript) {
-      existingScript.remove();
-    }
-    
-    document.head.appendChild(script);
-
-    // Cleanup on unmount
-    return () => {
-      const scriptToRemove = document.getElementById('faq-structured-data');
-      if (scriptToRemove) {
-        scriptToRemove.remove();
-      }
-    };
-  }, [faqs]);
+  // useEffect 注入脚本已移除，改为直接在 SSR 渲染 <script>
 
   return (
     <section 
@@ -66,6 +44,11 @@ export default function FAQ() {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >
+      {/* FAQ JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="container mx-auto px-6">
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">

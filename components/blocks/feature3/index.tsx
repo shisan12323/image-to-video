@@ -2,6 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 
 import { Badge } from "@/components/ui/badge";
 import { Section as SectionType } from "@/types/blocks/section";
+import Image from "next/image";
 
 export default function Feature3({ section }: { section: SectionType }) {
   if (section.disabled) {
@@ -52,9 +53,12 @@ export default function Feature3({ section }: { section: SectionType }) {
                     {item.image && (
                       <div className="mt-6 block border bg-muted/50 px-4 py-6 lg:hidden">
                         <div className="aspect-video">
-                          <img
-                            src={item.image?.src}
-                            alt={item.image?.alt || item.title}
+                          <Image
+                            src={item.image!.src as string}
+                            alt={item.image?.alt ? `${item.image.alt} | AI Garden Design` : `${item.title}`}
+                            width={800}
+                            height={600}
+                            sizes="(max-width: 768px) 100vw, 50vw"
                             className="h-full w-full rounded-md border object-cover shadow"
                           />
                         </div>
@@ -75,9 +79,12 @@ export default function Feature3({ section }: { section: SectionType }) {
                     className="aspect-video"
                   >
                     {item.image && (
-                      <img
-                        src={item.image.src}
-                        alt={item.image.alt || item.title}
+                      <Image
+                        src={item.image.src as string}
+                        alt={item.image.alt ? `${item.image.alt} | AI Garden Design` : `${item.title}`}
+                        width={800}
+                        height={600}
+                        sizes="(max-width: 1024px) 100vw, 50vw"
                         className="h-full w-full rounded-xl border object-cover shadow"
                       />
                     )}

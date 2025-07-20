@@ -18,6 +18,7 @@ import { Badge } from "@/components/ui/badge";
 import Fade from "embla-carousel-fade";
 import Icon from "@/components/icon";
 import { Section as SectionType } from "@/types/blocks/section";
+import Image from "next/image";
 
 const DURATION = 5000;
 
@@ -114,11 +115,16 @@ export default function Feature2({ section }: { section: SectionType }) {
                 {section.items?.map((item, i) => (
                   <CarouselItem key={i}>
                     <div>
-                      <img
-                        src={item.image?.src}
-                        alt={item.image?.alt || item.title}
-                        className="max-h-auto w-full object-cover lg:max-h-none rounded-md"
-                      />
+                      {item.image && (
+                        <Image
+                          src={item.image.src as string}
+                          alt={item.image.alt ? `${item.image.alt} | AI Garden Design` : `${item.title || 'AI Garden Design'}`}
+                          width={800}
+                          height={600}
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                          className="max-h-auto w-full object-cover lg:max-h-none rounded-md"
+                        />
+                      )}
                     </div>
                   </CarouselItem>
                 ))}

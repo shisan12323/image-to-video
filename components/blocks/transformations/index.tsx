@@ -4,7 +4,6 @@ import { Sparkles, MousePointer2 } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { BeforeAfterSlider } from "@/components/ui/before-after-slider";
 import { useTranslations } from "next-intl";
-import { useEffect } from "react";
 
 interface TransformationItem {
   style: string;
@@ -23,31 +22,17 @@ export default function Transformations() {
     after: `/imgs/showcases/${index + 1}.png`
   }));
 
-  // Inject ImageObject JSON-LD for gallery images (after images)
-  useEffect(() => {
-    const imagesLd = {
-      "@context": "https://schema.org",
-      "@graph": transformations.map((item) => ({
-        "@type": "ImageObject",
-        "contentUrl": item.after,
-        "description": item.title,
-      }))
-    };
+  // 预先构建图片 JSON-LD（ImageObject 列表），随首屏 HTML 输出
+  const imagesLd = {
+    "@context": "https://schema.org",
+    "@graph": transformations.map((item) => ({
+      "@type": "ImageObject",
+      "contentUrl": item.after,
+      "description": item.title,
+    }))
+  };
 
-    const id = "gallery-images-ld";
-    let scriptEl = document.getElementById(id) as HTMLScriptElement | null;
-    if (scriptEl) scriptEl.remove();
-    scriptEl = document.createElement('script');
-    scriptEl.type = 'application/ld+json';
-    scriptEl.id = id;
-    scriptEl.textContent = JSON.stringify(imagesLd);
-    document.head.appendChild(scriptEl);
-
-    return () => {
-      const s = document.getElementById(id);
-      s && s.remove();
-    };
-  }, [transformations]);
+  // useEffect 注入脚本已移除，改为 SSR 直接渲染 <script>
 
   return (
     <section 
@@ -56,6 +41,11 @@ export default function Transformations() {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >
+      {/* Gallery Image JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(imagesLd) }}
+      />
       <div className="container mx-auto px-8">
         <div className="text-center mb-12 md:mb-20">
           <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-6 py-2 rounded-full font-semibold mb-6">

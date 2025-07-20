@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     if (!cancel_url) {
       cancel_url = `${
         process.env.NEXT_PUBLIC_PAY_CANCEL_URL ||
-        process.env.NEXT_PUBLIC_WEB_URL
+        process.env.NEXT_PUBLIC_BASE_URL
       }`;
     }
 
@@ -132,7 +132,7 @@ export async function POST(req: Request) {
         user_uuid: user_uuid,
       },
       mode: is_subscription ? "subscription" : "payment",
-      success_url: `${process.env.NEXT_PUBLIC_WEB_URL}/pay-success/{CHECKOUT_SESSION_ID}`,
+      success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/pay-success/{CHECKOUT_SESSION_ID}`,
       cancel_url: cancel_url,
     };
 

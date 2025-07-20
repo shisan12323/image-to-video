@@ -10,7 +10,7 @@ export default async function MyImagesPage() {
   const t = await getTranslations();
   const user_uuid = await getUserUuid();
 
-  const callbackUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/my-images`;
+  const callbackUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/my-images`;
   if (!user_uuid) {
     redirect(`/auth/signin?callbackUrl=${encodeURIComponent(callbackUrl)}`);
   }

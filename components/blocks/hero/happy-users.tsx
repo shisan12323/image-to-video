@@ -10,7 +10,7 @@ export default function HappyUsers() {
           <Avatar className="size-12 border" key={index}>
             <AvatarImage
               src={`/imgs/users/${index + 6}.png`}
-              alt="placeholder"
+              alt={`示例用户头像 ${index + 1} - AI Garden Design`}
             />
           </Avatar>
         ))}

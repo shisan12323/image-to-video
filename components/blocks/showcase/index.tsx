@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Section as SectionType } from "@/types/blocks/section";
+import Image from "next/image";
 
 export default function Showcase({ section }: { section: SectionType }) {
   if (section.disabled) {
@@ -96,11 +97,16 @@ export default function Showcase({ section }: { section: SectionType }) {
                     <div className="flex aspect-[3/2] overflow-clip rounded-xl">
                       <div className="flex-1">
                         <div className="relative h-full w-full origin-bottom transition duration-300 group-hover:scale-105">
-                          <img
-                            src={item.image?.src}
-                            alt={item.image?.alt || item.title}
-                            className="h-full w-full object-cover object-center"
-                          />
+                          {item.image && (
+                            <Image
+                              src={item.image.src as string}
+                              alt={item.image.alt ? `${item.image.alt} | AI Garden Design` : `${item.title}`}
+                              width={480}
+                              height={320}
+                              sizes="(max-width: 768px) 100vw, 300px"
+                              className="h-full w-full object-cover object-center"
+                            />
+                          )}
                         </div>
                       </div>
                     </div>

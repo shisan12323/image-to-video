@@ -92,7 +92,7 @@ export default function Invite({ summary }: { summary: any }) {
             </div>
             {user.invite_code && (
               <CopyToClipboard
-                text={`${process.env.NEXT_PUBLIC_WEB_URL}/i/${user?.invite_code}`}
+                text={`${process.env.NEXT_PUBLIC_BASE_URL}/i/${user?.invite_code}`}
                 onCopy={() => toast.success("copied")}
               >
                 <Button size="sm">{t("my_invites.copy_invite_link")}</Button>

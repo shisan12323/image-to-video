@@ -16,20 +16,21 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations("hero");
+  const heroT = await getTranslations("hero");
+  const metaT = await getTranslations("metadata");
 
   const canonicalUrl = buildCanonical(locale);
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: metaT("title") || heroT("title"),
+    description: metaT("description") || heroT("description"),
     alternates: {
       canonical: canonicalUrl,
       languages: buildHreflang(""),
     },
     openGraph: {
-      title: t("title"),
-      description: t("description"),
+      title: metaT("title") || heroT("title"),
+      description: metaT("description") || heroT("description"),
       url: canonicalUrl,
       siteName: "AI Garden Design",
       images: [
@@ -37,7 +38,7 @@ export async function generateMetadata({
           url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.aigardendesign.online"}/og-home.jpg`,
           width: 1200,
           height: 630,
-          alt: t("title"),
+          alt: metaT("title") || heroT("title"),
         },
       ],
       locale,
@@ -45,8 +46,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: t("title"),
-      description: t("description"),
+      title: metaT("title") || heroT("title"),
+      description: metaT("description") || heroT("description"),
       images: [
         `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.aigardendesign.online"}/og-home.jpg`,
       ],

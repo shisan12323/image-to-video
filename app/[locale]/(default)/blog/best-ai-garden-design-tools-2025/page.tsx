@@ -50,9 +50,9 @@ export async function generateMetadata({
     km: "រកឃើញឧបករណ៍រចនាសួនច្បារ AI ល្អបំផុតឆ្នាំ 2025។ ផ្លាស់ប្តូរទីតាំងខាងក្រៅរបស់អ្នកជាមួយនឹងបញ្ញាសិប្បនិម្មិត។ មានការសាកល្បងឥតគិតថ្លៃ - ការរចនាដ៏ជំនាញក្នុងរយៈពេល 2 នាទី។",
   };
 
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/blog/best-ai-garden-design-tools-2025`;
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/blog/best-ai-garden-design-tools-2025`;
   if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/blog/best-ai-garden-design-tools-2025`;
+    canonicalUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/blog/best-ai-garden-design-tools-2025`;
   }
 
   return {

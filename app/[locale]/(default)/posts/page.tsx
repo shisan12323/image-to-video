@@ -11,10 +11,10 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations();
 
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/posts`;
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/posts`;
 
   if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/posts`;
+    canonicalUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/posts`;
   }
 
   return {

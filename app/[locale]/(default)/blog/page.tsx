@@ -156,7 +156,7 @@ export default async function BlogIndex({
           {blogPosts.map((post) => (
             <Link 
               key={post.slug}
-              href={`/blog/${post.slug}`}
+              href={locale === 'en' ? `/blog/${post.slug}` : `/${locale}/blog/${post.slug}`}
               className="block"
             >
               <article className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer h-full flex flex-col">

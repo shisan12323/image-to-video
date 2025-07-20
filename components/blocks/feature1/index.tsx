@@ -1,5 +1,6 @@
 import Icon from "@/components/icon";
 import { Section as SectionType } from "@/types/blocks/section";
+import Image from "next/image";
 
 export default function Feature1({ section }: { section: SectionType }) {
   if (section.disabled) {
@@ -11,9 +12,12 @@ export default function Feature1({ section }: { section: SectionType }) {
       <div className="container">
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           {section.image && (
-            <img
-              src={section.image?.src}
-              alt={section.image?.alt || section.title || "AI Garden Design Feature"}
+            <Image
+              src={section.image!.src as string}
+              alt={section.image.alt ? `${section.image.alt} | AI Garden Design` : `${section.title || 'AI Garden Design Feature'}`}
+              width={800}
+              height={600}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="max-h-full w-full rounded-md object-cover"
             />
           )}

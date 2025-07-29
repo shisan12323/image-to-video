@@ -1,6 +1,6 @@
-# ShipAny Template One
+# Image to Video
 
-Ship Any AI SaaS Startups in hours.
+Image to Video AI SaaS Startups in hours.
 
 ![preview](preview.png)
 
@@ -9,7 +9,7 @@ Ship Any AI SaaS Startups in hours.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/shipanyai/shipany-template-one.git
+git clone https://github.com/image-to-video/image-to-video.git
 ```
 
 2. Install dependencies
@@ -44,7 +44,7 @@ cp .env.example .env.local
 
 - Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshipanyai%2Fshipany-template-one&project-name=my-shipany-project&repository-name=my-shipany-project&redirect-url=https%3A%2F%2Fshipany.ai&demo-title=ShipAny&demo-description=Ship%20Any%20AI%20Startup%20in%20hours%2C%20not%20days&demo-url=https%3A%2F%2Fshipany.ai&demo-image=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FGgGSW3La8AAGJgU%3Fformat%3Djpg%26name%3Dlarge)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fimage-to-video%2Fimage-to-video&project-name=image-to-video&repository-name=image-to-video&redirect-url=https%3A%2F%2Fwww.image-to-video.art&demo-title=Image%20to%20Video&demo-description=Image%20to%20Video%20AI%20Startup%20in%20hours%2C%20not%20days&demo-url=https%3A%2F%2Fwww.image-to-video.art&demo-image=preview.png)
 
 - Deploy to Cloudflare
 
@@ -67,10 +67,10 @@ npm run cf:deploy
 
 ## Community
 
-- [ShipAny](https://shipany.ai)
-- [Documentation](https://docs.shipany.ai)
-- [Discord](https://discord.gg/HQNnrzjZQS)
+- [Image to Video](https://www.image-to-video.art)
+- [Documentation](https://www.image-to-video.art/docs)
+- [Discord](https://discord.gg/your-invite-link)
 
 ## License
 
-- [ShipAny AI SaaS Boilerplate License Agreement](LICENSE)
+- [Image to Video AI SaaS Boilerplate License Agreement](LICENSE)

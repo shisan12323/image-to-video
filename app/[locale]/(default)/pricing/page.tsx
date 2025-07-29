@@ -14,16 +14,16 @@ export async function generateMetadata({
   const canonicalUrl = buildCanonical(locale, 'pricing');
   
   return {
-    title: `${t('title')} - AI Garden Design`,
+    title: `${t('title')} - Image to Video`,
     description: t('description'),
-    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aigardendesign.online'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'),
     alternates: {
       canonical: canonicalUrl,
       languages: buildHreflang('pricing'),
     },
     openGraph: {
       url: canonicalUrl,
-      siteName: 'AI Garden Design',
+      siteName: 'Image to Video',
       locale: locale,
       type: 'website',
     },
@@ -38,22 +38,22 @@ export default async function PricingPage({
   const { locale } = await params;
 
   // Structured data for pricing plans
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aigardendesign.online';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
   
   const pricingStructuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "AI Garden Design Service",
-    "description": "Professional AI-powered garden design service",
+    "name": "Image to Video Service",
+    "description": "Professional AI-powered image to video service",
     "brand": {
       "@type": "Brand",
-      "name": "AI Garden Design"
+      "name": "Image to Video"
     },
     "offers": [
       {
         "@type": "Offer",
         "name": "Starter Plan",
-        "description": "Perfect for small garden homeowners",
+        "description": "Perfect for small business or personal use",
         "price": "9.90",
         "priceCurrency": "USD",
         "priceValidUntil": "2025-12-31",
@@ -62,13 +62,13 @@ export default async function PricingPage({
         "eligibleQuantity": {
           "@type": "QuantitativeValue",
           "value": "80",
-          "unitText": "AI garden designs per month"
+          "unitText": "AI video generations per month"
         }
       },
       {
         "@type": "Offer",
         "name": "Professional Plan",
-        "description": "Ideal for garden enthusiasts and landscape architects",
+        "description": "Ideal for video creators and marketers",
         "price": "19.90",
         "priceCurrency": "USD",
         "priceValidUntil": "2025-12-31",
@@ -77,13 +77,13 @@ export default async function PricingPage({
         "eligibleQuantity": {
           "@type": "QuantitativeValue",
           "value": "200",
-          "unitText": "AI garden designs per month"
+          "unitText": "AI video generations per month"
         }
       },
       {
         "@type": "Offer",
         "name": "Business Plan",
-        "description": "For landscape companies and designers",
+        "description": "For agencies and enterprises",
         "price": "29.90",
         "priceCurrency": "USD",
         "priceValidUntil": "2025-12-31",
@@ -92,7 +92,7 @@ export default async function PricingPage({
         "eligibleQuantity": {
           "@type": "QuantitativeValue",
           "value": "500",
-          "unitText": "AI garden designs per month"
+          "unitText": "AI video generations per month"
         }
       }
     ]

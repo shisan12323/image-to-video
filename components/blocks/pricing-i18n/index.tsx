@@ -163,7 +163,7 @@ export default function PricingI18n() {
     <section id="pricing" className="py-16">
       <div className="container">
         <div className="mx-auto mb-16 text-center">
-          <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+          <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             {t('title')}
           </h2>
           <p className="text-slate-600 text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
@@ -193,13 +193,13 @@ export default function PricingI18n() {
                       />
                       <Label
                         htmlFor={item.name}
-                        className="flex h-full cursor-pointer items-center justify-center px-8 font-bold text-slate-600 peer-data-[state=checked]:text-emerald-600 transition-all duration-300 hover:text-emerald-500"
+                        className="flex h-full cursor-pointer items-center justify-center px-8 font-bold text-slate-600 peer-data-[state=checked]:text-indigo-500 transition-all duration-300 hover:text-purple-500"
                       >
                         {item.title}
                         {item.label && (
                           <Badge
                             variant="outline"
-                            className="border-emerald-500 bg-gradient-to-r from-emerald-500 to-teal-500 px-2 ml-2 text-white text-xs font-semibold"
+                            className="border-indigo-400 bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-400 px-2 ml-2 text-white text-xs font-semibold"
                           >
                             {item.label}
                           </Badge>
@@ -222,8 +222,8 @@ export default function PricingI18n() {
                   key={index}
                   className={`rounded-xl p-8 transition-all duration-300 ${
                     productInfo?.is_featured
-                      ? "border-emerald-500 border-2 bg-gradient-to-br from-emerald-50/50 to-teal-50/50 shadow-xl scale-105"
-                      : "border-slate-200 border hover:border-emerald-300 hover:shadow-lg"
+                      ? "border-indigo-400 border-2 bg-gradient-to-br from-indigo-50/50 via-purple-50/50 to-pink-50/50 shadow-xl scale-105"
+                      : "border-slate-200 border hover:border-indigo-300 hover:shadow-lg"
                   }`}
                 >
                   <div className="flex h-full flex-col justify-between gap-5">
@@ -238,7 +238,7 @@ export default function PricingI18n() {
                         {plan.label && (
                           <Badge
                             variant="outline"
-                            className="border-emerald-500 bg-gradient-to-r from-emerald-500 to-teal-500 px-3 py-1 text-white font-semibold"
+                            className="border-indigo-400 bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-400 px-3 py-1 text-white font-semibold"
                           >
                             {plan.label}
                           </Badge>
@@ -251,7 +251,7 @@ export default function PricingI18n() {
                           </span>
                         )}
                         {plan.price && (
-                          <span className="text-5xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                          <span className="text-5xl font-bold bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                             {plan.price}
                           </span>
                         )}
@@ -276,7 +276,7 @@ export default function PricingI18n() {
                           {plan.features.map((feature: string, fi: number) => {
                             return (
                               <li className="flex gap-3" key={`feature-${fi}`}>
-                                <Check className="mt-0.5 size-5 shrink-0 text-emerald-500" />
+                                <Check className="mt-0.5 size-5 shrink-0 text-indigo-400" />
                                 <span className="text-slate-700">{feature}</span>
                               </li>
                             );
@@ -288,7 +288,7 @@ export default function PricingI18n() {
                       <Button
                         className={`w-full flex items-center justify-center gap-2 font-semibold py-6 text-lg transition-all duration-300 ${
                           productInfo?.is_featured 
-                            ? "bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg hover:shadow-xl"
+                            ? "bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-400 hover:from-indigo-600 hover:to-pink-500 text-white shadow-lg hover:shadow-xl"
                             : "bg-slate-900 hover:bg-slate-800 text-white"
                         }`}
                         disabled={isLoading}

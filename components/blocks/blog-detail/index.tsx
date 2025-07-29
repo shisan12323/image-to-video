@@ -8,7 +8,7 @@ import { Post } from "@/types/post";
 import moment from "moment";
 
 export default function BlogDetail({ post }: { post: Post }) {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aigardendesign.online';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
 
   // 预先构建 Article 结构化数据（SSR）
   const articleSchema = {
@@ -19,12 +19,12 @@ export default function BlogDetail({ post }: { post: Post }) {
     "image": post.cover_url ? `${baseUrl}${post.cover_url}` : `${baseUrl}/og-image.jpg`,
     "author": {
       "@type": "Person",
-      "name": post.author_name || "AI Garden Design Team",
+      "name": post.author_name || "Image to Video Team",
       "image": post.author_avatar_url
     },
     "publisher": {
       "@type": "Organization",
-      "name": "AI Garden Design",
+      "name": "Image to Video",
       "logo": {
         "@type": "ImageObject",
         "url": `${baseUrl}/logo.svg`
@@ -36,8 +36,8 @@ export default function BlogDetail({ post }: { post: Post }) {
       "@type": "WebPage",
       "@id": `${baseUrl}/blog/${post.slug}`
     },
-    "articleSection": "Garden Design",
-    "keywords": "garden design, AI landscape, outdoor planning, garden planner"
+    "articleSection": "Image to Video",
+    "keywords": "image to video, AI video generation, video from image, AI video, image animation"
   };
 
   return (

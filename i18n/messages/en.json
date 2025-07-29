@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ai garden design free – AI Landscape Generator & Backyard Planner Online",
-    "description": "AI garden design free – online AI landscape generator & backyard planner. Upload a yard photo to get professional garden layouts, before-after preview and HD download in 2 min.",
-    "keywords": "ai garden design free, ai landscape generator, garden planer, garden planner, free garden design, ai garden planner, landscape design ai, free landscape generator, garden design tool, ai garden design tool, garden layout planner, backyard design ai, free garden planning software, landscape planner ai, garden design generator, ai outdoor design, landscape design generator"
+    "title": "AI Image to Video Generator – Free Online AI Video Maker from Photos",
+    "description": "Transform your images into stunning videos with our free AI video generator. Upload any photo and create professional-quality videos in seconds. No editing skills required.",
+    "keywords": "ai image to video, image to video ai, photo to video converter, ai video generator, free video maker, image animation, ai video creation, picture to video, automated video generation, ai powered video maker"
   },
   "user": {
     "sign_in": "Sign In",
@@ -32,395 +32,473 @@
     "close_title": "Close",
     "cancel_title": "Cancel"
   },
-  "hero": {
-    "title": "AI Garden Design",
-    "subtitle": "Smart landscape solutions",
-    "description": "Upload your yard photo and let our AI create professional landscape designs tailored to your space",
-    "button": "Try AI Garden Design for free",
-    "ai_badge": "AI Generated"
-  },
-  "upload": {
-    "title": "Garden Design Upload",
-    "description": "Upload your garden photo and let our AI create a professional design",
-    "change": "Click to change photo",
-    "prompt": "Upload your garden photo",
-    "formats": "Supported: JPG, PNG, WEBP, up to 5MB",
-    "style_label": "Garden Style",
-    "style_placeholder": "Choose style...",
-    "elements_label": "Special Elements (Optional)",
-    "elements_placeholder": "e.g., water feature, pergola, fire pit...",
-    "generating": "Generating...",
-    "generate_button": "Generate Design",
-    "result_title": "Your AI Generated Design",
-    "ai_complete": "AI Generated",
-    "download": "Download Design",
-    "placeholder_title": "Your AI Generated Design",
-    "placeholder_text": "Upload your garden photo and choose a style to see your AI-generated design here",
-    "error_selection": "Please select a file and garden style"
-  },
-  "garden_styles": {
-    "title": "AI Garden Design Styles",
-    "description": "Our AI garden design platform offers a wide range of popular landscape styles to transform your outdoor space",
-    "styles": [
-      { "name": "English Cottage", "image": "/imgs/showcases/1.png" },
-      { "name": "Modern Minimalist", "image": "/imgs/showcases/2.png" },
-      { "name": "Mediterranean", "image": "/imgs/showcases/3.png" },
-      { "name": "Japanese Zen", "image": "/imgs/showcases/4.png" },
-      { "name": "Tropical Paradise", "image": "/imgs/showcases/5.png" },
-      { "name": "Desert Oasis", "image": "/imgs/showcases/6.png" },
-      { "name": "Prairie Wildflower", "image": "/imgs/showcases/7.png" },
-      { "name": "French Formal", "image": "/imgs/showcases/8.png" },
-      { "name": "Rustic Country", "image": "/imgs/showcases/9.png" },
-      { "name": "Contemporary Urban", "image": "/imgs/showcases/1.png" },
-      { "name": "Woodland Natural", "image": "/imgs/showcases/2.png" },
-      { "name": "Coastal Garden", "image": "/imgs/showcases/3.png" },
-      { "name": "Victorian Formal", "image": "/imgs/showcases/4.png" },
-      { "name": "Rock Garden", "image": "/imgs/showcases/5.png" },
-      { "name": "Water Garden", "image": "/imgs/showcases/6.png" },
-      { "name": "Herb Garden", "image": "/imgs/showcases/7.png" }
-    ]
-  },
-  "how_it_works": {
-    "title": "How It Works",
-    "subtitle": "Garden Design in 3 Simple Steps",
-    "description": "Transform your outdoor space with our AI-powered garden design process",
-    "steps": {
-      "upload": {
-        "title": "1. Upload Photo",
-        "description": "Take a photo of your outdoor space and upload it to our platform"
-      },
-      "style": {
-        "title": "2. Choose Style",
-        "description": "Select your preferred garden style from our curated collection"
-      },
-      "generate": {
-        "title": "3. Get Design",
-        "description": "Our AI creates a professional garden design tailored to your space"
-      }
-    }
-  },
-  "ai_features": {
-    "title": "Why Choose AI Garden Design",
-    "subtitle": "Advanced AI Technology",
-    "description": "Our powerful AI landscape design platform transforms how you plan outdoor spaces",
-    "features": {
-      "analysis": {
-        "title": "Smart Photo Analysis",
-        "description": "AI analyzes your space dimensions, lighting conditions, and existing elements in seconds"
-      },
-      "plant_selection": {
-        "title": "Climate Intelligence",
-        "description": "Automatically matches plants to your exact location, weather patterns, and growing conditions"
-      },
-      "design_optimization": {
-        "title": "Style Adaptation",
-        "description": "Seamlessly applies any garden style while keeping plant choices practical for your space"
-      },
-      "seasonal_planning": {
-        "title": "Realistic Previews",
-        "description": "Generate photorealistic 3D visualizations to see exactly how your garden will look"
-      },
-      "plant_database": {
-        "title": "Local Plant Database",
-        "description": "Access curated plant recommendations from local nurseries with pricing and availability"
-      },
-      "instant_results": {
-        "title": "Instant Results",
-        "description": "Complete professional garden designs generated in under 2 minutes, not weeks"
-      }
-    }
-  },
-  "transformations": {
-    "badge": "Real AI Transformations",
-    "title": "Before & After Magic",
-    "description": "See how our AI transforms ordinary spaces into extraordinary gardens in under 2 minutes",
-    "instruction": "Drag the slider to compare",
-    "cta_title": "Ready to transform your space?",
-    "cta_description": "Upload your photo above to get started",
-    "features": [
-      "Professional AI Design",
-      "2-minute transformation", 
-      "Detailed plant recommendations"
-    ],
-    "examples": [
-      {
-        "title": "Urban Backyard",
-        "style": "Japanese Zen",
-        "description": "A cluttered urban backyard transformed into a peaceful Japanese zen garden with bamboo, stones, and carefully placed plants."
-      },
-      {
-        "title": "Suburban Garden",
-        "style": "English Cottage", 
-        "description": "A plain suburban lawn redesigned as a romantic English cottage garden with mixed flower borders and charming pathways."
-      },
-      {
-        "title": "Patio Space",
-        "style": "Modern Minimalist",
-        "description": "A concrete patio transformed into a sleek modern minimalist garden with clean lines and geometric plant arrangements."
-      }
-    ]
-  },
-  "pricing": {
-    "title": "Simple, Transparent Pricing",
-    "description": "Choose the perfect plan to transform your outdoor space with AI",
-    "groups": [
-      {
-        "name": "monthly",
-        "title": "Monthly",
-        "description": "Pay as you go"
-      },
-      {
-        "name": "yearly", 
-        "title": "Yearly",
-        "description": "Save 20%",
-        "label": "Save 20%"
-      }
-    ],
-    "plans": [
-      {
-        "title": "Starter",
-        "description": "Perfect for homeowners with small gardens",
-        "price": "$9.9",
-        "unit": "/month",
-        "group": "monthly",
-        "features_title": "Everything you need to start:",
-        "features": [
-          "80 AI garden designs per month",
-          "Basic plant recommendations",
-          "Email support"
-        ],
-        "button_title": "Get Started",
-        "tip": ""
-      },
-      {
-        "title": "Professional", 
-        "description": "Ideal for garden enthusiasts and landscapers",
-        "price": "$19.9",
-        "unit": "/month",
-        "group": "monthly",
-        "label": "Most Popular",
-        "features_title": "Everything in Starter, plus:",
-        "features": [
-          "200 AI garden designs per month",
-          "Advanced plant database",
-          "Priority email support"
-        ],
-        "button_title": "Get Started",
-        "tip": ""
-      },
-      {
-        "title": "Business",
-        "description": "For landscaping businesses and designers",
-        "price": "$29.9",
-        "unit": "/month", 
-        "group": "monthly",
-        "features_title": "Everything in Professional, plus:",
-        "features": [
-          "500 AI garden designs per month",
-          "Commercial usage rights"
-        ],
-        "button_title": "Get Started",
-        "tip": ""
-      },
-      {
-        "title": "Starter",
-        "description": "Perfect for homeowners with small gardens",
-        "price": "$7.9",
-        "original_price": "$9.9",
-        "unit": "/month",
-        "group": "yearly",
-        "features_title": "Everything you need to start:",
-        "features": [
-          "80 AI garden designs per month",
-          "Basic plant recommendations",
-          "Email support"
-        ],
-        "button_title": "Get Started",
-        "tip": "Billed annually at $94.8"
-      },
-      {
-        "title": "Professional",
-        "description": "Ideal for garden enthusiasts and landscapers", 
-        "price": "$15.9",
-        "original_price": "$19.9",
-        "unit": "/month",
-        "group": "yearly",
-        "label": "Best Value",
-        "features_title": "Everything in Starter, plus:",
-        "features": [
-          "200 AI garden designs per month",
-          "Advanced plant database",
-          "Multiple style variations",
-          "HD quality downloads", 
-          "3D visualization preview",
-          "Priority email support",
-          "Custom color schemes"
-        ],
-        "button_title": "Get Started",
-        "tip": "Billed annually at $190.8"
-      },
-      {
-        "title": "Business",
-        "description": "For landscaping businesses and designers",
-        "price": "$23.9",
-        "original_price": "$29.9",
-        "unit": "/month",
-        "group": "yearly",
-        "features_title": "Everything in Professional, plus:",
-        "features": [
-          "500 AI garden designs per month",
-          "Commercial usage rights"
-        ],
-        "button_title": "Get Started",
-        "tip": "Billed annually at $286.8"
-      }
-    ]
-  },
   "testimonials": {
-    "title": "What Users Say About AI Garden Design",
-    "description": "Join thousands of satisfied customers who've transformed their outdoor spaces with our AI technology",
+    "title": "What Creators Say About Our AI Video Generator",
+    "description": "Join over 100,000 content creators, marketers, and businesses using our AI to transform static images into engaging videos",
     "reviews": [
       {
-        "name": "Sarah M.",
-        "location": "San Francisco, CA",
-        "quote": "I was skeptical about AI garden design at first, but I'm absolutely blown away by the results. My backyard transformation exceeded all expectations!"
+        "name": "Alex Rivera",
+        "location": "Social Media Manager, USA",
+        "quote": "This AI video generator is a game-changer! I can create scroll-stopping social media content from any image in seconds. The motion effects are incredibly realistic."
       },
       {
-        "name": "Michael R.",
-        "location": "Austin, TX",
-        "quote": "As a landscape designer, I use AI Garden Design for initial concepts. It's incredibly accurate and saves me hours of planning time."
+        "name": "Priya Sharma",
+        "location": "Digital Marketer, India", 
+        "quote": "Our video engagement increased by 400% after using this tool. The AI perfectly understands how to bring product photos to life with natural, eye-catching animations."
       },
       {
-        "name": "Lisa K.",
-        "location": "Seattle, WA",
-        "quote": "The Japanese Zen design generated for my small patio was perfect. I followed the plan exactly and now have my dream outdoor space."
+        "name": "James Wilson",
+        "location": "E-commerce Owner, Australia",
+        "quote": "I was spending hundreds on video production. Now I create professional product videos from photos in minutes. This tool paid for itself in the first week."
       },
       {
-        "name": "David L.",
-        "location": "Miami, FL",
-        "quote": "Property developer here - we use this for staging homes. The AI designs help buyers visualize the potential of outdoor spaces."
+        "name": "Maria Santos",
+        "location": "Content Creator, Brazil",
+        "quote": "The quality is mind-blowing! My followers can't believe these videos started as static images. The AI adds the perfect amount of motion without looking artificial."
       },
       {
-        "name": "Emma J.",
-        "location": "Portland, OR",
-        "quote": "I'm not good with plants, but the AI recommended the perfect ones for my climate. Everything is thriving six months later!"
+        "name": "Tom Chen",
+        "location": "YouTuber, Canada",
+        "quote": "Perfect for creating thumbnails that move! The AI knows exactly which parts of an image should animate. My click-through rates have never been higher."
       },
       {
-        "name": "James T.",
-        "location": "Denver, CO",
-        "quote": "The before and after difference is incredible. My neighbors can't believe it's the same backyard. Worth every penny!"
+        "name": "Sophie Martin",
+        "location": "Freelance Designer, France",
+        "quote": "I use this for every client project now. Static designs become dynamic presentations that wow clients. It's like having a motion graphics team in your pocket."
       }
     ]
   },
   "faq": {
-    "title": "FAQ About AI Garden Design",
-    "description": "Get answers to the most common questions about our AI-powered garden design service",
-    "cta_title": "Ready to Experience AI Garden Design?",
-    "cta_description": "Join thousands of gardeners who've transformed their spaces with our intelligent design system",
-    "cta_button": "Start Your Garden Transformation Today",
-    "stats": {
-      "gardens_designed": "Gardens Designed",
-      "cities_served": "Cities Served",
-      "design_time": "Minutes Design Time"
-    },
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about transforming images into videos with AI",
     "questions": [
       {
-        "question": "How accurate are the AI-generated garden designs?",
-        "answer": "Our AI garden designs are highly accurate, taking into account your specific space dimensions, lighting conditions, and climate zone. The AI has been trained on thousands of professional landscape designs and considers factors like plant compatibility, seasonal changes, and maintenance requirements. Most users report 90%+ satisfaction with the design accuracy."
+        "question": "How does AI image to video generation work?",
+        "answer": "Our advanced AI analyzes your image to understand depth, objects, and context. It then generates realistic motion by predicting how elements should move naturally - adding subtle camera movements, object animations, and atmospheric effects that bring your static image to life."
       },
       {
-        "question": "Is it complicated to implement the AI-generated designs?",
-        "answer": "Not at all! Each design comes with detailed implementation guides, plant lists with local suppliers, and step-by-step instructions. We provide shopping lists, planting schedules, and maintenance tips. Many designs can be implemented as weekend DIY projects, while others may require professional landscaping for complex features."
+        "question": "What types of images work best for video conversion?",
+        "answer": "Any high-quality image works great! Our AI excels with portraits, landscapes, product photos, artwork, and illustrations. For optimal results, use images with good lighting, clear subjects, and at least 1080p resolution. The AI automatically adapts to different styles and content types."
       },
       {
-        "question": "How does AI garden design compare to traditional landscape design?",
-        "answer": "AI garden design offers several advantages: it's faster (2 minutes vs weeks), more affordable (fraction of the cost), and provides multiple design options instantly. While traditional designers offer personal consultation, our AI considers the same principles of design, plant science, and aesthetics. Many professional landscapers actually use our tool for initial concepts."
+        "question": "How long does it take to generate a video?",
+        "answer": "Most videos are generated in 30-90 seconds. Processing time depends on image complexity, desired video length, and selected quality settings. Our cloud-based AI ensures consistent, fast processing without requiring powerful hardware on your device."
       },
       {
-        "question": "What kind of photos work best for AI garden design?",
-        "answer": "For best results, upload clear, well-lit photos taken during daylight hours. Include the entire space you want to redesign, taken from a good vantage point. Multiple angles help, but one comprehensive photo is sufficient. The AI works with photos from any smartphone or camera - no special equipment needed."
+        "question": "Can I control the animation style and motion?",
+        "answer": "Absolutely! Choose from preset styles like cinematic zoom, parallax scroll, gentle sway, or dynamic movement. You can also adjust motion intensity, direction, and speed. Advanced users can specify which parts of the image to animate and control camera movements."
       },
       {
-        "question": "What's included in the AI garden design service?",
-        "answer": "Each design includes: photorealistic visualizations, detailed plant lists with local availability, seasonal care guides, implementation timelines, cost estimates, and maintenance schedules. Premium plans also include multiple design variations, 3D renderings, and direct consultation with landscape professionals."
+        "question": "What video formats and quality options are available?",
+        "answer": "All videos are exported as MP4 files optimized for web and social media. Choose from HD (1080p), 4K for premium quality, or compressed formats for faster sharing. Videos support multiple frame rates (24fps, 30fps, 60fps) and include optimized audio tracks."
       },
       {
-        "question": "Can I customize the AI-generated designs?",
-        "answer": "Absolutely! The AI designs serve as professional starting points that you can customize. You can specify preferences like color schemes, plant types, maintenance levels, and budget constraints. Our system learns from your feedback to create increasingly personalized designs that match your style and needs."
+        "question": "Is there a free version, and what are the limits?",
+        "answer": "Yes! Free users can create unlimited 3-second videos with HD quality and standard animations. Premium plans unlock longer videos (up to 60 seconds), 4K quality, advanced motion controls, batch processing, and commercial usage rights."
+      }
+    ],
+    "cta_title": "Ready to Bring Your Images to Life?",
+    "cta_description": "Join over 100,000 creators already using AI to transform static images into engaging videos. Start creating today!",
+    "cta_button": "Create Your First AI Video Free"
+  },
+  "feature_video": {
+    "title": "Choose Your AI Video Creation Method",
+    "items": {
+      "0": {
+        "icon": "🖼️",
+        "title": "Image to Video AI",
+        "description": "Transform static images into dynamic videos with cutting-edge image to video AI animation technology.",
+        "button_text": "Try Image to Video AI"
+      },
+      "1": {
+        "icon": "📝",
+        "title": "Text to Video AI",
+        "description": "Create professional videos from text descriptions using advanced AI models.",
+        "button_text": "Try Text to Video AI"
+      },
+      "2": {
+        "icon": "✨",
+        "title": "Video Effect Templates",
+        "description": "Apply trending video effects with our growing collection of popular templates.",
+        "button_text": "Try Video Effect Templates"
+      }
+    }
+  },
+  "hero": {
+    "top_badge": "CONVERT IMAGES TO VIDEOS IN SECONDS",
+    "title_line1": "#1 Image To Video",
+    "title_line2": "AI For Creation", 
+    "subtitle": "Welcome to ImageToVideo AI!",
+    "description": "As a leading Image To Video AI technology, you can enjoy efficient and realistic AI-generated effects here. Enjoy amazing technology to transform images to videos AI.",
+    "cta_button": "Transform Images to Videos AI",
+    "button": "Start Creating for Free",
+    "buttons": {
+      "0": {
+        "title": "Transform Images to Videos AI",
+        "icon": "Play",
+        "url": "/#upload",
+        "variant": "default"
+      }
+    }
+  },
+  "excellent_cases": {
+    "title": "Excellent Cases",
+    "subtitle": "See What Our AI Can Create",
+    "description": "Explore amazing videos generated from simple images. Each video showcases the power of our AI technology.",
+    "categories": {
+      "all": "All",
+      "portrait": "Portrait",
+      "landscape": "Landscape", 
+      "product": "Product",
+      "creative": "Creative",
+      "animation": "Animation"
+    },
+    "view_more": "View More",
+    "load_more": "Load More Cases",
+    "play_video": "Play Video",
+    "case_details": "Case Details",
+    "original_image": "Original Image",
+    "generated_video": "Generated Video",
+    "duration": "Duration",
+    "model_used": "Model Used",
+    "prompt_used": "Prompt Used"
+  },
+  "generator": {
+    "tabs": {
+      "image_to_video": "Image To Video",
+      "photo_to_video": "Photo To Video"
+    },
+    "upload": {
+      "title": "Upload Image",
+      "ai_generator": "AI Image Generator",
+      "or": "OR",
+      "change_image": "Click to change image"
+    },
+    "effects": {
+      "video_effects": "Video Effects",
+      "video_styles": "Video Styles"
+    },
+    "description": {
+      "placeholder": "Describe your shot",
+      "character_count": "0/1000"
+    },
+    "actions": {
+      "ai_generate": "AI Generate",
+      "rewrite": "Rewrite",
+      "reset": "Reset"
+    },
+    "model": {
+      "label": "Model",
+      "fast": "Fast 1.4",
+      "pro": "Pro-Turbo 2.4",
+      "pro_badge": "PRO"
+    },
+    "duration": {
+      "label": "Duration",
+      "four_seconds": "4s",
+      "eight_seconds": "8s",
+      "pro_badge": "PRO"
+    },
+    "generate": {
+      "button": "Generate Now",
+      "generating": "Generating...",
+      "credits": "3"
+    },
+    "history": "History",
+    "preview": {
+      "title": "Video Preview",
+      "placeholder": "Your video will appear here",
+      "upload_prompt": "Upload an image to get started",
+      "generating": "AI is creating your video..."
+    }
+  },
+  "transformations": {
+    "badge": "AI Video Magic",
+    "title": "Amazing Image to Video Transformations",
+    "description": "See how our AI brings static images to life with stunning motion effects and professional quality results.",
+    "examples": [
+      {
+        "style": "Marketing Videos",
+        "title": "Generate Marketing Videos At A Low Cost",
+        "description": "If you're a brand marketer for a startup struggling to create high-quality corporate or marketing videos on a budget, our Image to Video AI Generator is your best solution. ImageToVideo AI offers a free online service that allows you to easily upload images and generate the video you desire, anytime.",
+        "button": {
+          "text": "Try Our Image to Video AI Generator Now →",
+          "url": "/#upload"
+        }
+      },
+      {
+        "style": "Watermark-Free Export", 
+        "title": "HD Lossless Export Of Watermark-Free Videos",
+        "description": "You have certainly experienced frustration when other AI video generators produce videos with watermarks. This greatly wastes your time experiencing the product. ImageToVideo AI will not cause you this trouble, as it always allows users to download watermark-free videos, even without payment.",
+        "button": {
+          "text": "Export Watermark-Free Video",
+          "url": "/#upload"
+        }
+      },
+      {
+        "style": "Nature Animation",
+        "title": "Animate Landscapes with Realistic Effects",
+        "description": "Watch as still landscapes come alive with flowing water, swaying trees, moving clouds, and atmospheric effects that create immersive natural scenes.",
+        "button": {
+          "text": "Animate Your Image with AI",
+          "url": "/#upload"
+        }
+      }
+    ],
+    "features": [
+      "Automatic motion detection",
+      "Professional quality output", 
+      "Multiple animation styles",
+      "HD and 4K resolution support",
+      "Fast 30-second processing"
+    ],
+    "cta_title": "Ready to Transform Your Images?",
+    "cta_description": "Start creating stunning videos from your photos now"
+  },
+  "how_it_works": {
+    "title": "How It Works",
+    "subtitle": "Create Amazing Videos in 3 Simple Steps",
+    "description": "Transform your images into stunning videos with our advanced AI technology",
+    "steps": {
+      "upload": {
+        "title": "Upload Your Image",
+        "description": "Simply drag and drop your image or click to upload. Supports JPG, PNG, and WebP formats."
+      },
+      "process": {
+        "title": "Choose Video Style",
+        "description": "Select your preferred animation style, duration, and other customization options."
+      },
+      "download": {
+        "title": "Download Your Video",
+        "description": "Our AI processes your image and generates a stunning video ready to download."
+      }
+    },
+    "button": {
+      "text": "Convert Image to Video Now!",
+      "url": "/#upload"
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "description": "Select the perfect plan for your video creation needs",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "save": "Save 20%",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "Monthly 每月",
+        "value": "monthly"
+      },
+      {
+        "name": "yearly", 
+        "title": "Yearly 每年",
+        "value": "yearly"
+      }
+    ],
+    "plans": [
+      {
+        "group": "monthly",
+        "title": "Free",
+        "price": "$0",
+        "unit": "/month",
+        "description": "Perfect for getting started",
+        "features": [
+          "3 videos per month",
+          "HD quality (720p)",
+          "Basic animations",
+          "Standard processing speed"
+        ],
+        "button_title": "Get Started Free",
+        "popular": false
+      },
+      {
+        "group": "monthly", 
+        "title": "Pro",
+        "price": "$19",
+        "unit": "/month",
+        "description": "Best for content creators",
+        "features": [
+          "50 videos per month",
+          "4K quality (2160p)",
+          "Advanced animations",
+          "Priority processing",
+          "Commercial license",
+          "Email support"
+        ],
+        "button_title": "Start Pro Plan",
+        "popular": true,
+        "label": "Most Popular"
+      },
+      {
+        "group": "monthly",
+        "title": "Business",
+        "price": "$49",
+        "unit": "/month", 
+        "description": "For teams and agencies",
+        "features": [
+          "Unlimited videos",
+          "4K quality (2160p)",
+          "All animation styles",
+          "Fastest processing",
+          "Commercial license",
+          "Priority support",
+          "API access",
+          "Team collaboration"
+        ],
+        "button_title": "Start Business Plan",
+        "popular": false
+      },
+      {
+        "group": "yearly",
+        "title": "Free",
+        "price": "$0",
+        "unit": "/year",
+        "description": "Perfect for getting started",
+        "features": [
+          "3 videos per month",
+          "HD quality (720p)",
+          "Basic animations",
+          "Standard processing speed"
+        ],
+        "button_title": "Get Started Free",
+        "popular": false
+      },
+      {
+        "group": "yearly",
+        "title": "Pro",
+        "price": "$180",
+        "unit": "/year",
+        "original_price": "$228",
+        "description": "Best for content creators",
+        "features": [
+          "50 videos per month",
+          "4K quality (2160p)",
+          "Advanced animations",
+          "Priority processing",
+          "Commercial license",
+          "Email support"
+        ],
+        "button_title": "Start Pro Plan",
+        "popular": true,
+        "label": "Save 20%"
+      },
+      {
+        "group": "yearly",
+        "title": "Business", 
+        "price": "$468",
+        "unit": "/year",
+        "original_price": "$588",
+        "description": "For teams and agencies",
+        "features": [
+          "Unlimited videos",
+          "4K quality (2160p)",
+          "All animation styles",
+          "Fastest processing",
+          "Commercial license",
+          "Priority support",
+          "API access",
+          "Team collaboration"
+        ],
+        "button_title": "Start Business Plan",
+        "popular": false
       }
     ]
   },
+  "video_showcase": {
+    "badge": "🎬 AI Video Examples",
+    "title": "Outstanding Cases Powered By Image To Video AI Generator",
+    "description": "Experience ImageToVideo AI's cutting-edge Image To Video AI Generator, trusted by over 500,000 users and generating more than 10 million videos. With free access to powerful video creation tools, discover outstanding cases to inspire your next professional video project.",
+    "categories": {
+      "photography": "Photography",
+      "people": "People", 
+      "commercial": "Commercial",
+      "architecture": "Architecture",
+      "creative": "Creative",
+      "lifestyle": "Lifestyle"
+    },
+    "examples": [
+      {
+        "title": "Mountain Paradise",
+        "category": "Photography", 
+        "description": "Stunning mountain landscape with flowing clouds and dynamic lighting effects",
+        "duration": "5s"
+      },
+      {
+        "title": "Portrait Magic",
+        "category": "People",
+        "description": "Professional portrait enhanced with subtle facial animations and background motion",
+        "duration": "3s"
+      },
+      {
+        "title": "Product Spotlight",
+        "category": "Commercial",
+        "description": "Commercial product photography with rotating highlights and depth effects",
+        "duration": "4s"
+      },
+      {
+        "title": "Urban Energy",
+        "category": "Architecture",
+        "description": "Modern cityscape with traffic flow and architectural movement",
+        "duration": "6s"
+      },
+      {
+        "title": "Digital Art",
+        "category": "Creative",
+        "description": "Abstract digital artwork transformed into mesmerizing motion graphics",
+        "duration": "4s"
+      },
+      {
+        "title": "Culinary Delight",
+        "category": "Lifestyle",
+        "description": "Appetizing food photography with steam effects and ingredient movement",
+        "duration": "3s"
+      }
+    ],
+    "view_example": "View Example",
+    "play_video": "Play Video",
+    "loading": "Loading video...",
+    "watch_full": "Watch Full Video"
+  },
   "footer": {
-    "brand_description": "AI Garden Design is an intelligent garden design platform that transforms your outdoor spaces using artificial intelligence.",
-    "copyright": "© 2025 • AI Garden Design All rights reserved.",
-    "privacy_policy": "Privacy Policy",
-    "terms_of_service": "Terms of Service",
-    "blog": "Blog"
-  },
-  "my_credits": {
-    "title": "My Credits",
-    "left_tip": "Remaining Credits: {left_credits}",
-    "no_credits": "No credit records",
-    "recharge": "Recharge",
-    "table": {
-      "trans_no": "Transaction No",
-      "trans_type": "Type",
-      "credits": "Credits",
-      "updated_at": "Updated At"
-    }
-  },
-  "my_orders": {
-    "title": "My Orders",
-    "description": "View your order history",
-    "no_orders": "No orders found",
-    "table": {
-      "order_no": "Order No",
-      "email": "Email",
-      "product_name": "Product",
-      "amount": "Amount",
-      "paid_at": "Paid At"
-    }
-  },
-  "my_images": {
-    "title": "My Images",
-    "no_images": "No generated images yet",
-    "download": "Download",
-    "copy": "Copy",
-    "generation_date": "Generated",
-    "theme": "Theme",
-    "elements": "Elements",
-    "credits_used": "Credits Used",
-    "status": "Status"
-  },
-  "blog": {
-    "title": "AI Garden Design Blog - Tips, Guides & Best Practices",
-    "description": "Expert advice on AI garden design, landscape planning tips, plant selection guides, and the latest trends in smart gardening technology.",
-    "read_more_text": "Read More",
-    "featured_post": "Featured Article",
-    "latest_posts": "Latest Posts",
-    "categories": "Categories",
-    "tags": "Tags",
-    "share": "Share Article",
-    "related_posts": "Related Articles"
-  },
-  "common": {
-    "loading": "Loading...",
-    "error": "Something went wrong",
-    "try_again": "Try Again",
-    "success": "Success!",
-    "cancel": "Cancel",
-    "confirm": "Confirm",
-    "save": "Save",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "download": "Download",
-    "upload": "Upload",
-    "search": "Search",
-    "filter": "Filter",
-    "sort": "Sort",
-    "next": "Next",
-    "previous": "Previous",
-    "close": "Close"
+    "blog": "Blog",
+    "brand": {
+      "title": "ImageToVideo AI",
+      "description": "Transform images into stunning videos with advanced AI technology"
+    },
+    "links": {
+      "product": {
+        "title": "Product",
+        "items": [
+          { "title": "Image to Video", "url": "/#features" },
+          { "title": "Text to Video", "url": "/#features" },
+          { "title": "Pricing", "url": "/pricing" }
+        ]
+      },
+      "company": {
+        "title": "Company", 
+        "items": [
+          { "title": "About", "url": "/about" },
+          { "title": "Blog", "url": "/blog" },
+          { "title": "Contact", "url": "/contact" }
+        ]
+      },
+      "support": {
+        "title": "Support",
+        "items": [
+          { "title": "Help Center", "url": "/help" },
+          { "title": "FAQ", "url": "/#faq" },
+          { "title": "Contact Support", "url": "/support" }
+        ]
+      },
+      "legal": {
+        "title": "Legal",
+        "items": [
+          { "title": "Privacy Policy", "url": "/privacy" },
+          { "title": "Terms of Service", "url": "/terms" }
+        ]
+      }
+    },
+    "copyright": "© 2024 ImageToVideo AI. All rights reserved."
   }
 }

@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
 import { useTranslations } from "next-intl";
 
-export default function Testimonials() {
+export default function TestimonialsVideo() {
   const { ref: animationRef, isVisible } = useScrollAnimation();
   const scrollRef = useRef<HTMLDivElement>(null);
   const t = useTranslations('testimonials');
@@ -46,7 +46,7 @@ export default function Testimonials() {
   return (
     <section 
       ref={animationRef}
-      className={`py-12 md:py-24 bg-gradient-to-b from-white to-slate-50 transition-all duration-1000 ${
+      className={`py-12 md:py-24 bg-gradient-to-br from-slate-50/70 via-blue-50/50 to-white transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
       }`}
     >

@@ -26,7 +26,7 @@ export async function generateMetadata({
   const t = await getTranslations();
 
   // Construct canonical URL
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aigardendesign.online';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
   const canonicalUrl = locale === 'en' ? baseUrl : `${baseUrl}/${locale}`;
 
   return {
@@ -56,7 +56,7 @@ export async function generateMetadata({
     },
     openGraph: {
       url: canonicalUrl,
-      siteName: 'AI Garden Design',
+      siteName: 'Image to Video',
       locale: locale,
       type: 'website',
     },
@@ -74,13 +74,13 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   // Base URL for structured data
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aigardendesign.online';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
 
   // Structured data for the website
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "AI Garden Design",
+    "name": "Image to Video",
     "description": "Smart garden design platform that transforms your outdoor space using artificial intelligence",
     "url": baseUrl,
     "potentialAction": {
@@ -92,9 +92,9 @@ export default async function RootLayout({
       "query-input": "required name=search_term_string"
     },
     "sameAs": [
-      "https://twitter.com/aigardendesign",
-      "https://facebook.com/aigardendesign",
-      "https://linkedin.com/company/aigardendesign"
+      "https://twitter.com/image_to_video",
+      "https://facebook.com/image.to.video",
+      "https://linkedin.com/company/image-to-video"
     ],
     "inLanguage": locales.map(lang => ({
       "@type": "Language",
@@ -106,14 +106,14 @@ export default async function RootLayout({
   const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "AI Garden Design",
-    "description": "AI-powered garden design platform",
+    "name": "Image to Video",
+    "description": "AI-powered image to video platform that transforms your images into stunning videos using artificial intelligence",
     "url": baseUrl,
     "logo": `${baseUrl}/logo.svg`,
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "email": "support@aigardendesign.com"
+      "email": "support@image-to-video.art"
     },
     "address": {
       "@type": "PostalAddress",
@@ -124,13 +124,13 @@ export default async function RootLayout({
   const serviceData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "AI Garden Design Service",
-    "description": "Professional garden design generation using artificial intelligence",
+    "name": "Image to Video Service",
+    "description": "Professional image to video generation using artificial intelligence",
     "provider": {
       "@type": "Organization",
-      "name": "AI Garden Design"
+      "name": "Image to Video"
     },
-    "serviceType": "Garden Design",
+    "serviceType": "Image to Video",
     "areaServed": "Worldwide",
     "availableLanguage": locales
   };

@@ -1,132 +1,48 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
-import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
-import { useTranslations } from "next-intl";
-
-interface FAQItem {
-  question: string;
-  answer: string;
-}
+import { useTranslations } from 'next-intl';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 export default function FAQ() {
-  const { ref, isVisible } = useScrollAnimation();
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const t = useTranslations('faq');
 
-  const faqs: FAQItem[] = t.raw('questions');
+  const name = t('title');
+  if (!name) {
+    return null;
+  }
 
-  // 预先构建 FAQ 结构化数据，让其随首屏 HTML 一并输出
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
-  // useEffect 注入脚本已移除，改为直接在 SSR 渲染 <script>
+  const title = t('title');
+  const description = t('description');
+  const questionsObj = t.raw('questions') as Record<string, any>;
+  const questions = Object.values(questionsObj || {});
 
   return (
-    <section 
-      ref={ref}
-      className={`py-12 md:py-24 bg-white transition-all duration-1000 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-      }`}
-    >
-      {/* FAQ JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
-            {t('title')}
+    <section id={name} className="py-16 sm:py-20">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+            {title}
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            {t('description')}
+          <p className="mt-4 text-lg text-slate-600">
+            {description}
           </p>
         </div>
-        
-        <div className="max-w-4xl mx-auto">
-          {faqs.map((faq: FAQItem, index) => (
-            <div key={index} className="mb-4">
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full text-left p-6 bg-slate-50 hover:bg-slate-100 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold text-slate-900 pr-4">
-                    {faq.question}
-                  </h3>
-                  {openIndex === index ? (
-                    <ChevronUp className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
-                  )}
-                </div>
-              </button>
-              
-              {openIndex === index && (
-                <div className="px-6 pb-6 pt-2 bg-slate-50 rounded-b-lg">
-                  <p className="text-slate-700 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-        
-        {/* Call to action */}
-        <div className="text-center mt-20">
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-12 max-w-4xl mx-auto text-white">
-            <h3 className="text-3xl font-bold mb-4">
-              {t('cta_title')}
-            </h3>
-            <p className="text-xl text-emerald-100 mb-8">
-              {t('cta_description')}
-            </p>
-            <div className="flex flex-wrap justify-center gap-8 text-emerald-100 mb-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white">10K+</div>
-                <div className="text-sm">{t('stats.gardens_designed')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white">50+</div>
-                <div className="text-sm">{t('stats.cities_served')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white">2</div>
-                <div className="text-sm">{t('stats.design_time')}</div>
-              </div>
-            </div>
-            <button 
-              className="bg-white text-emerald-600 hover:bg-emerald-50 px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              style={{
-                animation: 'breathe 3s ease-in-out infinite'
-              }}
-              onClick={() => {
-                const uploadSection = document.getElementById('upload-section');
-                if (uploadSection) {
-                  uploadSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              {t('cta_button')}
-            </button>
-          </div>
+        <div className="mx-auto max-w-3xl">
+          <Accordion type="single" collapsible className="w-full">
+            {questions.map((q, i) => (
+              <AccordionItem key={i} value={`item-${i}`}>
+                <AccordionTrigger className="text-left">{q.question}</AccordionTrigger>
+                <AccordionContent className="text-slate-600">
+                  {q.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

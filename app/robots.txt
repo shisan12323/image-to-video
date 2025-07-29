@@ -10,7 +10,7 @@ Disallow: /privacy-policy
 Disallow: /terms-of-service
 
 # Sitemap
-Sitemap: https://www.aigardendesign.online/sitemap.xml
+Sitemap: https://www.image-to-video.art/sitemap.xml
 
 # Optional: polite crawl delay
 Crawl-delay: 1

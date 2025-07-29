@@ -3,7 +3,11 @@
   "version": "1.6.0",
   "private": true,
   "author": "idoubi",
-  "homepage": "https://shipany.ai",
+  "homepage": "https://www.image-to-video.art",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shisan12323/image-to-video.git"
+  },
   "scripts": {
     "dev": "cross-env NODE_NO_WARNINGS=1 next dev",
     "build": "next build",

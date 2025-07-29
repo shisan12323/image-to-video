@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.aigardendesign.online'
+  const baseUrl = 'https://www.image-to-video.art'
   const locales = ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'ms', 'vi', 'id', 'km', 'hi']
   
   const urls: MetadataRoute.Sitemap = [

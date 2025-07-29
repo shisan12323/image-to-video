@@ -1,42 +1,45 @@
-import { Button } from "@/components/ui/button";
-import Icon from "@/components/icon";
-import Link from "next/link";
-import { Section as SectionType } from "@/types/blocks/section";
+'use client';
 
-export default function CTA({ section }: { section: SectionType }) {
-  if (section.disabled) {
+import { useTranslations } from 'next-intl';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Sparkles } from 'lucide-react';
+
+export default function CTA() {
+  const t = useTranslations('landing.cta');
+
+  const name = t('name');
+  if (!name) {
     return null;
   }
 
+  const title = t('title');
+  const description = t('description');
+  const buttonsObj = t.raw('buttons') as Record<string, any>;
+  const buttons = Object.values(buttonsObj || {});
+
   return (
-    <section id={section.name} className="py-16">
-      <div className="px-8">
-        <div className='flex items-center justify-center rounded-2xl  bg-[url("/imgs/masks/circle.svg")] bg-cover bg-center px-8 py-12 text-center md:p-16'>
-          <div className="mx-auto max-w-screen-md">
-            <h2 className="mb-4 text-balance text-3xl font-semibold md:text-5xl">
-              {section.title}
-            </h2>
-            <p className="text-muted-foreground md:text-lg">
-              {section.description}
-            </p>
-            {section.buttons && (
-              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                {section.buttons.map((item, idx) => (
-                  <Button key={idx} variant={item.variant || "default"}>
-                    <Link
-                      href={item.url || ""}
-                      target={item.target}
-                      className="flex items-center justify-center gap-1"
-                    >
-                      {item.title}
-                      {item.icon && (
-                        <Icon name={item.icon as string} className="size-6" />
-                      )}
-                    </Link>
-                  </Button>
-                ))}
-              </div>
-            )}
+    <section
+      id={name}
+      className="bg-gradient-to-t from-slate-50 to-white py-16 sm:py-20"
+    >
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+            {title}
+          </h2>
+          <p className="mt-4 text-lg text-slate-600">
+            {description}
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            {buttons.map((button, i) => (
+              <Button key={i} size="lg" asChild variant={button.variant || 'default'}>
+                <Link href={button.url} target={button.target}>
+                  <Sparkles className="mr-2 h-5 w-5" />
+                  {button.title}
+                </Link>
+              </Button>
+            ))}
           </div>
         </div>
       </div>

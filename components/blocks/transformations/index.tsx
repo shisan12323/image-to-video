@@ -1,16 +1,20 @@
 "use client";
 
-import { Sparkles, MousePointer2 } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
-import { BeforeAfterSlider } from "@/components/ui/before-after-slider";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { ArrowRight } from "lucide-react";
 
 interface TransformationItem {
   style: string;
   title: string;
   description: string;
-  before: string;
-  after: string;
+  image: string;
+  button?: {
+    text: string;
+    url: string;
+  };
 }
 
 export default function Transformations() {
@@ -18,8 +22,7 @@ export default function Transformations() {
   const t = useTranslations('transformations');
   const transformations: TransformationItem[] = t.raw('examples').map((example: any, index: number) => ({
     ...example,
-    before: `/imgs/features/${index + 1}.png`,
-    after: `/imgs/showcases/${index + 1}.png`
+    image: `/imgs/showcases/${index + 1}.png`
   }));
 
   // 预先构建图片 JSON-LD（ImageObject 列表），随首屏 HTML 输出
@@ -27,7 +30,7 @@ export default function Transformations() {
     "@context": "https://schema.org",
     "@graph": transformations.map((item) => ({
       "@type": "ImageObject",
-      "contentUrl": item.after,
+      "contentUrl": item.image,
       "description": item.title,
     }))
   };
@@ -55,13 +58,9 @@ export default function Transformations() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
             {t('title')}
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-4">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             {t('description')}
           </p>
-          <div className="inline-flex items-center gap-2 text-slate-500 text-sm">
-            <MousePointer2 className="w-4 h-4" />
-            {t('instruction')}
-          </div>
         </div>
         
         <div className="space-y-24 max-w-7xl mx-auto">
@@ -103,15 +102,29 @@ export default function Transformations() {
                       </div>
                     ))}
                   </div>
+                  {/* CTA Button */}
+                  <div className="mt-6">
+                    <a
+                      href={transformation.button?.url || "/#upload"}
+                      className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-400 text-white text-lg font-semibold shadow-md transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                    >
+                      {transformation.button?.text}
+                      <ArrowRight className="w-5 h-5" />
+                    </a>
+                  </div>
                 </div>
 
                 {/* Image Side */}
                 <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                  <BeforeAfterSlider
-                    beforeImage={transformation.before}
-                    afterImage={transformation.after}
-                    className="w-full max-w-md mx-auto"
-                  />
+                  <div className="relative w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                    <Image
+                      src={transformation.image}
+                      alt={transformation.title}
+                      width={400}
+                      height={300}
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             );

@@ -1,4 +1,4 @@
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.aigardendesign.online";
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.image-to-video.art";
 
 import { locales } from "@/i18n/locale";
 

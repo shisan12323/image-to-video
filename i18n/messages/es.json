@@ -1,481 +1,683 @@
 {
   "metadata": {
-    "title": "Diseño de jardín con IA en horas | AI Garden Design",
-    "description": "AI Garden Design es una plataforma inteligente de diseño de jardines que transforma sus espacios exteriores usando inteligencia artificial.",
-    "keywords": "diseño jardín IA, paisajismo, diseño jardín automático, inteligencia artificial jardinería"
+    "title": "Design of garden with AI in hours | AI Garden Design",
+    "description": "Image to Video is an intelligent image-to-video generation platform that transforms your exterior spaces using artificial intelligence.",
+    "keywords": "image to video IA, landscape design, automatic garden design, artificial intelligence gardening"
   },
   "user": {
-    "sign_in": "Iniciar sesión",
-    "sign_out": "Cerrar sesión",
-    "credits": "Créditos",
-    "api_keys": "Claves API",
-    "my_orders": "Mis pedidos",
-    "user_center": "Centro de usuario",
-    "admin_system": "Administración"
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "credits": "Credits",
+    "api_keys": "API Keys",
+    "my_orders": "My Orders",
+    "user_center": "User Center",
+    "admin_system": "Administration"
   },
   "sign_modal": {
-    "sign_in_title": "Iniciar sesión",
-    "sign_in_description": "Inicia sesión en tu cuenta",
-    "sign_up_title": "Registrarse",
-    "sign_up_description": "Crear una cuenta",
-    "email_title": "Correo electrónico",
-    "email_placeholder": "Ingresa tu correo electrónico",
-    "password_title": "Contraseña",
-    "password_placeholder": "Ingresa tu contraseña",
-    "forgot_password": "¿Olvidaste tu contraseña?",
-    "or": "O",
-    "continue": "Continuar",
-    "no_account": "¿No tienes cuenta?",
-    "email_sign_in": "Iniciar sesión con correo",
-    "google_sign_in": "Iniciar sesión con Google",
-    "github_sign_in": "Iniciar sesión con GitHub",
-    "close_title": "Cerrar",
-    "cancel_title": "Cancelar"
+    "sign_in_title": "Sign In",
+    "sign_in_description": "Sign in to your account",
+    "sign_up_title": "Sign Up",
+    "sign_up_description": "Create an account",
+    "email_title": "Email",
+    "email_placeholder": "Enter your email",
+    "password_title": "Password",
+    "password_placeholder": "Enter your password",
+    "forgot_password": "Forgot password?",
+    "or": "Or",
+    "continue": "Continue",
+    "no_account": "Don't have an account?",
+    "email_sign_in": "Sign in with email",
+    "google_sign_in": "Sign in with Google",
+    "github_sign_in": "Sign in with GitHub",
+    "close_title": "Close",
+    "cancel_title": "Cancel"
+  },
+  "feature_video": {
+    "title": "Choose Your Method for Video Creation with AI",
+    "items": {
+      "0": {
+        "icon": "🖼️",
+        "title": "Image to Video IA",
+        "description": "Transform static images into dynamic videos with advanced animation IA image-to-video technology.",
+        "button_text": "Try Image to Video IA"
+      },
+      "1": {
+        "icon": "📝",
+        "title": "Text to Video IA",
+        "description": "Create professional videos from text descriptions using advanced AI models.",
+        "button_text": "Try Text to Video IA"
+      },
+      "2": {
+        "icon": "✨",
+        "title": "Video Effect Templates",
+        "description": "Apply trendy video effects with our growing collection of popular templates.",
+        "button_text": "Try Effect Templates"
+      }
+    }
+  },
+  "excellent_cases": {
+    "title": "Excellent Cases",
+    "subtitle": "See What Our IA Can Create",
+    "description": "Explore incredible videos generated from simple images. Each video shows the power of our IA technology.",
+    "categories": {
+      "all": "All",
+      "portrait": "Portrait",
+      "landscape": "Landscape",
+      "product": "Product", 
+      "creative": "Creative",
+      "animation": "Animation"
+    },
+    "view_more": "View More",
+    "load_more": "Load More Cases",
+    "play_video": "Play Video",
+    "case_details": "Case Details",
+    "original_image": "Original Image",
+    "generated_video": "Generated Video",
+    "duration": "Duration",
+    "model_used": "Model Used",
+    "prompt_used": "Prompt Used"
+  },
+  "generator": {
+    "tabs": {
+      "image_to_video": "Image to Video",
+      "photo_to_video": "Photo to Video"
+    },
+    "upload": {
+      "title": "Upload Image",
+      "ai_generator": "Image IA Generator",
+      "or": "Or",
+      "change_image": "Click to change image"
+    },
+    "effects": {
+      "video_effects": "Video Effects",
+      "video_styles": "Video Styles"
+    },
+    "description": {
+      "placeholder": "Describe your shot",
+      "character_count": "0/1000"
+    },
+    "actions": {
+      "ai_generate": "Generate IA",
+      "rewrite": "Rewrite",
+      "reset": "Reset"
+    },
+    "model": {
+      "label": "Model",
+      "fast": "Rápido 1.4",
+      "pro": "Pro-Turbo 2.4",
+      "pro_badge": "PRO"
+    },
+    "duration": {
+      "label": "Duration",
+      "four_seconds": "4s",
+      "eight_seconds": "8s",
+      "pro_badge": "PRO"
+    },
+    "generate": {
+      "button": "Generate Now",
+      "generating": "Generating...",
+      "credits": "3"
+    },
+    "history": "History",
+    "preview": {
+      "title": "Video Preview",
+      "placeholder": "Your video will appear here",
+      "upload_prompt": "Upload an image to start",
+      "generating": "The IA is creating your video..."
+    }
   },
   "my_orders": {
-    "title": "Mis pedidos",
-    "description": "Tu historial de compras.",
-    "no_orders": "No se encontraron pedidos",
+    "title": "My Orders",
+    "description": "Your purchase history.",
+    "no_orders": "No orders found",
     "tip": "",
-    "activate_order": "Activar pedido",
-    "actived": "Activado",
-    "join_discord": "Unirse a Discord",
-    "read_docs": "Leer documentación",
+    "activate_order": "Activate Order",
+    "actived": "Activated",
+    "join_discord": "Join Discord",
+    "read_docs": "Read Documentation",
     "table": {
-      "order_no": "Nº pedido",
-      "email": "Correo",
-      "product_name": "Nombre del producto",
-      "amount": "Cantidad",
-      "paid_at": "Pagado el",
-      "github_username": "Usuario de GitHub",
-      "status": "Estado"
+      "order_no": "Order No.",
+      "email": "Email",
+      "product_name": "Product Name",
+      "amount": "Amount",
+      "paid_at": "Paid at",
+      "github_username": "GitHub Username",
+      "status": "Status"
     }
   },
   "my_credits": {
-    "title": "Mis créditos",
-    "left_tip": "Créditos restantes: {left_credits}",
-    "no_credits": "No hay registros de créditos",
-    "recharge": "Recargar",
+    "title": "My Credits",
+    "left_tip": "Remaining Credits: {left_credits}",
+    "no_credits": "No credit records found",
+    "recharge": "Recharge",
     "table": {
-      "trans_no": "Nº transacción",
-      "trans_type": "Tipo de transacción",
-      "credits": "Créditos",
-      "updated_at": "Actualizado el",
-      "status": "Estado"
+      "trans_no": "Transaction No.",
+      "trans_type": "Transaction Type",
+      "credits": "Credits",
+      "updated_at": "Updated at",
+      "status": "Status"
     }
   },
   "api_keys": {
-    "title": "Claves API",
-    "tip": "Por favor mantén tus claves API seguras para evitar filtraciones",
-    "no_api_keys": "No hay claves API",
-    "create_api_key": "Crear clave API",
+    "title": "API Keys",
+    "tip": "Please keep your API keys secure to prevent leaks",
+    "no_api_keys": "No API keys",
+    "create_api_key": "Create API Key",
     "table": {
-      "name": "Nombre",
-      "key": "Clave",
-      "created_at": "Creado el"
+      "name": "Name",
+      "key": "Key",
+      "created_at": "Created at"
     },
     "form": {
-      "name": "Nombre",
-      "name_placeholder": "Nombre de la clave API",
-      "submit": "Enviar"
+      "name": "Name",
+      "name_placeholder": "API Key Name",
+      "submit": "Submit"
     }
   },
   "blog": {
     "title": "Blog",
-    "description": "Noticias, recursos y actualizaciones sobre AI Garden Design",
-    "read_more_text": "Leer más"
+    "description": "News, resources, and updates about Image to Video",
+    "read_more_text": "Read More"
   },
   "my_invites": {
-    "title": "Mis invitaciones",
-    "description": "Ver tus registros de invitaciones",
-    "no_invites": "No se encontraron invitaciones",
-    "my_invite_link": "Mi enlace de invitación",
-    "edit_invite_link": "Editar enlace de invitación",
-    "copy_invite_link": "Copiar enlace de invitación",
-    "invite_code": "Código de invitación",
-    "invite_tip": "Invita a 1 amigo a comprar AI Garden Design, gana 50€.",
-    "invite_balance": "Saldo de recompensas por invitación",
-    "total_invite_count": "Total de invitaciones",
-    "total_paid_count": "Total pagado",
-    "total_award_amount": "Cantidad total de premios",
-    "update_invite_code": "Establecer código de invitación",
-    "update_invite_code_tip": "Ingresa tu código de invitación personalizado",
-    "update_invite_button": "Guardar",
-    "no_orders": "Debes comprar AI Garden Design primero para invitar amigos",
-    "no_affiliates": "No tienes permitido invitar a otros, por favor contáctanos para solicitar permiso.",
+    "title": "My Invites",
+    "description": "View your invite records",
+    "no_invites": "No invites found",
+    "my_invite_link": "My Invite Link",
+    "edit_invite_link": "Edit Invite Link",
+    "copy_invite_link": "Copy Invite Link",
+    "invite_code": "Invite Code",
+    "invite_tip": "Invite 1 friend to buy Image to Video, win 50€.",
+    "invite_balance": "Invite reward balance",
+    "total_invite_count": "Total invites",
+    "total_paid_count": "Total paid",
+    "total_award_amount": "Total award amount",
+    "update_invite_code": "Set invite code",
+    "update_invite_code_tip": "Enter your custom invite code",
+    "update_invite_button": "Save",
+    "no_orders": "You must purchase Image to Video first to invite friends",
+    "no_affiliates": "You are not allowed to invite others, please contact us to request permission.",
     "table": {
-      "invite_time": "Hora de invitación",
-      "invite_user": "Usuario invitado",
-      "status": "Estado",
-      "reward_percent": "Porcentaje de recompensa",
-      "reward_amount": "Cantidad de recompensa",
-      "pending": "Pendiente",
-      "completed": "Completado"
+      "invite_time": "Invite Time",
+      "invite_user": "Invited User",
+      "status": "Status",
+      "reward_percent": "Reward Percentage",
+      "reward_amount": "Reward Amount",
+      "pending": "Pending",
+      "completed": "Completed"
     }
   },
   "feedback": {
-    "title": "Comentarios",
-    "description": "Nos encantaría saber qué funcionó bien o cómo podemos mejorar la experiencia del producto.",
-    "submit": "Enviar",
-    "loading": "Enviando...",
-    "contact_tip": "Otras formas de contactarnos",
-    "rating_tip": "¿Qué opinas de AI Garden Design?",
-    "placeholder": "Deja tus comentarios aquí..."
+    "title": "Feedback",
+    "description": "We'd love to hear what worked well or how we can improve the product experience.",
+    "submit": "Submit",
+    "loading": "Sending...",
+    "contact_tip": "Other ways to contact us",
+    "rating_tip": "What do you think of Image to Video?",
+    "placeholder": "Leave your feedback here..."
   },
   "my_images": {
-    "title": "Mis Imágenes",
-    "no_images": "Aún no hay imágenes generadas",
-    "download": "Descargar",
-    "copy": "Copiar",
-    "generation_date": "Generado",
-    "theme": "Tema",
-    "elements": "Elementos",
-    "credits_used": "Créditos Usados",
-    "status": "Estado"
+    "title": "My Images",
+    "no_images": "No images generated yet",
+    "download": "Download",
+    "copy": "Copy",
+    "generation_date": "Generated",
+    "theme": "Theme",
+    "elements": "Elements",
+    "credits_used": "Credits Used",
+    "status": "Status"
   },
   "garden_styles": {
-    "title": "Estilos de Diseño de Jardín AI",
-    "description": "Nuestra plataforma de diseño de jardín AI ofrece una amplia gama de estilos de paisajismo populares para transformar tu espacio exterior",
+    "title": "Image to Video Garden Design Styles",
+    "description": "Our intelligent garden design platform offers a wide range of popular landscape design styles to transform your exterior space",
     "styles": [
-      { "name": "Casa de Campo Inglesa", "image": "/imgs/showcases/1.png" },
-      { "name": "Minimalista Moderno", "image": "/imgs/showcases/2.png" },
-      { "name": "Mediterráneo", "image": "/imgs/showcases/3.png" },
-      { "name": "Zen Japonés", "image": "/imgs/showcases/4.png" },
-      { "name": "Paraíso Tropical", "image": "/imgs/showcases/5.png" },
-      { "name": "Oasis del Desierto", "image": "/imgs/showcases/6.png" },
-      { "name": "Pradera de Flores Silvestres", "image": "/imgs/showcases/7.png" },
-      { "name": "Formal Francés", "image": "/imgs/showcases/8.png" },
-      { "name": "Rústico Campestre", "image": "/imgs/showcases/9.png" },
-      { "name": "Urbano Contemporáneo", "image": "/imgs/showcases/1.png" },
-      { "name": "Bosque Natural", "image": "/imgs/showcases/2.png" },
-      { "name": "Jardín Costero", "image": "/imgs/showcases/3.png" },
-      { "name": "Formal Victoriano", "image": "/imgs/showcases/4.png" },
-      { "name": "Jardín de Rocas", "image": "/imgs/showcases/5.png" },
-      { "name": "Jardín de Agua", "image": "/imgs/showcases/6.png" },
-      { "name": "Jardín de Hierbas", "image": "/imgs/showcases/7.png" }
+      { "name": "English Country House", "image": "/imgs/showcases/1.png" },
+      { "name": "Modern Minimalist", "image": "/imgs/showcases/2.png" },
+      { "name": "Mediterranean", "image": "/imgs/showcases/3.png" },
+      { "name": "Japanese Zen", "image": "/imgs/showcases/4.png" },
+      { "name": "Tropical Paradise", "image": "/imgs/showcases/5.png" },
+      { "name": "Oasis of the Desert", "image": "/imgs/showcases/6.png" },
+      { "name": "Wildflower Meadow", "image": "/imgs/showcases/7.png" },
+      { "name": "French Formal", "image": "/imgs/showcases/8.png" },
+      { "name": "Rustic Farmhouse", "image": "/imgs/showcases/9.png" },
+      { "name": "Urban Contemporary", "image": "/imgs/showcases/1.png" },
+      { "name": "Natural Forest", "image": "/imgs/showcases/2.png" },
+      { "name": "Coastal Garden", "image": "/imgs/showcases/3.png" },
+      { "name": "Victorian Formal", "image": "/imgs/showcases/4.png" },
+      { "name": "Rock Garden", "image": "/imgs/showcases/5.png" },
+      { "name": "Water Garden", "image": "/imgs/showcases/6.png" },
+      { "name": "Herb Garden", "image": "/imgs/showcases/7.png" }
     ]
   },
   "hero": {
-    "title": "Diseño de jardines IA gratis – Generador de paisajes IA y planificador de jardín online",
-    "subtitle": "Soluciones de paisajismo inteligente",
-    "description": "Diseño de jardines IA gratis – generador de paisajes IA y planificador de jardín online. Sube una foto de tu jardín y en 2 minutos obtén planos profesionales, vista antes-después y descarga HD.",
-    "button": "Prueba AI Garden Design gratis",
-    "ai_badge": "Generado por IA"
+    "top_badge": "CONVERT IMAGES TO VIDEOS IN SECONDS",
+    "title_line1": "#1 Image to Video IA",
+    "title_line2": "for Creation", 
+    "subtitle": "Welcome to ImageToVideo AI!",
+    "description": "As a leading IA image-to-video technology, you can enjoy efficient and realistic generated effects here. Enjoy incredible technology to transform images into IA videos.",
+    "cta_button": "Transform Images to IA Videos",
+    "button": "Start Creating for Free",
+    "buttons": {
+      "0": {
+        "title": "Transform Images to IA Videos",
+        "icon": "Play",
+        "url": "/#upload",
+        "variant": "default"
+      }
+    },
+    "badges": {
+      "0": { "title": "✅ Free to Use" },
+      "1": { "title": "⚡ Generates in Seconds" },
+      "2": { "title": "🎯 No Skills Required" },
+      "3": { "title": "📱 Works on Any Device" }
+    },
+    "stats": {
+      "users": "50,000+",
+      "videos": "500,000+",
+      "rating": "4.9/5"
+    },
+    "ai_badge": "Generated by IA"
   },
   "upload": {
-    "title": "Subir Diseño de Jardín",
-    "description": "Sube la foto de tu jardín y deja que nuestra IA cree un diseño profesional",
-    "change": "Hacer clic para cambiar foto",
-    "prompt": "Sube la foto de tu jardín",
-    "formats": "Formatos soportados: JPG, PNG, WEBP, hasta 5MB",
-    "style_label": "Estilo de Jardín",
-    "style_placeholder": "Elegir estilo...",
-    "elements_label": "Elementos Especiales (Opcional)",
-    "elements_placeholder": "ej: fuente de agua, pérgola, hoguera...",
-    "generating": "Generando...",
-    "generate_button": "Generar Diseño",
-    "result_title": "Tu Diseño Generado por IA",
-    "ai_complete": "Generado por IA",
-    "download": "Descargar Diseño",
-    "placeholder_title": "Tu Diseño Generado por IA",
-    "placeholder_text": "Sube la foto de tu jardín y elige un estilo para ver tu diseño generado por IA aquí",
-    "error_selection": "Por favor selecciona un archivo y estilo de jardín"
+    "title": "Upload Garden Design",
+    "description": "Upload your garden photo and let our IA create a professional design",
+    "change": "Click to change photo",
+    "prompt": "Upload your garden photo",
+    "formats": "Supported formats: JPG, PNG, WEBP, up to 5MB",
+    "style_label": "Garden Style",
+    "style_placeholder": "Choose style...",
+    "elements_label": "Special Elements (Optional)",
+    "elements_placeholder": "e.g., water source, pergola, campfire...",
+    "generating": "Generating...",
+    "generate_button": "Generate Design",
+    "result_title": "Your Generated Design by IA",
+    "ai_complete": "Generated by IA",
+    "download": "Download Design",
+    "placeholder_title": "Your Generated Design by IA",
+    "placeholder_text": "Upload your garden photo and choose a style to see your IA-generated design here",
+    "error_selection": "Please select a file and garden style"
   },
   "how_it_works": {
-    "title": "Cómo Funciona",
-    "subtitle": "Diseño de Jardín en 3 Pasos Simples",
-    "description": "Transforma tu espacio exterior con nuestro proceso de diseño de jardín impulsado por IA",
+    "title": "How It Works",
+    "subtitle": "Simple 3-Step Garden Design",
+    "description": "Transform your exterior space with our AI-powered garden design process",
     "steps": {
       "upload": {
-        "title": "1. Subir Foto",
-        "description": "Toma una foto de tu espacio exterior y súbela a nuestra plataforma"
+        "title": "1. Upload Photo",
+        "description": "Take a photo of your exterior space and upload it to our platform"
       },
       "style": {
-        "title": "2. Elegir Estilo",
-        "description": "Selecciona tu estilo de jardín preferido de nuestra colección curada"
+        "title": "2. Choose Style",
+        "description": "Select your preferred garden style from our curated collection"
       },
       "generate": {
-        "title": "3. Obtener Diseño",
-        "description": "Nuestra IA crea un diseño de jardín profesional adaptado a tu espacio"
+        "title": "3. Get Design",
+        "description": "Our IA creates a professional design adapted to your space"
       }
+    },
+    "button": {
+      "text": "Convert your image to video now!",
+      "url": "/#upload"
     }
   },
   "ai_features": {
-    "title": "Por Qué Elegir AI Garden Design",
-    "subtitle": "Tecnología IA Avanzada",
-    "description": "Nuestra poderosa plataforma de diseño paisajístico IA transforma cómo planificas espacios exteriores",
+    "title": "Why Choose Image to Video",
+    "subtitle": "Advanced AI Technology",
+    "description": "Our powerful intelligent landscape design platform transforms how you plan your exterior spaces",
     "features": {
       "analysis": {
-        "title": "Análisis Inteligente de Fotos",
-        "description": "La IA analiza las dimensiones de tu espacio, condiciones de iluminación y elementos existentes en segundos"
+        "title": "Smart Photo Analysis",
+        "description": "The IA analyzes the dimensions of your space, lighting conditions, and existing elements in seconds"
       },
       "plant_selection": {
-        "title": "Inteligencia Climática",
-        "description": "Combina automáticamente plantas con tu ubicación exacta, patrones climáticos y condiciones de crecimiento"
+        "title": "Climate Intelligence",
+        "description": "Automatically combines plants with your exact location, climate patterns, and growth conditions"
       },
       "design_optimization": {
-        "title": "Adaptación de Estilo",
-        "description": "Aplica sin problemas cualquier estilo de jardín manteniendo las opciones de plantas prácticas para tu espacio"
+        "title": "Style Adaptation",
+        "description": "Applies any garden style without problems, maintaining practical plant options for your space"
       },
       "seasonal_planning": {
-        "title": "Vistas Previas Realistas",
-        "description": "Genera visualizaciones 3D fotorrealistas para ver exactamente cómo se verá tu jardín"
+        "title": "Realistic Previews",
+        "description": "Generates 3D photorealistic visualizations to see exactly how your garden will look"
       },
       "plant_database": {
-        "title": "Base de Datos de Plantas Locales",
-        "description": "Accede a recomendaciones de plantas seleccionadas de viveros locales con precios y disponibilidad"
+        "title": "Local Plant Database",
+        "description": "Access locally selected plant recommendations with prices and availability"
       },
       "instant_results": {
-        "title": "Resultados Instantáneos",
-        "description": "Diseños completos de jardines profesionales generados en menos de 2 minutos, no semanas"
+        "title": "Instant Results",
+        "description": "Professional garden designs generated in less than 2 minutes, not weeks"
       }
     }
   },
   "transformations": {
-    "badge": "Transformaciones IA Reales",
-    "title": "Magia de Antes y Después",
-    "description": "Mira cómo nuestra IA transforma espacios ordinarios en jardines extraordinarios en menos de 2 minutos",
-    "instruction": "Arrastra el deslizador para comparar",
-    "cta_title": "¿Listo para transformar tu espacio?",
-    "cta_description": "Sube tu foto arriba para comenzar",
+    "badge": "Real IA Transformations",
+    "title": "Magic Before and After",
+    "description": "See how our IA transforms ordinary spaces into extraordinary gardens in less than 2 minutes",
+    "instruction": "Drag the slider to compare",
+    "cta_title": "Ready to transform your space?",
+    "cta_description": "Upload your photo above to start",
     "features": [
-      "Diseño IA Profesional",
-      "Transformación en 2 minutos",
-      "Recomendaciones detalladas de plantas"
+      "Professional IA Design",
+      "Transformation in 2 minutes",
+      "Detailed plant recommendations"
     ],
     "examples": [
       {
-        "title": "Patio Urbano",
-        "style": "Zen Japonés",
-        "description": "Un patio urbano desordenado transformado en un jardín zen japonés pacífico con bambú, piedras y plantas cuidadosamente colocadas."
+        "title": "Urban Patio",
+        "style": "Japanese Zen",
+        "description": "An unorganized urban patio transformed into a peaceful Japanese Zen garden with bamboos, rocks, and carefully placed plants.",
+        "button": {
+          "text": "Try our image-to-video IA generator now →",
+          "url": "/#upload"
+        }
       },
       {
-        "title": "Jardín Suburbano",
-        "style": "Casa de Campo Inglesa",
-        "description": "Un césped suburbano simple rediseñado como un jardín romántico de casa de campo inglesa con bordes de flores mixtas y senderos encantadores."
+        "title": "Suburban Garden",
+        "style": "English Country House",
+        "description": "A simple suburban lawn redesigned as a romantic English country house garden with mixed flower borders and enchanting paths.",
+        "button": {
+          "text": "Export video without watermark",
+          "url": "/#upload"
+        }
       },
       {
-        "title": "Espacio de Patio",
-        "style": "Minimalista Moderno",
-        "description": "Un patio de concreto transformado en un elegante jardín minimalista moderno con líneas limpias y arreglos geométricos de plantas."
+        "title": "Patio Space",
+        "style": "Modern Minimalist",
+        "description": "A concrete patio transformed into a sophisticated modern minimalist garden with clean lines and geometric plant arrangements.",
+        "button": {
+          "text": "Animate your image with IA",
+          "url": "/#upload"
+        }
       }
     ]
   },
   "pricing": {
-    "title": "Precios Simples y Transparentes",
-    "description": "Elige el plan perfecto para transformar tu espacio exterior con IA",
+    "title": "Simple and Transparent Pricing",
+    "description": "Choose the perfect plan to transform your exterior space with IA",
     "groups": [
       {
         "name": "monthly",
-        "title": "Mensual",
-        "description": "Paga según uses"
+        "title": "Monthly",
+        "description": "Pay as you use"
       },
       {
         "name": "yearly", 
-        "title": "Anual",
-        "description": "Ahorra 20%",
-        "label": "Ahorra 20%"
+        "title": "Annual",
+        "description": "Save 20%",
+        "label": "Save 20%"
       }
     ],
     "plans": [
       {
-        "title": "Iniciador",
-        "description": "Perfecto para propietarios con jardines pequeños",
+        "title": "Starter",
+        "description": "Perfect for small garden owners",
         "price": "$9.9",
-        "unit": "/mes",
+        "unit": "/month",
         "group": "monthly",
-        "features_title": "Todo lo que necesitas para empezar:",
+        "features_title": "Everything you need to get started:",
         "features": [
-          "80 diseños de jardín IA por mes",
-          "Recomendaciones básicas de plantas",
-          "Soporte por correo electrónico"
+          "80 IA garden designs per month",
+          "Basic plant recommendations",
+          "Email support"
         ],
-        "button_title": "Comenzar",
+        "button_title": "Get Started",
         "tip": ""
       },
       {
-        "title": "Profesional", 
-        "description": "Ideal para entusiastas de jardines y paisajistas",
+        "title": "Professional", 
+        "description": "Ideal for garden enthusiasts and landscapers",
         "price": "$19.9",
-        "unit": "/mes",
+        "unit": "/month",
         "group": "monthly",
-        "label": "Más Popular",
-        "features_title": "Todo en Iniciador, además:",
+        "label": "Most Popular",
+        "features_title": "Everything in Starter, plus:",
         "features": [
-          "200 diseños de jardín IA por mes",
-          "Base de datos avanzada de plantas",
-          "Soporte prioritario por correo electrónico"
+          "200 IA garden designs per month",
+          "Advanced plant database",
+          "Priority email support"
         ],
-        "button_title": "Comenzar",
+        "button_title": "Get Started",
         "tip": ""
       },
       {
-        "title": "Empresarial",
-        "description": "Para empresas de paisajismo y diseñadores",
+        "title": "Enterprise",
+        "description": "For landscape companies and designers",
         "price": "$29.9",
-        "unit": "/mes", 
+        "unit": "/month", 
         "group": "monthly",
-        "features_title": "Todo en Profesional, además:",
+        "features_title": "Everything in Professional, plus:",
         "features": [
-          "500 diseños de jardín IA por mes",
-          "Derechos de uso comercial"
+          "500 IA garden designs per month",
+          "Commercial use rights"
         ],
-        "button_title": "Comenzar",
+        "button_title": "Get Started",
         "tip": ""
       },
       {
-        "title": "Iniciador",
-        "description": "Perfecto para propietarios con jardines pequeños",
+        "title": "Starter",
+        "description": "Perfect for small garden owners",
         "price": "$7.9",
         "original_price": "$9.9",
-        "unit": "/mes",
+        "unit": "/month",
         "group": "yearly",
-        "features_title": "Todo lo que necesitas para empezar:",
+        "features_title": "Everything you need to get started:",
         "features": [
-          "80 diseños de jardín IA por mes",
-          "Recomendaciones básicas de plantas",
-          "Soporte por correo electrónico"
+          "80 IA garden designs per month",
+          "Basic plant recommendations",
+          "Email support"
         ],
-        "button_title": "Comenzar",
-        "tip": "Facturado anualmente a $94.8"
+        "button_title": "Get Started",
+        "tip": "Billed annually at $94.8"
       },
       {
-        "title": "Profesional",
-        "description": "Ideal para entusiastas de jardines y paisajistas", 
+        "title": "Professional",
+        "description": "Ideal for garden enthusiasts and landscapers", 
         "price": "$15.9",
         "original_price": "$19.9",
-        "unit": "/mes",
+        "unit": "/month",
         "group": "yearly",
-        "label": "Mejor Valor",
-        "features_title": "Todo en Iniciador, además:",
+        "label": "Best Value",
+        "features_title": "Everything in Starter, plus:",
         "features": [
-          "200 diseños de jardín IA por mes",
-          "Base de datos avanzada de plantas",
-          "Múltiples variaciones de estilo",
-          "Descargas de alta calidad", 
-          "Vista previa de visualización 3D",
-          "Soporte prioritario por correo electrónico",
-          "Esquemas de colores personalizados"
+          "200 IA garden designs per month",
+          "Advanced plant database",
+          "Multiple style variations",
+          "High-quality downloads", 
+          "3D visualization preview",
+          "Priority email support",
+          "Custom color schemes"
         ],
-        "button_title": "Comenzar",
-        "tip": "Facturado anualmente a $190.8"
+        "button_title": "Get Started",
+        "tip": "Billed annually at $190.8"
       },
       {
-        "title": "Empresarial",
-        "description": "Para empresas de paisajismo y diseñadores",
+        "title": "Enterprise",
+        "description": "For landscape companies and designers",
         "price": "$23.9",
         "original_price": "$29.9",
-        "unit": "/mes",
+        "unit": "/month",
         "group": "yearly",
-        "features_title": "Todo en Profesional, además:",
+        "features_title": "Everything in Professional, plus:",
         "features": [
-          "500 diseños de jardín IA por mes",
-          "Derechos de uso comercial"
+          "500 IA garden designs per month",
+          "Commercial use rights"
         ],
-        "button_title": "Comenzar",
-        "tip": "Facturado anualmente a $286.8"
+        "button_title": "Get Started",
+        "tip": "Billed annually at $286.8"
       }
     ]
   },
   "testimonials": {
-    "title": "Lo Que Dicen los Usuarios Sobre AI Garden Design",
-    "description": "Únete a miles de clientes satisfechos que han transformado sus espacios exteriores con nuestra tecnología IA",
+    "title": "What Users Say About Image to Video",
+    "description": "Join thousands of satisfied customers who have transformed their exterior spaces with our IA technology",
     "reviews": [
       {
         "name": "Sarah M.",
-        "location": "Madrid, España",
-        "quote": "Al principio era escéptica sobre el diseño de jardín con IA, pero estoy completamente impresionada con los resultados. ¡La transformación de mi patio trasero superó todas las expectativas!"
+        "location": "Madrid, Spain",
+        "quote": "At first, I was skeptical about garden design with IA, but I am completely impressed with the results. The transformation of my backyard exceeded all expectations!"
       },
       {
         "name": "Michael R.",
-        "location": "Barcelona, España",
-        "quote": "Como diseñador paisajista, uso AI Garden Design para conceptos iniciales. Es increíblemente preciso y me ahorra horas de tiempo de planificación."
+        "location": "Barcelona, Spain",
+        "quote": "As a landscape designer, I use Image to Video for initial concepts. It's incredibly accurate and saves me hours of planning time."
       },
       {
         "name": "Lisa K.",
-        "location": "Valencia, España",
-        "quote": "El diseño zen japonés generado para mi pequeño patio fue perfecto. Seguí el plan exactamente y ahora tengo mi espacio exterior de ensueño."
+        "location": "Valencia, Spain",
+        "quote": "The Japanese Zen design generated for my small patio was perfect. I followed the plan exactly and now have my dream outdoor space."
       },
       {
         "name": "David L.",
-        "location": "Sevilla, España",
-        "quote": "Soy desarrollador inmobiliario - usamos esto para preparar casas. Los diseños IA ayudan a los compradores a visualizar el potencial de los espacios exteriores."
+        "location": "Seville, Spain",
+        "quote": "I am a real estate developer - we use this to prepare houses. IA designs help buyers visualize the potential of exterior spaces."
       },
       {
         "name": "Emma J.",
-        "location": "Bilbao, España",
-        "quote": "No soy buena con las plantas, pero la IA recomendó las perfectas para mi clima. ¡Todo está prosperando seis meses después!"
+        "location": "Bilbao, Spain",
+        "quote": "I'm not good with plants, but the IA recommended the perfect ones for my climate. Everything is thriving six months later!"
       },
       {
         "name": "James T.",
-        "location": "Zaragoza, España",
-        "quote": "La diferencia de antes y después es increíble. Mis vecinos no pueden creer que sea el mismo patio trasero. ¡Vale cada centavo!"
+        "location": "Zaragoza, Spain",
+        "quote": "The difference before and after is incredible. My neighbors can't believe it's the same backyard. Worth every penny!"
       }
     ]
   },
   "faq": {
-    "title": "Preguntas Frecuentes Sobre AI Garden Design",
-    "description": "Obtén respuestas a las preguntas más comunes sobre nuestro servicio de diseño de jardín impulsado por IA",
-    "cta_title": "¿Listo para Experimentar AI Garden Design?",
-    "cta_description": "Únete a miles de jardineros que han transformado sus espacios con nuestro sistema de diseño inteligente",
-    "cta_button": "Comienza Tu Transformación de Jardín Hoy",
+    "title": "Frequently Asked Questions About Image to Video",
+    "description": "Get answers to the most common questions about our AI-powered garden design service",
+    "cta_title": "Ready to Experiment with Image to Video?",
+    "cta_description": "Join thousands of gardeners who have transformed their spaces with our intelligent design system",
+    "cta_button": "Start Your Image to Video Garden Transformation Today",
     "stats": {
-      "gardens_designed": "Jardines Diseñados",
-      "cities_served": "Ciudades Servidas",
-      "design_time": "Tiempo de Diseño en Minutos"
+      "gardens_designed": "Gardens Designed",
+      "cities_served": "Cities Served",
+      "design_time": "Design Time in Minutes"
     },
     "questions": [
       {
-        "question": "¿Qué tan precisos son los diseños de jardín generados por IA?",
-        "answer": "Nuestros diseños de jardín IA son altamente precisos, tomando en cuenta las dimensiones específicas de tu espacio, condiciones de iluminación y zona climática. La IA ha sido entrenada con miles de diseños paisajísticos profesionales y considera factores como compatibilidad de plantas, cambios estacionales y requisitos de mantenimiento. La mayoría de los usuarios reportan 90%+ de satisfacción con la precisión del diseño."
+        "question": "How accurate are the generated garden designs?",
+        "answer": "Our IA garden designs are highly accurate, taking into account the specific dimensions of your space, lighting conditions, and climate zone. The IA has been trained with thousands of professional landscape designs and considers factors such as plant compatibility, seasonal changes, and maintenance requirements. Most users report 90%+ satisfaction with the design accuracy."
       },
       {
-        "question": "¿Es complicado implementar los diseños generados por IA?",
-        "answer": "¡Para nada! Cada diseño viene con guías de implementación detalladas, listas de plantas con proveedores locales e instrucciones paso a paso. Proporcionamos listas de compras, horarios de plantación y consejos de mantenimiento. Muchos diseños se pueden implementar como proyectos de bricolaje de fin de semana, mientras que otros pueden requerir paisajismo profesional para características complejas."
+        "question": "Is it difficult to implement the generated designs?",
+        "answer": "Not at all! Each design comes with detailed implementation guidelines, plant lists with local suppliers, and step-by-step instructions. We provide shopping lists, planting schedules, and maintenance tips. Many designs can be implemented as weekend DIY projects, while others may require professional landscaping for complex features."
       },
       {
-        "question": "¿Cómo se compara el diseño de jardín IA con el diseño paisajístico tradicional?",
-        "answer": "El diseño de jardín IA ofrece varias ventajas: es más rápido (2 minutos vs semanas), más asequible (fracción del costo) y proporciona múltiples opciones de diseño instantáneamente. Mientras que los diseñadores tradicionales ofrecen consulta personal, nuestra IA considera los mismos principios de diseño, ciencia de plantas y estética. Muchos paisajistas profesionales realmente usan nuestra herramienta para conceptos iniciales."
+        "question": "How does the IA garden design compare to traditional landscape design?",
+        "answer": "The IA garden design offers several advantages: it's faster (2 minutes vs. weeks), more affordable (fraction of the cost), and provides multiple design options instantly. While traditional designers offer personalized consultations, our IA considers the same design principles, plant science, and aesthetics. Many professional landscapers actually use our tool for initial concepts."
       },
       {
-        "question": "¿Qué tipo de fotos funcionan mejor para el diseño de jardín IA?",
-        "answer": "Para mejores resultados, sube fotos claras y bien iluminadas tomadas durante horas de luz diurna. Incluye todo el espacio que quieres rediseñar, tomado desde un buen punto de vista. Múltiples ángulos ayudan, pero una foto integral es suficiente. La IA funciona con fotos de cualquier smartphone o cámara - no se necesita equipo especial."
+        "question": "What types of photos work best for IA garden design?",
+        "answer": "For better results, upload clear, well-lit photos taken during daylight hours. Include the entire space you want to redesign, taken from a good vantage point. Multiple angles help, but a single photo is sufficient. The IA works with photos from any smartphone or camera - no special equipment is needed."
       },
       {
-        "question": "¿Qué está incluido en el servicio de diseño de jardín IA?",
-        "answer": "Cada diseño incluye: visualizaciones fotorrealistas, listas detalladas de plantas con disponibilidad local, guías de cuidado estacional, cronogramas de implementación, estimaciones de costos y horarios de mantenimiento. Los planes premium también incluyen múltiples variaciones de diseño, renderizados 3D y consulta directa con profesionales paisajistas."
+        "question": "What is included in the IA garden design service?",
+        "answer": "Each design includes: photorealistic visualizations, detailed plant lists with local availability, seasonal care guides, implementation schedules, cost estimates, and maintenance schedules. Premium plans also include multiple design variations, 3D renderings, and direct consultation with professional landscapers."
       },
       {
-        "question": "¿Puedo personalizar los diseños generados por IA?",
-        "answer": "¡Absolutamente! Los diseños IA sirven como puntos de partida profesionales que puedes personalizar. Puedes especificar preferencias como esquemas de colores, tipos de plantas, niveles de mantenimiento y restricciones de presupuesto. Nuestro sistema aprende de tus comentarios para crear diseños cada vez más personalizados que coincidan con tu estilo y necesidades."
+        "question": "Can I customize the generated designs?",
+        "answer": "Absolutely! IA designs serve as professional starting points that you can customize. You can specify preferences like color schemes, plant types, maintenance levels, and budget constraints. Our system learns from your feedback to create increasingly personalized designs that match your style and needs."
       }
     ]
   },
   "footer": {
-    "brand_description": "AI Garden Design es una plataforma inteligente de diseño de jardín que transforma tus espacios exteriores usando inteligencia artificial.",
-    "copyright": "© 2025 • AI Garden Design Todos los derechos reservados.",
-    "privacy_policy": "Política de Privacidad",
-    "terms_of_service": "Términos de Servicio",
+    "brand_description": "Image to Video is an intelligent image-to-video generation platform that transforms your exterior spaces using artificial intelligence.",
+    "copyright": "© 2025 • Image to Video All rights reserved.",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
     "blog": "Blog"
   },
+  "landing": {
+    "cta": {
+      "name": "cta",
+      "title": "Ready to Create Incredible Videos?",
+      "description": "Join thousands of creators who use our IA image-to-video technology to transform their visual content. Start creating amazing videos today!",
+      "buttons": {
+        "0": {
+          "title": "Try Image to Video IA for Free",
+          "url": "/#",
+          "target": "_self",
+          "icon": "Sparkles"
+        }
+      }
+    }
+  },
+  "video_showcase": {
+    "badge": "🎬 IA Video Examples",
+    "title": "Exceptional Cases Powered by Image to Video IA Generator",
+    "description": "Experience the cutting-edge Image to Video IA generator of ImageToVideo AI, trusted by over 500,000 users and generating over 10 million videos. With free access to powerful video creation tools, discover exceptional cases to inspire your next professional video project.",
+    "categories": {
+      "photography": "Photography",
+      "people": "People", 
+      "commercial": "Commercial",
+      "architecture": "Architecture",
+      "creative": "Creative",
+      "lifestyle": "Lifestyle"
+    },
+    "examples": [
+      {
+        "title": "Mountainous Paradise",
+        "category": "Photography", 
+        "description": "Impressive mountainous landscape with fluid clouds and dynamic lighting effects",
+        "duration": "5s"
+      },
+      {
+        "title": "Portrait Magic",
+        "category": "People",
+        "description": "Enhanced professional portrait with subtle facial animations and background movement",
+        "duration": "3s"
+      },
+      {
+        "title": "Product Focus",
+        "category": "Commercial",
+        "description": "Professional product photography with rotating lights and depth effects",
+        "duration": "4s"
+      },
+      {
+        "title": "Urban Energy",
+        "category": "Architecture",
+        "description": "Modern urban landscape with traffic flow and architectural movement",
+        "duration": "6s"
+      },
+      {
+        "title": "Digital Art",
+        "category": "Creative",
+        "description": "Abstract digital art transformed into hypnotic motion graphics",
+        "duration": "4s"
+      },
+      {
+        "title": "Culinary Delight",
+        "category": "Lifestyle",
+        "description": "Appetizing culinary photography with vapor effects and ingredient movement",
+        "duration": "3s"
+      }
+    ],
+    "view_example": "View Example",
+    "play_video": "Play Video",
+    "loading": "Loading video...",
+    "watch_full": "Watch Full Video"
+  },
   "common": {
-    "loading": "Cargando...",
-    "error": "Algo salió mal",
-    "try_again": "Intentar de Nuevo",
-    "success": "¡Éxito!",
-    "cancel": "Cancelar",
-    "confirm": "Confirmar",
-    "save": "Guardar",
-    "delete": "Eliminar",
-    "edit": "Editar",
-    "view": "Ver",
-    "download": "Descargar",
-    "upload": "Subir",
-    "search": "Buscar",
-    "filter": "Filtrar",
-    "sort": "Ordenar",
-    "next": "Siguiente",
-    "previous": "Anterior",
-    "close": "Cerrar"
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "try_again": "Try Again",
+    "success": "Success!",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close"
   }
 }

@@ -148,15 +148,15 @@ export const ImageUploadGenerator = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-blue-400 hover:bg-blue-50">
+                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-blue-400 hover:bg-blue-50 min-h-[44px] px-4">
                     <Sparkles className="w-4 h-4 mr-2 text-blue-500" />
                     {t('actions.ai_generate')}
                   </Button>
-                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-green-400 hover:bg-green-50">
+                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-green-400 hover:bg-green-50 min-h-[44px] px-4">
                     <Edit className="w-4 h-4 mr-2 text-green-500" />
                     {t('actions.rewrite')}
                   </Button>
-                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-orange-400 hover:bg-orange-50">
+                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-orange-400 hover:bg-orange-50 min-h-[44px] px-4">
                     <RotateCcw className="w-4 h-4 mr-2 text-orange-500" />
                     {t('actions.reset')}
                   </Button>

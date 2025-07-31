@@ -127,6 +127,11 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://plausible.io" />
         
+        {/* Preload critical resources */}
+        <link rel="preload" href="/logo.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/hero-background.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/imgs/showcases/1.webp" as="image" type="image/webp" />
+        
         {/* Analytics Scripts - Optimized Loading */}
         <Analytics />
         

@@ -29,7 +29,13 @@ export const HeroVideo = () => {
           muted 
           loop 
           playsInline
+          preload="metadata"
           className="w-full h-full object-cover"
+          onError={(e) => {
+            console.warn('Video failed to load, falling back to image');
+            const videoElement = e.target as HTMLVideoElement;
+            videoElement.style.display = 'none';
+          }}
         >
           <source src="/hero-background.mp4" type="video/mp4" />
           <source src="/hero-background.webm" type="video/webm" />
@@ -57,19 +63,19 @@ export const HeroVideo = () => {
         </div>
         
         {/* Main Title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
           {titleLine1}
           <br />
           {titleLine2}
         </h1>
         
         {/* Subtitle */}
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-medium mb-6 opacity-90">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium mb-6 opacity-90">
           {subtitle}
         </h2>
         
         {/* Description */}
-        <p className="text-lg md:text-xl mb-10 leading-relaxed max-w-3xl mx-auto opacity-90">
+        <p className="text-base sm:text-lg md:text-xl mb-10 leading-relaxed max-w-3xl mx-auto opacity-90 px-4">
           {description}
         </p>
         

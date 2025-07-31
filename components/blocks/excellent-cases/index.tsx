@@ -29,11 +29,11 @@ const createCasesFromI18n = (cases: any[], categories: string[]) => {
   });
 };
 
-interface ExcellentCasesProps {
+interface WhatCanProps {
   limit?: number;
 }
 
-export const ExcellentCases = ({ limit }: ExcellentCasesProps) => {
+export const WhatCan = ({ limit }: WhatCanProps) => {
   const t = useTranslations('excellent_cases');
   const [activeCategory, setActiveCategory] = useState('all');
   const [visibleCases, setVisibleCases] = useState(6);

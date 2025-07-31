@@ -1,7 +1,7 @@
 import { HeroVideo } from '@/components/blocks/hero-video';
 import { ImageUploadGenerator } from '@/components/blocks/image-upload-generator';
 import { VideoShowcase } from '@/components/blocks/video-showcase';
-import { ExcellentCases } from '@/components/blocks/excellent-cases';
+import { WhatCan } from '@/components/blocks/excellent-cases';
 import HowItWorks from '@/components/blocks/how-it-works';
 import TestimonialsVideo from '@/components/blocks/testimonials-video';
 import FAQVideo from '@/components/blocks/faq-video';
@@ -15,9 +15,9 @@ export default function IndexPage() {
       <HeroVideo />
       <ImageUploadGenerator />
       <VideoShowcase />
-      <ExcellentCases />
-      <AIFeatures />
       <HowItWorks />
+      <WhatCan />
+      <AIFeatures />
       <Transformations />
       <PricingI18n />
       <TestimonialsVideo />

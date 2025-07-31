@@ -34,7 +34,7 @@ export default function Blog({ blog }: { blog: BlogType }) {
                   <div>
                     <Image
                       src={item.cover_url}
-                      alt={`${item.title} - garden design blog article about landscape planning and outdoor space transformation`}
+                      alt={`${item.title} - image to video blog article about video generation and content creation`}
                       width={400}
                       height={225}
                       loading="lazy"

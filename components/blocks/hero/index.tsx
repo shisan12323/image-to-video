@@ -4,6 +4,7 @@ import HappyUsers from "./happy-users";
 import HeroBg from "./bg";
 import { Hero as HeroType } from "@/types/blocks/hero";
 import Icon from "@/components/icon";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero({ hero }: { hero: HeroType }) {
@@ -24,10 +25,13 @@ export default function Hero({ hero }: { hero: HeroType }) {
         <div className="container">
           {hero.show_badge && (
             <div className="flex items-center justify-center mb-8">
-              <img
+              <Image
                 src="/imgs/badges/phdaily.svg"
-                alt="Product Hunt Daily Badge - AI Garden Design"
+                alt="Product Hunt Daily Badge - Image to Video AI Generator"
+                width={120}
+                height={40}
                 className="h-10 object-cover"
+                priority
               />
             </div>
           )}

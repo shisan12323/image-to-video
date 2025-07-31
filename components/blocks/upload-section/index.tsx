@@ -82,7 +82,7 @@ export default function UploadSection() {
 
       if (result.success) {
         setGeneratedImage(result.image);
-        toast.success("Garden design generated successfully!");
+        toast.success("Video generated successfully!");
       } else {
         toast.error(result.error || "Failed to generate design");
       }
@@ -248,7 +248,7 @@ export default function UploadSection() {
                 <div className="relative">
                   <Image 
                     src={generatedImage} 
-                    alt="AI-generated professional garden design transformation showing custom landscape planning results"
+                    alt="AI-generated professional video transformation showing custom image to video results"
                     width={600}
                     height={400}
                     className="w-full h-auto rounded-xl shadow-2xl"

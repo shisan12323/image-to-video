@@ -100,7 +100,7 @@ export default function Showcase({ section }: { section: SectionType }) {
                           {item.image && (
                             <Image
                               src={item.image.src as string}
-                              alt={item.image.alt ? `${item.image.alt} | AI Garden Design` : `${item.title}`}
+                              alt={item.image.alt ? `${item.image.alt} | Image to Video` : `${item.title}`}
                               width={480}
                               height={320}
                               sizes="(max-width: 768px) 100vw, 300px"

@@ -123,7 +123,7 @@ export function BeforeAfterSlider({
       <div className="absolute inset-0">
         <Image
           src={afterImage}
-          alt="AI garden design after transformation"
+          alt="AI image to video after transformation"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover"

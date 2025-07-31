@@ -12,13 +12,14 @@ export default function Feature1({ section }: { section: SectionType }) {
       <div className="container">
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           {section.image && (
-            <Image
+                        <Image
               src={section.image!.src as string}
-              alt={section.image.alt ? `${section.image.alt} | AI Garden Design` : `${section.title || 'AI Garden Design Feature'}`}
+              alt={section.image.alt ? `${section.image.alt} | Image to Video` : `${section.title || 'Image to Video Feature'}`}
               width={800}
               height={600}
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="max-h-full w-full rounded-md object-cover"
+              loading="lazy"
             />
           )}
           <div className="flex flex-col lg:text-left">

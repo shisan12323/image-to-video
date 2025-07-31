@@ -10,6 +10,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "@/providers/theme";
 import { cn } from "@/lib/utils";
 import { locales } from "@/i18n/locale";
+import { Analytics } from "@/components/analytics";
 import Script from "next/script";
 
 const fontSans = FontSans({
@@ -25,9 +26,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations();
 
-  // Construct canonical URL
+  // Base URL for metadata
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
-  const canonicalUrl = locale === 'en' ? baseUrl : `${baseUrl}/${locale}`;
 
   return {
     title: {
@@ -37,25 +37,7 @@ export async function generateMetadata({
     description: t("metadata.description") || "",
     keywords: t("metadata.keywords") || "",
     metadataBase: new URL(baseUrl),
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        'en': baseUrl,
-        'zh': `${baseUrl}/zh`,
-        'fr': `${baseUrl}/fr`,
-        'de': `${baseUrl}/de`,
-        'es': `${baseUrl}/es`,
-        'ja': `${baseUrl}/ja`,
-        'ko': `${baseUrl}/ko`,
-        'ms': `${baseUrl}/ms`,
-        'vi': `${baseUrl}/vi`,
-        'id': `${baseUrl}/id`,
-        'km': `${baseUrl}/km`,
-        'hi': `${baseUrl}/hi`,
-      },
-    },
     openGraph: {
-      url: canonicalUrl,
       siteName: 'Image to Video',
       locale: locale,
       type: 'website',
@@ -81,7 +63,7 @@ export default async function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Image to Video",
-    "description": "Smart garden design platform that transforms your outdoor space using artificial intelligence",
+    "description": "Smart image to video platform that transforms your photos into stunning videos using artificial intelligence",
     "url": baseUrl,
     "potentialAction": {
       "@type": "SearchAction",
@@ -138,40 +120,16 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-1X6V67LRCW"
-          strategy="afterInteractive"
-        />
-        <Script id="ga-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);} 
-            gtag('js', new Date());
-            gtag('config', 'G-1X6V67LRCW');
-          `}
-        </Script>
-
-        {/* Microsoft Clarity */}
-        <Script id="clarity-init" strategy="lazyOnload">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "sczpcuda6b");
-          `}
-        </Script>
-
-        {/* Plausible Analytics */}
-        <Script
-          src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
-          data-domain="aigardendesign.online"
-          strategy="lazyOnload"
-        />
-        <Script id="plausible-init" strategy="lazyOnload">
-          {`window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }`}
-        </Script>
+        {/* Preconnect to external domains for performance */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.clarity.ms" />
+        <link rel="preconnect" href="https://plausible.io" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://plausible.io" />
+        
+        {/* Analytics Scripts - Optimized Loading */}
+        <Analytics />
         
         {/* Structured Data */}
         <script

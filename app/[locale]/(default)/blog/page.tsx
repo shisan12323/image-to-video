@@ -11,43 +11,59 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const titles = {
-    en: "AI Garden Design Blog | Tips, Tools & Expert Advice",
-    zh: "AI花园设计博客 | 技巧、工具和专家建议",
-    ja: "AIガーデンデザインブログ | ヒント、ツール＆エキスパートアドバイス",
-    de: "KI-Gartendesign Blog | Tipps, Tools & Expertenrat",
-    es: "Blog de Diseño de Jardines con IA | Consejos, Herramientas y Asesoramiento Experto",
-    fr: "Blog Conception Jardin IA | Conseils, Outils et Expertise",
-    ko: "AI 정원 디자인 블로그 | 팁, 도구 및 전문가 조언",
-    hi: "AI गार्डन डिज़ाइन ब्लॉग | टिप्स, टूल्स और विशेषज्ञ सलाह",
-    id: "Blog Desain Taman AI | Tips, Alat & Saran Ahli",
-    ms: "Blog Reka Bentuk Taman AI | Tips, Alat & Nasihat Pakar",
-    vi: "Blog Thiết Kế Vườn AI | Mẹo, Công Cụ & Lời Khuyên Chuyên Gia",
-    km: "ប្លុករចនាសួនច្បារ AI | គន្លឹះ ឧបករណ៍ និងដំបូន្មានពីអ្នកជំនាញ",
+    en: "AI Image to Video Blog | Tips, Tools & Expert Advice",
+    zh: "AI图片转视频博客 | 技巧、工具和专家建议",
+    ja: "AI画像動画変換ブログ | ヒント、ツール＆エキスパートアドバイス",
+    de: "KI-Bild-zu-Video Blog | Tipps, Tools & Expertenrat",
+    es: "Blog de IA Imagen a Video | Consejos, Herramientas y Asesoramiento Experto",
+    fr: "Blog IA Image vers Vidéo | Conseils, Outils et Expertise",
+    ko: "AI 이미지 영상 변환 블로그 | 팁, 도구 및 전문가 조언",
+    hi: "AI इमेज टू वीडियो ब्लॉग | टिप्स, टूल्स और विशेषज्ञ सलाह",
+    id: "Blog AI Gambar ke Video | Tips, Alat & Saran Ahli",
+    ms: "Blog AI Gambar ke Video | Tips, Alat & Nasihat Pakar",
+    vi: "Blog AI Chuyển Ảnh Thành Video | Mẹo, Công Cụ & Lời Khuyên Chuyên Gia",
+    km: "ប្លុកបម្លែងរូបភាពទៅជាវីដេអូ AI | គន្លឹះ ឧបករណ៍ និងដំបូន្មានពីអ្នកជំនាញ",
   };
 
   const descriptions = {
-    en: "Discover the latest in AI garden design technology, tips for creating beautiful outdoor spaces, and expert advice on landscape planning.",
-    zh: "发现AI花园设计技术的最新动态、创造美丽户外空间的技巧以及景观规划的专家建议。",
-    ja: "最新のAIガーデンデザイン技術、美しいアウトドアスペース作りのヒント、ランドスケープ計画のエキスパートアドバイスを発見。",
-    de: "Entdecken Sie die neuesten KI-Gartendesign-Technologien, Tipps für schöne Außenbereiche und Expertenrat zur Landschaftsplanung.",
-    es: "Descubre lo último en tecnología de diseño de jardines con IA, consejos para crear hermosos espacios exteriores y asesoramiento experto en planificación paisajística.",
-    fr: "Découvrez les dernières technologies de conception de jardin IA, des conseils pour créer de beaux espaces extérieurs et des conseils d'experts en planification paysagère.",
-    ko: "최신 AI 정원 디자인 기술, 아름다운 야외 공간 조성 팁, 조경 계획에 대한 전문가 조언을 발견하세요.",
-    hi: "AI गार्डन डिज़ाइन तकनीक में नवीनतम खोजें, सुंदर बाहरी स्थान बनाने के लिए टिप्स, और लैंडस्केप प्लानिंग पर विशेषज्ञ सलाह।",
-    id: "Temukan teknologi desain taman AI terbaru, tips untuk menciptakan ruang luar yang indah, dan saran ahli tentang perencanaan lanskap.",
-    ms: "Temui teknologi reka bentuk taman AI terkini, tips untuk mencipta ruang luar yang cantik, dan nasihat pakar mengenai perancangan landskap.",
-    vi: "Khám phá công nghệ thiết kế vườn AI mới nhất, mẹo tạo không gian ngoài trời đẹp và lời khuyên chuyên gia về quy hoạch cảnh quan.",
-    km: "រកឃើញបច្ចេកវិទ្យារចនាសួនច្បារ AI ចុងក្រោយបំផុត គន្លឹះសម្រាប់បង្កើតទីតាំងខាងក្រៅដ៏ស្រស់ស្អាត និងដំបូន្មានពីអ្នកជំនាញអំពីការរៀបចំទេសភាព។",
+    en: "Discover the latest in AI image to video technology, tips for creating amazing video content, and expert advice on automated video generation.",
+    zh: "发现AI图片转视频技术的最新动态、创造精彩视频内容的技巧以及自动视频生成的专家建议。",
+    ja: "最新のAI画像動画変換技術、素晴らしい動画コンテンツ作成のヒント、自動動画生成のエキスパートアドバイスを発見。",
+    de: "Entdecken Sie die neuesten KI-Bild-zu-Video-Technologien, Tipps für erstaunliche Videoinhalte und Expertenrat zur automatisierten Videogenerierung.",
+    es: "Descubre lo último en tecnología de IA imagen a video, consejos para crear contenido de video increíble y asesoramiento experto en generación automática de videos.",
+    fr: "Découvrez les dernières technologies IA image vers vidéo, des conseils pour créer du contenu vidéo incroyable et des conseils d'experts en génération vidéo automatique.",
+    ko: "최신 AI 이미지 영상 변환 기술, 놀라운 영상 콘텐츠 제작 팁, 자동 영상 생성에 대한 전문가 조언을 발견하세요.",
+    hi: "AI इमेज टू वीडियो तकनीक में नवीनतम खोजें, अद्भुत वीडियो सामग्री बनाने के लिए टिप्स, और स्वचालित वीडियो जेनरेशन पर विशेषज्ञ सलाह।",
+    id: "Temukan teknologi AI gambar ke video terbaru, tips untuk membuat konten video yang menakjubkan, dan saran ahli tentang generasi video otomatis.",
+    ms: "Temui teknologi AI gambar ke video terkini, tips untuk mencipta kandungan video yang menakjubkan, dan nasihat pakar mengenai penjanaan video automatik.",
+    vi: "Khám phá công nghệ AI chuyển ảnh thành video mới nhất, mẹo tạo nội dung video tuyệt vời và lời khuyên chuyên gia về tạo video tự động.",
+    km: "រកឃើញបច្ចេកវិទ្យាបម្លែងរូបភាពទៅជាវីដេអូ AI ចុងក្រោយបំផុត គន្លឹះសម្រាប់បង្កើតខ្លឹមសារវីដេអូដ៏អស្ចារ្យ និងដំបូន្មានពីអ្នកជំនាញអំពីការបង្កើតវីដេអូដោយស្វ័យប្រវត្តិ។",
   };
 
   const canonicalUrl = buildCanonical(locale, 'blog');
+  const ogImage = `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'}/imgs/showcases/1.webp`;
 
   return {
     title: titles[locale as keyof typeof titles] || titles.en,
     description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
+    keywords: 'ai image to video blog, video generation tips, ai video creation guide, image to video tutorial',
     alternates: {
       canonical: canonicalUrl,
       languages: buildHreflang('blog'),
+    },
+    openGraph: {
+      title: titles[locale as keyof typeof titles] || titles.en,
+      description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
+      url: canonicalUrl,
+      images: [ogImage],
+      type: 'website',
+      locale: locale,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: titles[locale as keyof typeof titles] || titles.en,
+      description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
+      images: [ogImage],
     },
   };
 }
@@ -63,28 +79,28 @@ export default async function BlogIndex({
     {
       slug: "best-ai-garden-design-tools-2025",
       title: locale === "zh" 
-        ? "2025年最佳AI花园设计工具" 
+        ? "2025年最佳AI图像转视频工具" 
         : locale === "ja"
-        ? "2025年最高のAIガーデンデザインツール"
+        ? "2025年最高のAI画像から動画ツール"
         : locale === "de"
-        ? "Die besten KI-Gartendesign-Tools 2025"
+        ? "Die besten KI-Bild-zu-Video-Tools 2025"
         : locale === "es"
-        ? "Las Mejores Herramientas de Diseño de Jardines con IA 2025"
+        ? "Las Mejores Herramientas de Imagen a Video IA 2025"
         : locale === "fr"
-        ? "Les Meilleurs Outils de Conception de Jardin IA 2025"
+        ? "Les Meilleurs Outils d'Image à Vidéo IA 2025"
         : locale === "ko"
-        ? "2025년 최고의 AI 정원 디자인 도구"
+        ? "2025년 최고의 AI 이미지-투-비디오 도구"
         : locale === "hi"
-        ? "2025 के सर्वश्रेष्ठ AI गार्डन डिज़ाइन टूल्स"
+        ? "2025 के सर्वश्रेष्ठ AI इमेज-टू-वीडियो टूल्स"
         : locale === "id"
-        ? "Alat Desain Taman AI Terbaik 2025"
+        ? "Alat Gambar ke Video AI Terbaik 2025"
         : locale === "ms"
-        ? "Alat Reka Bentuk Taman AI Terbaik 2025"
+        ? "Alat Imej ke Video AI Terbaik 2025"
         : locale === "vi"
-        ? "Công Cụ Thiết Kế Vườn AI Tốt Nhất 2025"
+        ? "Công Cụ Hình Ảnh Sang Video AI Tốt Nhất 2025"
         : locale === "km"
-        ? "ឧបករណ៍រចនាសួនច្បារ AI ល្អបំផុត 2025"
-        : "The Best AI Garden Design Tools in 2025",
+        ? "ឧបករណ៍រូបថតទៅវីដេអូ AI ល្អបំផុត 2025"
+        : "The Best AI Image to Video Tools in 2025",
       description: locale === "zh"
         ? "用人工智能改造您的户外空间。发现最佳免费AI花园设计工具，专业设计只需2分钟。"
         : locale === "ja"
@@ -139,8 +155,33 @@ export default async function BlogIndex({
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-emerald-50/20 to-slate-50 py-8 sm:py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <>
+      {/* BreadcrumbList JSON-LD for Blog */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": buildCanonical(locale)
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": buildCanonical(locale, 'blog')
+              }
+            ]
+          })
+        }}
+      />
+      <div className="min-h-screen bg-gradient-to-b from-white via-emerald-50/20 to-slate-50 py-8 sm:py-12 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
@@ -242,7 +283,7 @@ export default async function BlogIndex({
             {getTranslation('ctaDescription', locale)}
           </p>
           <a 
-            href="https://www.aigardendesign.online/#upload-section" 
+            href="https://www.image-to-video.art/#upload-section" 
             className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-xl transition-colors transform hover:scale-105 w-full sm:w-auto max-w-sm sm:max-w-none mx-auto"
           >
             🌟 
@@ -251,5 +292,6 @@ export default async function BlogIndex({
         </div>
       </div>
     </div>
+    </>
   );
 }

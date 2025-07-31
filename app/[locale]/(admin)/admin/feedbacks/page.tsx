@@ -3,6 +3,7 @@ import TableSlot from "@/components/dashboard/slots/table";
 import { Table as TableSlotType } from "@/types/slots/table";
 import { getFeedbacks } from "@/models/feedback";
 import moment from "moment";
+import Image from "next/image";
 
 export const runtime = "edge";
 
@@ -20,10 +21,13 @@ export default async function () {
 
         return (
           <div className="flex items-center gap-2">
-            <img
+            <Image
               src={row.user?.avatar_url || ""}
               alt={`${row.user?.nickname || 'User'} avatar`}
+              width={32}
+              height={32}
               className="w-8 h-8 rounded-full"
+              loading="lazy"
             />
             <span>{row.user?.nickname}</span>
           </div>

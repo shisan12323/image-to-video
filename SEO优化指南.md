@@ -202,3 +202,135 @@ export const metadata = {
 • GPT/Claude 等大模型可解析站点品牌、FAQ、图片并在回答中引用。  
 
 > 推荐书签：`chrome://flags/#enable-experimental-web-platform-features`（开启后可在 DevTools 直接验证 JSON-LD 富结果）。 
+
+我来帮你分析整个项目的关键词布局和SEO优化情况。让我先检查一下当前的项目结构和关键文件。
+
+Ran tool
+Read file: app/[locale]/layout.tsx
+Read file: app/[locale]/(default)/page.tsx
+Read file: i18n/messages/en.json
+Read file: app/sitemap.ts
+Read file: public/robots.txt
+Ran tool
+Read file: app/robots.txt
+Read file: app/[locale]/(default)/pricing/page.tsx
+Read file: app/[locale]/(default)/blog/page.tsx
+Read file: components/blocks/faq-video/index.tsx
+Read file: lib/seo.ts
+Ran tool
+Ran tool
+Read file: app/[locale]/(default)/blog/[slug]/page.tsx
+Ran tool
+Ran tool
+Read file: app/[locale]/(default)/blog/best-ai-garden-design-tools-2025/page.tsx
+基于我对你项目的全面分析，我发现了几个关键问题。让我详细分析一下：
+
+## �� **关键词布局分析**
+
+### ✅ **做得好的地方：**
+
+1. **核心关键词覆盖全面**：
+   - 主关键词："image to video"、"AI image to video generator"、"photo to video converter"
+   - 长尾关键词："free video maker"、"ai video creation"、"automated video generation"
+   - 品牌关键词："Image to Video" 在多个位置出现
+
+2. **多语言关键词策略**：
+   - 13种语言版本，每种都有对应的关键词翻译
+   - 西班牙语版本有专门的 "image to video IA" 关键词
+
+3. **结构化数据完善**：
+   - FAQ组件有JSON-LD结构化数据
+   - 价格页面有Product/Offer结构化数据
+   - 根布局有WebSite/Organization/Service结构化数据
+
+### ❌ **主要问题：**
+
+## 1. **关键词混乱 - 最严重问题**
+
+**问题**：项目同时存在两套完全不同的关键词体系：
+- **"Image to Video"** (当前主题)
+- **"AI Garden Design"** (旧主题残留)
+
+**证据**：
+```typescript
+// 当前主题关键词
+"ai image to video, image to video ai, photo to video converter"
+
+// 旧主题关键词残留
+"AI Garden Design Blog | Tips, Tools & Expert Advice"
+"AI Garden Design - Top Pick"
+"ai garden design free, ai landscape generator"
+```
+
+**影响**：搜索引擎会认为你的网站主题不明确，影响排名。
+
+## 2. **Canonical URL 问题**
+
+**问题**：根布局的canonical逻辑有问题：
+```typescript
+// app/[locale]/layout.tsx 第25行
+const canonicalUrl = locale === 'en' ? baseUrl : `${baseUrl}/${locale}`;
+```
+
+**问题**：所有页面都会继承这个canonical，导致：
+- 首页：`https://www.image-to-video.art` ✅
+- 价格页：`https://www.image-to-video.art` ❌ (应该是 `/pricing`)
+- 博客页：`https://www.image-to-video.art` ❌ (应该是 `/blog`)
+
+## 3. **Metadata 不完整**
+
+**问题**：
+- 首页没有独立的 `generateMetadata`，依赖根布局的默认值
+- 缺少 `openGraph.images` 和 `twitter.images`
+- 部分页面缺少 `keywords` 元标签
+
+## 4. **Sitemap 覆盖不足**
+
+**问题**：
+- 只包含硬编码的页面，没有动态生成
+- 缺少功能页面（如 `/video` 页面）
+- 没有包含所有博客文章的slug
+
+## 5. **图片优化缺失**
+
+**问题**：
+- 大量使用 `<img>` 而不是 `next/image`
+- 缺少 `alt` 属性
+- 没有图片懒加载
+
+## 6. **性能问题**
+
+**问题**：
+- 第三方脚本（GA、Clarity、Plausible）使用 `dangerouslySetInnerHTML`
+- 应该使用 `next/script` 并设置合适的 `strategy`
+
+## �� **SEO评分（满分100）**
+
+| 项目 | 当前得分 | 问题 |
+|------|----------|------|
+| 关键词一致性 | 40/100 | 两套关键词体系冲突 |
+| Canonical URL | 60/100 | 根布局canonical逻辑错误 |
+| Metadata完整性 | 70/100 | 缺少OG图片、Twitter卡片 |
+| 结构化数据 | 85/100 | FAQ、价格页有JSON-LD |
+| 多语言SEO | 80/100 | hreflang基本正确 |
+| 图片优化 | 30/100 | 未使用next/image |
+| 性能优化 | 50/100 | 第三方脚本加载方式 |
+
+## 🎯 **优先级修复建议**
+
+### **高优先级（立即修复）**
+1. **清理关键词冲突** - 删除所有"AI Garden Design"相关内容
+2. **修复Canonical逻辑** - 每个页面独立设置canonical
+3. **完善首页Metadata** - 添加独立的generateMetadata
+
+### **中优先级（1周内）**
+4. **图片优化** - 替换为next/image + alt属性
+5. **脚本优化** - 使用next/script
+6. **动态Sitemap** - 自动生成所有页面URL
+
+### **低优先级（2周内）**
+7. **添加BreadcrumbList** - 为层级页面添加面包屑
+8. **完善Article结构化数据** - 为博客文章添加
+9. **性能监控** - 设置Core Web Vitals监控
+
+你希望我先从哪个问题开始修复？我建议从**关键词清理**开始，因为这是最影响SEO的问题。

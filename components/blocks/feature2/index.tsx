@@ -118,7 +118,7 @@ export default function Feature2({ section }: { section: SectionType }) {
                       {item.image && (
                         <Image
                           src={item.image.src as string}
-                          alt={item.image.alt ? `${item.image.alt} | AI Garden Design` : `${item.title || 'AI Garden Design'}`}
+                          alt={item.image.alt ? `${item.image.alt} | Image to Video` : `${item.title || 'Image to Video'}`}
                           width={800}
                           height={600}
                           sizes="(max-width: 1024px) 100vw, 50vw"

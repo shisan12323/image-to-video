@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next'
+import { getAllPosts, PostStatus } from '@/models/post'
+import { Post } from '@/types/post'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.image-to-video.art'
   const locales = ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'ms', 'vi', 'id', 'km', 'hi']
   
@@ -59,31 +61,100 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
-  // Blog articles - English versions
-  const blogArticles = [
-    'best-ai-garden-design-tools-2025'
-  ]
+  // Add English posts page
+  urls.push({
+    url: `${baseUrl}/posts`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  })
 
-  blogArticles.forEach(article => {
+  // Add all posts pages for each language
+  locales.slice(1).forEach(locale => {
     urls.push({
-      url: `${baseUrl}/blog/${article}`,
+      url: `${baseUrl}/${locale}/posts`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
+      changeFrequency: 'weekly',
+      priority: 0.7,
     })
   })
 
-  // Blog articles - all language versions
+  // Add video page
+  urls.push({
+    url: `${baseUrl}/video`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  })
+
+  // Add all video pages for each language
   locales.slice(1).forEach(locale => {
-    blogArticles.forEach(article => {
-      urls.push({
-        url: `${baseUrl}/${locale}/blog/${article}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: 0.5,
+    urls.push({
+      url: `${baseUrl}/${locale}/video`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    })
+  })
+
+  // Dynamic blog articles from database
+  try {
+    const allPosts = await getAllPosts(1, 1000) // Get all posts
+    
+    // Add English blog articles
+    allPosts.forEach((post: Post) => {
+      if (post.status === PostStatus.Online) {
+        urls.push({
+          url: `${baseUrl}/blog/${post.slug}`,
+          lastModified: new Date(post.updated_at || post.created_at || new Date()),
+          changeFrequency: 'monthly',
+          priority: 0.6,
+        })
+      }
+    })
+
+    // Add all language blog articles
+    locales.slice(1).forEach(locale => {
+      allPosts.forEach((post: Post) => {
+        if (post.status === PostStatus.Online) {
+          urls.push({
+            url: `${baseUrl}/${locale}/blog/${post.slug}`,
+            lastModified: new Date(post.updated_at || post.created_at || new Date()),
+            changeFrequency: 'monthly',
+            priority: 0.5,
+          })
+        }
       })
     })
-  })
+
+    // Add English posts articles
+    allPosts.forEach((post: Post) => {
+      if (post.status === PostStatus.Online) {
+        urls.push({
+          url: `${baseUrl}/posts/${post.slug}`,
+          lastModified: new Date(post.updated_at || post.created_at || new Date()),
+          changeFrequency: 'monthly',
+          priority: 0.6,
+        })
+      }
+    })
+
+    // Add all language posts articles
+    locales.slice(1).forEach(locale => {
+      allPosts.forEach((post: Post) => {
+        if (post.status === PostStatus.Online) {
+          urls.push({
+            url: `${baseUrl}/${locale}/posts/${post.slug}`,
+            lastModified: new Date(post.updated_at || post.created_at || new Date()),
+            changeFrequency: 'monthly',
+            priority: 0.5,
+          })
+        }
+      })
+    })
+  } catch (error) {
+    console.error('Error fetching posts for sitemap:', error)
+  }
 
   // 隐私政策和条款页面不添加到sitemap，避免被搜索引擎索引
 

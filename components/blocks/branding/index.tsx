@@ -1,4 +1,5 @@
 import { Section as SectionType } from "@/types/blocks/section";
+import Image from "next/image";
 
 export default function Branding({ section }: { section: SectionType }) {
   if (section.disabled) {
@@ -14,16 +15,20 @@ export default function Branding({ section }: { section: SectionType }) {
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-8 mt-4">
             {section.items?.map((item, idx) => {
-              if (item.image) {
+              if (item.image && item.image.src) {
                 return (
-                  <img
+                  <Image
                     key={idx}
                     src={item.image.src}
-                    alt={item.image.alt || item.title}
+                    alt={item.image.alt || item.title || "Brand logo"}
+                    width={120}
+                    height={28}
                     className="h-7 dark:invert"
+                    loading="lazy"
                   />
                 );
               }
+              return null;
             })}
           </div>
         </div>

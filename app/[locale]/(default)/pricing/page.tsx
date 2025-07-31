@@ -13,19 +13,31 @@ export async function generateMetadata({
   // Construct canonical URL for pricing page
   const canonicalUrl = buildCanonical(locale, 'pricing');
   
+  const ogImage = `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'}/imgs/showcases/1.webp`;
+  
   return {
     title: `${t('title')} - Image to Video`,
     description: t('description'),
+    keywords: 'image to video pricing, ai video generator cost, video creation plans, affordable video maker',
     metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'),
     alternates: {
       canonical: canonicalUrl,
       languages: buildHreflang('pricing'),
     },
     openGraph: {
+      title: `${t('title')} - Image to Video`,
+      description: t('description'),
       url: canonicalUrl,
+      images: [ogImage],
       siteName: 'Image to Video',
       locale: locale,
       type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${t('title')} - Image to Video`,
+      description: t('description'),
+      images: [ogImage],
     },
   };
 }

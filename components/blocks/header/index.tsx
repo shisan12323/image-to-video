@@ -26,6 +26,7 @@ import {
 
 import { Header as HeaderType } from "@/types/blocks/header";
 import Icon from "@/components/icon";
+import Image from "next/image";
 import Link from "next/link";
 import LocaleToggle from "@/components/locale/toggle";
 import { Menu } from "lucide-react";
@@ -48,10 +49,13 @@ export default function Header({ header }: { header: HeaderType }) {
               className="flex items-center gap-2"
             >
               {header.brand?.logo?.src && (
-                <img
+                <Image
                   src={header.brand.logo.src}
-                  alt={header.brand.logo.alt || header.brand.title}
+                  alt={header.brand.logo.alt || header.brand.title || "Image to Video Logo"}
+                  width={40}
+                  height={40}
                   className="w-10"
+                  priority
                 />
               )}
               {header.brand?.title && (
@@ -171,10 +175,13 @@ export default function Header({ header }: { header: HeaderType }) {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               {header.brand?.logo?.src && (
-                <img
+                <Image
                   src={header.brand.logo.src}
-                  alt={header.brand.logo.alt || header.brand.title}
+                  alt={header.brand.logo.alt || header.brand.title || "Image to Video Logo"}
+                  width={40}
+                  height={40}
                   className="w-10"
+                  priority
                 />
               )}
               {header.brand?.title && (
@@ -194,10 +201,13 @@ export default function Header({ header }: { header: HeaderType }) {
                   <SheetTitle>
                     <div className="flex items-center gap-2">
                       {header.brand?.logo?.src && (
-                        <img
+                        <Image
                           src={header.brand.logo.src}
-                          alt={header.brand.logo.alt || header.brand.title}
+                          alt={header.brand.logo.alt || header.brand.title || "Image to Video Logo"}
+                          width={40}
+                          height={40}
                           className="w-10"
+                          priority
                         />
                       )}
                       {header.brand?.title && (

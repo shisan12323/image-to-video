@@ -52,6 +52,8 @@ export default async function ({
 
   if (!post) return null;
 
+  const canonicalUrl = buildCanonical(locale, `posts/${slug}`);
+
   // Prepare Article structured data
   const articleLd = {
     "@context": "https://schema.org",
@@ -62,9 +64,23 @@ export default async function ({
     "dateModified": post.updated_at || post.created_at || new Date().toISOString(),
     "author": {
       "@type": "Person",
-      "name": post.author_name || "AI Garden Design"
+      "name": post.author_name || "Image to Video"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Image to Video",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'}/logo.svg`
+      }
     },
     "image": post.cover_url ? [post.cover_url] : undefined,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalUrl
+    },
+    "articleSection": "AI Image to Video",
+    "keywords": "ai image to video, video generation, ai video creation, image to video tutorial"
   };
 
   return (

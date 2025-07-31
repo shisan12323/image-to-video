@@ -2,6 +2,7 @@ import { Footer as FooterType } from "@/types/blocks/footer";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Footer({ footer }: { footer: FooterType }) {
   const t = useTranslations();
@@ -19,11 +20,14 @@ export default function Footer({ footer }: { footer: FooterType }) {
               {footer.brand && (
                 <div>
                   <div className="flex items-center justify-center gap-2 lg:justify-start">
-                    {footer.brand.logo && (
-                      <img
+                    {footer.brand.logo && footer.brand.logo.src && (
+                      <Image
                         src={footer.brand.logo.src}
-                        alt={footer.brand.logo.alt || footer.brand.title}
+                        alt={footer.brand.logo.alt || footer.brand.title || "Image to Video Logo"}
+                        width={40}
+                        height={40}
                         className="h-10"
+                        priority
                       />
                     )}
                     {footer.brand.title && (

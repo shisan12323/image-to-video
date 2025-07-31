@@ -19,7 +19,7 @@ export default async function SignInPage({
       <div className="flex w-full max-w-sm flex-col gap-6">
         <a href="/" className="flex items-center gap-2 self-center font-medium">
           <div className="flex h-6 w-6 items-center justify-center rounded-md border text-primary-foreground overflow-hidden">
-            <Image src="/logo.svg" alt="AI Garden Design logo" width={16} height={16} loading="lazy" />
+            <Image src="/logo.svg" alt="Image to Video logo" width={16} height={16} loading="lazy" />
           </div>
           {process.env.NEXT_PUBLIC_PROJECT_NAME}
         </a>

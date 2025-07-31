@@ -55,11 +55,12 @@ export default function Feature3({ section }: { section: SectionType }) {
                         <div className="aspect-video">
                           <Image
                             src={item.image!.src as string}
-                            alt={item.image?.alt ? `${item.image.alt} | AI Garden Design` : `${item.title}`}
+                            alt={item.image?.alt ? `${item.image.alt} | Image to Video` : `${item.title}`}
                             width={800}
                             height={600}
                             sizes="(max-width: 768px) 100vw, 50vw"
                             className="h-full w-full rounded-md border object-cover shadow"
+                            loading="lazy"
                           />
                         </div>
                       </div>
@@ -81,11 +82,12 @@ export default function Feature3({ section }: { section: SectionType }) {
                     {item.image && (
                       <Image
                         src={item.image.src as string}
-                        alt={item.image.alt ? `${item.image.alt} | AI Garden Design` : `${item.title}`}
+                        alt={item.image.alt ? `${item.image.alt} | Image to Video` : `${item.title}`}
                         width={800}
                         height={600}
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="h-full w-full rounded-xl border object-cover shadow"
+                        loading="lazy"
                       />
                     )}
                   </TabsContent>

@@ -21,7 +21,27 @@ export default function FAQ() {
   const questionsObj = t.raw('questions') as Record<string, any>;
   const questions = Object.values(questionsObj || {});
 
+  // Prepare FAQ structured data
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": questions.map((q: any) => ({
+      "@type": "Question",
+      "name": q.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": q.answer
+      }
+    }))
+  };
+
   return (
+    <>
+      {/* FAQ JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     <section id={name} className="py-16 sm:py-20">
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-12 max-w-2xl text-center">
@@ -46,5 +66,6 @@ export default function FAQ() {
         </div>
       </div>
     </section>
+    </>
   );
 }

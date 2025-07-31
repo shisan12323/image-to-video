@@ -122,7 +122,9 @@ export default function Transformations() {
                       alt={transformation.title}
                       width={400}
                       height={300}
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                       className="w-full h-auto object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </div>

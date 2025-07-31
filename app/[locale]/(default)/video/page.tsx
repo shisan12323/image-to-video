@@ -6,32 +6,33 @@ import HowItWorksVideo from '@/components/blocks/how-it-works-video';
 import TestimonialsVideo from '@/components/blocks/testimonials-video';
 import FAQVideo from '@/components/blocks/faq-video';
 import CTAVideo from '@/components/blocks/cta-video';
+import { buildCanonical, buildHreflang } from '@/lib/seo';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const locale = params.locale;
+  const canonicalUrl = buildCanonical(locale, 'video');
   
   return {
     title: `AI Image to Video Generator – Free Online | ImgToVideo`,
     description: 'Transform images into stunning videos in minutes with our advanced image to video AI technology. No editing skills required. Free trial available.',
     keywords: 'image to video, ai video generator, photo to video, free video generator, ai animation',
     alternates: {
-      canonical: `/video`,
-      languages: {
-        'en': '/en/video',
-        'es': '/es/video'
-      }
+      canonical: canonicalUrl,
+      languages: buildHreflang('video'),
     },
     openGraph: {
       title: `AI Image to Video Generator – Free Online | ImgToVideo`,
       description: 'Transform images into stunning videos in minutes with our advanced image to video AI technology. No editing skills required. Free trial available.',
+      url: canonicalUrl,
+      images: [`${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'}/imgs/showcases/1.webp`],
       type: 'website',
       locale: locale,
-      url: `/video`
     },
     twitter: {
       card: 'summary_large_image',
       title: `AI Image to Video Generator – Free Online | ImgToVideo`,
-      description: 'Transform images into stunning videos in minutes with our advanced image to video AI technology. No editing skills required. Free trial available.'
+      description: 'Transform images into stunning videos in minutes with our advanced image to video AI technology. No editing skills required. Free trial available.',
+      images: [`${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'}/imgs/showcases/1.webp`]
     }
   };
 }

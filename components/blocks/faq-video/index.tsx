@@ -117,16 +117,16 @@ export default function FAQVideo() {
               onClick={() => {
                 console.log('FAQ CTA button clicked!'); // 调试信息
                 try {
-                  const heroSection = document.getElementById('hero-section');
-                  console.log('Hero section found:', heroSection); // 调试信息
-                  if (heroSection) {
-                    console.log('Scrolling to hero section'); // 调试信息
-                    heroSection.scrollIntoView({ 
+                  const uploadSection = document.getElementById('upload');
+                  console.log('Upload section found:', uploadSection); // 调试信息
+                  if (uploadSection) {
+                    console.log('Scrolling to upload section'); // 调试信息
+                    uploadSection.scrollIntoView({ 
                       behavior: 'smooth',
                       block: 'start' 
                     });
                   } else {
-                    console.log('Hero section not found, scrolling to top'); // 调试信息
+                    console.log('Upload section not found, scrolling to top'); // 调试信息
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }
                 } catch (error) {

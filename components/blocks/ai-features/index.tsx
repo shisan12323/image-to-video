@@ -83,7 +83,17 @@ export default function AIFeatures() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => (
-            <Card key={index} className="group relative overflow-hidden bg-white border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl cursor-pointer hover:-translate-y-2">
+            <Card 
+              key={index} 
+              className="group relative overflow-hidden bg-white border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-2xl cursor-pointer hover:-translate-y-2"
+              onClick={() => {
+                // 滚动到图片上传生成视频区域
+                const uploadSection = document.getElementById('upload');
+                if (uploadSection) {
+                  uploadSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               <div className="p-8 relative z-10">
                 {/* Icon with gradient background */}
                 <div className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-6 group-hover:scale-125 group-hover:rotate-3 transition-all duration-500 shadow-lg`}>

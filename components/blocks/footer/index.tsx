@@ -1,18 +1,40 @@
-import { Footer as FooterType } from "@/types/blocks/footer";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export default function Footer({ footer }: { footer: FooterType }) {
+export default function Footer() {
   const t = useTranslations();
-  
-  if (footer.disabled) {
-    return null;
-  }
+  const footer = {
+    brand: {
+      title: t('footer.brand.title'),
+      description: t('footer.brand.description'),
+      logo: {
+        src: "/logo.svg",
+        alt: "ImageToVideo AI"
+      },
+      url: "/"
+    },
+    copyright: t('footer.copyright'),
+    privacy_policy: t('footer.privacy_policy'),
+    terms_of_service: t('footer.terms_of_service'),
+    blog: t('footer.blog'),
+    agreement: {
+      items: [
+        {
+          title: t('footer.privacy_policy'),
+          url: "/privacy-policy"
+        },
+        {
+          title: t('footer.terms_of_service'),
+          url: "/terms-of-service"
+        }
+      ]
+    }
+  };
 
   return (
-    <section id={footer.name} className="py-8">
+    <section id="footer" className="py-8">
       <div className="max-w-7xl mx-auto px-8">
         <footer>
           <div className="flex flex-col items-center justify-between gap-6 text-center lg:flex-row lg:text-left">
@@ -62,7 +84,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
                 <ul className="flex justify-center gap-6 lg:justify-end">
                   {footer.agreement.items?.map((item, i) => (
                     <li key={i} className="hover:text-primary">
-                      <a href={item.url} target={item.target}>
+                      <a href={item.url}>
                         {item.title}
                       </a>
                     </li>

@@ -22,10 +22,16 @@ export function buildCanonical(locale: string, pathname: string = ""): string {
 export function buildHreflang(pathname: string = ""): Record<string, string> {
   const cleanPath = pathname.replace(/^\//, "");
   const langs: Record<string, string> = {};
+  
+  // Add x-default pointing to English version
+  langs["x-default"] = cleanPath ? `${BASE_URL}/${cleanPath}` : BASE_URL;
+  
   locales.forEach((lg) => {
-    langs[lg] = lg === "en"
-      ? `${BASE_URL}/${cleanPath}`.replace(/\/$/, "")
-      : `${BASE_URL}/${lg}/${cleanPath}`.replace(/\/$/, "");
+    if (lg === "en") {
+      langs[lg] = cleanPath ? `${BASE_URL}/${cleanPath}` : BASE_URL;
+    } else {
+      langs[lg] = cleanPath ? `${BASE_URL}/${lg}/${cleanPath}` : `${BASE_URL}/${lg}`;
+    }
   });
   return langs;
 } 

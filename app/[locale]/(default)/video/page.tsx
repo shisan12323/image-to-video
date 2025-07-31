@@ -8,14 +8,13 @@ import FAQVideo from '@/components/blocks/faq-video';
 import CTAVideo from '@/components/blocks/cta-video';
 import { buildCanonical, buildHreflang } from '@/lib/seo';
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const locale = params.locale;
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const canonicalUrl = buildCanonical(locale, 'video');
   
   return {
     title: `AI Image to Video Generator – Free Online | ImgToVideo`,
     description: 'Transform images into stunning videos in minutes with our advanced image to video AI technology. No editing skills required. Free trial available.',
-    keywords: 'image to video, ai video generator, photo to video, free video generator, ai animation',
     alternates: {
       canonical: canonicalUrl,
       languages: buildHreflang('video'),

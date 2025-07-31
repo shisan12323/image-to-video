@@ -24,7 +24,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { Header as HeaderType } from "@/types/blocks/header";
+import { useTranslations } from "next-intl";
 import Icon from "@/components/icon";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,7 +34,40 @@ import SignToggle from "@/components/sign/toggle";
 import ThemeToggle from "@/components/theme/toggle";
 import { cn } from "@/lib/utils";
 
-export default function Header({ header }: { header: HeaderType }) {
+export default function Header() {
+  const t = useTranslations();
+  const header = {
+    brand: {
+      title: "ImageToVideo AI",
+      logo: {
+        src: "/logo.svg",
+        alt: "ImageToVideo AI"
+      },
+      url: "/"
+    },
+    nav: {
+      items: [
+        {
+          title: t('header.nav.items.0.title'),
+          url: "/#features",
+          icon: "Video"
+        },
+        {
+          title: t('header.nav.items.1.title'),
+          url: "/#features",
+          icon: "MessageCircle"
+        },
+        {
+          title: t('header.nav.items.2.title'),
+          url: "/pricing",
+          icon: "CreditCard"
+        }
+      ]
+    },
+    show_sign: true,
+    show_theme: false,
+    show_locale: true
+  };
   if (header.disabled) {
     return null;
   }

@@ -1,57 +1,56 @@
 {
   "metadata": {
-    "title": "Generador de Video IA de Imagen a Video - Gratis Online",
-    "description": "Image to Video es una plataforma inteligente de generación de video a partir de imágenes que transforma tus espacios exteriores usando inteligencia artificial.",
-    "keywords": "image to video IA, generador de video IA, conversor de foto a video, generador de video gratis, animación IA"
+    "title": "Generador de Video IA de Imagen a Video - Convierte Fotos y Scripts a Videos",
+    "description": "Transforma imágenes, fotos y scripts en videos impresionantes con nuestro generador de video IA. Conversión gratuita de imagen a video, foto a video y script a video."
   },
   "user": {
-    "sign_in": "Sign In",
-    "sign_out": "Sign Out",
-    "credits": "Credits",
-    "api_keys": "API Keys",
-    "my_orders": "My Orders",
-    "user_center": "User Center",
-    "admin_system": "Administration"
+    "sign_in": "Iniciar Sesión",
+    "sign_out": "Cerrar Sesión",
+    "credits": "Créditos",
+    "api_keys": "Claves API",
+    "my_orders": "Mis Pedidos",
+    "user_center": "Centro de Usuario",
+    "admin_system": "Sistema de Administración"
   },
   "sign_modal": {
-    "sign_in_title": "Sign In",
-    "sign_in_description": "Sign in to your account",
-    "sign_up_title": "Sign Up",
-    "sign_up_description": "Create an account",
-    "email_title": "Email",
-    "email_placeholder": "Enter your email",
-    "password_title": "Password",
-    "password_placeholder": "Enter your password",
-    "forgot_password": "Forgot password?",
-    "or": "Or",
-    "continue": "Continue",
-    "no_account": "Don't have an account?",
-    "email_sign_in": "Sign in with email",
-    "google_sign_in": "Sign in with Google",
-    "github_sign_in": "Sign in with GitHub",
-    "close_title": "Close",
-    "cancel_title": "Cancel"
+    "sign_in_title": "Iniciar Sesión",
+    "sign_in_description": "Inicia sesión en tu cuenta",
+    "sign_up_title": "Registrarse",
+    "sign_up_description": "Crear una cuenta",
+    "email_title": "Correo Electrónico",
+    "email_placeholder": "Ingresa tu correo electrónico",
+    "password_title": "Contraseña",
+    "password_placeholder": "Ingresa tu contraseña",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "or": "O",
+    "continue": "Continuar",
+    "no_account": "¿No tienes una cuenta?",
+    "email_sign_in": "Iniciar con correo electrónico",
+    "google_sign_in": "Iniciar con Google",
+    "github_sign_in": "Iniciar con GitHub",
+    "close_title": "Cerrar",
+    "cancel_title": "Cancelar"
   },
   "feature_video": {
-    "title": "Choose Your Method for Video Creation with AI",
+    "title": "Generador de Video IA - Imagen, Foto y Script a Video",
     "items": {
       "0": {
         "icon": "🖼️",
-        "title": "Image to Video IA",
-        "description": "Transform static images into dynamic videos with advanced animation IA image-to-video technology.",
-        "button_text": "Try Image to Video IA"
+        "title": "Generador de Video IA de Imagen a Video",
+        "description": "Transforma imágenes estáticas en videos dinámicos con nuestro generador de video IA. Convierte cualquier imagen a video con calidad profesional. Nuestra tecnología IA de imagen a video crea efectos de movimiento impresionantes.",
+        "button_text": "Comenzar Imagen a Video IA"
       },
       "1": {
-        "icon": "📝",
-        "title": "Text to Video IA",
-        "description": "Create professional videos from text descriptions using advanced AI models.",
-        "button_text": "Try Text to Video IA"
+        "icon": "📸",
+        "title": "Generador de Video IA de Foto a Video",
+        "description": "Convierte fotos a videos con nuestro generador de video IA. Transforma tus fotos en contenido de video atractivo. Crea videos profesionales a partir de fotos con nuestra IA avanzada.",
+        "button_text": "Comenzar Foto a Video IA"
       },
       "2": {
-        "icon": "✨",
-        "title": "Video Effect Templates",
-        "description": "Apply trendy video effects with our growing collection of popular templates.",
-        "button_text": "Try Effect Templates"
+        "icon": "📝",
+        "title": "Generador de Video IA de Script a Video",
+        "description": "Convierte scripts a videos con nuestro generador de video IA. Perfecto para creadores de contenido y mercadólogos. Genera videos a partir de texto con nuestra tecnología IA de script a video.",
+        "button_text": "Comenzar Script a Video IA"
       }
     }
   },
@@ -116,251 +115,251 @@
   },
   "generator": {
     "tabs": {
-      "image_to_video": "Image to Video",
-      "photo_to_video": "Photo to Video"
+      "image_to_video": "Imagen a Video",
+      "photo_to_video": "Foto a Video"
     },
     "upload": {
-      "title": "Upload Image",
-      "ai_generator": "Image IA Generator",
-      "or": "Or",
-      "change_image": "Click to change image"
+      "title": "Subir Imagen",
+      "ai_generator": "Generador IA de Imágenes",
+      "or": "O",
+      "change_image": "Haz clic para cambiar imagen"
     },
     "effects": {
-      "video_effects": "Video Effects",
-      "video_styles": "Video Styles"
+      "video_effects": "Efectos de Video",
+      "video_styles": "Estilos de Video"
     },
     "description": {
-      "placeholder": "Describe your shot",
+      "placeholder": "Describe tu toma",
       "character_count": "0/1000"
     },
     "actions": {
-      "ai_generate": "Generate IA",
-      "rewrite": "Rewrite",
-      "reset": "Reset"
+      "ai_generate": "Generar IA",
+      "rewrite": "Reescribir",
+      "reset": "Reiniciar"
     },
     "model": {
-      "label": "Model",
+      "label": "Modelo",
       "fast": "Rápido 1.4",
       "pro": "Pro-Turbo 2.4",
       "pro_badge": "PRO"
     },
     "duration": {
-      "label": "Duration",
+      "label": "Duración",
       "four_seconds": "4s",
       "eight_seconds": "8s",
       "pro_badge": "PRO"
     },
     "generate": {
-      "button": "Generate Now",
-      "generating": "Generating...",
+      "button": "Generar Ahora",
+      "generating": "Generando...",
       "credits": "3"
     },
-    "history": "History",
+    "history": "Historial",
     "preview": {
-      "title": "Video Preview",
-      "placeholder": "Your video will appear here",
-      "upload_prompt": "Upload an image to start",
-      "generating": "The IA is creating your video..."
+      "title": "Vista Previa del Video",
+      "placeholder": "Tu video aparecerá aquí",
+      "upload_prompt": "Sube una imagen para comenzar",
+      "generating": "La IA está creando tu video..."
     }
   },
   "my_orders": {
-    "title": "My Orders",
-    "description": "Your purchase history.",
-    "no_orders": "No orders found",
+    "title": "Mis Pedidos",
+    "description": "Tu historial de compras.",
+    "no_orders": "No se encontraron pedidos",
     "tip": "",
-    "activate_order": "Activate Order",
-    "actived": "Activated",
-    "join_discord": "Join Discord",
-    "read_docs": "Read Documentation",
+    "activate_order": "Activar Pedido",
+    "actived": "Activado",
+    "join_discord": "Unirse a Discord",
+    "read_docs": "Leer Documentación",
     "table": {
-      "order_no": "Order No.",
-      "email": "Email",
-      "product_name": "Product Name",
-      "amount": "Amount",
-      "paid_at": "Paid at",
-      "github_username": "GitHub Username",
-      "status": "Status"
+      "order_no": "Número de Pedido",
+      "email": "Correo Electrónico",
+      "product_name": "Nombre del Producto",
+      "amount": "Monto",
+      "paid_at": "Pagado el",
+      "github_username": "Usuario de GitHub",
+      "status": "Estado"
     }
   },
   "my_credits": {
-    "title": "My Credits",
-    "left_tip": "Remaining Credits: {left_credits}",
-    "no_credits": "No credit records found",
-    "recharge": "Recharge",
+    "title": "Mis Créditos",
+    "left_tip": "Créditos Restantes: {left_credits}",
+    "no_credits": "No se encontraron registros de créditos",
+    "recharge": "Recargar",
     "table": {
-      "trans_no": "Transaction No.",
-      "trans_type": "Transaction Type",
-      "credits": "Credits",
-      "updated_at": "Updated at",
-      "status": "Status"
+      "trans_no": "Número de Transacción",
+      "trans_type": "Tipo de Transacción",
+      "credits": "Créditos",
+      "updated_at": "Actualizado el",
+      "status": "Estado"
     }
   },
   "api_keys": {
-    "title": "API Keys",
-    "tip": "Please keep your API keys secure to prevent leaks",
-    "no_api_keys": "No API keys",
-    "create_api_key": "Create API Key",
+    "title": "Claves API",
+    "tip": "Por favor mantén tus claves API seguras para evitar filtraciones",
+    "no_api_keys": "Sin claves API",
+    "create_api_key": "Crear Clave API",
     "table": {
-      "name": "Name",
-      "key": "Key",
-      "created_at": "Created at"
+      "name": "Nombre",
+      "key": "Clave",
+      "created_at": "Creado el"
     },
     "form": {
-      "name": "Name",
-      "name_placeholder": "API Key Name",
-      "submit": "Submit"
+      "name": "Nombre",
+      "name_placeholder": "Nombre de Clave API",
+      "submit": "Enviar"
     }
   },
   "blog": {
     "title": "Blog",
-    "description": "News, resources, and updates about Image to Video",
-    "read_more_text": "Read More"
+    "description": "Noticias, recursos y actualizaciones sobre Imagen a Video",
+    "read_more_text": "Leer Más"
   },
   "my_invites": {
-    "title": "My Invites",
-    "description": "View your invite records",
-    "no_invites": "No invites found",
-    "my_invite_link": "My Invite Link",
-    "edit_invite_link": "Edit Invite Link",
-    "copy_invite_link": "Copy Invite Link",
-    "invite_code": "Invite Code",
-    "invite_tip": "Invite 1 friend to buy Image to Video, win 50€.",
-    "invite_balance": "Invite reward balance",
-    "total_invite_count": "Total invites",
-    "total_paid_count": "Total paid",
-    "total_award_amount": "Total award amount",
-    "update_invite_code": "Set invite code",
-    "update_invite_code_tip": "Enter your custom invite code",
-    "update_invite_button": "Save",
-    "no_orders": "You must purchase Image to Video first to invite friends",
-    "no_affiliates": "You are not allowed to invite others, please contact us to request permission.",
+    "title": "Mis Invitaciones",
+    "description": "Ver tus registros de invitaciones",
+    "no_invites": "No se encontraron invitaciones",
+    "my_invite_link": "Mi Enlace de Invitación",
+    "edit_invite_link": "Editar Enlace de Invitación",
+    "copy_invite_link": "Copiar Enlace de Invitación",
+    "invite_code": "Código de Invitación",
+            "invite_tip": "Invita a 1 amigo a comprar Imagen a Video, gana 50€.",
+    "invite_balance": "Saldo de recompensas por invitación",
+    "total_invite_count": "Total de invitaciones",
+    "total_paid_count": "Total pagado",
+    "total_award_amount": "Monto total de premios",
+    "update_invite_code": "Establecer código de invitación",
+    "update_invite_code_tip": "Ingresa tu código de invitación personalizado",
+    "update_invite_button": "Guardar",
+            "no_orders": "Debes comprar Imagen a Video primero para invitar amigos",
+    "no_affiliates": "No tienes permitido invitar a otros, por favor contáctanos para solicitar permiso.",
     "table": {
-      "invite_time": "Invite Time",
-      "invite_user": "Invited User",
-      "status": "Status",
-      "reward_percent": "Reward Percentage",
-      "reward_amount": "Reward Amount",
-      "pending": "Pending",
-      "completed": "Completed"
+      "invite_time": "Tiempo de Invitación",
+      "invite_user": "Usuario Invitado",
+      "status": "Estado",
+      "reward_percent": "Porcentaje de Recompensa",
+      "reward_amount": "Monto de Recompensa",
+      "pending": "Pendiente",
+      "completed": "Completado"
     }
   },
   "feedback": {
-    "title": "Feedback",
-    "description": "We'd love to hear what worked well or how we can improve the product experience.",
-    "submit": "Submit",
-    "loading": "Sending...",
-    "contact_tip": "Other ways to contact us",
-    "rating_tip": "What do you think of Image to Video?",
-    "placeholder": "Leave your feedback here..."
+    "title": "Comentarios",
+    "description": "Nos encantaría escuchar qué funcionó bien o cómo podemos mejorar la experiencia del producto.",
+    "submit": "Enviar",
+    "loading": "Enviando...",
+    "contact_tip": "Otras formas de contactarnos",
+            "rating_tip": "¿Qué piensas de Imagen a Video?",
+    "placeholder": "Deja tus comentarios aquí..."
   },
   "my_images": {
-    "title": "My Images",
-    "no_images": "No images generated yet",
-    "download": "Download",
-    "copy": "Copy",
-    "generation_date": "Generated",
-    "theme": "Theme",
-    "elements": "Elements",
-    "credits_used": "Credits Used",
-    "status": "Status"
+    "title": "Mis Imágenes",
+    "no_images": "Aún no se han generado imágenes",
+    "download": "Descargar",
+    "copy": "Copiar",
+    "generation_date": "Generado",
+    "theme": "Tema",
+    "elements": "Elementos",
+    "credits_used": "Créditos Utilizados",
+    "status": "Estado"
   },
   "video_styles": {
-    "title": "Image to Video AI Generation Styles",
-    "description": "Our intelligent video generation platform offers a wide range of popular video styles to transform your images into stunning videos",
+    "title": "Estilos de Generación IA de Imagen a Video",
+    "description": "Nuestra plataforma inteligente de generación de videos ofrece una amplia gama de estilos de video populares para transformar tus imágenes en videos impresionantes",
     "styles": [
-      { "name": "English Country House", "image": "/imgs/showcases/1.png" },
-      { "name": "Modern Minimalist", "image": "/imgs/showcases/2.png" },
-      { "name": "Mediterranean", "image": "/imgs/showcases/3.png" },
-      { "name": "Japanese Zen", "image": "/imgs/showcases/4.png" },
-      { "name": "Tropical Paradise", "image": "/imgs/showcases/5.png" },
-      { "name": "Oasis of the Desert", "image": "/imgs/showcases/6.png" },
-      { "name": "Wildflower Meadow", "image": "/imgs/showcases/7.png" },
-      { "name": "French Formal", "image": "/imgs/showcases/8.png" },
-      { "name": "Rustic Farmhouse", "image": "/imgs/showcases/9.png" },
-      { "name": "Urban Contemporary", "image": "/imgs/showcases/1.png" },
-      { "name": "Natural Forest", "image": "/imgs/showcases/2.png" },
-      { "name": "Coastal Garden", "image": "/imgs/showcases/3.png" },
-      { "name": "Victorian Formal", "image": "/imgs/showcases/4.png" },
-      { "name": "Rock Garden", "image": "/imgs/showcases/5.png" },
-      { "name": "Water Garden", "image": "/imgs/showcases/6.png" },
-      { "name": "Herb Garden", "image": "/imgs/showcases/7.png" }
+      { "name": "Casa de Campo Inglesa", "image": "/imgs/showcases/1.png" },
+      { "name": "Minimalista Moderno", "image": "/imgs/showcases/2.png" },
+      { "name": "Mediterráneo", "image": "/imgs/showcases/3.png" },
+      { "name": "Zen Japonés", "image": "/imgs/showcases/4.png" },
+      { "name": "Paraíso Tropical", "image": "/imgs/showcases/5.png" },
+      { "name": "Oasis del Desierto", "image": "/imgs/showcases/6.png" },
+      { "name": "Pradera de Flores Silvestres", "image": "/imgs/showcases/7.png" },
+      { "name": "Formal Francés", "image": "/imgs/showcases/8.png" },
+      { "name": "Granja Rústica", "image": "/imgs/showcases/9.png" },
+      { "name": "Urbano Contemporáneo", "image": "/imgs/showcases/1.png" },
+      { "name": "Bosque Natural", "image": "/imgs/showcases/2.png" },
+      { "name": "Jardín Costero", "image": "/imgs/showcases/3.png" },
+      { "name": "Formal Victoriano", "image": "/imgs/showcases/4.png" },
+      { "name": "Jardín de Rocas", "image": "/imgs/showcases/5.png" },
+      { "name": "Jardín de Agua", "image": "/imgs/showcases/6.png" },
+      { "name": "Jardín de Hierbas", "image": "/imgs/showcases/7.png" }
     ]
   },
   "hero": {
-    "top_badge": "CONVERT IMAGES TO VIDEOS IN SECONDS",
-    "title_line1": "#1 Image to Video IA",
-    "title_line2": "for Creation", 
-    "subtitle": "Welcome to ImageToVideo AI!",
-    "description": "As a leading IA image-to-video technology, you can enjoy efficient and realistic generated effects here. Enjoy incredible technology to transform images into IA videos.",
-    "cta_button": "Transform Images to IA Videos",
-    "button": "Start Creating for Free",
+    "top_badge": "#1 GENERADOR DE VIDEO IA",
+    "title_line1": "Generador de Video IA de Imagen a Video",
+    "title_line2": "Foto y Script a Video", 
+    "subtitle": "¡Bienvenido a ImageToVideo AI!",
+    "description": "Transforma imágenes, fotos y scripts en videos impresionantes con nuestro generador de video IA. Conversión gratuita de imagen a video, foto a video y script a video. Crea videos profesionales con nuestra tecnología IA avanzada.",
+    "cta_button": "Comenzar Imagen a Video IA Gratis",
+    "button": "Comenzar Imagen a Video IA Gratis",
     "buttons": {
       "0": {
-        "title": "Transform Images to IA Videos",
+        "title": "Probar Generador de Video IA de Imagen a Video",
         "icon": "Play",
         "url": "/#upload",
         "variant": "default"
       }
     },
     "badges": {
-      "0": { "title": "✅ Free to Use" },
-      "1": { "title": "⚡ Generates in Seconds" },
-      "2": { "title": "🎯 No Skills Required" },
-      "3": { "title": "📱 Works on Any Device" }
+      "0": { "title": "✅ Gratis para Usar" },
+      "1": { "title": "⚡ Genera en Segundos" },
+      "2": { "title": "🎯 No Requiere Habilidades" },
+      "3": { "title": "📱 Funciona en Cualquier Dispositivo" }
     },
     "stats": {
       "users": "50,000+",
       "videos": "500,000+",
       "rating": "4.9/5"
     },
-    "ai_badge": "Generated by IA"
+    "ai_badge": "Generado por IA"
   },
   "upload": {
-    "title": "Upload Image to Video",
-    "description": "Upload your image and let our IA create a professional video",
-    "change": "Click to change image",
-    "prompt": "Upload your image",
-    "formats": "Supported formats: JPG, PNG, WEBP, up to 5MB",
-    "style_label": "Video Style",
-    "style_placeholder": "Choose style...",
-    "elements_label": "Special Elements (Optional)",
-    "elements_placeholder": "e.g., motion effects, transitions, animations...",
-    "generating": "Generating...",
-    "generate_button": "Generate Video",
-    "result_title": "Your Generated Video by IA",
-    "ai_complete": "Generated by IA",
-    "download": "Download Video",
-    "placeholder_title": "Your Generated Video by IA",
-    "placeholder_text": "Upload your image and choose a style to see your IA-generated video here",
-    "error_selection": "Please select a file and video style"
+    "title": "Subir Imagen a Video",
+    "description": "Sube tu imagen y deja que nuestra IA cree un video profesional",
+    "change": "Haz clic para cambiar imagen",
+    "prompt": "Sube tu imagen",
+    "formats": "Formatos soportados: JPG, PNG, WEBP, hasta 5MB",
+    "style_label": "Estilo de Video",
+    "style_placeholder": "Elegir estilo...",
+    "elements_label": "Elementos Especiales (Opcional)",
+    "elements_placeholder": "ej., efectos de movimiento, transiciones, animaciones...",
+    "generating": "Generando...",
+    "generate_button": "Generar Video",
+    "result_title": "Tu Video Generado por IA",
+    "ai_complete": "Generado por IA",
+    "download": "Descargar Video",
+    "placeholder_title": "Tu Video Generado por IA",
+    "placeholder_text": "Sube tu imagen y elige un estilo para ver tu video generado por IA aquí",
+    "error_selection": "Por favor selecciona un archivo y estilo de video"
   },
   "how_it_works": {
-    "title": "How It Works",
-    "subtitle": "Simple 3-Step Video Generation",
-    "description": "Transform your images into videos with our AI-powered video generation process",
-          "steps": {
-        "upload": {
-          "title": "1. Upload Image",
-          "description": "Upload your image to our platform"
-        },
-        "style": {
-          "title": "2. Choose Style",
-          "description": "Select your preferred video style from our curated collection"
-        },
-        "generate": {
-          "title": "3. Get Video",
-          "description": "Our IA creates a professional video from your image"
-        }
+    "title": "¿Cómo Convertir Imagen, Foto y Script a Video con IA?",
+    "subtitle": "Crea Videos Increíbles en 3 Pasos Simples",
+    "description": "Transforma imágenes, fotos y scripts en videos impresionantes con nuestro generador de video IA. Nuestra tecnología IA de imagen a video hace que la creación de videos sea simple y profesional.",
+    "steps": {
+      "upload": {
+        "title": "Sube Tu Imagen para Procesamiento IA",
+        "description": "Simplemente arrastra y suelta tu imagen o haz clic para subir. Nuestro generador de video IA admite formatos JPG, PNG y WebP para conversión de imagen a video."
       },
+      "style": {
+        "title": "Elige Estilo de Video IA",
+        "description": "Selecciona tu estilo de animación preferido, duración y otras opciones de personalización. Nuestra IA de imagen a video ofrece múltiples efectos de video."
+      },
+      "generate": {
+        "title": "Descarga Tu Video IA",
+        "description": "Nuestro generador de video IA procesa tu imagen y crea un video impresionante listo para descargar. Obtén resultados profesionales de imagen a video al instante."
+      }
+    },
     "button": {
-      "text": "Convert your image to video now!",
+      "text": "¡Comenzar Imagen a Video IA Ahora!",
       "url": "/#upload"
     }
   },
   "ai_features": {
-    "title": "¿Qué hace diferente a Image to Video AI?",
+    "title": "Mejor Generador de Video IA para Imagen, Foto y Script a Video",
     "subtitle": "Tecnología IA Avanzada",
-    "description": "Transforma tus imágenes estáticas en videos impresionantes con nuestra potente tecnología IA. Comienza a crear inmediatamente con resultados profesionales.",
+    "description": "Transforma imágenes, fotos y scripts en videos impresionantes con nuestro potente generador de video IA. Nuestra tecnología IA de imagen a video crea videos profesionales con efectos de movimiento avanzados. Comienza a crear inmediatamente con resultados profesionales.",
     "features": {
       "analysis": {
         "title": "Fácil 容易",
@@ -368,7 +367,7 @@
       },
       "plant_selection": {
         "title": "Gratis 免费",
-        "description": "Image to Video AI es completamente gratis para comenzar. Sube tu imagen y comienza a crear videos impresionantes sin ningún costo ni marcas de agua."
+        "description": "Imagen a Video IA es completamente gratis para comenzar. Sube tu imagen y comienza a crear videos impresionantes sin ningún costo ni marcas de agua."
       },
       "design_optimization": {
         "title": "Rápido 快速",
@@ -389,209 +388,201 @@
     }
   },
   "transformations": {
-    "badge": "Real IA Transformations",
-    "title": "Magic Before and After",
-    "description": "See how our IA transforms ordinary spaces into extraordinary gardens in less than 2 minutes",
-    "instruction": "Drag the slider to compare",
-    "cta_title": "Ready to transform your space?",
-    "cta_description": "Upload your photo above to start",
-    "features": [
-      "Professional IA Design",
-      "Transformation in 2 minutes",
-      "Detailed plant recommendations"
-    ],
+    "badge": "Generador de Video IA",
+    "title": "Convierte Imagen, Foto y Script a Video con Generador IA",
+    "description": "Mira cómo nuestro generador de video IA convierte imágenes, fotos y scripts en videos con efectos de movimiento impresionantes y resultados de calidad profesional. Nuestra tecnología IA de imagen a video crea transformaciones increíbles.",
     "examples": [
       {
-        "title": "Urban Patio",
-        "style": "Japanese Zen",
-        "description": "An unorganized urban patio transformed into a peaceful Japanese Zen garden with bamboos, rocks, and carefully placed plants.",
+        "title": "Patio Urbano",
+        "style": "Zen Japonés",
+        "description": "Un patio urbano desorganizado transformado en un pacífico jardín Zen japonés con bambúes, rocas y plantas cuidadosamente colocadas.",
         "button": {
-          "text": "Try our image-to-video IA generator now →",
+          "text": "Probar nuestro generador de video IA de imagen a video ahora →",
           "url": "/#upload"
         }
       },
       {
-        "title": "Suburban Garden",
-        "style": "English Country House",
-        "description": "A simple suburban lawn redesigned as a romantic English country house garden with mixed flower borders and enchanting paths.",
+        "title": "Jardín Suburbano",
+        "style": "Casa de Campo Inglesa",
+        "description": "Un simple césped suburbano rediseñado como un romántico jardín de casa de campo inglesa con bordes de flores mixtas y caminos encantadores.",
         "button": {
-          "text": "Export video without watermark",
+          "text": "Exportar video sin marca de agua",
           "url": "/#upload"
         }
       },
       {
-        "title": "Patio Space",
-        "style": "Modern Minimalist",
-        "description": "A concrete patio transformed into a sophisticated modern minimalist garden with clean lines and geometric plant arrangements.",
+        "title": "Espacio de Patio",
+        "style": "Minimalista Moderno",
+        "description": "Un patio de concreto transformado en un sofisticado jardín minimalista moderno con líneas limpias y arreglos geométricos de plantas.",
         "button": {
-          "text": "Animate your image with IA",
+          "text": "Animar tu imagen con IA",
           "url": "/#upload"
         }
       }
     ]
   },
   "pricing": {
-    "title": "Simple and Transparent Pricing",
-    "description": "Choose the perfect plan to transform your exterior space with IA",
+    "title": "Precios Simples y Transparentes",
+    "description": "Elige el plan perfecto para transformar tu espacio exterior con IA",
     "groups": [
       {
         "name": "monthly",
-        "title": "Monthly",
-        "description": "Pay as you use"
+        "title": "Mensual",
+        "description": "Paga según uses"
       },
       {
         "name": "yearly", 
-        "title": "Annual",
-        "description": "Save 20%",
-        "label": "Save 20%"
+        "title": "Anual",
+        "description": "Ahorra 20%",
+        "label": "Ahorra 20%"
       }
     ],
     "plans": [
       {
-        "title": "Starter",
-        "description": "Perfect for small garden owners",
+        "title": "Inicial",
+        "description": "Perfecto para propietarios de jardines pequeños",
         "price": "$9.9",
-        "unit": "/month",
+        "unit": "/mes",
         "group": "monthly",
-        "features_title": "Everything you need to get started:",
+        "features_title": "Todo lo que necesitas para comenzar:",
         "features": [
-          "80 IA video generations per month",
-          "Basic video effects",
-          "Email support"
+          "80 generaciones de video IA por mes",
+          "Efectos de video básicos",
+          "Soporte por email"
         ],
-        "button_title": "Get Started",
+        "button_title": "Comenzar",
         "tip": ""
       },
       {
-        "title": "Professional", 
-        "description": "Ideal for video creators and marketers",
+        "title": "Profesional", 
+        "description": "Ideal para creadores de video y mercadólogos",
         "price": "$19.9",
-        "unit": "/month",
+        "unit": "/mes",
         "group": "monthly",
-        "label": "Most Popular",
-        "features_title": "Everything in Starter, plus:",
+        "label": "Más Popular",
+        "features_title": "Todo en Inicial, más:",
         "features": [
-          "200 IA video generations per month",
-          "Advanced video effects",
-          "Priority email support"
+          "200 generaciones de video IA por mes",
+          "Efectos de video avanzados",
+          "Soporte prioritario por email"
         ],
-        "button_title": "Get Started",
+        "button_title": "Comenzar",
         "tip": ""
       },
       {
-        "title": "Enterprise",
-        "description": "For agencies and enterprises",
+        "title": "Empresarial",
+        "description": "Para agencias y empresas",
         "price": "$29.9",
-        "unit": "/month", 
+        "unit": "/mes", 
         "group": "monthly",
-        "features_title": "Everything in Professional, plus:",
+        "features_title": "Todo en Profesional, más:",
         "features": [
-          "500 IA video generations per month",
-          "Commercial use rights"
+          "500 generaciones de video IA por mes",
+          "Derechos de uso comercial"
         ],
-        "button_title": "Get Started",
+        "button_title": "Comenzar",
         "tip": ""
       },
       {
-        "title": "Starter",
-        "description": "Perfect for small businesses or personal use",
+        "title": "Inicial",
+        "description": "Perfecto para pequeñas empresas o uso personal",
         "price": "$7.9",
         "original_price": "$9.9",
-        "unit": "/month",
+        "unit": "/mes",
         "group": "yearly",
-        "features_title": "Everything you need to get started:",
+        "features_title": "Todo lo que necesitas para comenzar:",
         "features": [
-          "80 IA video generations per month",
-          "Basic video effects",
-          "Email support"
+          "80 generaciones de video IA por mes",
+          "Efectos de video básicos",
+          "Soporte por email"
         ],
-        "button_title": "Get Started",
-        "tip": "Billed annually at $94.8"
+        "button_title": "Comenzar",
+        "tip": "Facturado anualmente a $94.8"
       },
       {
-        "title": "Professional",
-        "description": "Ideal for video creators and marketers", 
+        "title": "Profesional",
+        "description": "Ideal para creadores de video y mercadólogos", 
         "price": "$15.9",
         "original_price": "$19.9",
-        "unit": "/month",
+        "unit": "/mes",
         "group": "yearly",
-        "label": "Best Value",
-        "features_title": "Everything in Starter, plus:",
+        "label": "Mejor Valor",
+        "features_title": "Todo en Inicial, más:",
         "features": [
-          "200 IA video generations per month",
-          "Advanced video effects",
-          "Multiple style variations",
-          "High-quality downloads", 
-          "4K video quality",
-          "Priority email support",
-          "Custom video effects"
+          "200 generaciones de video IA por mes",
+          "Efectos de video avanzados",
+          "Múltiples variaciones de estilo",
+          "Descargas de alta calidad", 
+          "Calidad de video 4K",
+          "Soporte prioritario por email",
+          "Efectos de video personalizados"
         ],
-        "button_title": "Get Started",
-        "tip": "Billed annually at $190.8"
+        "button_title": "Comenzar",
+        "tip": "Facturado anualmente a $190.8"
       },
       {
-        "title": "Enterprise",
-        "description": "For agencies and enterprises",
+        "title": "Empresarial",
+        "description": "Para agencias y empresas",
         "price": "$23.9",
         "original_price": "$29.9",
-        "unit": "/month",
+        "unit": "/mes",
         "group": "yearly",
-        "features_title": "Everything in Professional, plus:",
+        "features_title": "Todo en Profesional, más:",
         "features": [
-          "500 IA video generations per month",
-          "Commercial use rights"
+          "500 generaciones de video IA por mes",
+          "Derechos de uso comercial"
         ],
-        "button_title": "Get Started",
-        "tip": "Billed annually at $286.8"
+        "button_title": "Comenzar",
+        "tip": "Facturado anualmente a $286.8"
       }
     ]
   },
   "testimonials": {
-    "title": "What Users Say About Image to Video",
-    "description": "Join thousands of satisfied customers who have transformed their images into videos with our IA technology",
+    "title": "Lo Que Dicen los Usuarios Sobre Imagen a Video",
+    "description": "Únete a miles de clientes satisfechos que han transformado sus imágenes en videos con nuestra tecnología IA",
     "reviews": [
       {
         "name": "Sarah M.",
-        "location": "Madrid, Spain",
-        "quote": "At first, I was skeptical about image to video conversion with IA, but I am completely impressed with the results. The transformation of my photos into videos exceeded all expectations!"
+        "location": "Madrid, España",
+        "quote": "Al principio, era escéptica sobre la conversión de imagen a video con IA, pero estoy completamente impresionada con los resultados. ¡La transformación de mis fotos en videos superó todas las expectativas!"
       },
       {
         "name": "Michael R.",
-        "location": "Barcelona, Spain",
-        "quote": "As a video creator, I use Image to Video for initial concepts. It's incredibly accurate and saves me hours of editing time."
+        "location": "Barcelona, España",
+        "quote": "Como creador de videos, uso Imagen a Video para conceptos iniciales. Es increíblemente preciso y me ahorra horas de tiempo de edición."
       },
       {
         "name": "Lisa K.",
-        "location": "Valencia, Spain",
-        "quote": "The cinematic style generated for my small photo was perfect. I followed the settings exactly and now have my dream video content."
+        "location": "Valencia, España",
+        "quote": "El estilo cinematográfico generado para mi pequeña foto fue perfecto. Seguí las configuraciones exactamente y ahora tengo el contenido de video de mis sueños."
       },
       {
         "name": "David L.",
-        "location": "Seville, Spain",
-        "quote": "I am a real estate developer - we use this to prepare property videos. IA videos help buyers visualize the potential of properties."
+        "location": "Sevilla, España",
+        "quote": "Soy desarrollador inmobiliario - usamos esto para preparar videos de propiedades. Los videos IA ayudan a los compradores a visualizar el potencial de las propiedades."
       },
       {
         "name": "Emma J.",
-        "location": "Bilbao, Spain",
-        "quote": "I'm not good with video editing, but the IA created the perfect effects for my content. Everything looks professional!"
+        "location": "Bilbao, España",
+        "quote": "No soy buena con la edición de video, pero la IA creó los efectos perfectos para mi contenido. ¡Todo se ve profesional!"
       },
       {
         "name": "James T.",
-        "location": "Zaragoza, Spain",
-        "quote": "The difference before and after is incredible. My followers can't believe it's the same photo. Worth every penny!"
+        "location": "Zaragoza, España",
+        "quote": "La diferencia antes y después es increíble. Mis seguidores no pueden creer que sea la misma foto. ¡Vale cada centavo!"
       }
     ]
   },
   "faq": {
-    "title": "Frequently Asked Questions About Image to Video",
-    "description": "Get answers to the most common questions about our AI-powered video generation service",
-    "cta_title": "Ready to Bring Your Images to Life?",
-    "cta_description": "Join over 200,000 creators already using AI to transform static images into engaging videos. Start creating today!",
-    "cta_button": "Create Your First AI Video Free",
+    "title": "Preguntas Frecuentes Sobre Imagen a Video",
+    "description": "Obtén respuestas a las preguntas más comunes sobre nuestro servicio de generación de video potenciado por IA",
+    "cta_title": "¿Listo para Probar el Generador de Video IA de Imagen a Video?",
+    "cta_description": "Únete a miles de creadores que usan nuestro generador de video IA para transformar imágenes, fotos y scripts en videos. ¡Comienza a crear videos increíbles con nuestra tecnología IA de imagen a video hoy!",
+    "cta_button": "Comenzar Imagen a Video IA Gratis",
     "questions": [
       {
-        "question": "¿Cómo funciona la generación de videos IA de imágenes?",
-        "answer": "Nuestra IA avanzada analiza tu imagen para entender la profundidad, objetos y contexto. Luego genera movimiento realista prediciendo cómo los elementos deberían moverse naturalmente - agregando movimientos sutiles de cámara, animaciones de objetos y efectos atmosféricos que dan vida a tu imagen estática."
+        "question": "¿Qué es el generador de video IA y cómo funciona la IA de imagen a video?",
+        "answer": "El generador de video IA es una tecnología avanzada de inteligencia artificial que analiza imágenes estáticas, fotos y scripts para transformarlos en videos dinámicos. Nuestra IA de imagen a video usa algoritmos de aprendizaje profundo para entender el contenido y generar movimiento realista, creando transiciones de video suaves que dan vida a tu contenido."
       },
       {
         "question": "¿Qué tipos de imágenes funcionan mejor para la conversión a video?",
@@ -610,26 +601,66 @@
         "answer": "Todos los videos se exportan como archivos MP4 optimizados para web y redes sociales. Elige entre HD (1080p), 4K para calidad premium, o formatos comprimidos para compartir más rápido. Los videos soportan múltiples velocidades de fotogramas (24fps, 30fps, 60fps) e incluyen pistas de audio optimizadas."
       },
       {
-        "question": "¿Hay una versión gratuita y cuáles son los límites?",
-        "answer": "¡Sí! Los usuarios gratuitos pueden crear videos ilimitados de 3 segundos con calidad HD y animaciones estándar. Los planes premium desbloquean videos más largos (hasta 60 segundos), calidad 4K, controles de movimiento avanzados, procesamiento por lotes y derechos de uso comercial."
+        "question": "¿Tu generador de video IA es completamente gratuito?",
+        "answer": "¡Sí, nuestro generador de video IA es completamente gratuito! Puedes crear videos ilimitados con nuestra IA de imagen a video, IA de foto a video e IA de script a video. No se requiere registro ni tarjeta de crédito."
       }
     ]
   },
+  "header": {
+    "brand": {
+      "title": "ImageToVideo AI",
+      "logo": {
+        "src": "/logo.svg",
+        "alt": "ImageToVideo AI"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Imagen a Video",
+          "url": "/#features",
+          "icon": "Video"
+        },
+        {
+          "title": "Texto a Video",
+          "url": "/#features",
+          "icon": "MessageCircle"
+        },
+        {
+          "title": "Precios",
+          "url": "/pricing",
+          "icon": "CreditCard"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
   "footer": {
-    "brand_description": "Image to Video is an intelligent image-to-video generation platform that transforms your images into stunning videos using artificial intelligence.",
-    "copyright": "© 2025 • Image to Video All rights reserved.",
-    "privacy_policy": "Privacy Policy",
-    "terms_of_service": "Terms of Service",
+    "brand": {
+      "title": "ImageToVideo AI",
+      "description": "La plataforma más avanzada potenciada por IA para convertir imágenes y texto en videos impresionantes de alta calidad. Transforma tu contenido visual con inteligencia artificial de vanguardia.",
+      "logo": {
+        "src": "/logo.svg",
+        "alt": "ImageToVideo AI"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 ImageToVideo AI. Todos los derechos reservados.",
+    "privacy_policy": "Política de Privacidad",
+    "terms_of_service": "Términos de Servicio",
     "blog": "Blog"
   },
   "landing": {
     "cta": {
       "name": "cta",
-      "title": "Ready to Create Incredible Videos?",
-      "description": "Join thousands of creators who use our IA image-to-video technology to transform their visual content. Start creating amazing videos today!",
+      "title": "¿Listo para Crear Videos Increíbles?",
+      "description": "Únete a miles de creadores que usan nuestra tecnología IA imagen-a-video para transformar su contenido visual. ¡Comienza a crear videos increíbles hoy!",
       "buttons": {
         "0": {
-          "title": "Try Image to Video IA for Free",
+          "title": "Probar Imagen a Video IA Gratis",
           "url": "/#",
           "target": "_self",
           "icon": "Sparkles"
@@ -699,23 +730,23 @@
     "watch_full": "Ver Video Completo"
   },
   "common": {
-    "loading": "Loading...",
-    "error": "Something went wrong",
-    "try_again": "Try Again",
-    "success": "Success!",
-    "cancel": "Cancel",
-    "confirm": "Confirm",
-    "save": "Save",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "download": "Download",
-    "upload": "Upload",
-    "search": "Search",
-    "filter": "Filter",
-    "sort": "Sort",
-    "next": "Next",
-    "previous": "Previous",
-    "close": "Close"
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "try_again": "Intentar de Nuevo",
+    "success": "¡Éxito!",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "view": "Ver",
+    "download": "Descargar",
+    "upload": "Subir",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar"
   }
 }

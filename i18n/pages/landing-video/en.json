@@ -1,12 +1,11 @@
 {
   "metadata": {
-    "title": "AI Image to Video Generator – Free Online | ImgToVideo",
-    "description": "Transform images into stunning videos in minutes with our advanced image to video AI technology. No editing skills required. Free trial available.",
-    "keywords": "image to video, ai video generator, photo to video, free video generator, ai animation"
+    "title": "Image to Video AI Free - Convert Photos to Videos Online | ImgToVideo",
+    "description": "Transform your images into stunning videos with our free image to video AI. Upload any photo and create professional videos in minutes. No editing skills required."
   },
   "hero": {
-    "title": "Transform Images & Text into Stunning AI Videos",
-    "description": "Create professional videos in minutes with our advanced image to video AI technology. No editing skills required.",
+    "title": "Image to Video AI Free - Transform Photos into Videos",
+    "description": "Create stunning videos from images with our free image to video AI. Upload any photo and generate professional videos in minutes. No editing skills required.",
     "buttons": {
       "0": {
         "title": "Start Creating Free",
@@ -16,113 +15,113 @@
       }
     },
     "badges": {
-      "0": { "title": "Advanced Image to Video AI" },
-      "1": { "title": "Generate in Minutes" },
+      "0": { "title": "Free Image to Video AI" },
+      "1": { "title": "Generate Videos in Minutes" },
       "2": { "title": "No Skills Required" }
     }
   },
   "feature_video": {
-    "title": "Choose Your AI Video Creation Method",
+    "title": "Free Image to Video AI - Choose Your Creation Method",
     "items": {
       "0": {
         "icon": "🖼️",
-        "title": "Image to Video AI",
-        "description": "Transform static images into dynamic videos with cutting-edge image to video AI animation technology.",
-        "button_text": "Try Image to Video AI"
+        "title": "Free Image to Video AI",
+        "description": "Transform static images into dynamic videos with our free image to video AI technology. No cost, no registration required.",
+        "button_text": "Try Free Image to Video AI"
       },
       "1": {
         "icon": "📝",
-        "title": "Text to Video AI",
-        "description": "Create professional videos from text descriptions using advanced AI models.",
-        "button_text": "Try Text to Video AI"
+        "title": "Free Text to Video AI",
+        "description": "Create professional videos from text descriptions using our free AI models. Generate videos from simple text prompts.",
+        "button_text": "Try Free Text to Video AI"
       },
       "2": {
         "icon": "✨",
-        "title": "Video Effect Templates",
-        "description": "Apply trending video effects with our growing collection of popular templates.",
-        "button_text": "Try Video Effect Templates"
+        "title": "Free Video Effect Templates",
+        "description": "Apply trending video effects with our free collection of popular templates. Enhance your image to video AI results.",
+        "button_text": "Try Free Video Templates"
       }
     }
   },
   "how_it_works": {
-    "title": "How It Works",
+    "title": "How Free Image to Video AI Works",
     "subtitle": "Get Started in 3 Simple Steps",
-    "description": "AI-powered video creation is as easy as 1-2-3.",
+    "description": "Our free image to video AI makes video creation as easy as 1-2-3.",
     "steps": {
       "upload": {
-        "title": "1. Upload or Describe",
-        "description": "Upload your image for our image to video AI or write a text description of your desired video."
+        "title": "1. Upload Image for Free AI Processing",
+        "description": "Upload your image for our free image to video AI or write a text description of your desired video."
       },
       "style": {
         "title": "2. Customize Settings",
         "description": "Choose your preferred AI model, adjust duration, and set your preferences for optimal results."
       },
       "generate": {
-        "title": "3. Generate & Download",
-        "description": "Watch the image to video AI create your content and download the final high-quality result."
+        "title": "3. Generate & Download Free Video",
+        "description": "Watch our free image to video AI create your content and download the final high-quality result."
       }
     }
   },
   "testimonials": {
-    "title": "What Creators Say About Us",
-    "description": "Join thousands of satisfied users creating amazing video content.",
+    "title": "What Users Say About Our Free Image to Video AI",
+    "description": "Join thousands of satisfied users creating amazing videos with our free image to video AI.",
     "reviews": {
       "0": {
         "name": "Alex R.",
         "location": "Content Creator",
-        "quote": "This image-to-video tool is a game-changer! I can now produce stunning video content for my social media in a fraction of the time. The quality is just incredible."
+        "quote": "This free image to video AI tool is a game-changer! I can now produce stunning video content for my social media in a fraction of the time. The quality is just incredible."
       },
       "1": {
         "name": "Samantha B.",
         "location": "Digital Marketer",
-        "quote": "We use this for creating quick video ads from our product images. The engagement rate has skyrocketed. It's fast, efficient, and super easy to use."
+        "quote": "We use this free image to video AI for creating quick video ads from our product images. The engagement rate has skyrocketed. It's fast, efficient, and super easy to use."
       },
       "2": {
         "name": "David L.",
         "location": "Small Business Owner",
-        "quote": "I have zero video editing skills, but with this AI, I can create professional-looking videos for my business. Highly recommended!"
+        "quote": "I have zero video editing skills, but with this free image to video AI, I can create professional-looking videos for my business. Highly recommended!"
       }
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "description": "Get answers to the most common questions about our Image to Video AI.",
-    "cta_title": "Ready to Experience the Future of Video Creation?",
-    "cta_button": "Start Creating For Free",
+    "title": "Frequently Asked Questions About Free Image to Video AI",
+    "description": "Get answers to the most common questions about our free image to video AI technology.",
+    "cta_title": "Ready to Try Free Image to Video AI?",
+    "cta_button": "Start Creating Free",
     "questions": {
       "0": {
-        "question": "What is image to video AI and how does it work?",
-        "answer": "Image to video AI is an advanced artificial intelligence technology that analyzes static images and transforms them into dynamic videos. Our AI uses deep learning algorithms to understand the content of your image and generate realistic motion, creating smooth video transitions that bring your photos to life."
+        "question": "What is free image to video AI and how does it work?",
+        "answer": "Free image to video AI is an advanced artificial intelligence technology that analyzes static images and transforms them into dynamic videos. Our free AI uses deep learning algorithms to understand the content of your image and generate realistic motion, creating smooth video transitions that bring your photos to life."
       },
       "1": {
-        "question": "Is your image to video AI free to use?",
-        "answer": "Yes, we offer free trials for new users to experience our image to video AI technology. This allows you to test the capabilities of our AI video generator before deciding to use more advanced features."
+        "question": "Is your image to video AI completely free to use?",
+        "answer": "Yes, our image to video AI is completely free to use. You can create unlimited videos with our free image to video AI technology. No registration or credit card required."
       },
       "2": {
-        "question": "What image formats work best with your image to video AI?",
-        "answer": "Our image to video AI supports all common formats including JPG, PNG and WebP. For optimal results, we recommend high-resolution images with clear subjects."
+        "question": "What image formats work best with your free image to video AI?",
+        "answer": "Our free image to video AI supports all common formats including JPG, PNG and WebP. For optimal results, we recommend high-resolution images with clear subjects."
       },
       "3": {
-        "question": "How long does the image to video AI generation take?",
-        "answer": "Our AI typically generates videos within 2-5 minutes, depending on the complexity of your image and the current server load. We provide real-time progress updates during the generation process."
+        "question": "How long does the free image to video AI generation take?",
+        "answer": "Our free image to video AI typically generates videos within 2-5 minutes, depending on the complexity of your image and the current server load. We provide real-time progress updates during the generation process."
       },
       "4": {
         "question": "Can I use the generated videos for commercial purposes?",
-        "answer": "Absolutely! You retain full ownership and commercial rights to all videos generated by our image to video AI. You can use these videos for marketing, social media, or any other purpose."
+        "answer": "Absolutely! You retain full ownership and commercial rights to all videos generated by our free image to video AI. You can use these videos for marketing, social media, or any other purpose."
       }
     }
   },
   "cta": {
     "name": "cta",
-    "title": "Ready to Create Amazing Videos?",
-    "description": "Join thousands of creators using our image to video AI technology to transform their visual content. Start creating amazing videos today!",
-    "buttons": [
-      {
-        "title": "Try Image to Video AI Free",
-        "url": "/#",
-        "target": "_self",
-        "icon": "Sparkles"
-      }
-    ]
+    "title": "Ready to Try Free Image to Video AI?",
+    "description": "Join thousands of creators using our free image to video AI technology to transform their visual content. Start creating amazing videos today!",
+          "buttons": [
+        {
+          "title": "Try Free Image to Video AI",
+          "url": "/#",
+          "target": "_self",
+          "icon": "Sparkles"
+        }
+      ]
   }
 }

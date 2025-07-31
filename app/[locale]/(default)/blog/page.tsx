@@ -46,7 +46,6 @@ export async function generateMetadata({
   return {
     title: titles[locale as keyof typeof titles] || titles.en,
     description: descriptions[locale as keyof typeof descriptions] || descriptions.en,
-    keywords: 'ai image to video blog, video generation tips, ai video creation guide, image to video tutorial',
     alternates: {
       canonical: canonicalUrl,
       languages: buildHreflang('blog'),

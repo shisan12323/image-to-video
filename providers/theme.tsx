@@ -1,6 +1,6 @@
 "use client";
 
-import Analytics from "@/components/analytics";
+import { Analytics } from "@/components/analytics";
 import { CacheKey } from "@/services/constant";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import SignModal from "@/components/sign/modal";

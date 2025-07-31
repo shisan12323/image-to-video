@@ -35,7 +35,6 @@ export async function generateMetadata({
       default: t("metadata.title") || "",
     },
     description: t("metadata.description") || "",
-    keywords: t("metadata.keywords") || "",
     metadataBase: new URL(baseUrl),
     openGraph: {
       siteName: 'Image to Video',

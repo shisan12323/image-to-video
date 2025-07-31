@@ -93,7 +93,14 @@ export default function Invite({ summary }: { summary: any }) {
             {user.invite_code && (
               <CopyToClipboard
                 text={`${process.env.NEXT_PUBLIC_BASE_URL}/i/${user?.invite_code}`}
-                onCopy={() => toast.success("copied")}
+                onCopy={() => {
+                  try {
+                    toast.success("copied");
+                  } catch (error) {
+                    console.warn("Copy to clipboard is not supported in this browser");
+                    toast.error("Copy not supported in this browser");
+                  }
+                }}
               >
                 <Button size="sm">{t("my_invites.copy_invite_link")}</Button>
               </CopyToClipboard>

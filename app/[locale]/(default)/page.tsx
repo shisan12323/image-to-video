@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { buildCanonical, buildHreflang } from '@/lib/seo';
 import { HeroVideo } from '@/components/blocks/hero-video';
 import { ImageUploadGenerator } from '@/components/blocks/image-upload-generator';
 import { VideoShowcase } from '@/components/blocks/video-showcase';
@@ -10,18 +11,18 @@ import PricingI18n from '@/components/blocks/pricing-i18n';
 import Transformations from '@/components/blocks/transformations';
 import AIFeatures from '@/components/blocks/ai-features';
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const t = await getTranslations();
-  const locale = params.locale;
+  const { locale } = await params;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
   const ogImage = `${baseUrl}/imgs/showcases/1.webp`;
 
   return {
     title: t('metadata.title'),
     description: t('metadata.description'),
-    keywords: t('metadata.keywords'),
     alternates: {
-      canonical: locale === 'en' ? baseUrl : `${baseUrl}/${locale}`,
+      canonical: buildCanonical(locale, ''),
+      languages: buildHreflang(''),
     },
     openGraph: {
       title: t('metadata.title'),

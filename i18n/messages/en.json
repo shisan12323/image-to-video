@@ -1,8 +1,7 @@
 {
   "metadata": {
-    "title": "AI Image to Video Generator – Free Online AI Video Maker from Photos",
-    "description": "Transform your images into stunning videos with our free AI video generator. Upload any photo and create professional-quality videos in seconds. No editing skills required.",
-    "keywords": "ai image to video, image to video ai, photo to video converter, ai video generator, free video maker, image animation, ai video creation, picture to video, automated video generation, ai powered video maker"
+    "title": "Image to Video AI Generator - Convert Photos & Scripts to Videos",
+    "description": "Transform images, photos and scripts into stunning videos with our AI video generator. Free image to video, photo to video and script to video conversion."
   },
   "user": {
     "sign_in": "Sign In",
@@ -69,12 +68,12 @@
     ]
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "description": "Everything you need to know about transforming images into videos with AI",
+    "title": "Frequently Asked Questions About Free Image to Video AI",
+    "description": "Get answers to the most common questions about our free image to video AI technology.",
     "questions": [
       {
-        "question": "How does AI image to video generation work?",
-        "answer": "Our advanced AI analyzes your image to understand depth, objects, and context. It then generates realistic motion by predicting how elements should move naturally - adding subtle camera movements, object animations, and atmospheric effects that bring your static image to life."
+        "question": "What is AI video generator and how does image to video AI work?",
+        "answer": "AI video generator is an advanced artificial intelligence technology that analyzes static images, photos and scripts to transform them into dynamic videos. Our image to video AI uses deep learning algorithms to understand content and generate realistic motion, creating smooth video transitions that bring your content to life."
       },
       {
         "question": "What types of images work best for video conversion?",
@@ -93,48 +92,48 @@
         "answer": "All videos are exported as MP4 files optimized for web and social media. Choose from HD (1080p), 4K for premium quality, or compressed formats for faster sharing. Videos support multiple frame rates (24fps, 30fps, 60fps) and include optimized audio tracks."
       },
       {
-        "question": "Is there a free version, and what are the limits?",
-        "answer": "Yes! Free users can create unlimited 3-second videos with HD quality and standard animations. Premium plans unlock longer videos (up to 60 seconds), 4K quality, advanced motion controls, batch processing, and commercial usage rights."
+        "question": "Is your AI video generator completely free to use?",
+        "answer": "Yes, our AI video generator is completely free to use. You can create unlimited videos with our image to video AI, photo to video AI and script to video AI technology. No registration or credit card required."
       }
     ],
-    "cta_title": "Ready to Bring Your Images to Life?",
-    "cta_description": "Join over 200,000 creators already using AI to transform static images into engaging videos. Start creating today!",
-    "cta_button": "Create Your First AI Video Free"
+    "cta_title": "Ready to Try Image to Video AI Generator?",
+    "cta_description": "Join thousands of creators using our AI video generator to transform images, photos and scripts into videos. Start creating amazing videos with our image to video AI technology today!",
+    "cta_button": "Start Image to Video AI Free"
   },
   "feature_video": {
-    "title": "Choose Your AI Video Creation Method",
+    "title": "AI Video Generator - Image, Photo & Script to Video",
     "items": {
       "0": {
         "icon": "🖼️",
-        "title": "Image to Video AI",
-        "description": "Transform static images into dynamic videos with cutting-edge image to video AI animation technology.",
-        "button_text": "Try Image to Video AI"
+        "title": "Image to Video AI Generator",
+        "description": "Transform static images into dynamic videos with our AI video generator. Convert any image to video with professional quality. Our image to video AI technology creates stunning motion effects.",
+        "button_text": "Start Image to Video AI"
       },
       "1": {
-        "icon": "📝",
-        "title": "Text to Video AI",
-        "description": "Create professional videos from text descriptions using advanced AI models.",
-        "button_text": "Try Text to Video AI"
+        "icon": "📸",
+        "title": "Photo to Video AI Generator",
+        "description": "Convert photos to videos with our AI video generator. Transform your photos into engaging video content. Create professional videos from photos with our advanced AI.",
+        "button_text": "Start Photo to Video AI"
       },
       "2": {
-        "icon": "✨",
-        "title": "Video Effect Templates",
-        "description": "Apply trending video effects with our growing collection of popular templates.",
-        "button_text": "Try Video Effect Templates"
+        "icon": "📝",
+        "title": "Script to Video AI Generator",
+        "description": "Convert scripts to videos with our AI video generator. Perfect for content creators and marketers. Generate videos from text with our script to video AI technology.",
+        "button_text": "Start Script to Video AI"
       }
     }
   },
   "hero": {
-    "top_badge": "CONVERT IMAGES TO VIDEOS IN SECONDS",
-    "title_line1": "#1 Image To Video",
-    "title_line2": "AI For Creation", 
+    "top_badge": "#1 AI VIDEO GENERATOR",
+    "title_line1": "Image to Video AI Generator",
+    "title_line2": "Photo & Script to Video", 
     "subtitle": "Welcome to ImageToVideo AI!",
-    "description": "As a leading Image To Video AI technology, you can enjoy efficient and realistic AI-generated effects here. Enjoy amazing technology to transform images to videos AI.",
-    "cta_button": "Transform Images to Videos AI",
-    "button": "Start Creating for Free",
+    "description": "Transform images, photos and scripts into stunning videos with our AI video generator. Free image to video, photo to video and script to video conversion. Create professional videos with our advanced AI technology.",
+    "cta_button": "Start Image to Video AI Free",
+    "button": "Start Image to Video AI Free",
     "buttons": {
       "0": {
-        "title": "Transform Images to Videos AI",
+        "title": "Try Image to Video AI Generator",
         "icon": "Play",
         "url": "/#upload",
         "variant": "default"
@@ -142,9 +141,9 @@
     }
   },
   "excellent_cases": {
-    "title": "Outstanding Cases Powered By Image To Video AI Generator",
+    "title": "What Can This Image to Video AI Generator Do?",
     "subtitle": "See What Our AI Can Create",
-    "description": "Explore amazing videos generated from simple images. Each video showcases the power of our AI technology.",
+    "description": "Explore amazing videos generated from simple images. Each video showcases the power of our image to video AI generator.",
     "categories": {
       "all": "All",
       "photography": "Photography",
@@ -250,9 +249,9 @@
     }
   },
   "transformations": {
-    "badge": "AI Video Magic",
-    "title": "Amazing Image to Video Transformations",
-    "description": "See how our AI brings static images to life with stunning motion effects and professional quality results.",
+    "badge": "AI Video Generator",
+    "title": "Convert Image, Photo & Script to Video with AI Generator",
+    "description": "See how our AI video generator converts images, photos and scripts to videos with stunning motion effects and professional quality results. Our image to video AI technology creates amazing transformations.",
     "examples": [
       {
         "style": "Marketing Videos",
@@ -293,25 +292,25 @@
     "cta_description": "Start creating stunning videos from your photos now"
   },
   "how_it_works": {
-    "title": "How It Works",
+    "title": "How to Convert Image, Photo & Script to Video with AI?",
     "subtitle": "Create Amazing Videos in 3 Simple Steps",
-    "description": "Transform your images into stunning videos with our advanced AI technology",
+    "description": "Transform images, photos and scripts into stunning videos with our AI video generator. Our image to video AI technology makes video creation simple and professional.",
     "steps": {
       "upload": {
-        "title": "Upload Your Image",
-        "description": "Simply drag and drop your image or click to upload. Supports JPG, PNG, and WebP formats."
+        "title": "Upload Your Image for AI Processing",
+        "description": "Simply drag and drop your image or click to upload. Our AI video generator supports JPG, PNG, and WebP formats for image to video conversion."
       },
       "process": {
-        "title": "Choose Video Style",
-        "description": "Select your preferred animation style, duration, and other customization options."
+        "title": "Choose AI Video Style",
+        "description": "Select your preferred animation style, duration, and other customization options. Our image to video AI offers multiple video effects."
       },
       "download": {
-        "title": "Download Your Video",
-        "description": "Our AI processes your image and generates a stunning video ready to download."
+        "title": "Download Your AI Video",
+        "description": "Our AI video generator processes your image and creates a stunning video ready to download. Get professional image to video results instantly."
       }
     },
     "button": {
-      "text": "Convert Image to Video Now!",
+      "text": "Start Image to Video AI Now!",
       "url": "/#upload"
     }
   },
@@ -443,9 +442,9 @@
     ]
   },
   "ai_features": {
-    "title": "What's Different About Image to Video AI?",
+    "title": "Best AI Video Generator for Image, Photo & Script to Video",
     "subtitle": "Advanced AI Technology",
-    "description": "Transform your static images into stunning videos with our powerful AI technology. Start creating immediately with professional results.",
+    "description": "Transform images, photos and scripts into stunning videos with our powerful AI video generator. Our image to video AI technology creates professional videos with advanced motion effects. Start creating immediately with professional results.",
     "features": {
       "analysis": {
         "title": "Easy 容易",
@@ -534,45 +533,51 @@
     "loading": "Loading video...",
     "watch_full": "Watch Full Video"
   },
-  "footer": {
-    "blog": "Blog",
+  "header": {
     "brand": {
       "title": "ImageToVideo AI",
-      "description": "Transform images into stunning videos with advanced AI technology"
+      "logo": {
+        "src": "/logo.svg",
+        "alt": "ImageToVideo AI"
+      },
+      "url": "/"
     },
-    "links": {
-      "product": {
-        "title": "Product",
-        "items": [
-          { "title": "Image to Video", "url": "/#features" },
-          { "title": "Text to Video", "url": "/#features" },
-          { "title": "Pricing", "url": "/pricing" }
-        ]
-      },
-      "company": {
-        "title": "Company", 
-        "items": [
-          { "title": "About", "url": "/about" },
-          { "title": "Blog", "url": "/blog" },
-          { "title": "Contact", "url": "/contact" }
-        ]
-      },
-      "support": {
-        "title": "Support",
-        "items": [
-          { "title": "Help Center", "url": "/help" },
-          { "title": "FAQ", "url": "/#faq" },
-          { "title": "Contact Support", "url": "/support" }
-        ]
-      },
-      "legal": {
-        "title": "Legal",
-        "items": [
-          { "title": "Privacy Policy", "url": "/privacy" },
-          { "title": "Terms of Service", "url": "/terms" }
-        ]
-      }
+    "nav": {
+      "items": [
+        {
+          "title": "Image to Video",
+          "url": "/#features",
+          "icon": "Video"
+        },
+        {
+          "title": "Text to Video",
+          "url": "/#features",
+          "icon": "MessageCircle"
+        },
+        {
+          "title": "Pricing",
+          "url": "/pricing",
+          "icon": "CreditCard"
+        }
+      ]
     },
-    "copyright": "© 2024 ImageToVideo AI. All rights reserved."
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "footer": {
+    "brand": {
+      "title": "ImageToVideo AI",
+      "description": "The most advanced AI-powered platform for converting images and text into stunning, high-quality videos. Transform your visual content with cutting-edge artificial intelligence.",
+      "logo": {
+        "src": "/logo.svg",
+        "alt": "ImageToVideo AI"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 ImageToVideo AI. All rights reserved.",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "blog": "Blog"
   }
 }

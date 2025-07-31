@@ -2,6 +2,7 @@ import Blog from "@/components/blocks/blog";
 import { Blog as BlogType } from "@/types/blocks/blog";
 import { getPostsByLocale } from "@/models/post";
 import { getTranslations } from "next-intl/server";
+import { buildCanonical, buildHreflang } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -11,20 +12,15 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations();
 
-  let canonicalUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/posts`;
-
-  if (locale !== "en") {
-    canonicalUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/posts`;
-  }
-
+  const canonicalUrl = buildCanonical(locale, 'posts');
   const ogImage = `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'}/imgs/showcases/1.webp`;
   
   return {
     title: t("blog.title"),
     description: t("blog.description"),
-    keywords: 'ai image to video articles, video generation blog, ai video creation posts, image to video content',
     alternates: {
       canonical: canonicalUrl,
+      languages: buildHreflang('posts'),
     },
     openGraph: {
       title: t("blog.title"),

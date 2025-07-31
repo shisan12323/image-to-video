@@ -18,7 +18,6 @@ export async function generateMetadata({
   return {
     title: `${t('title')} - Image to Video`,
     description: t('description'),
-    keywords: 'image to video pricing, ai video generator cost, video creation plans, affordable video maker',
     metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'),
     alternates: {
       canonical: canonicalUrl,

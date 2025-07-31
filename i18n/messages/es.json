@@ -56,26 +56,63 @@
     }
   },
   "excellent_cases": {
-    "title": "Excellent Cases",
-    "subtitle": "See What Our IA Can Create",
-    "description": "Explore incredible videos generated from simple images. Each video shows the power of our IA technology.",
+    "title": "Casos Excelentes",
+    "subtitle": "Mira Lo Que Nuestra IA Puede Crear",
+    "description": "Explora videos increíbles generados a partir de imágenes simples. Cada video muestra el poder de nuestra tecnología IA.",
     "categories": {
-      "all": "All",
-      "portrait": "Portrait",
-      "landscape": "Landscape",
-      "product": "Product", 
-      "creative": "Creative",
-      "animation": "Animation"
+      "all": "Todos",
+      "photography": "Fotografía",
+      "architecture": "Arquitectura",
+      "people": "Personas",
+      "creative": "Creativo"
     },
-    "view_more": "View More",
-    "load_more": "Load More Cases",
-    "play_video": "Play Video",
-    "case_details": "Case Details",
-    "original_image": "Original Image",
-    "generated_video": "Generated Video",
-    "duration": "Duration",
-    "model_used": "Model Used",
-    "prompt_used": "Prompt Used"
+    "view_more": "Ver Más",
+    "load_more": "Cargar Más Casos",
+    "play_video": "Reproducir Video",
+    "case_details": "Detalles del Caso",
+    "original_image": "Imagen Original",
+    "generated_video": "Video Generado",
+    "duration": "Duración",
+    "model_used": "Modelo Utilizado",
+    "prompt_used": "Prompt Utilizado",
+    "cases": [
+      {
+        "title": "Convierte imágenes estáticas en contenido de video cinematográfico",
+        "description": "Arting.AI transforma tus fotos estáticas en videos inmersivos usando automatización inteligente. Ya sea una presentación de producto, un rollo de recuerdos o un teaser de marca, simplemente coloca tus imágenes y observa cómo evolucionan en historias visuales pulidas—completas con movimiento, efectos y mejoras de audio.",
+        "duration": "5s",
+        "featured": true
+      },
+      {
+        "title": "Narrativa visual sin necesidad de edición",
+        "description": "Olvídate de las líneas de tiempo complejas y el software de edición. Arting.AI elimina la sobrecarga técnica al unir automáticamente tus imágenes en escenas cohesivas y bien ritmadas. La plataforma maneja todo—desde el ritmo visual hasta el diseño dinámico—para que puedas enfocarte en tu narrativa, no en las herramientas.",
+        "duration": "6s",
+        "featured": false
+      },
+      {
+        "title": "Una biblioteca de estilos de movimiento para cada escenario",
+        "description": "Con más de 10 estilos de presentación dinámica para elegir, puedes adaptar la apariencia y sensación de tu video basado en imágenes para adaptarse a tu propósito. Ya sea que estés construyendo una campaña publicitaria, un rollo de testimonios o una presentación personal, nuestras plantillas aseguran que tus visuales brillen en el contexto correcto.",
+        "duration": "4s",
+        "featured": true
+      },
+      {
+        "title": "Ritmo, transiciones y ambiente mejorados por IA",
+        "description": "Arting.AI da vida a tus visuales con movimiento de cámara suave, transiciones animadas y paisajes sonoros ambientales—todo impulsado por IA. Está diseñado para imitar técnicas de producción de video profesionales sin requerir entrada manual.",
+        "duration": "5s",
+        "featured": false
+      },
+      {
+        "title": "Visuales de marca con alineación total de diseño",
+        "description": "La consistencia importa. Por eso nuestra herramienta de imagen a video admite intros de marca, outros, esquemas de color y colocación de logos—dando a tus videos una apariencia distintiva, ya sea que estés compartiendo un clip o construyendo una campaña.",
+        "duration": "6s",
+        "featured": true
+      },
+      {
+        "title": "Sin software, sin curva de aprendizaje—solo sube y listo",
+        "description": "Todo el flujo de trabajo se ejecuta en tu navegador. Sin plugins. Sin descargas. Sin habilidades de edición necesarias. Solo arrastra tus imágenes, selecciona tus preferencias y genera. Es perfecto para mercadólogos, freelancers y equipos que quieren producir visuales convincentes sin fricción.",
+        "duration": "4s",
+        "featured": false
+      }
+    ]
   },
   "generator": {
     "tabs": {
@@ -321,33 +358,33 @@
     }
   },
   "ai_features": {
-    "title": "Why Choose Image to Video",
-    "subtitle": "Advanced AI Technology",
-    "description": "Our powerful intelligent landscape design platform transforms how you plan your exterior spaces",
+    "title": "¿Qué hace diferente a Image to Video AI?",
+    "subtitle": "Tecnología IA Avanzada",
+    "description": "Transforma tus imágenes estáticas en videos impresionantes con nuestra potente tecnología IA. Comienza a crear inmediatamente con resultados profesionales.",
     "features": {
       "analysis": {
-        "title": "Smart Photo Analysis",
-        "description": "The IA analyzes the dimensions of your space, lighting conditions, and existing elements in seconds"
+        "title": "Fácil 容易",
+        "description": "Comienza a crear inmediatamente con nuestra interfaz de carga simple. Solo sube una imagen y observa cómo la IA la transforma en un hermoso video en segundos."
       },
       "plant_selection": {
-        "title": "Climate Intelligence",
-        "description": "Automatically combines plants with your exact location, climate patterns, and growth conditions"
+        "title": "Gratis 免费",
+        "description": "Image to Video AI es completamente gratis para comenzar. Sube tu imagen y comienza a crear videos impresionantes sin ningún costo ni marcas de agua."
       },
       "design_optimization": {
-        "title": "Style Adaptation",
-        "description": "Applies any garden style without problems, maintaining practical plant options for your space"
+        "title": "Rápido 快速",
+        "description": "Obtén resultados de video profesionales en menos de 30 segundos. Nuestra tecnología IA optimizada procesa tus imágenes rápidamente sin comprometer la calidad."
       },
       "seasonal_planning": {
-        "title": "Realistic Previews",
-        "description": "Generates 3D photorealistic visualizations to see exactly how your garden will look"
+        "title": "Calidad 品质",
+        "description": "Genera videos de alta calidad hasta 4K con animaciones suaves y efectos profesionales que rivalizan con costoso software de edición de video."
       },
       "plant_database": {
-        "title": "Local Plant Database",
-        "description": "Access locally selected plant recommendations with prices and availability"
+        "title": "En Línea 在线",
+        "description": "Nuestra plataforma basada en la nube funciona en cualquier dispositivo. Accede a tus videos en cualquier parte del mundo y compártelos instantáneamente con cualquiera."
       },
       "instant_results": {
-        "title": "Instant Results",
-        "description": "Professional garden designs generated in less than 2 minutes, not weeks"
+        "title": "Potente 强大",
+        "description": "Elige entre múltiples estilos de animación incluyendo movimiento natural, efectos cinematográficos y transformaciones artísticas para crear exactamente lo que quieres."
       }
     }
   },
@@ -547,39 +584,34 @@
   },
   "faq": {
     "title": "Frequently Asked Questions About Image to Video",
-    "description": "Get answers to the most common questions about our AI-powered garden design service",
-    "cta_title": "Ready to Experiment with Image to Video?",
-    "cta_description": "Join thousands of gardeners who have transformed their spaces with our intelligent design system",
-    "cta_button": "Start Your Image to Video Garden Transformation Today",
-    "stats": {
-      "gardens_designed": "Gardens Designed",
-      "cities_served": "Cities Served",
-      "design_time": "Design Time in Minutes"
-    },
+    "description": "Get answers to the most common questions about our AI-powered video generation service",
+    "cta_title": "Ready to Bring Your Images to Life?",
+    "cta_description": "Join over 200,000 creators already using AI to transform static images into engaging videos. Start creating today!",
+    "cta_button": "Create Your First AI Video Free",
     "questions": [
       {
-        "question": "How accurate are the generated garden designs?",
-        "answer": "Our IA garden designs are highly accurate, taking into account the specific dimensions of your space, lighting conditions, and climate zone. The IA has been trained with thousands of professional landscape designs and considers factors such as plant compatibility, seasonal changes, and maintenance requirements. Most users report 90%+ satisfaction with the design accuracy."
+        "question": "¿Cómo funciona la generación de videos IA de imágenes?",
+        "answer": "Nuestra IA avanzada analiza tu imagen para entender la profundidad, objetos y contexto. Luego genera movimiento realista prediciendo cómo los elementos deberían moverse naturalmente - agregando movimientos sutiles de cámara, animaciones de objetos y efectos atmosféricos que dan vida a tu imagen estática."
       },
       {
-        "question": "Is it difficult to implement the generated designs?",
-        "answer": "Not at all! Each design comes with detailed implementation guidelines, plant lists with local suppliers, and step-by-step instructions. We provide shopping lists, planting schedules, and maintenance tips. Many designs can be implemented as weekend DIY projects, while others may require professional landscaping for complex features."
+        "question": "¿Qué tipos de imágenes funcionan mejor para la conversión a video?",
+        "answer": "¡Cualquier imagen de alta calidad funciona muy bien! Nuestra IA sobresale con retratos, paisajes, fotos de productos, obras de arte e ilustraciones. Para resultados óptimos, usa imágenes con buena iluminación, sujetos claros y al menos resolución 1080p. La IA se adapta automáticamente a diferentes estilos y tipos de contenido."
       },
       {
-        "question": "How does the IA garden design compare to traditional landscape design?",
-        "answer": "The IA garden design offers several advantages: it's faster (2 minutes vs. weeks), more affordable (fraction of the cost), and provides multiple design options instantly. While traditional designers offer personalized consultations, our IA considers the same design principles, plant science, and aesthetics. Many professional landscapers actually use our tool for initial concepts."
+        "question": "¿Cuánto tiempo toma generar un video?",
+        "answer": "La mayoría de videos se generan en 30-90 segundos. El tiempo de procesamiento depende de la complejidad de la imagen, la duración deseada del video y la configuración de calidad seleccionada. Nuestra IA basada en la nube asegura procesamiento consistente y rápido sin requerir hardware potente en tu dispositivo."
       },
       {
-        "question": "What types of photos work best for IA garden design?",
-        "answer": "For better results, upload clear, well-lit photos taken during daylight hours. Include the entire space you want to redesign, taken from a good vantage point. Multiple angles help, but a single photo is sufficient. The IA works with photos from any smartphone or camera - no special equipment is needed."
+        "question": "¿Puedo controlar el estilo de animación y movimiento?",
+        "answer": "¡Absolutamente! Elige entre estilos preestablecidos como zoom cinematográfico, desplazamiento paralaje, balanceo suave o movimiento dinámico. También puedes ajustar la intensidad del movimiento, dirección y velocidad. Los usuarios avanzados pueden especificar qué partes de la imagen animar y controlar movimientos de cámara."
       },
       {
-        "question": "What is included in the IA garden design service?",
-        "answer": "Each design includes: photorealistic visualizations, detailed plant lists with local availability, seasonal care guides, implementation schedules, cost estimates, and maintenance schedules. Premium plans also include multiple design variations, 3D renderings, and direct consultation with professional landscapers."
+        "question": "¿Qué formatos de video y opciones de calidad están disponibles?",
+        "answer": "Todos los videos se exportan como archivos MP4 optimizados para web y redes sociales. Elige entre HD (1080p), 4K para calidad premium, o formatos comprimidos para compartir más rápido. Los videos soportan múltiples velocidades de fotogramas (24fps, 30fps, 60fps) e incluyen pistas de audio optimizadas."
       },
       {
-        "question": "Can I customize the generated designs?",
-        "answer": "Absolutely! IA designs serve as professional starting points that you can customize. You can specify preferences like color schemes, plant types, maintenance levels, and budget constraints. Our system learns from your feedback to create increasingly personalized designs that match your style and needs."
+        "question": "¿Hay una versión gratuita y cuáles son los límites?",
+        "answer": "¡Sí! Los usuarios gratuitos pueden crear videos ilimitados de 3 segundos con calidad HD y animaciones estándar. Los planes premium desbloquean videos más largos (hasta 60 segundos), calidad 4K, controles de movimiento avanzados, procesamiento por lotes y derechos de uso comercial."
       }
     ]
   },
@@ -606,59 +638,65 @@
     }
   },
   "video_showcase": {
-    "badge": "🎬 IA Video Examples",
-    "title": "Exceptional Cases Powered by Image to Video IA Generator",
-    "description": "Experience the cutting-edge Image to Video IA generator of ImageToVideo AI, trusted by over 500,000 users and generating over 10 million videos. With free access to powerful video creation tools, discover exceptional cases to inspire your next professional video project.",
+    "badge": "🎬 Ejemplos de Video IA",
+    "title": "Mira Lo Que Nuestra IA Puede Crear",
+    "description": "Explora videos increíbles generados a partir de imágenes simples. Cada video muestra el poder de nuestra tecnología IA.",
     "categories": {
-      "photography": "Photography",
-      "people": "People", 
-      "commercial": "Commercial",
-      "architecture": "Architecture",
-      "creative": "Creative",
-      "lifestyle": "Lifestyle"
+      "photography": "Fotografía",
+      "people": "Personas", 
+      "commercial": "Comercial",
+      "architecture": "Arquitectura",
+      "creative": "Creativo",
+      "lifestyle": "Estilo de Vida"
     },
     "examples": [
       {
-        "title": "Mountainous Paradise",
-        "category": "Photography", 
-        "description": "Impressive mountainous landscape with fluid clouds and dynamic lighting effects",
-        "duration": "5s"
+        "title": "Caso de Fotografía 1",
+        "category": "Fotografía", 
+        "description": "Hermosa fotografía con movimiento dinámico",
+        "duration": "5s",
+        "featured": true
       },
       {
-        "title": "Portrait Magic",
-        "category": "People",
-        "description": "Enhanced professional portrait with subtle facial animations and background movement",
-        "duration": "3s"
+        "title": "Caso de Arquitectura 1",
+        "category": "Arquitectura",
+        "description": "Visualización arquitectónica impresionante",
+        "duration": "6s",
+        "featured": false
       },
       {
-        "title": "Product Focus",
-        "category": "Commercial",
-        "description": "Professional product photography with rotating lights and depth effects",
-        "duration": "4s"
+        "title": "Caso de Fotografía 2",
+        "category": "Fotografía",
+        "description": "Fotografía elegante con transiciones suaves",
+        "duration": "4s",
+        "featured": true
       },
       {
-        "title": "Urban Energy",
-        "category": "Architecture",
-        "description": "Modern urban landscape with traffic flow and architectural movement",
-        "duration": "6s"
+        "title": "Caso de Arquitectura 2",
+        "category": "Arquitectura",
+        "description": "Diseño arquitectónico moderno en movimiento",
+        "duration": "5s",
+        "featured": false
       },
       {
-        "title": "Digital Art",
-        "category": "Creative",
-        "description": "Abstract digital art transformed into hypnotic motion graphics",
-        "duration": "4s"
+        "title": "Caso de Personas 1",
+        "category": "Personas",
+        "description": "Sujetos humanos con movimiento natural",
+        "duration": "6s",
+        "featured": true
       },
       {
-        "title": "Culinary Delight",
-        "category": "Lifestyle",
-        "description": "Appetizing culinary photography with vapor effects and ingredient movement",
-        "duration": "3s"
+        "title": "Caso Creativo 1",
+        "category": "Creativo",
+        "description": "Generación de video artística y creativa",
+        "duration": "4s",
+        "featured": false
       }
     ],
-    "view_example": "View Example",
-    "play_video": "Play Video",
-    "loading": "Loading video...",
-    "watch_full": "Watch Full Video"
+    "view_example": "Ver Ejemplo",
+    "play_video": "Reproducir Video",
+    "loading": "Cargando video...",
+    "watch_full": "Ver Video Completo"
   },
   "common": {
     "loading": "Loading...",

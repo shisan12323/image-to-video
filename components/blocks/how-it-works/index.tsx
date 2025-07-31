@@ -12,18 +12,18 @@ export default function HowItWorks() {
   const steps = [
     {
       key: "upload",
-      image: "/video-examples/Step-1.-Upload-your-watermarked-video_2024-05-13-091936_geux.jpg",
-      altText: "Upload your watermarked video"
+      image: "/video-examples/1.png",
+      altText: "Upload your image"
     },
     {
       key: "process", 
-      image: "/video-examples/Step-2.-Automatically-remove-video-watermark-with-AI_2024-05-13-091937_ptkd.jpg",
-      altText: "Automatically remove video watermark with AI"
+      image: "/video-examples/2.png",
+      altText: "Choose video style"
     },
     {
       key: "download",
-      image: "/video-examples/Step-3.-Download-your-watermark-free-video_2024-05-13-091941_ekcj.jpg",
-      altText: "Download your watermark-free video"
+      image: "/video-examples/3.png",
+      altText: "Download your video"
     }
   ];
 

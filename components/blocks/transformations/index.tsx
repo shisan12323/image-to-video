@@ -22,7 +22,7 @@ export default function Transformations() {
   const t = useTranslations('transformations');
   const transformations: TransformationItem[] = t.raw('examples').map((example: any, index: number) => ({
     ...example,
-    image: `/imgs/showcases/${index + 1}.png`
+    image: `/imgs/showcases/${index + 1}.webp`
   }));
 
   // 预先构建图片 JSON-LD（ImageObject 列表），随首屏 HTML 输出

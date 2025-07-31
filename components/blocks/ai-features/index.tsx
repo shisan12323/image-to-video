@@ -24,7 +24,7 @@ export default function AIFeatures() {
     },
     {
       icon: Brain,
-      title: t('features.plant_selection.title'), 
+      title: t('features.plant_selection.title'),
       description: t('features.plant_selection.description'),
       gradient: "from-emerald-500 to-teal-500"
     },

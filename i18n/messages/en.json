@@ -98,7 +98,7 @@
       }
     ],
     "cta_title": "Ready to Bring Your Images to Life?",
-    "cta_description": "Join over 100,000 creators already using AI to transform static images into engaging videos. Start creating today!",
+    "cta_description": "Join over 200,000 creators already using AI to transform static images into engaging videos. Start creating today!",
     "cta_button": "Create Your First AI Video Free"
   },
   "feature_video": {
@@ -147,11 +147,10 @@
     "description": "Explore amazing videos generated from simple images. Each video showcases the power of our AI technology.",
     "categories": {
       "all": "All",
-      "portrait": "Portrait",
-      "landscape": "Landscape", 
-      "product": "Product",
-      "creative": "Creative",
-      "animation": "Animation"
+      "photography": "Photography",
+      "architecture": "Architecture",
+      "people": "People",
+      "creative": "Creative"
     },
     "view_more": "View More",
     "load_more": "Load More Cases",
@@ -161,7 +160,45 @@
     "generated_video": "Generated Video",
     "duration": "Duration",
     "model_used": "Model Used",
-    "prompt_used": "Prompt Used"
+    "prompt_used": "Prompt Used",
+    "cases": [
+      {
+        "title": "Turn still images into cinematic video content",
+        "description": "Arting.AI transforms your static photos into immersive videos using intelligent automation. Whether it's a product showcase, a memory reel, or a brand teaser, simply drop in your images and watch them evolve into polished visual stories—complete with movement, effects, and audio enhancements.",
+        "duration": "5s",
+        "featured": true
+      },
+      {
+        "title": "Visual storytelling with zero editing required",
+        "description": "Forget about complex timelines and editing software. Arting.AI eliminates the technical overhead by automatically stitching your images into cohesive, well-paced scenes. The platform handles everything—from visual rhythm to dynamic layout—so you can focus on your narrative, not the tools.",
+        "duration": "6s",
+        "featured": false
+      },
+      {
+        "title": "A library of motion styles for every scenario",
+        "description": "With over 10 dynamic presentation styles to choose from, you can tailor the look and feel of your image-based video to suit your purpose. Whether you're building an ad campaign, a testimonial reel, or a personal slideshow, our templates ensure your visuals shine in the right context.",
+        "duration": "4s",
+        "featured": true
+      },
+      {
+        "title": "AI-enhanced pacing, transitions, and ambiance",
+        "description": "Arting.AI brings your visuals to life with smooth camera movement, animated transitions, and ambient soundscapes—all powered by AI. It's designed to mimic professional video production techniques without requiring manual input.",
+        "duration": "5s",
+        "featured": false
+      },
+      {
+        "title": "Branded visuals with total design alignment",
+        "description": "Consistency matters. That's why our image to video tool supports branded intros, outros, color schemes, and logo placements—giving your videos a signature look, whether you're sharing one clip or building out a campaign.",
+        "duration": "6s",
+        "featured": true
+      },
+      {
+        "title": "No software, no learning curve—just upload and go",
+        "description": "The entire workflow runs in your browser. No plugins. No downloads. No editing skills needed. Just drag in your images, select your preferences, and generate. It's perfect for marketers, freelancers, and teams who want to produce compelling visuals without the friction.",
+        "duration": "4s",
+        "featured": false
+      }
+    ]
   },
   "generator": {
     "tabs": {
@@ -405,10 +442,41 @@
       }
     ]
   },
+  "ai_features": {
+    "title": "What's Different About Image to Video AI?",
+    "subtitle": "Advanced AI Technology",
+    "description": "Transform your static images into stunning videos with our powerful AI technology. Start creating immediately with professional results.",
+    "features": {
+      "analysis": {
+        "title": "Easy 容易",
+        "description": "Start creating immediately with our simple upload interface. Just upload an image and watch AI transform it into a beautiful video in seconds."
+      },
+      "plant_selection": {
+        "title": "Free 免费",
+        "description": "Image to Video AI is completely free to start. Upload your image and begin creating stunning videos without any cost or watermarks."
+      },
+      "design_optimization": {
+        "title": "Fast 快速",
+        "description": "Get professional video results in under 30 seconds. Our optimized AI technology processes your images quickly without compromising quality."
+      },
+      "seasonal_planning": {
+        "title": "Quality 品质",
+        "description": "Generate high-quality videos up to 4K resolution with smooth animations and professional effects that rival expensive video editing software."
+      },
+      "plant_database": {
+        "title": "Online 在线",
+        "description": "Our cloud-based platform works on any device. Access your videos anywhere in the world and share them instantly with anyone."
+      },
+      "instant_results": {
+        "title": "Powerful 强大",
+        "description": "Choose from multiple animation styles including natural movement, cinematic effects, and artistic transformations to create exactly what you want."
+      }
+    }
+  },
   "video_showcase": {
     "badge": "🎬 AI Video Examples",
-    "title": "Outstanding Cases Powered By Image To Video AI Generator",
-    "description": "Experience ImageToVideo AI's cutting-edge Image To Video AI Generator, trusted by over 500,000 users and generating more than 10 million videos. With free access to powerful video creation tools, discover outstanding cases to inspire your next professional video project.",
+    "title": "See What Our AI Can Create",
+    "description": "Explore amazing videos generated from simple images. Each video showcases the power of our AI technology.",
     "categories": {
       "photography": "Photography",
       "people": "People", 
@@ -419,40 +487,46 @@
     },
     "examples": [
       {
-        "title": "Mountain Paradise",
+        "title": "Photography Case 1",
         "category": "Photography", 
-        "description": "Stunning mountain landscape with flowing clouds and dynamic lighting effects",
-        "duration": "5s"
+        "description": "Beautiful photography with dynamic movement",
+        "duration": "5s",
+        "featured": true
       },
       {
-        "title": "Portrait Magic",
-        "category": "People",
-        "description": "Professional portrait enhanced with subtle facial animations and background motion",
-        "duration": "3s"
-      },
-      {
-        "title": "Product Spotlight",
-        "category": "Commercial",
-        "description": "Commercial product photography with rotating highlights and depth effects",
-        "duration": "4s"
-      },
-      {
-        "title": "Urban Energy",
+        "title": "Architecture Case 1",
         "category": "Architecture",
-        "description": "Modern cityscape with traffic flow and architectural movement",
-        "duration": "6s"
+        "description": "Stunning architectural visualization",
+        "duration": "6s",
+        "featured": false
       },
       {
-        "title": "Digital Art",
+        "title": "Photography Case 2",
+        "category": "Photography",
+        "description": "Elegant photography with smooth transitions",
+        "duration": "4s",
+        "featured": true
+      },
+      {
+        "title": "Architecture Case 2",
+        "category": "Architecture",
+        "description": "Modern architectural design in motion",
+        "duration": "5s",
+        "featured": false
+      },
+      {
+        "title": "People Case 1",
+        "category": "People",
+        "description": "Human subjects with natural movement",
+        "duration": "6s",
+        "featured": true
+      },
+      {
+        "title": "Creative Case 1",
         "category": "Creative",
-        "description": "Abstract digital artwork transformed into mesmerizing motion graphics",
-        "duration": "4s"
-      },
-      {
-        "title": "Culinary Delight",
-        "category": "Lifestyle",
-        "description": "Appetizing food photography with steam effects and ingredient movement",
-        "duration": "3s"
+        "description": "Artistic and creative video generation",
+        "duration": "4s",
+        "featured": false
       }
     ],
     "view_example": "View Example",

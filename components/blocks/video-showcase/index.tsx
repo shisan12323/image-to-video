@@ -12,15 +12,117 @@ export const VideoShowcase = () => {
   const [loadingVideos, setLoadingVideos] = useState<Set<number>>(new Set());
   const videoRefs = useRef<Map<number, HTMLVideoElement>>(new Map());
 
-  // 增加更多视频示例数据 - 每列约3个，共12个视频
-  const videoExamples = Array.from({ length: 12 }, (_, index) => ({
-    id: index + 1,
-    title: t(`examples.${index % 6}.title`),
-    category: t(`examples.${index % 6}.category`),
-    thumbnail: `/imgs/showcases/${(index % 8) + 1}.png`,
-    duration: t(`examples.${index % 6}.duration`),
-    videoUrl: `/videos/example-${index + 1}.mp4`
-  }));
+  // 创建12个视频的数据
+  const videoExamples = [
+    {
+      id: 1,
+      title: "Photography Case 1",
+      category: "Photography",
+      duration: "5s",
+      videoUrl: "/cases/1.mp4",
+      posterUrl: "/cases/posters/1.png",
+      featured: true
+    },
+    {
+      id: 2,
+      title: "Architecture Case 1",
+      category: "Architecture", 
+      duration: "6s",
+      videoUrl: "/cases/2.mp4",
+      posterUrl: "/cases/posters/2.png",
+      featured: false
+    },
+    {
+      id: 3,
+      title: "Photography Case 2",
+      category: "Photography",
+      duration: "4s",
+      videoUrl: "/cases/3.mp4",
+      posterUrl: "/cases/posters/3.png",
+      featured: true
+    },
+    {
+      id: 4,
+      title: "Architecture Case 2",
+      category: "Architecture",
+      duration: "5s",
+      videoUrl: "/cases/4.mp4",
+      posterUrl: "/cases/posters/4.png",
+      featured: false
+    },
+    {
+      id: 5,
+      title: "People Case 1",
+      category: "People",
+      duration: "6s",
+      videoUrl: "/cases/5.mp4",
+      posterUrl: "/cases/posters/5.png",
+      featured: true
+    },
+    {
+      id: 6,
+      title: "Creative Case 1",
+      category: "Creative",
+      duration: "4s",
+      videoUrl: "/cases/6.mp4",
+      posterUrl: "/cases/posters/6.png",
+      featured: false
+    },
+    {
+      id: 7,
+      title: "Photography Case 3",
+      category: "Photography",
+      duration: "5s",
+      videoUrl: "/cases/7.mp4",
+      posterUrl: "/cases/posters/7.png",
+      featured: false
+    },
+    {
+      id: 8,
+      title: "Architecture Case 3",
+      category: "Architecture",
+      duration: "6s",
+      videoUrl: "/cases/8.mp4",
+      posterUrl: "/cases/posters/8.png",
+      featured: false
+    },
+    {
+      id: 9,
+      title: "People Case 2",
+      category: "People",
+      duration: "3s",
+      videoUrl: "/cases/9.mp4",
+      posterUrl: "/cases/posters/9.png",
+      featured: false
+    },
+    {
+      id: 10,
+      title: "Creative Case 2",
+      category: "Creative",
+      duration: "4s",
+      videoUrl: "/cases/10.mp4",
+      posterUrl: "/cases/posters/10.png",
+      featured: false
+    },
+    {
+      id: 11,
+      title: "Photography Case 4",
+      category: "Photography",
+      duration: "5s",
+      videoUrl: "/cases/11.mp4",
+      posterUrl: "/cases/posters/11.png",
+      featured: false
+    },
+    {
+      id: 12,
+      title: "Architecture Case 4",
+      category: "Architecture",
+      duration: "6s",
+      videoUrl: "/cases/12.mp4",
+      posterUrl: "/cases/posters/12.png",
+      featured: true
+    }
+  ];
 
   const handleMouseEnter = async (videoId: number) => {
     setHoveredVideo(videoId);
@@ -77,7 +179,7 @@ export const VideoShowcase = () => {
 
         {/* 瀑布流/不规则布局 */}
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
-          {videoExamples.map((video) => (
+          {videoExamples.map((video: any) => (
             <div
               key={video.id}
               className="break-inside-avoid mb-4"
@@ -92,9 +194,9 @@ export const VideoShowcase = () => {
                     aspectRatio: video.id % 3 === 0 ? '3/4' : video.id % 2 === 0 ? '4/5' : '1/1'
                   }}
                 >
-                  {/* 静态缩略图 */}
+                  {/* 视频封面图片 */}
                   <Image
-                    src={video.thumbnail}
+                    src={video.posterUrl}
                     alt={video.title}
                     fill
                     className={`object-cover transition-all duration-300 ${
@@ -103,7 +205,7 @@ export const VideoShowcase = () => {
                     priority={video.id <= 6}
                   />
                   
-                  {/* 视频元素 - 只在悬停时显示 */}
+                  {/* 悬停时显示的视频 */}
                   {hoveredVideo === video.id && (
                     <video
                       ref={setVideoRef(video.id)}
@@ -111,7 +213,7 @@ export const VideoShowcase = () => {
                       loop
                       muted
                       playsInline
-                      preload="metadata"
+                      autoPlay
                     >
                       <source src={video.videoUrl} type="video/mp4" />
                     </video>
@@ -126,7 +228,7 @@ export const VideoShowcase = () => {
                     </div>
                   )}
                   
-                  {/* 播放按钮覆盖层 - 只在没有悬停且不在播放时显示 */}
+                  {/* 播放按钮覆盖层 - 只在没有悬停时显示 */}
                   {hoveredVideo !== video.id && (
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                       <div className="bg-white/90 rounded-full p-4 shadow-lg transform transition-transform duration-300 group-hover:scale-110">
@@ -135,19 +237,7 @@ export const VideoShowcase = () => {
                     </div>
                   )}
 
-                  {/* 时长标签 */}
-                  <div className="absolute top-3 right-3 z-20">
-                    <Badge variant="secondary" className="bg-black/80 text-white border-0 px-3 py-1 text-xs font-medium">
-                      {video.duration}
-                    </Badge>
-                  </div>
 
-                  {/* 分类标签 */}
-                  <div className="absolute top-3 left-3 z-20">
-                    <Badge variant="outline" className="bg-white/95 text-xs font-medium border-white/50 backdrop-blur-sm text-gray-700">
-                      {video.category}
-                    </Badge>
-                  </div>
                 </div>
               </div>
             </div>

@@ -7,6 +7,7 @@ import TestimonialsVideo from '@/components/blocks/testimonials-video';
 import FAQVideo from '@/components/blocks/faq-video';
 import PricingI18n from '@/components/blocks/pricing-i18n';
 import Transformations from '@/components/blocks/transformations';
+import AIFeatures from '@/components/blocks/ai-features';
 
 export default function IndexPage() {
   return (
@@ -15,6 +16,7 @@ export default function IndexPage() {
       <ImageUploadGenerator />
       <VideoShowcase />
       <ExcellentCases />
+      <AIFeatures />
       <HowItWorks />
       <Transformations />
       <PricingI18n />

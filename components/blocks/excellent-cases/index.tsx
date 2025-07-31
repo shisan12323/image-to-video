@@ -8,93 +8,26 @@ import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import { Play, Eye, Clock, Cpu, FileText } from 'lucide-react';
 
-// Mock data for cases
-const excellentCases = [
-  {
-    id: 1,
-    category: 'portrait',
-    originalImage: '/imgs/showcases/1.png',
-    videoUrl: '/videos/case1.mp4',
-    videoPoster: '/imgs/showcases/1.png',
-    title: 'Portrait Animation',
-    description: 'Beautiful woman portrait with flowing hair animation',
-    duration: '4s',
-    model: 'Pro-Turbo 2.4',
-    prompt: 'Add gentle wind effect to hair, soft lighting, cinematic quality',
-    views: '12.5K',
-    featured: true
-  },
-  {
-    id: 2,
-    category: 'landscape',
-    originalImage: '/imgs/showcases/2.png',
-    videoUrl: '/videos/case2.mp4',
-    videoPoster: '/imgs/showcases/2.png',
-    title: 'Mountain Landscape',
-    description: 'Serene mountain landscape with moving clouds',
-    duration: '8s',
-    model: 'Fast 1.4',
-    prompt: 'Moving clouds, gentle camera movement, golden hour lighting',
-    views: '8.3K',
-    featured: false
-  },
-  {
-    id: 3,
-    category: 'product',
-    originalImage: '/imgs/showcases/3.png',
-    videoUrl: '/videos/case3.mp4',
-    videoPoster: '/imgs/showcases/3.png',
-    title: 'Product Showcase',
-    description: 'Elegant product display with rotation effect',
-    duration: '4s',
-    model: 'Pro-Turbo 2.4',
-    prompt: 'Slow rotation, premium lighting, studio quality',
-    views: '15.2K',
-    featured: true
-  },
-  {
-    id: 4,
-    category: 'creative',
-    originalImage: '/imgs/showcases/4.png',
-    videoUrl: '/videos/case4.mp4',
-    videoPoster: '/imgs/showcases/4.png',
-    title: 'Abstract Art',
-    description: 'Creative abstract art with flowing colors',
-    duration: '6s',
-    model: 'Fast 1.4',
-    prompt: 'Color flow animation, abstract movement, artistic style',
-    views: '9.7K',
-    featured: false
-  },
-  {
-    id: 5,
-    category: 'animation',
-    originalImage: '/imgs/showcases/5.png',
-    videoUrl: '/videos/case5.mp4',
-    videoPoster: '/imgs/showcases/5.png',
-    title: 'Character Animation',
-    description: 'Cartoon character with blinking and movement',
-    duration: '5s',
-    model: 'Pro-Turbo 2.4',
-    prompt: 'Character blinking, subtle movement, cartoon style',
-    views: '22.1K',
-    featured: true
-  },
-  {
-    id: 6,
-    category: 'landscape',
-    originalImage: '/imgs/showcases/6.png',
-    videoUrl: '/videos/case6.mp4',
-    videoPoster: '/imgs/showcases/6.png',
-    title: 'Ocean Waves',
-    description: 'Peaceful ocean scene with gentle waves',
-    duration: '8s',
-    model: 'Fast 1.4',
-    prompt: 'Gentle waves, seagulls flying, peaceful atmosphere',
-    views: '11.4K',
-    featured: false
-  }
-];
+// Helper function to create cases from i18n data
+const createCasesFromI18n = (cases: any[], categories: string[]) => {
+  return cases.map((caseData, index) => {
+    const categoryIndex = index % categories.length;
+    return {
+      id: index + 1,
+      category: categories[categoryIndex],
+      originalImage: `/imgs/showcases/${index + 1}.png`,
+      videoUrl: `/cases/${index + 1}.mp4`,
+      videoPoster: `/cases/posters/${index + 1}.png`,
+      title: caseData.title,
+      description: caseData.description,
+      duration: caseData.duration,
+      model: index % 2 === 0 ? 'Pro-Turbo 2.4' : 'Fast 1.4',
+      prompt: 'AI-powered video generation',
+      views: `${Math.floor(Math.random() * 20 + 5)}.${Math.floor(Math.random() * 9)}K`,
+      featured: caseData.featured
+    };
+  });
+};
 
 interface ExcellentCasesProps {
   limit?: number;
@@ -106,18 +39,23 @@ export const ExcellentCases = ({ limit }: ExcellentCasesProps) => {
   const [visibleCases, setVisibleCases] = useState(6);
   const [playingVideo, setPlayingVideo] = useState<number | null>(null);
 
+  // Get cases from i18n data
+  const i18nCases = t.raw('cases') || [];
+  const categoryKeys = ['photography', 'architecture', 'people', 'creative'];
+  const excellentCases = createCasesFromI18n(i18nCases, categoryKeys);
+
   const categories = [
     { id: 'all', label: t('categories.all') },
-    { id: 'portrait', label: t('categories.portrait') },
-    { id: 'landscape', label: t('categories.landscape') },
-    { id: 'product', label: t('categories.product') },
-    { id: 'creative', label: t('categories.creative') },
-    { id: 'animation', label: t('categories.animation') }
+    { id: 'photography', label: t('categories.photography') },
+    { id: 'architecture', label: t('categories.architecture') },
+    { id: 'people', label: t('categories.people') },
+    { id: 'creative', label: t('categories.creative') }
   ];
 
-  const filteredCases = excellentCases.filter(
-    case_ => activeCategory === 'all' || case_.category === activeCategory
-  );
+  // Filter cases based on active category
+  const filteredCases = excellentCases.filter((case_: any) => 
+    activeCategory === 'all' || case_.category === activeCategory
+  ).slice(0, limit || visibleCases);
 
   const displayedCases = limit ? filteredCases.slice(0, limit) : filteredCases.slice(0, visibleCases);
 
@@ -150,7 +88,7 @@ export const ExcellentCases = ({ limit }: ExcellentCasesProps) => {
 
         {/* Cases Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {displayedCases.map((case_, index) => (
+          {displayedCases.map((case_: any, index: number) => (
             <Card 
               key={case_.id} 
               className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl"

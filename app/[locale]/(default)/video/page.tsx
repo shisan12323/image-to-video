@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import PricingI18n from '@/components/blocks/pricing-i18n';
 import { HeroVideo } from '@/components/blocks/hero-video';
 import { FeatureVideo } from '@/components/blocks/feature-video';
-import HowItWorksVideo from '@/components/blocks/how-it-works-video';
+import HowItWorks from '@/components/blocks/how-it-works';
 import TestimonialsVideo from '@/components/blocks/testimonials-video';
 import FAQVideo from '@/components/blocks/faq-video';
 import CTAVideo from '@/components/blocks/cta-video';
@@ -41,7 +41,7 @@ export default function VideoLandingPage() {
     <>
       <HeroVideo />
       <FeatureVideo />
-      <HowItWorksVideo />
+      <HowItWorks />
       <PricingI18n />
       <TestimonialsVideo />
       <FAQVideo />

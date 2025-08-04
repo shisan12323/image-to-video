@@ -8,8 +8,9 @@ import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Image from 'next/image';
-import { Upload, Play, Sparkles, Loader2, RotateCcw, Edit, History, ChevronRight } from 'lucide-react';
+import { Upload, Play, Sparkles, Loader2, RotateCcw, Edit, History, ChevronRight, Check, Zap } from 'lucide-react';
 
 export const ImageUploadGenerator = () => {
   const t = useTranslations('generator');
@@ -22,6 +23,7 @@ export const ImageUploadGenerator = () => {
   const [description, setDescription] = useState('');
   const [selectedModel, setSelectedModel] = useState('fast-1.4');
   const [selectedDuration, setSelectedDuration] = useState('4s');
+  const [selectedAspectRatio, setSelectedAspectRatio] = useState('9:16');
 
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -37,7 +39,7 @@ export const ImageUploadGenerator = () => {
   };
 
   const handleGenerate = async () => {
-    if (!selectedFile) return;
+    if (!selectedFile || !description.trim()) return;
     
     setIsGenerating(true);
     setTimeout(() => {
@@ -49,6 +51,12 @@ export const ImageUploadGenerator = () => {
   const tabs = [
     { id: 'image-to-video', label: t('tabs.image_to_video') },
     { id: 'photo-to-video', label: t('tabs.photo_to_video') }
+  ];
+
+  const aspectRatios = [
+    { value: '9:16', label: t('aspect_ratio.portrait') },
+    { value: '16:9', label: t('aspect_ratio.landscape') },
+    { value: '1:1', label: t('aspect_ratio.square') }
   ];
 
   return (
@@ -73,159 +81,138 @@ export const ImageUploadGenerator = () => {
           </div>
         </div>
 
-        {/* Main Content Card */}
+        {/* Main Content - Single Large Card */}
         <div className="max-w-7xl mx-auto">
-          <Card className="p-6 bg-white shadow-2xl rounded-2xl border-0">
+          <Card className="p-8 bg-white shadow-2xl rounded-2xl border-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               
-              {/* Left Side - Upload and Controls */}
-              <div className="space-y-4">
-                {/* Upload Area */}
-                <div 
-                  className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-blue-400 hover:bg-blue-50/50 transition-all duration-300 min-h-[200px] flex flex-col items-center justify-center bg-gray-50/30"
-                  onClick={handleUploadClick}
-                >
-                  {previewUrl ? (
-                    <div className="space-y-3">
-                      <div className="relative w-32 h-24 mx-auto rounded-xl overflow-hidden shadow-lg">
-                        <Image
-                          src={previewUrl}
-                          alt="Selected image"
-                          fill
-                          className="object-cover"
-                        />
+              {/* Left Panel - Upload and Configuration */}
+              <div className="space-y-6">
+                
+                {/* Upload Section */}
+                <div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <Upload className="w-5 h-5 text-blue-500" />
+                    <h3 className="text-lg font-semibold text-gray-800">{t('upload.title')}</h3>
+                  </div>
+                  
+                  <div 
+                    className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-blue-400 hover:bg-blue-50/50 transition-all duration-300 min-h-[200px] flex flex-col items-center justify-center bg-gray-50/30"
+                    onClick={handleUploadClick}
+                  >
+                    {previewUrl ? (
+                      <div className="space-y-4">
+                        <div className="relative w-32 h-24 mx-auto rounded-xl overflow-hidden shadow-lg">
+                          <Image
+                            src={previewUrl}
+                            alt="Selected image"
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <p className="text-sm text-gray-600 font-medium">{t('upload.change_image')}</p>
                       </div>
-                      <p className="text-sm text-gray-600 font-medium">{t('upload.change_image')}</p>
-                    </div>
-                  ) : (
-                    <div className="space-y-4">
-                      <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                    ) : (
+                      <div className="space-y-4">
                         <Button className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">
                           <Upload className="w-4 h-4 mr-2" />
                           {t('upload.title')}
                         </Button>
-                        <span className="text-gray-400 font-medium text-sm">{t('upload.or')}</span>
-                        <Button variant="outline" className="border-gray-300 hover:border-blue-400 hover:bg-blue-50 px-5 py-2.5 rounded-xl">
-                          <Sparkles className="w-4 h-4 mr-2 text-purple-500" />
-                          {t('upload.ai_generator')}
-                        </Button>
+                        <p className="text-xs text-gray-500">{t('upload.image_types')}</p>
                       </div>
-                      <p className="text-xs text-gray-500">支持 JPG、PNG、WEBP 格式，最大 10MB</p>
-                    </div>
-                  )}
-                </div>
-                
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept="image/*"
-                  onChange={handleFileSelect}
-                  className="hidden"
-                />
-
-                {/* Video Effects and Styles */}
-                <div className="grid grid-cols-2 gap-3">
-                  <Button variant="outline" className="justify-between h-12 rounded-xl border-gray-200 hover:border-blue-400 hover:bg-blue-50 transition-all duration-200">
-                    <span className="font-medium">{t('effects.video_effects')}</span>
-                    <ChevronRight className="w-4 h-4 text-gray-400" />
-                  </Button>
-                  <Button variant="outline" className="justify-between h-12 rounded-xl border-gray-200 hover:border-purple-400 hover:bg-purple-50 transition-all duration-200">
-                    <span className="font-medium">{t('effects.video_styles')}</span>
-                    <ChevronRight className="w-4 h-4 text-gray-400" />
-                  </Button>
+                    )}
+                  </div>
+                  
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept="image/*"
+                    onChange={handleFileSelect}
+                    className="hidden"
+                  />
                 </div>
 
-                {/* Description */}
-                <div className="space-y-2">
+                {/* Edit Instructions Section */}
+                <div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <Zap className="w-5 h-5 text-green-500" />
+                    <h3 className="text-lg font-semibold text-gray-800">{t('edit_instructions.title')}</h3>
+                  </div>
+                  
                   <Textarea
-                    placeholder={t('description.placeholder')}
+                    placeholder={t('edit_instructions.placeholder')}
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    className="min-h-[100px] resize-none rounded-xl border-gray-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-all duration-200"
+                    className="min-h-[120px] resize-none rounded-xl border-gray-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-all duration-200"
+                    required
                   />
-                  <p className="text-sm text-gray-500 text-right">{description.length}/1000</p>
+                  <p className="text-sm text-gray-500 mt-2">{t('edit_instructions.helper')}</p>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-blue-400 hover:bg-blue-50 min-h-[44px] px-4">
-                    <Sparkles className="w-4 h-4 mr-2 text-blue-500" />
-                    {t('actions.ai_generate')}
-                  </Button>
-                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-green-400 hover:bg-green-50 min-h-[44px] px-4">
-                    <Edit className="w-4 h-4 mr-2 text-green-500" />
-                    {t('actions.rewrite')}
-                  </Button>
-                  <Button variant="outline" size="sm" className="rounded-lg border-gray-200 hover:border-orange-400 hover:bg-orange-50 min-h-[44px] px-4">
-                    <RotateCcw className="w-4 h-4 mr-2 text-orange-500" />
-                    {t('actions.reset')}
-                  </Button>
+                {/* Aspect Ratio Section */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4">{t('aspect_ratio.title')}</h3>
+                  
+                  <Select value={selectedAspectRatio} onValueChange={setSelectedAspectRatio}>
+                    <SelectTrigger className="w-full rounded-xl border-gray-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-100">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {aspectRatios.map((ratio) => (
+                        <SelectItem key={ratio.value} value={ratio.value}>
+                          {ratio.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
 
-                {/* Model Selection */}
-                <div className="space-y-3">
-                  <Label className="text-base font-semibold text-gray-800">{t('model.label')}</Label>
-                  <RadioGroup value={selectedModel} onValueChange={setSelectedModel} className="space-y-2">
-                    <div className={`flex items-center space-x-3 p-3 rounded-xl border-2 transition-all duration-200 cursor-pointer ${selectedModel === 'fast-1.4' ? 'border-blue-400 bg-blue-50' : 'border-gray-200 hover:border-gray-300'}`}>
-                      <RadioGroupItem value="fast-1.4" id="fast" />
-                      <Label htmlFor="fast" className="font-medium cursor-pointer flex-1">{t('model.fast')}</Label>
-                      <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">免费</span>
+                {/* Pro Tips Section */}
+                <div className="bg-green-50 rounded-xl p-4 border border-green-100">
+                  <div className="flex items-center gap-2 mb-4">
+                    <Zap className="w-5 h-5 text-green-500" />
+                    <h3 className="text-lg font-semibold text-gray-800">{t('pro_tips.title')}</h3>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-gray-600">{t('pro_tips.tip1')}</p>
                     </div>
-                    <div className={`flex items-center space-x-3 p-3 rounded-xl border-2 transition-all duration-200 cursor-pointer ${selectedModel === 'pro-turbo-2.4' ? 'border-purple-400 bg-purple-50' : 'border-gray-200 hover:border-gray-300'}`}>
-                      <RadioGroupItem value="pro-turbo-2.4" id="pro" />
-                      <Label htmlFor="pro" className="font-medium cursor-pointer flex-1">{t('model.pro')}</Label>
-                      <Badge className="bg-red-500 text-white text-xs px-2 py-1">{t('model.pro_badge')}</Badge>
+                    <div className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-gray-600">{t('pro_tips.tip2')}</p>
                     </div>
-                  </RadioGroup>
-                </div>
-
-                {/* Duration Selection */} 
-                <div className="space-y-3">
-                  <Label className="text-base font-semibold text-gray-800">{t('duration.label')}</Label>
-                  <RadioGroup value={selectedDuration} onValueChange={setSelectedDuration} className="flex gap-3">
-                    <div className={`flex items-center space-x-2 p-3 rounded-xl border-2 transition-all duration-200 cursor-pointer flex-1 ${selectedDuration === '4s' ? 'border-blue-400 bg-blue-50' : 'border-gray-200 hover:border-gray-300'}`}>
-                      <RadioGroupItem value="4s" id="4s" />
-                      <Label htmlFor="4s" className="font-medium cursor-pointer">{t('duration.four_seconds')}</Label>
+                    <div className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-gray-600">{t('pro_tips.tip3')}</p>
                     </div>
-                    <div className={`flex items-center space-x-2 p-3 rounded-xl border-2 transition-all duration-200 cursor-pointer flex-1 ${selectedDuration === '8s' ? 'border-purple-400 bg-purple-50' : 'border-gray-200 hover:border-gray-300'}`}>
-                      <RadioGroupItem value="8s" id="8s" />
-                      <Label htmlFor="8s" className="font-medium cursor-pointer flex items-center gap-2">
-                        {t('duration.eight_seconds')}
-                        <Badge className="bg-red-500 text-white text-xs px-2 py-1">{t('duration.pro_badge')}</Badge>
-                      </Label>
-                    </div>
-                  </RadioGroup>
+                  </div>
                 </div>
 
                 {/* Generate Button */}
-                <div className="flex gap-3 pt-1">
-                  <Button 
-                    onClick={handleGenerate}
-                    disabled={!selectedFile || isGenerating}
-                    className="flex-1 bg-blue-500 hover:bg-blue-600 text-white h-12 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
-                  >
-                    {isGenerating ? (
-                      <>
-                        <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                        {t('generate.generating')}
-                      </>
-                    ) : (
-                      <>
-                        {t('generate.button')}
-                        <span className="ml-2 bg-white/20 px-2 py-1 rounded-full text-sm font-medium">{t('generate.credits')}</span>
-                      </>
-                    )}
-                  </Button>
-                  <Button variant="outline" className="h-12 w-12 rounded-xl border-gray-200 hover:border-gray-400 hover:bg-gray-50">
-                    <History className="w-5 h-5 text-gray-600" />
-                  </Button>
-                </div>
+                <Button 
+                  onClick={handleGenerate}
+                  disabled={!selectedFile || !description.trim() || isGenerating}
+                  className="w-full bg-green-500 hover:bg-green-600 text-white h-12 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+                >
+                  {isGenerating ? (
+                    <>
+                      <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                      {t('generate.generating')}
+                    </>
+                  ) : (
+                    <>
+                      {t('generate.button')}
+                    </>
+                  )}
+                </Button>
               </div>
 
-              {/* Right Side - Video Preview */}
+              {/* Right Panel - Video Preview */}
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">{t('preview.title')}</h3>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4">{t('preview.title')}</h3>
                   
                   <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl overflow-hidden shadow-lg border border-gray-200">
                     {isGenerating ? (
@@ -255,6 +242,33 @@ export const ImageUploadGenerator = () => {
                         </div>
                       </div>
                     )}
+                  </div>
+                </div>
+
+                {/* Info Boxes */}
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white rounded-xl p-4 shadow-md border border-gray-100">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                        <Loader2 className="w-5 h-5 text-blue-600" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">100-300s</p>
+                        <p className="text-xs text-gray-500">Processing Time</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-xl p-4 shadow-md border border-gray-100">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                        <Sparkles className="w-5 h-5 text-green-600" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-gray-800">360p</p>
+                        <p className="text-xs text-gray-500">Video Quality</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

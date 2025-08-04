@@ -122,7 +122,27 @@
       "title": "Subir Imagen",
       "ai_generator": "Generador IA de Imágenes",
       "or": "O",
-      "change_image": "Haz clic para cambiar imagen"
+      "change_image": "Haz clic para cambiar imagen",
+      "drag_drop": "Haz clic para subir o arrastrar y soltar",
+      "file_types": "MP4, WebM, MOV hasta 100MB",
+      "image_types": "JPG, PNG, WEBP hasta 10MB"
+    },
+    "edit_instructions": {
+      "title": "Instrucciones de Edición",
+      "placeholder": "Describe el video que quieres crear...",
+      "helper": "Describe la escena, personajes y acciones que quieres en tu video"
+    },
+    "aspect_ratio": {
+      "title": "Relación de Aspecto",
+      "portrait": "9:16 (Retrato)",
+      "landscape": "16:9 (Paisaje)",
+      "square": "1:1 (Cuadrado)"
+    },
+    "pro_tips": {
+      "title": "Consejos Pro",
+      "tip1": "Incluye detalles específicos sobre iluminación y ángulos de cámara",
+      "tip2": "Menciona si quieres estilo realista o animado",
+      "tip3": "Describe acciones y movimientos claramente"
     },
     "effects": {
       "video_effects": "Efectos de Video",
@@ -419,7 +439,16 @@
           "url": "/#upload"
         }
       }
-    ]
+    ],
+    "features": [
+      "Detección automática de movimiento",
+      "Salida de calidad profesional",
+      "Múltiples estilos de animación",
+      "Soporte para resolución HD y 4K",
+      "Procesamiento rápido de 30 segundos"
+    ],
+    "cta_title": "¿Listo para Transformar tus Imágenes?",
+    "cta_description": "Comienza a crear videos impresionantes a partir de tus fotos ahora"
   },
   "pricing": {
     "title": "Precios Simples y Transparentes",

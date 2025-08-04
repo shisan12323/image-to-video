@@ -208,7 +208,27 @@
       "title": "Upload Image",
       "ai_generator": "AI Image Generator",
       "or": "OR",
-      "change_image": "Click to change image"
+      "change_image": "Click to change image",
+      "drag_drop": "Click to upload or drag and drop",
+      "file_types": "MP4, WebM, MOV up to 100MB",
+      "image_types": "JPG, PNG, WEBP up to 10MB"
+    },
+    "edit_instructions": {
+      "title": "Edit Instructions",
+      "placeholder": "Describe the video you want to create...",
+      "helper": "Describe the scene, characters, and actions you want in your video"
+    },
+    "aspect_ratio": {
+      "title": "Aspect Ratio",
+      "portrait": "9:16 (Portrait)",
+      "landscape": "16:9 (Landscape)",
+      "square": "1:1 (Square)"
+    },
+    "pro_tips": {
+      "title": "Pro Tips",
+      "tip1": "Include specific details about lighting and camera angles",
+      "tip2": "Mention if you want realistic or animated style",
+      "tip3": "Describe actions and movements clearly"
     },
     "effects": {
       "video_effects": "Video Effects",
@@ -236,7 +256,7 @@
       "pro_badge": "PRO"
     },
     "generate": {
-      "button": "Generate Now",
+      "button": "Generate Video",
       "generating": "Generating...",
       "credits": "3"
     },

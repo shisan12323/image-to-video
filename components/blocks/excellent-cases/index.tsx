@@ -16,8 +16,8 @@ const createCasesFromI18n = (cases: any[], categories: string[]) => {
       id: index + 1,
       category: categories[categoryIndex],
       originalImage: `/imgs/showcases/${index + 1}.png`,
-      videoUrl: `/cases/${index + 1}.mp4`,
-      videoPoster: `/cases/posters/${index + 1}.png`,
+      videoUrl: `/cases/tutorials/${index + 1}.mp4`,
+      videoPoster: `/cases/tutorials/posters/${index + 1}.png`,
       title: caseData.title,
       description: caseData.description,
       duration: caseData.duration,
@@ -108,7 +108,7 @@ export const WhatCan = ({ limit }: WhatCanProps) => {
                 ) : (
                   <>
                     <Image
-                      src={case_.originalImage}
+                      src={case_.videoPoster}
                       alt={case_.title}
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -136,13 +136,7 @@ export const WhatCan = ({ limit }: WhatCanProps) => {
                       </div>
                     )}
 
-                    {/* Duration Badge */}
-                    <div className="absolute top-3 right-3">
-                      <Badge className="bg-black/70 text-white text-xs px-2 py-1 backdrop-blur-sm">
-                        <Clock className="w-3 h-3 mr-1" />
-                        {case_.duration}
-                      </Badge>
-                    </div>
+
                   </>
                 )}
               </div>

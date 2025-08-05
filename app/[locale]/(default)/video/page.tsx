@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { Metadata } from 'next';
 import PricingI18n from '@/components/blocks/pricing-i18n';
 import { HeroVideo } from '@/components/blocks/hero-video';

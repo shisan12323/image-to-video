@@ -26,17 +26,19 @@ import {
 
 import { useTranslations } from "next-intl";
 import Icon from "@/components/icon";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import LocaleToggle from "@/components/locale/toggle";
 import { Menu } from "lucide-react";
 import SignToggle from "@/components/sign/toggle";
 import ThemeToggle from "@/components/theme/toggle";
 import { cn } from "@/lib/utils";
+import type { Header } from "@/types/blocks/header";
 
 export default function Header() {
   const t = useTranslations();
-  const header = {
+  const header: Header = {
+    disabled: false,
     brand: {
       title: "ImageToVideo AI",
       logo: {
@@ -64,6 +66,7 @@ export default function Header() {
         }
       ]
     },
+    buttons: [],
     show_sign: true,
     show_theme: false,
     show_locale: true
@@ -82,13 +85,10 @@ export default function Header() {
               className="flex items-center gap-2"
             >
               {header.brand?.logo?.src && (
-                <Image
+                <img
                   src={header.brand.logo.src}
                   alt={header.brand.logo.alt || header.brand.title || "Image to Video Logo"}
-                  width={40}
-                  height={40}
-                  className="w-10"
-                  priority
+                  className="w-10 h-10"
                 />
               )}
               {header.brand?.title && (
@@ -208,13 +208,10 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               {header.brand?.logo?.src && (
-                <Image
+                <img
                   src={header.brand.logo.src}
                   alt={header.brand.logo.alt || header.brand.title || "Image to Video Logo"}
-                  width={40}
-                  height={40}
-                  className="w-10"
-                  priority
+                  className="w-10 h-10"
                 />
               )}
               {header.brand?.title && (
@@ -234,13 +231,10 @@ export default function Header() {
                   <SheetTitle>
                     <div className="flex items-center gap-2">
                       {header.brand?.logo?.src && (
-                        <Image
+                        <img
                           src={header.brand.logo.src}
                           alt={header.brand.logo.alt || header.brand.title || "Image to Video Logo"}
-                          width={40}
-                          height={40}
-                          className="w-10"
-                          priority
+                          className="w-10 h-10"
                         />
                       )}
                       {header.brand?.title && (

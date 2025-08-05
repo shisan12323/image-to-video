@@ -140,13 +140,8 @@ export async function getBlogContent(slug: string, locale: string = 'en') {
   try {
     switch (slug) {
       case "best-ai-garden-design-tools-2025":
-        if (locale === 'zh') {
-          const { default: BlogContentZH } = await import('./best-ai-garden-design-tools-2025/zh');
-          return BlogContentZH;
-        } else {
-          const { default: BlogContentEN } = await import('./best-ai-garden-design-tools-2025/en');
-          return BlogContentEN;
-        }
+        // TODO: Add blog content files when needed
+        return null;
       default:
         return null;
     }

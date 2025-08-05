@@ -78,34 +78,37 @@ export function MicrosoftClarity() {
 
 // 组合所有分析脚本
 export function Analytics() {
-  useEffect(() => {
-    // Core Web Vitals monitoring
-    if (typeof window !== 'undefined' && 'PerformanceObserver' in window) {
-      const observer = new PerformanceObserver((list) => {
-        for (const entry of list.getEntries()) {
-          if (entry.entryType === 'largest-contentful-paint') {
-            console.log('LCP:', entry.startTime);
-          }
-          if (entry.entryType === 'first-input') {
-            console.log('FID detected');
-          }
-          if (entry.entryType === 'layout-shift') {
-            console.log('CLS detected');
-          }
-        }
-      });
+  // 临时禁用 Analytics 以解决 CSP 问题
+  return null;
+  
+  // useEffect(() => {
+  //   // Core Web Vitals monitoring
+  //   if (typeof window !== 'undefined' && 'PerformanceObserver' in window) {
+  //     const observer = new PerformanceObserver((list) => {
+  //       for (const entry of list.getEntries()) {
+  //         if (entry.entryType === 'largest-contentful-paint') {
+  //           console.log('LCP:', entry.startTime);
+  //         }
+  //         if (entry.entryType === 'first-input') {
+  //           console.log('FID detected');
+  //         }
+  //         if (entry.entryType === 'layout-shift') {
+  //           console.log('CLS detected');
+  //         }
+  //       }
+  //     });
       
-      observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+  //     observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
       
-      return () => observer.disconnect();
-    }
-  }, []);
+  //     return () => observer.disconnect();
+  //   }
+  // }, []);
 
-  return (
-    <>
-      <GoogleAnalytics />
-      <PlausibleAnalytics />
-      <MicrosoftClarity />
-    </>
-  );
+  // return (
+  //   <>
+  //     <GoogleAnalytics />
+  //     <PlausibleAnalytics />
+  //     <MicrosoftClarity />
+  //   </>
+  // );
 }

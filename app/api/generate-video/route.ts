@@ -1,10 +1,12 @@
+export const runtime = "edge";
+
 import { NextRequest, NextResponse } from 'next/server';
 import { replicateVideoService } from '@/services/replicate-video';
 import { createClient } from '@supabase/supabase-js';
 
 // 初始化Supabase客户端
 const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.SUPABASE_URL!,
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
 

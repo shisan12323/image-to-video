@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { getTranslations } from 'next-intl/server';
 import { buildCanonical, buildHreflang } from '@/lib/seo';
 import { HeroVideo } from '@/components/blocks/hero-video';

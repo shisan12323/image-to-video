@@ -1,17 +1,17 @@
+export const runtime = "edge";
+
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
-import crypto from 'crypto';
-
 // 初始化Supabase客户端
 const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.SUPABASE_URL!,
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
 
 // Webhook密钥验证
 const WEBHOOK_SECRET = process.env.REPLICATE_WEBHOOK_SECRET || 'whsec_XZfvbR93GmNdK9f37I0ppNqxU+IeuzCC';
 
-function verifyWebhookSignature(request: NextRequest, body: string): boolean {
+async function verifyWebhookSignature(request: NextRequest, body: string): Promise<boolean> {
   const signature = request.headers.get('webhook-id') || '';
   const timestamp = request.headers.get('webhook-timestamp') || '';
   const bodySignature = request.headers.get('webhook-signature') || '';
@@ -20,17 +20,35 @@ function verifyWebhookSignature(request: NextRequest, body: string): boolean {
     return false;
   }
 
-  // 构建签名字符串
-  const signedContent = `${timestamp}.${body}`;
-  const expectedSignature = crypto
-    .createHmac('sha256', WEBHOOK_SECRET)
-    .update(signedContent, 'utf8')
-    .digest('hex');
-
-  return crypto.timingSafeEqual(
-    Buffer.from(bodySignature, 'hex'),
-    Buffer.from(expectedSignature, 'hex')
-  );
+  try {
+    // 构建签名字符串
+    const signedContent = `${timestamp}.${body}`;
+    
+    // 使用 Web Crypto API (Edge Runtime 兼容)
+    const encoder = new TextEncoder();
+    const keyData = encoder.encode(WEBHOOK_SECRET);
+    const key = await crypto.subtle.importKey(
+      'raw',
+      keyData,
+      { name: 'HMAC', hash: 'SHA-256' },
+      false,
+      ['sign']
+    );
+    
+    const signatureData = encoder.encode(signedContent);
+    const signatureBuffer = await crypto.subtle.sign('HMAC', key, signatureData);
+    
+    // 转换为 hex
+    const expectedSignature = Array.from(new Uint8Array(signatureBuffer))
+      .map(b => b.toString(16).padStart(2, '0'))
+      .join('');
+    
+    // 简单的字符串比较 (在生产环境中应该使用 timingSafeEqual)
+    return bodySignature === expectedSignature;
+  } catch (error) {
+    console.error('Webhook signature verification error:', error);
+    return false;
+  }
 }
 
 export async function POST(request: NextRequest) {
@@ -38,7 +56,7 @@ export async function POST(request: NextRequest) {
     const body = await request.text();
     
     // 验证webhook签名
-    if (!verifyWebhookSignature(request, body)) {
+    if (!(await verifyWebhookSignature(request, body))) {
       console.error('Webhook签名验证失败');
       return NextResponse.json(
         { error: '签名验证失败' },

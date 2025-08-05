@@ -9,7 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { Upload, Play, Sparkles, Loader2, RotateCcw, Edit, History, ChevronRight, Check, Zap } from 'lucide-react';
 
 export const ImageUploadGenerator = () => {
@@ -103,11 +103,10 @@ export const ImageUploadGenerator = () => {
                     {previewUrl ? (
                       <div className="space-y-4">
                         <div className="relative w-32 h-24 mx-auto rounded-xl overflow-hidden shadow-lg">
-                          <Image
+                          <img
                             src={previewUrl}
                             alt="Selected image"
-                            fill
-                            className="object-cover"
+                            className="w-full h-full object-cover"
                           />
                         </div>
                         <p className="text-sm text-gray-600 font-medium">{t('upload.change_image')}</p>

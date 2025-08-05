@@ -5,19 +5,28 @@ import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import Image from 'next/image';
 import { Play, Eye, Clock, Cpu, FileText } from 'lucide-react';
 
 // Helper function to create cases from i18n data
 const createCasesFromI18n = (cases: any[], categories: string[]) => {
   return cases.map((caseData, index) => {
     const categoryIndex = index % categories.length;
+    const caseIndex = index + 1;
+    let originalImage = `/imgs/showcases/${caseIndex}.webp`;
+    let videoUrl = `/cases/tutorials/${caseIndex}.mp4`;
+    let videoPoster = `/cases/tutorials/posters/${caseIndex}.png`;
+    
+    // 处理 3.webp 空文件的情况
+    if (caseIndex === 3) {
+      originalImage = `/imgs/showcases/1.webp`;
+    }
+    
     return {
-      id: index + 1,
+      id: caseIndex,
       category: categories[categoryIndex],
-      originalImage: `/imgs/showcases/${index + 1}.png`,
-      videoUrl: `/cases/tutorials/${index + 1}.mp4`,
-      videoPoster: `/cases/tutorials/posters/${index + 1}.png`,
+      originalImage,
+      videoUrl,
+      videoPoster,
       title: caseData.title,
       description: caseData.description,
       duration: caseData.duration,
@@ -107,12 +116,10 @@ export const WhatCan = ({ limit }: WhatCanProps) => {
                   </video>
                 ) : (
                   <>
-                    <Image
+                    <img
                       src={case_.videoPoster}
                       alt={case_.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       loading={index < 6 ? "eager" : "lazy"}
                     />
                     
@@ -187,4 +194,4 @@ export const WhatCan = ({ limit }: WhatCanProps) => {
       </div>
     </section>
   );
-};
+}

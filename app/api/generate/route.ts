@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { GoogleGenAI, Modality } from "@google/genai";
 import { NextRequest, NextResponse } from "next/server";
 import { getUserUuid } from "@/services/user";

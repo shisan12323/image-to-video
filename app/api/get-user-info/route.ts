@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { respData, respErr, respJson } from "@/lib/resp";
 
 import { findUserByUuid } from "@/models/user";

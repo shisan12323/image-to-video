@@ -38,7 +38,7 @@ export class ReplicateVideoService {
           prompt: input.prompt,
         },
         webhook: input.webhook,
-        webhook_events_filter: input.webhook_events_filter || ["completed"],
+        webhook_events_filter: (input.webhook_events_filter || ["completed"]) as any,
       });
 
       return {
@@ -48,11 +48,11 @@ export class ReplicateVideoService {
         started_at: prediction.started_at,
         completed_at: prediction.completed_at,
         output: prediction.output as string,
-        error: prediction.error,
+        error: prediction.error as string | undefined,
       };
     } catch (error) {
       console.error("Replicate API调用失败:", error);
-      throw new Error(`视频生成任务启动失败: ${error.message}`);
+      throw new Error(`视频生成任务启动失败: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
 
@@ -70,11 +70,11 @@ export class ReplicateVideoService {
         started_at: prediction.started_at,
         completed_at: prediction.completed_at,
         output: prediction.output as string,
-        error: prediction.error,
+        error: prediction.error as string | undefined,
       };
     } catch (error) {
       console.error("查询任务状态失败:", error);
-      throw new Error(`查询任务状态失败: ${error.message}`);
+      throw new Error(`查询任务状态失败: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
 
@@ -86,7 +86,7 @@ export class ReplicateVideoService {
       await this.replicate.predictions.cancel(taskId);
     } catch (error) {
       console.error("取消任务失败:", error);
-      throw new Error(`取消任务失败: ${error.message}`);
+      throw new Error(`取消任务失败: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
 
@@ -95,20 +95,19 @@ export class ReplicateVideoService {
    */
   async getTaskList(limit: number = 10): Promise<ReplicateVideoResponse[]> {
     try {
-      const predictions = await this.replicate.predictions.list({ limit });
-      
-      return predictions.results.map(prediction => ({
+      const predictions = await this.replicate.predictions.list();
+      return predictions.results.slice(0, limit).map(prediction => ({
         id: prediction.id,
         status: prediction.status,
         created_at: prediction.created_at,
         started_at: prediction.started_at,
         completed_at: prediction.completed_at,
         output: prediction.output as string,
-        error: prediction.error,
+        error: prediction.error as string | undefined,
       }));
     } catch (error) {
       console.error("获取任务列表失败:", error);
-      throw new Error(`获取任务列表失败: ${error.message}`);
+      throw new Error(`获取任务列表失败: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
 }

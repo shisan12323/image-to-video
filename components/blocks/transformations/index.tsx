@@ -2,7 +2,6 @@
 
 import { Sparkles } from "lucide-react";
 import { useScrollAnimation } from "@/components/hooks/useScrollAnimation";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 
@@ -20,10 +19,21 @@ interface TransformationItem {
 export default function Transformations() {
   const { ref, isVisible } = useScrollAnimation();
   const t = useTranslations('transformations');
-  const transformations: TransformationItem[] = t.raw('examples').map((example: any, index: number) => ({
-    ...example,
-    image: `/imgs/showcases/${index + 1}.webp`
-  }));
+  const transformations: TransformationItem[] = t.raw('examples').map((example: any, index: number) => {
+    const caseIndex = index + 1;
+    let image = `/imgs/showcases/${caseIndex}.webp`;
+    
+    // 如果文件不存在或为空，使用备用文件
+    if (caseIndex === 3) {
+      // 3.webp 是空文件，使用 1.webp 作为备用
+      image = `/imgs/showcases/1.webp`;
+    }
+    
+    return {
+      ...example,
+      image
+    };
+  });
 
   // 预先构建图片 JSON-LD（ImageObject 列表），随首屏 HTML 输出
   const imagesLd = {
@@ -117,12 +127,9 @@ export default function Transformations() {
                 {/* Image Side */}
                 <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                   <div className="relative w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl">
-                    <Image
+                    <img
                       src={transformation.image}
                       alt={transformation.title}
-                      width={400}
-                      height={300}
-                      sizes="(max-width: 1024px) 100vw, 50vw"
                       className="w-full h-auto object-cover"
                       loading="lazy"
                     />

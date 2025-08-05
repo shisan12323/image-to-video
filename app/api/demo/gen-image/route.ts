@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { JSONValue, experimental_generateImage as generateImage } from "ai";
 import { respData, respErr } from "@/lib/resp";
 

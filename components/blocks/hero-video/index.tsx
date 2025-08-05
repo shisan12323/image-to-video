@@ -48,7 +48,7 @@ export const HeroVideo = () => {
         {/* <div 
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/imgs/showcases/1.png')`
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/imgs/showcases/1.webp')`
           }}
         /> */}
       </div>

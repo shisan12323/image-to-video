@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { respErr, respData } from "@/lib/resp";
 import { getUserCredits } from "@/services/credit";
 import { getUserUuid } from "@/services/user";

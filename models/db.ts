@@ -12,7 +12,11 @@ export function getSupabaseClient() {
     throw new Error("Supabase URL or key is not set");
   }
 
-  const client = createClient(supabaseUrl, supabaseKey);
+  const client = createClient(supabaseUrl, supabaseKey, {
+    auth: {
+      persistSession: false, // Cloudflare Pages 环境
+    },
+  });
 
   return client;
 }

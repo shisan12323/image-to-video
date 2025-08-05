@@ -3,7 +3,6 @@
 import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { Badge } from '@/components/ui/badge';
-import Image from 'next/image';
 import { Play, Loader2 } from 'lucide-react';
 
 export const VideoShowcase = () => {
@@ -195,14 +194,13 @@ export const VideoShowcase = () => {
                   }}
                 >
                   {/* 视频封面图片 */}
-                  <Image
+                  <img
                     src={video.posterUrl}
                     alt={video.title}
-                    fill
-                    className={`object-cover transition-all duration-300 ${
+                    className={`w-full h-full object-cover transition-all duration-300 ${
                       hoveredVideo === video.id ? 'opacity-0' : 'opacity-100'
                     }`}
-                    priority={video.id <= 6}
+                    loading={video.id <= 6 ? "eager" : "lazy"}
                   />
                   
                   {/* 悬停时显示的视频 */}

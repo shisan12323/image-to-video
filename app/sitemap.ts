@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { MetadataRoute } from 'next'
 import { getAllPosts, PostStatus } from '@/models/post'
 import { Post } from '@/types/post'

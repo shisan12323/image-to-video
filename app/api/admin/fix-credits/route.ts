@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { NextRequest, NextResponse } from "next/server";
 import { findOrderByOrderNo } from "@/models/order";
 import { updateCreditForOrder } from "@/services/credit";

@@ -223,6 +223,16 @@
       "landscape": "16:9 (Landscape)",
       "square": "1:1 (Square)"
     },
+    "resolution": {
+      "title": "Video Quality",
+      "720p": "720p",
+      "1080p": "1080p"
+    },
+    "duration": {
+      "title": "Video Duration",
+      "5s": "5s",
+      "8s": "8s"
+    },
     "pro_tips": {
       "title": "Pro Tips",
       "tip1": "Include specific details about your wild idea and vision",

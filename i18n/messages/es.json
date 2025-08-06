@@ -138,6 +138,16 @@
       "landscape": "16:9 (Paisaje)",
       "square": "1:1 (Cuadrado)"
     },
+    "resolution": {
+      "title": "Calidad de Video",
+      "720p": "720p",
+      "1080p": "1080p"
+    },
+    "duration": {
+      "title": "Duración del Video",
+      "5s": "5s",
+      "8s": "8s"
+    },
     "pro_tips": {
       "title": "Consejos Pro",
       "tip1": "Incluye detalles específicos sobre iluminación y ángulos de cámara",

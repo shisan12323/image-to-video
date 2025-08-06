@@ -22,8 +22,10 @@ export const ImageUploadGenerator = () => {
   const [generatedVideo, setGeneratedVideo] = useState<string>('');
   const [description, setDescription] = useState('');
   const [selectedModel, setSelectedModel] = useState('fast-1.4');
-  const [selectedDuration, setSelectedDuration] = useState('4s');
+  const [selectedDuration, setSelectedDuration] = useState('5s');
   const [selectedAspectRatio, setSelectedAspectRatio] = useState('9:16');
+  const [selectedResolution, setSelectedResolution] = useState('720p');
+  const [selectedVideoDuration, setSelectedVideoDuration] = useState('5s');
 
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -42,10 +44,42 @@ export const ImageUploadGenerator = () => {
     if (!selectedFile || !description.trim()) return;
     
     setIsGenerating(true);
-    setTimeout(() => {
-      setGeneratedVideo('/sample-video.mp4');
+    
+    try {
+      // 这里可以调用你的 Seedance API
+      const response = await fetch('/api/generate-video', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          modelType: 'seedance-lite',
+          prompt: description,
+          image: previewUrl, // 如果有图片的话
+          num_frames: selectedVideoDuration === '5s' ? 150 : 240, // 5s=150帧, 8s=240帧
+          width: selectedResolution === '720p' ? 480 : 720,
+          height: selectedResolution === '720p' ? 720 : 1080,
+          webhook: `${window.location.origin}/api/webhook/replicate`
+        })
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        console.log('视频生成任务已启动:', result.data);
+        // 这里可以添加轮询逻辑来检查任务状态
+        setTimeout(() => {
+          setGeneratedVideo('/sample-video.mp4');
+          setIsGenerating(false);
+        }, 3000);
+      } else {
+        throw new Error(result.error || '生成失败');
+      }
+    } catch (error) {
+      console.error('视频生成失败:', error);
       setIsGenerating(false);
-    }, 3000);
+      // 这里可以添加错误提示
+    }
   };
 
   const tabs = [
@@ -57,6 +91,16 @@ export const ImageUploadGenerator = () => {
     { value: '9:16', label: t('aspect_ratio.portrait') },
     { value: '16:9', label: t('aspect_ratio.landscape') },
     { value: '1:1', label: t('aspect_ratio.square') }
+  ];
+
+  const resolutions = [
+    { value: '720p', label: t('resolution.720p') },
+    { value: '1080p', label: t('resolution.1080p') }
+  ];
+
+  const durations = [
+    { value: '5s', label: t('duration.5s') },
+    { value: '8s', label: t('duration.8s') }
   ];
 
   return (
@@ -166,6 +210,48 @@ export const ImageUploadGenerator = () => {
                   </Select>
                 </div>
 
+                {/* Resolution Section */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4">{t('resolution.title')}</h3>
+                  
+                  <div className="grid grid-cols-2 gap-3">
+                    {resolutions.map((resolution) => (
+                      <button
+                        key={resolution.value}
+                        onClick={() => setSelectedResolution(resolution.value)}
+                        className={`px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 border-2 ${
+                          selectedResolution === resolution.value
+                            ? 'bg-orange-500 text-white border-orange-500 shadow-md'
+                            : 'bg-white text-gray-600 border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                        }`}
+                      >
+                        {resolution.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Video Duration Section */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4">{t('duration.title')}</h3>
+                  
+                  <div className="grid grid-cols-2 gap-3">
+                    {durations.map((duration) => (
+                      <button
+                        key={duration.value}
+                        onClick={() => setSelectedVideoDuration(duration.value)}
+                        className={`px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 border-2 ${
+                          selectedVideoDuration === duration.value
+                            ? 'bg-orange-500 text-white border-orange-500 shadow-md'
+                            : 'bg-white text-gray-600 border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                        }`}
+                      >
+                        {duration.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 {/* Pro Tips Section */}
                 <div className="bg-green-50 rounded-xl p-4 border border-green-100">
                   <div className="flex items-center gap-2 mb-4">
@@ -252,7 +338,7 @@ export const ImageUploadGenerator = () => {
                         <Loader2 className="w-5 h-5 text-blue-600" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-gray-800">100-300s</p>
+                        <p className="text-sm font-medium text-gray-800">{selectedVideoDuration === '5s' ? '100-300s' : '150-450s'}</p>
                         <p className="text-xs text-gray-500">Processing Time</p>
                       </div>
                     </div>
@@ -264,7 +350,7 @@ export const ImageUploadGenerator = () => {
                         <Sparkles className="w-5 h-5 text-green-600" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-gray-800">360p</p>
+                        <p className="text-sm font-medium text-gray-800">{selectedResolution}</p>
                         <p className="text-xs text-gray-500">Video Quality</p>
                       </div>
                     </div>

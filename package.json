@@ -20,7 +20,9 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy",
-    "docker:build": "docker build -f Dockerfile -t shipany-template-one:latest ."
+    "docker:build": "docker build -f Dockerfile -t shipany-template-one:latest .",
+    "test:simple": "node scripts/simple-test.js",
+    "queue:stats": "curl -s http://localhost:3000/api/process-queue"
   },
   "dependencies": {
     "@ai-sdk/deepseek": "^0.1.11",

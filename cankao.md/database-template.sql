@@ -154,6 +154,8 @@ CREATE TABLE public.video_tasks (
     prompt text,
     replicate_task_id character varying,
     error_message text,
+    priority integer DEFAULT 0,
+    retry_count integer DEFAULT 0,
     created_at timestamp with time zone DEFAULT now(),
     updated_at timestamp with time zone DEFAULT now()
 );
@@ -163,6 +165,8 @@ CREATE INDEX idx_video_tasks_user_uuid ON public.video_tasks(user_uuid);
 CREATE INDEX idx_video_tasks_status ON public.video_tasks(status);
 CREATE INDEX idx_video_tasks_replicate_task_id ON public.video_tasks(replicate_task_id);
 CREATE INDEX idx_video_tasks_created_at ON public.video_tasks(created_at);
+CREATE INDEX idx_video_tasks_priority ON public.video_tasks(priority);
+CREATE INDEX idx_video_tasks_status_priority ON public.video_tasks(status, priority DESC);
 
 CREATE INDEX idx_users_email ON public.users(email);
 CREATE INDEX idx_users_uuid ON public.users(uuid);

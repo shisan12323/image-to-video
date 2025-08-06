@@ -2,6 +2,7 @@ export const runtime = "edge";
 
 import { NextRequest, NextResponse } from 'next/server';
 import { replicateVideoService } from '@/services/replicate-video';
+import { taskQueueService } from '@/services/task-queue';
 import { createClient } from '@supabase/supabase-js';
 
 // 初始化Supabase客户端
@@ -11,63 +12,65 @@ const supabase = createClient(
 );
 
 export async function POST(request: NextRequest) {
+  console.log('🎬 收到视频生成请求');
+  
   try {
     const body = await request.json();
     const { image, prompt, userId } = body;
 
-    if (!image || !prompt) {
+    console.log('📋 请求参数:', {
+      hasImage: !!image,
+      promptLength: prompt?.length || 0,
+      userId: userId
+    });
+
+    if (!image || !prompt || !userId) {
+      console.warn('⚠️ 缺少必要参数:', { image: !!image, prompt: !!prompt, userId: !!userId });
       return NextResponse.json(
-        { error: '缺少必要参数: image 和 prompt' },
+        { error: '缺少必要参数: image、prompt 和 userId' },
         { status: 400 }
       );
     }
 
     // 生成任务ID
     const taskId = crypto.randomUUID();
+    console.log('🆔 生成任务ID:', taskId);
     
-    // 创建webhook URL
-    const webhookUrl = `${process.env.NEXT_PUBLIC_APP_URL}/api/webhook/replicate`;
-    
-    // 启动Replicate视频生成任务
-    const replicateResponse = await replicateVideoService.startVideoGeneration({
+    // 使用任务队列服务添加任务
+    console.log('📝 开始添加任务到队列...');
+    const queueResult = await taskQueueService.addTask({
+      userId,
       image,
       prompt,
-      webhook: webhookUrl,
-      webhook_events_filter: ['completed', 'failed'],
+      status: 'pending',
+      priority: 0, // 队列服务会自动计算优先级
+      retryCount: 0,
     });
 
-    // 将任务信息保存到Supabase
-    const { error: dbError } = await supabase
-      .from('video_tasks')
-      .insert({
-        id: taskId,
-        user_uuid: userId,
-        status: 'pending',
-        input_image_url: image,
-        prompt,
-        replicate_task_id: replicateResponse.id,
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      });
-
-    if (dbError) {
-      console.error('数据库保存失败:', dbError);
+    if (!queueResult.success) {
+      console.error('❌ 任务队列添加失败:', queueResult.error);
       return NextResponse.json(
-        { error: '任务创建失败' },
-        { status: 500 }
+        { error: queueResult.error },
+        { status: 429 } // Too Many Requests
       );
     }
 
+    console.log('✅ 任务成功添加到队列:', {
+      taskId: queueResult.taskId,
+      status: 'pending'
+    });
+
+    // 立即返回任务ID（不等待处理）
     return NextResponse.json({
       success: true,
-      taskId,
-      replicateTaskId: replicateResponse.id,
+      taskId: queueResult.taskId,
       status: 'pending',
-      message: '视频生成任务已启动',
+      message: '视频生成任务已加入队列',
+      estimatedWaitTime: '2-5分钟'
     });
 
   } catch (error) {
-    console.error('视频生成API错误:', error);
+    console.error('💥 视频生成API错误:', error);
     return NextResponse.json(
       { error: '视频生成任务启动失败' },
       { status: 500 }
@@ -76,54 +79,67 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest) {
+  console.log('🔍 收到任务状态查询请求');
+  
   try {
     const { searchParams } = new URL(request.url);
     const taskId = searchParams.get('taskId');
 
+    console.log('📋 查询参数:', { taskId });
+
     if (!taskId) {
+      console.warn('⚠️ 缺少taskId参数');
       return NextResponse.json(
         { error: '缺少taskId参数' },
         { status: 400 }
       );
     }
 
-    // 从数据库查询任务状态
-    const { data: task, error } = await supabase
-      .from('video_tasks')
-      .select('*')
-      .eq('id', taskId)
-      .single();
+    // 使用任务队列服务获取任务信息
+    console.log('🔍 开始查询任务信息...');
+    const task = await taskQueueService.getTask(taskId);
 
-    if (error || !task) {
+    if (!task) {
+      console.warn('⚠️ 任务不存在:', taskId);
       return NextResponse.json(
         { error: '任务不存在' },
         { status: 404 }
       );
     }
 
+    console.log('✅ 获取任务信息成功:', {
+      taskId: task.id,
+      status: task.status,
+      priority: task.priority
+    });
+
     // 如果有replicate_task_id，也查询Replicate的状态
     let replicateStatus = null;
-    if (task.replicate_task_id) {
+    if (task.replicateTaskId) {
+      console.log('🔄 查询Replicate状态:', task.replicateTaskId);
       try {
-        replicateStatus = await replicateVideoService.getTaskStatus(task.replicate_task_id);
+        replicateStatus = await replicateVideoService.getTaskStatus(task.replicateTaskId);
+        console.log('✅ Replicate状态查询成功:', replicateStatus?.status);
       } catch (error) {
-        console.error('查询Replicate状态失败:', error);
+        console.error('❌ 查询Replicate状态失败:', error);
       }
     }
 
     return NextResponse.json({
       taskId: task.id,
       status: task.status,
-      inputImageUrl: task.input_image_url,
-      outputVideoUrl: task.output_video_url,
+      inputImageUrl: task.image,
+      outputVideoUrl: task.outputVideoUrl,
       prompt: task.prompt,
-      createdAt: task.created_at,
-      updatedAt: task.updated_at,
+      createdAt: task.createdAt,
+      updatedAt: task.updatedAt,
+      priority: task.priority,
+      retryCount: task.retryCount,
       replicateStatus,
     });
 
   } catch (error) {
-    console.error('查询任务状态错误:', error);
+    console.error('💥 查询任务状态错误:', error);
     return NextResponse.json(
       { error: '查询任务状态失败' },
       { status: 500 }

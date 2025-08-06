@@ -41,7 +41,7 @@ Allow: /pricing/
 Allow: /video/
 
 # Sitemap for AI models
-Sitemap: https://www.image-to-video.art/sitemap.xml
+Sitemap: https://www.grok-imagine.pro/sitemap.xml
 
 # Crawl delay for AI models (be respectful)
 Crawl-delay: 1 

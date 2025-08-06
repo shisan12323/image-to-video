@@ -29,7 +29,7 @@ export async function generateMetadata({
   const t = await getTranslations();
 
   // Base URL for metadata
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.grok-imagine.pro';
 
   return {
     title: {
@@ -39,7 +39,7 @@ export async function generateMetadata({
     description: t("metadata.description") || "",
     metadataBase: new URL(baseUrl),
     openGraph: {
-      siteName: 'Image to Video',
+      siteName: 'Grok Imagine',
       locale: locale,
       type: 'website',
     },
@@ -57,14 +57,14 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   // Base URL for structured data
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.grok-imagine.pro';
 
   // Structured data for the website
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Image to Video",
-    "description": "Smart image to video platform that transforms your photos into stunning videos using artificial intelligence",
+    "name": "Grok Imagine",
+    "description": "AI-powered video and image platform that transforms your ideas into viral content using Aurora engine technology",
     "url": baseUrl,
     "potentialAction": {
       "@type": "SearchAction",
@@ -75,9 +75,9 @@ export default async function RootLayout({
       "query-input": "required name=search_term_string"
     },
     "sameAs": [
-      "https://twitter.com/image_to_video",
-      "https://facebook.com/image.to.video",
-      "https://linkedin.com/company/image-to-video"
+      "https://twitter.com/grokimagine",
+      "https://facebook.com/grokimagine",
+      "https://linkedin.com/company/grokimagine"
     ],
     "inLanguage": locales.map(lang => ({
       "@type": "Language",
@@ -89,14 +89,14 @@ export default async function RootLayout({
   const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Image to Video",
-    "description": "AI-powered image to video platform that transforms your images into stunning videos using artificial intelligence",
+    "name": "Grok Imagine",
+    "description": "AI-powered video and image platform that transforms your ideas into viral content using Aurora engine technology",
     "url": baseUrl,
     "logo": `${baseUrl}/logo.svg`,
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "email": "support@image-to-video.art"
+      "email": "support@grok-imagine.pro"
     },
     "address": {
       "@type": "PostalAddress",
@@ -107,13 +107,13 @@ export default async function RootLayout({
   const serviceData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Image to Video Service",
-    "description": "Professional image to video generation using artificial intelligence",
+    "name": "Grok Imagine Service",
+    "description": "Professional video and image generation using artificial intelligence",
     "provider": {
       "@type": "Organization",
-      "name": "Image to Video"
+      "name": "Grok Imagine"
     },
-    "serviceType": "Image to Video",
+    "serviceType": "Grok Imagine",
     "areaServed": "Worldwide",
     "availableLanguage": locales
   };

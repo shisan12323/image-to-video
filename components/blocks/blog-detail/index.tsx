@@ -8,7 +8,7 @@ import { Post } from "@/types/post";
 import moment from "moment";
 
 export default function BlogDetail({ post }: { post: Post }) {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.grok-imagine.pro';
 
   // 预先构建 Article 结构化数据（SSR）
   const articleSchema = {
@@ -19,12 +19,12 @@ export default function BlogDetail({ post }: { post: Post }) {
     "image": post.cover_url ? `${baseUrl}${post.cover_url}` : `${baseUrl}/og-image.jpg`,
     "author": {
       "@type": "Person",
-      "name": post.author_name || "Image to Video Team",
+      "name": post.author_name || "Grok Imagine Team",
       "image": post.author_avatar_url
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Image to Video",
+      "name": "Grok Imagine",
       "logo": {
         "@type": "ImageObject",
         "url": `${baseUrl}/logo.svg`
@@ -36,8 +36,8 @@ export default function BlogDetail({ post }: { post: Post }) {
       "@type": "WebPage",
       "@id": `${baseUrl}/blog/${post.slug}`
     },
-    "articleSection": "Image to Video",
-    "keywords": "image to video, AI video generation, video from image, AI video, image animation"
+    "articleSection": "Grok Imagine",
+    "keywords": "grok imagine, AI video generation, video from image, AI video, viral content, aurora engine"
   };
 
   return (

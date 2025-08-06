@@ -10,9 +10,14 @@ Disallow: /.well-known/
 # Legal pages (also have <meta name="robots" content="noindex">)
 Disallow: /privacy-policy
 Disallow: /terms-of-service
+# Blog pages (hidden for MVP)
+Disallow: /blog
+Disallow: /posts
+Disallow: /*/blog
+Disallow: /*/posts
 
 # Sitemap
-Sitemap: https://www.image-to-video.art/sitemap.xml
+Sitemap: https://www.grok-imagine.pro/sitemap.xml
 
 # Optional: polite crawl delay
 Crawl-delay: 1

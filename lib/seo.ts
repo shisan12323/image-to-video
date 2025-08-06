@@ -1,4 +1,4 @@
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.image-to-video.art";
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.grok-imagine.pro";
 
 import { locales } from "@/i18n/locale";
 

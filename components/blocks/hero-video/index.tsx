@@ -10,7 +10,6 @@ export const HeroVideo = () => {
 
   const topBadge = t('top_badge');
   const titleLine1 = t('title_line1');
-  const titleLine2 = t('title_line2');
   const subtitle = t('subtitle');
   const description = t('description');
   const ctaButton = t('cta_button');
@@ -65,8 +64,6 @@ export const HeroVideo = () => {
         {/* Main Title */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
           {titleLine1}
-          <br />
-          {titleLine2}
         </h1>
         
         {/* Subtitle */}

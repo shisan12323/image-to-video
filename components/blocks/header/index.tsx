@@ -40,10 +40,10 @@ export default function Header() {
   const header: Header = {
     disabled: false,
     brand: {
-      title: "ImageToVideo AI",
+      title: "Grok Imagine",
       logo: {
         src: "/logo.svg",
-        alt: "ImageToVideo AI"
+        alt: "Grok Imagine"
       },
       url: "/"
     },
@@ -51,16 +51,11 @@ export default function Header() {
       items: [
         {
           title: t('header.nav.items.0.title'),
-          url: "/#features",
+          url: "/#upload",
           icon: "Video"
         },
         {
           title: t('header.nav.items.1.title'),
-          url: "/#features",
-          icon: "MessageCircle"
-        },
-        {
-          title: t('header.nav.items.2.title'),
           url: "/pricing",
           icon: "CreditCard"
         }

@@ -1,5 +1,7 @@
-import { ArrowRight } from "lucide-react";
+"use client";
+
 import { Blog as BlogType } from "@/types/blocks/blog";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Blog({ blog }: { blog: BlogType }) {

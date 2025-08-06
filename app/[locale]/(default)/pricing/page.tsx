@@ -16,25 +16,25 @@ export async function generateMetadata({
   const ogImage = `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'}/imgs/showcases/1.webp`;
   
   return {
-    title: `${t('title')} - Image to Video`,
+    title: `${t('title')} - Grok Imagine`,
     description: t('description'),
-    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.grok-imagine.pro'),
     alternates: {
       canonical: canonicalUrl,
       languages: buildHreflang('pricing'),
     },
     openGraph: {
-      title: `${t('title')} - Image to Video`,
+      title: `${t('title')} - Grok Imagine`,
       description: t('description'),
       url: canonicalUrl,
       images: [ogImage],
-      siteName: 'Image to Video',
+      siteName: 'Grok Imagine',
       locale: locale,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${t('title')} - Image to Video`,
+      title: `${t('title')} - Grok Imagine`,
       description: t('description'),
       images: [ogImage],
     },
@@ -49,16 +49,16 @@ export default async function PricingPage({
   const { locale } = await params;
 
   // Structured data for pricing plans
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.grok-imagine.pro';
   
   const pricingStructuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Image to Video Service",
-    "description": "Professional AI-powered image to video service",
+    "name": "Grok Imagine Service",
+    "description": "Professional AI-powered video and image generation platform",
     "brand": {
       "@type": "Brand",
-      "name": "Image to Video"
+      "name": "Grok Imagine"
     },
     "offers": [
       {

@@ -16,7 +16,7 @@ import AIFeatures from '@/components/blocks/ai-features';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const t = await getTranslations();
   const { locale } = await params;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.grok-imagine.pro';
   const ogImage = `${baseUrl}/imgs/showcases/1.webp`;
 
   return {
@@ -58,7 +58,7 @@ export default function IndexPage() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art'
+                "item": process.env.NEXT_PUBLIC_BASE_URL || 'https://www.grok-imagine.pro'
               }
             ]
           })

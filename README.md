@@ -1,6 +1,6 @@
-# Image to Video
+# Grok Imagine
 
-Image to Video AI SaaS Startups in hours.
+Grok Imagine AI Video Generation Platform - Turn wild ideas into viral content.
 
 ![preview](preview.png)
 
@@ -9,7 +9,7 @@ Image to Video AI SaaS Startups in hours.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/image-to-video/image-to-video.git
+git clone https://github.com/grok-imagine/grok-imagine.git
 ```
 
 2. Install dependencies
@@ -44,7 +44,7 @@ cp .env.example .env.local
 
 - Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fimage-to-video%2Fimage-to-video&project-name=image-to-video&repository-name=image-to-video&redirect-url=https%3A%2F%2Fwww.image-to-video.art&demo-title=Image%20to%20Video&demo-description=Image%20to%20Video%20AI%20Startup%20in%20hours%2C%20not%20days&demo-url=https%3A%2F%2Fwww.image-to-video.art&demo-image=preview.png)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgrok-imagine%2Fgrok-imagine&project-name=grok-imagine&repository-name=grok-imagine&redirect-url=https%3A%2F%2Fwww.grok-imagine.pro&demo-title=Grok%20Imagine&demo-description=Grok%20Imagine%20AI%20Video%20Generation%20Platform&demo-url=https%3A%2F%2Fwww.grok-imagine.pro&demo-image=preview.png)
 
 - Deploy to Cloudflare
 
@@ -67,11 +67,11 @@ npm run cf:deploy
 
 ## Community
 
-- [Image to Video](https://www.image-to-video.art)
-- [Documentation](https://www.image-to-video.art/docs)
+- [Grok Imagine](https://www.grok-imagine.pro)
+- [Documentation](https://www.grok-imagine.pro/docs)
 - [Discord](https://discord.gg/your-invite-link)
 
 ## License
 
-- [Image to Video AI SaaS Boilerplate License Agreement](LICENSE)
+- [Grok Imagine AI SaaS Boilerplate License Agreement](LICENSE)
 # Trigger redeploy 2025年 8月 6日 星期三 13时22分43秒 CST

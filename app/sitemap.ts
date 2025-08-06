@@ -5,8 +5,8 @@ import { getAllPosts, PostStatus } from '@/models/post'
 import { Post } from '@/types/post'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.image-to-video.art'
-  const locales = ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'ms', 'vi', 'id', 'km', 'hi']
+  const baseUrl = 'https://www.grok-imagine.pro'
+  const locales = ['en',  'es']
   
   const urls: MetadataRoute.Sitemap = [
     {
@@ -45,6 +45,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   })
 
+  // Blog pages - HIDDEN FOR MVP (uncomment when ready to show)
+  /*
   // Add English blog page
   urls.push({
     url: `${baseUrl}/blog`,
@@ -80,6 +82,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     })
   })
+  */
 
   // Add video page
   urls.push({
@@ -99,7 +102,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   })
 
-  // Dynamic blog articles from database
+  // Dynamic blog articles from database - HIDDEN FOR MVP (uncomment when ready to show)
+  /*
   try {
     const allPosts = await getAllPosts(1, 1000) // Get all posts
     
@@ -157,6 +161,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   } catch (error) {
     console.error('Error fetching posts for sitemap:', error)
   }
+  */
 
   // 隐私政策和条款页面不添加到sitemap，避免被搜索引擎索引
 

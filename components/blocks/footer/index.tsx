@@ -11,7 +11,7 @@ export default function Footer() {
       description: t('footer.brand.description'),
       logo: {
         src: "/logo.svg",
-        alt: "ImageToVideo AI"
+        alt: "Grok Imagine"
       },
       url: "/"
     },
@@ -68,7 +68,8 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col items-center gap-4 lg:items-end">
-              {/* Blog Link */}
+              {/* Blog Link - HIDDEN FOR MVP (uncomment when ready to show) */}
+              {/*
               {process.env.NEXT_PUBLIC_SHOW_BLOG === 'true' && (
                 <div className="mb-4">
                   <Link 
@@ -79,6 +80,7 @@ export default function Footer() {
                   </Link>
                 </div>
               )}
+              */}
 
               {footer.agreement && (
                 <ul className="flex justify-center gap-6 lg:justify-end">

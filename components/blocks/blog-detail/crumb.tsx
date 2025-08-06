@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
 
 export default function Crumb({ post }: { post: Post }) {
   const t = useTranslations();
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.image-to-video.art';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.grok-imagine.pro';
 
   // 预先构建面包屑 JSON-LD（SSR）
   const homeUrl = post.locale === "en" ? baseUrl : `${baseUrl}/${post.locale}`;

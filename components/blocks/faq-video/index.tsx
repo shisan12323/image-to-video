@@ -101,15 +101,15 @@ export default function FAQVideo() {
             <div className="flex flex-wrap justify-center gap-8 text-blue-100 mb-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">200K+</div>
-                <div className="text-sm">ACTIVE USERS 活跃用户</div>
+                <div className="text-sm">ACTIVE USERS</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">400K+</div>
-                <div className="text-sm">TOTAL DOWNLOADS 总下载量</div>
+                <div className="text-sm">TOTAL DOWNLOADS</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">458+</div>
-                <div className="text-sm">SHARED VIDEOS 共享视频</div>
+                <div className="text-sm">SHARED VIDEOS</div>
               </div>
             </div>
             <button 

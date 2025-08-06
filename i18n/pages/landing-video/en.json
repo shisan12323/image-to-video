@@ -1,127 +1,127 @@
 {
   "metadata": {
-    "title": "Image to Video AI Free - Convert Photos to Videos Online | ImgToVideo",
-    "description": "Transform your images into stunning videos with our free image to video AI. Upload any photo and create professional videos in minutes. No editing skills required."
+    "title": "Grok Imagine & Grok Video AI Platform - Turn Wild Ideas into Viral Content",
+    "description": "Transform your wildest ideas into viral content with Grok Imagine and Grok Video. Create stunning 6-second videos with synchronized audio using advanced Grok Imagine and Grok Video technology."
   },
   "hero": {
-    "title": "Image to Video AI Free - Transform Photos into Videos",
-    "description": "Create stunning videos from images with our free image to video AI. Upload any photo and generate professional videos in minutes. No editing skills required.",
+    "title": "Grok Imagine & Grok Video - Turn Wild Ideas into Viral Content",
+    "description": "Create professional videos and images in minutes with Grok Imagine's Grok Video technology. No editing skills required. Grok Video makes it easy!",
     "buttons": {
       "0": {
-        "title": "Start Creating Free",
+        "title": "Start Creating with Grok Imagine",
         "icon": "Sparkles",
         "url": "/#",
         "variant": "default"
       }
     },
     "badges": {
-      "0": { "title": "Free Image to Video AI" },
-      "1": { "title": "Generate Videos in Minutes" },
+      "0": { "title": "Grok Imagine Technology" },
+      "1": { "title": "Generate in Minutes" },
       "2": { "title": "No Skills Required" }
     }
   },
   "feature_video": {
-    "title": "Free Image to Video AI - Choose Your Creation Method",
+    "title": "Choose Your Grok Imagine or Grok Video Creation Method",
     "items": {
       "0": {
-        "icon": "🖼️",
-        "title": "Free Image to Video AI",
-        "description": "Transform static images into dynamic videos with our free image to video AI technology. No cost, no registration required.",
-        "button_text": "Try Free Image to Video AI"
+        "icon": "🎬",
+        "title": "Text to Grok Video Generation",
+        "description": "Convert text descriptions into dynamic 6-second Grok Videos with synchronized audio. Perfect for viral content and social media using Grok Imagine and Grok Video technology.",
+        "button_text": "Start Text to Grok Video"
       },
       "1": {
-        "icon": "📝",
-        "title": "Free Text to Video AI",
-        "description": "Create professional videos from text descriptions using our free AI models. Generate videos from simple text prompts.",
-        "button_text": "Try Free Text to Video AI"
+        "icon": "🖼️",
+        "title": "Image to Grok Video Generation",
+        "description": "Convert static images into engaging Grok Video content. Create professional Grok Videos from images with the advanced Grok Imagine and Grok Video technology.",
+        "button_text": "Start Image to Grok Video"
       },
       "2": {
         "icon": "✨",
-        "title": "Free Video Effect Templates",
-        "description": "Apply trending video effects with our free collection of popular templates. Enhance your image to video AI results.",
-        "button_text": "Try Free Video Templates"
+        "title": "Text to Image Generation",
+        "description": "Create photorealistic images from text prompts with Grok Imagine. Generate high-quality portraits, logos, artwork, and visual content across multiple domains.",
+        "button_text": "Start Text to Image"
       }
     }
   },
   "how_it_works": {
-    "title": "How Free Image to Video AI Works",
-    "subtitle": "Get Started in 3 Simple Steps",
-    "description": "Our free image to video AI makes video creation as easy as 1-2-3.",
+    "title": "How Grok Imagine Works",
+    "subtitle": "Create Amazing Content in 3 Simple Steps",
+    "description": "Transform your wildest ideas into viral content with Grok Imagine. Grok Imagine technology makes content creation simple and professional.",
     "steps": {
       "upload": {
-        "title": "1. Upload Image for Free AI Processing",
-        "description": "Upload your image for our free image to video AI or write a text description of your desired video."
+        "title": "1. Describe Your Idea or Upload Image",
+        "description": "Describe your wild idea or upload an image. Grok Imagine supports text descriptions and JPG, PNG, and WebP formats."
       },
       "style": {
-        "title": "2. Customize Settings",
-        "description": "Choose your preferred AI model, adjust duration, and set your preferences for optimal results."
+        "title": "2. Choose Grok Imagine Style",
+        "description": "Select your preferred creation style, duration, and customization options. Grok Imagine offers multiple content effects."
       },
       "generate": {
-        "title": "3. Generate & Download Free Video",
-        "description": "Watch our free image to video AI create your content and download the final high-quality result."
+        "title": "3. Generate & Download Content",
+        "description": "Grok Imagine processes your idea and creates stunning content ready to download. Get professional results instantly."
       }
     }
   },
   "testimonials": {
-    "title": "What Users Say About Our Free Image to Video AI",
-    "description": "Join thousands of satisfied users creating amazing videos with our free image to video AI.",
+    "title": "What Creators Say About Grok Imagine",
+    "description": "Join millions of creators worldwide using Grok Imagine to turn wild ideas into viral content with Grok Imagine technology.",
     "reviews": {
       "0": {
-        "name": "Alex R.",
-        "location": "Content Creator",
-        "quote": "This free image to video AI tool is a game-changer! I can now produce stunning video content for my social media in a fraction of the time. The quality is just incredible."
+        "name": "Victoria Harrison",
+        "location": "Content Creator, USA",
+        "quote": "Grok Imagine has completely revolutionized my content creation workflow. Using Grok Imagine daily, I can transform creative ideas into engaging content instantly. Grok Imagine's ability to generate perfect clips makes it indispensable for my social media strategy."
       },
       "1": {
-        "name": "Samantha B.",
-        "location": "Digital Marketer",
-        "quote": "We use this free image to video AI for creating quick video ads from our product images. The engagement rate has skyrocketed. It's fast, efficient, and super easy to use."
+        "name": "Michael Williams",
+        "location": "Digital Marketing Manager, UK",
+        "quote": "Our team relies on Grok Imagine for every marketing campaign now. Grok Imagine lets us rapidly produce high quality promotional content simply by describing our vision. When clients ask how we create so fast, we tell them: Grok Imagine."
       },
       "2": {
-        "name": "David L.",
-        "location": "Small Business Owner",
-        "quote": "I have zero video editing skills, but with this free image to video AI, I can create professional-looking videos for my business. Highly recommended!"
+        "name": "Clara Bennett",
+        "location": "Motion Designer, Australia",
+        "quote": "As a professional motion designer, Grok Imagine has redefined my workflow completely. Grok Imagine demonstrates an incredible understanding of natural motion dynamics. I recommend Grok Imagine to every designer seeking professional results."
       }
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions About Free Image to Video AI",
-    "description": "Get answers to the most common questions about our free image to video AI technology.",
-    "cta_title": "Ready to Try Free Image to Video AI?",
-    "cta_button": "Start Creating Free",
+    "title": "Frequently Asked Questions About Grok Imagine & Grok Video",
+    "description": "Get answers to the most common questions about Grok Imagine and Grok Video technology.",
+    "cta_title": "Ready to Try Grok Imagine?",
+    "cta_button": "Start Creating with Grok Imagine",
     "questions": {
       "0": {
-        "question": "What is free image to video AI and how does it work?",
-        "answer": "Free image to video AI is an advanced artificial intelligence technology that analyzes static images and transforms them into dynamic videos. Our free AI uses deep learning algorithms to understand the content of your image and generate realistic motion, creating smooth video transitions that bring your photos to life."
+        "question": "What is Grok Imagine & Grok Video and how do they work?",
+        "answer": "Grok Imagine and Grok Video are revolutionary AI-powered platforms that turn your wildest ideas into viral content using advanced Grok Imagine and Grok Video technology. They create stunning 6-second videos with synchronized audio from text descriptions or images, perfect for social media and marketing campaigns."
       },
       "1": {
-        "question": "Is your image to video AI completely free to use?",
-        "answer": "Yes, our image to video AI is completely free to use. You can create unlimited videos with our free image to video AI technology. No registration or credit card required."
+        "question": "Is Grok Imagine free to use?",
+        "answer": "Grok Imagine offers flexible pricing plans starting with free access. You can create content with our Grok Imagine technology using a credit system. No registration required to start exploring Grok Imagine's capabilities."
       },
       "2": {
-        "question": "What image formats work best with your free image to video AI?",
-        "answer": "Our free image to video AI supports all common formats including JPG, PNG and WebP. For optimal results, we recommend high-resolution images with clear subjects."
+        "question": "What types of content work best with Grok Imagine?",
+        "answer": "Grok Imagine excels with any creative idea! Whether it's product showcases, brand stories, educational content, or entertainment videos, the Grok Imagine adapts to your vision. Simply describe your idea or upload an image, and watch Grok Imagine create professional-quality content."
       },
       "3": {
-        "question": "How long does the free image to video AI generation take?",
-        "answer": "Our free image to video AI typically generates videos within 2-5 minutes, depending on the complexity of your image and the current server load. We provide real-time progress updates during the generation process."
+        "question": "How long does it take to generate content with Grok Imagine?",
+        "answer": "Most content is generated in 2-15 minutes. Processing time depends on content complexity and selected quality settings. Grok Imagine's Grok Imagine ensures consistent, fast processing with real-time status updates."
       },
       "4": {
-        "question": "Can I use the generated videos for commercial purposes?",
-        "answer": "Absolutely! You retain full ownership and commercial rights to all videos generated by our free image to video AI. You can use these videos for marketing, social media, or any other purpose."
+        "question": "Can I use the generated content for commercial purposes?",
+        "answer": "Absolutely! You retain full ownership and commercial rights to all content generated by Grok Imagine. You can use these videos and images for marketing, social media, or any other purpose."
       }
     }
   },
   "cta": {
     "name": "cta",
-    "title": "Ready to Try Free Image to Video AI?",
-    "description": "Join thousands of creators using our free image to video AI technology to transform their visual content. Start creating amazing videos today!",
-          "buttons": [
-        {
-          "title": "Try Free Image to Video AI",
-          "url": "/#",
-          "target": "_self",
-          "icon": "Sparkles"
-        }
-      ]
+    "title": "Ready to Try Grok Imagine?",
+    "description": "Join millions of creators using Grok Imagine to turn wild ideas into viral content. Start creating amazing content with Grok Imagine technology today!",
+    "buttons": [
+      {
+        "title": "Start Creating with Grok Imagine",
+        "url": "/#",
+        "target": "_self",
+        "icon": "Sparkles"
+      }
+    ]
   }
 }
